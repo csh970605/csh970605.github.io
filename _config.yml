@@ -1,31 +1,36 @@
 # The Site Configuration
 
-theme: jekyll-theme-chirpy  # import하는 테마 명입니다. 디폴트로 사용중인 테마 명이 들어가 있으므로, 수정은 하지 않습니다.
+# Import the theme
+theme: jekyll-theme-chirpy
 
-baseurl: ''     # 사용자 페이지를 만들었을 경우, 빈칸으로 둡니다. 프로젝트 페이지를 만든 경우 프로젝트 명을 적어줍니다.
-                # 사용자 페이지와 프로젝트 페이지를 모르신다면, [초보자를 위한 GitHub Blog 만들기 - 1](https://wlqmffl0102.github.io/posts/Making-Git-blogs-for-beginners-1/)에서 Step 1-2. repository생성을 참고하시길 바랍니다.
-=
-lang: ko-KR     # 사용하는 언어 설정을 진행합니다. http://www.lingoes.net/en/translator/langcode.htm 로 접속하여 확인가능합니다.
+# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
+# and doesn't have a custom domain.
+baseurl: ''
 
-timezone: Asia/Seoul    #timezone설정입니다. http://www.timezoneconverter.com/cgi-bin/findzone/findzone 에서 확인가능합니다.
+# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
+# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
+# otherwise, the layout language will use the default value of 'en'.
+lang: en
+
+
+# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+timezone: Asia/Shanghai
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: SeHoon's Blog                          # 블로그 이름입니다. 설정하면 브라우저 상단에 설정된 이름이 확인가능합니다.
+title: SeHoon                          # the main title
 
-tagline: My study history   # 서브 타이틀 입니다. 설정하면 블로그 첫 페이지 좌측에서 확인 가능합니다.
+tagline: A text-focused Jekyll theme   # it will display as the sub-title
 
-description: >-                        # "used by seo meta and the atom feed"라고 나옵니다. 저는 설정을 그대로 두었습니다.
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+description: >-                        # used by seo meta and the atom feed
+  A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
-url: 'https://csh970605.github.io'    # 'https://username.github.io'와 같이 설정합니다. 설정이 잘 못 되면 곤란합니다. 
-                                        # 잘 적어넣도록 합니다.
+# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
+url: 'https://csh970605.github.io'
 
 github:
-  username: csh970605  
+  username: github_username             # change to your github username
 
 twitter:
   username: twitter_username            # change to your twitter username
@@ -73,7 +78,7 @@ theme_mode:   # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: ''
+img_cdn: 'https://chirpy-img.netlify.app'
 
 # the avatar on sidebar, support local or CORS resources
 avatar: '/commons/avatar.jpg'
