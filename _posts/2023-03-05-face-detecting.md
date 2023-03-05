@@ -85,8 +85,8 @@ The result of code
 
 ## HOG(Histograms of Oriented Gradients)
 
-
-
+### What is HOG?
+Extract the edges of the image by color variation and consequently identify the object on the format
 
 [1] [casacade image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
 [2] [examples of features image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
