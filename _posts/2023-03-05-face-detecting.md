@@ -49,15 +49,46 @@ at the end, we will have a matrix of numbers similar to this one below<br>
 Each number in the matrix means "white pixels - black pixels" in order in the 'examples of features' image.
 </center>
 
+### Example Code
+<center>
+<image src="https://user-images.githubusercontent.com/28240052/222977073-f124a61c-64cc-47d7-9b99-2170c98bc8c3.png" width=500px><br>
+[4] 'test image'
+</center>
+
+``` py
+import cv2
+
+face_detector = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+
+image = cv2.imread('people1.jpg')
+# Why use grayscale image?: Casacade detectors with opencv recommands to use grayscale images.
+image_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+# scaleFactor: Image reduction ratio, default value is 1.1
+# minNeighbors: Speicies how many neighboring squares must be detected to set it as the final   detection area. default is 3
+# minSize: Minimum object size. (w, h) tuple
+# maxSize: Maximum object size. (w, h) tuple
+detections = face_detector.detectMultiScale(image_gray,
+                                            scaleFactor=1.21,
+                                            minNeighbors=None,
+                                            minSize=None,
+                                            maxSize=None)
+
+for (x, y, w, h) in detections:
+  cv2.rectangle(image, (x, y), (x+w, y+h), (0,255,0), 5)
+  
+cv2.imshow(image)
+```
+The result of code
+<center>
+<image src="https://user-images.githubusercontent.com/28240052/222976979-65527fa6-91be-49b5-a5c6-434ce6cab04c.png" width = 500px><br>
+</center>
 
 ## HOG(Histograms of Oriented Gradients)
 
 
 
 
-
-
-
 [1] [casacade image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
 [2] [examples of features image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
-[3] [image consists of features image source](https://www.udemy.com/course/computer-vision-masterclass/)
+[3] [image consists of features image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
+[4] [test image source](https://www.udemy.com/course/computer-vision-masterclass/)
