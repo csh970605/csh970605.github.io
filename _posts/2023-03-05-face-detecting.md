@@ -21,9 +21,7 @@ For example, a face consists of eyes, moth, nose and so on.<br>
 <center>
 
 <img src="https://user-images.githubusercontent.com/28240052/222949319-922710c1-b41c-4693-927a-01578783d0a6.png" width=800px>
-[^1]<br>
-
-'casacade'<br>
+[1]'casacade'<br>
 
 </center>
 
@@ -36,24 +34,20 @@ There is image below shows examples of features and the image consists of featur
 <center>
 
 <img src="https://user-images.githubusercontent.com/28240052/222947707-6382c837-614f-4b9c-a55e-3ba3fa1c827d.png" width=300px height=300px>
-[^2]<br>
-'examples of features'<br>
+[2]'examples of features'<br>
 
 <img src="https://user-images.githubusercontent.com/28240052/222949169-c22d51bf-18b8-4427-9b22-f4dc956b8c82.png" width=500px height=500px>
-[^3]<br>
-'image consists of features'<br>
+[3]'image consists of features'<br>
 </center>
 
 at the end, we will have a matrix of numbers similar to this one below<br>
-<center>
 
-```text
+```
 2 3 5 6
 8 9 2 1
 0 4 8 7
 Each number in the matrix means "white pixels - black pixels" in order in the 'examples of features' image.
 ```
-</center>
 
 
 ## HOG(Histograms of Oriented Gradients)
@@ -64,6 +58,6 @@ Each number in the matrix means "white pixels - black pixels" in order in the 'e
 
 
 
-[^1] image source: https://www.udemy.com/course/computer-vision-masterclass/<br>
-[^2] image source: https://www.udemy.com/course/computer-vision-masterclass/<br>
-[^3] image source: https://www.udemy.com/course/computer-vision-masterclass/
+[1] image source: https://www.udemy.com/course/computer-vision-masterclass/<br>
+[2] image source: https://www.udemy.com/course/computer-vision-masterclass/<br>
+[3] image source: https://www.udemy.com/course/computer-vision-masterclass/
