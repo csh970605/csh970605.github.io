@@ -58,6 +58,6 @@ Each number in the matrix means "white pixels - black pixels" in order in the 'e
 
 
 
-[1] image source: https://www.udemy.com/course/computer-vision-masterclass/<br>
-[2] image source: https://www.udemy.com/course/computer-vision-masterclass/<br>
-[3] image source: https://www.udemy.com/course/computer-vision-masterclass/
+[1] [casacade image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
+[2] [examples of features image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
+[3] [image consists of features image source](https://www.udemy.com/course/computer-vision-masterclass/)
