@@ -43,9 +43,9 @@ There is image below shows examples of features and the image consists of featur
 at the end, we will have a matrix of numbers similar to this one below<br>
 
 <center>
-2 3 5 6
-8 9 2 1
-0 4 8 7
+2 3 5 6<br>
+8 9 2 1<br>
+0 4 8 7<br>
 Each number in the matrix means "white pixels - black pixels" in order in the 'examples of features' image.
 </center>
 
