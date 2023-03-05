@@ -20,7 +20,8 @@ For example, a face consists of eyes, moth, nose and so on.<br>
 ### Step 3
 <center>
 
-<img src="https://user-images.githubusercontent.com/28240052/222949319-922710c1-b41c-4693-927a-01578783d0a6.png" width=800px>[^1]<br>
+<img src="https://user-images.githubusercontent.com/28240052/222949319-922710c1-b41c-4693-927a-01578783d0a6.png" width=800px>
+[^1]<br>
 
 'casacade'<br>
 
@@ -34,10 +35,12 @@ AdaBoost select the features of the whole images from top left to the bottom rig
 There is image below shows examples of features and the image consists of features.<br>
 <center>
 
-<img src="https://user-images.githubusercontent.com/28240052/222947707-6382c837-614f-4b9c-a55e-3ba3fa1c827d.png" width=300px height=300px>[^2]<br>
+<img src="https://user-images.githubusercontent.com/28240052/222947707-6382c837-614f-4b9c-a55e-3ba3fa1c827d.png" width=300px height=300px>
+[^2]<br>
 'examples of features'<br>
 
-<img src="https://user-images.githubusercontent.com/28240052/222949169-c22d51bf-18b8-4427-9b22-f4dc956b8c82.png" width=500px height=500px>[^3]<br>
+<img src="https://user-images.githubusercontent.com/28240052/222949169-c22d51bf-18b8-4427-9b22-f4dc956b8c82.png" width=500px height=500px>
+[^3]<br>
 'image consists of features'<br>
 </center>
 
