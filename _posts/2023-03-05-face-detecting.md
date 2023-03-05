@@ -115,24 +115,29 @@ There are two important concepts
         means there is small variation in the image.
     + high derivative derivative<br>
         means there is high variation in the image<br> EX) edge of the image.
+    <br>
+    The zero derivative of the image is painted black instead of the original color like images below.<br>
+    <br>
+    <center>
+    <img src="https://user-images.githubusercontent.com/28240052/222980227-d2ffe26c-6c6e-4afb-a39a-28af4266d3a9.png"> 
+    </center>
+    <br>
+    So we can extract the edges of the image and consequently identify the object based on the formats.
 - Gradient vector<br>
     Gradient vector indicates the direction in which the values increase.<br>
     For example, as image below shows, the gradient vector points upwards because this is where there is the greatest variation in colors from yellow to gray<br>
-    <img src="https://user-images.githubusercontent.com/28240052/222979389-6b604da5-fc93-4be6-8954-6357e90e8284.png"><br>[5] 'gradient vector image'<br><br>
+    <img src="https://user-images.githubusercontent.com/28240052/222979389-6b604da5-fc93-4be6-8954-6357e90e8284.png">[5] 'gradient vector image'<br><br>
+
+    We select only that part of head, and can see several arrows pointing to where there is greater gradient vector. Also 'Gradient Direction'(direction of arrow) matrix and 'Gradient Magnitude'(size of arrow) can be made like image below.
+    <br>
+    <img src="https://user-images.githubusercontent.com/28240052/222981629-1d4d6447-c521-43b4-ae1e-1118bf247104.png">[8]<br>
 
 
-### Hog Algorithm
+
+
+<br>
 <br>
 
-#### Step 1
-<br>
-The zero derivative of the image is painted black instead of the original color like images below.<br>
-<center>
-<img src="https://user-images.githubusercontent.com/28240052/222980227-d2ffe26c-6c6e-4afb-a39a-28af4266d3a9.png"> 
-</center>
-<br>
-So we can extract the edges of the image and consequently identify the object based on the formats
-<br>
 
 
 <br>
@@ -143,4 +148,5 @@ So we can extract the edges of the image and consequently identify the object ba
 [4] [test image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
 [5] [gradient vector image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
 [6] [runner image source](https://learnopencv.com/histogram-of-oriented-gradients/)<br>
-[7] [converted runner image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
+[7] [converted runner image source](https://learnopencv.com/histogram-of-oriented-gradients/)<br>
+[7] [converted runner image source](https://learnopencv.com/histogram-of-oriented-gradients/)<br>
