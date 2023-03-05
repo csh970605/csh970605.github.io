@@ -3,7 +3,7 @@ title: Face Detecting
 author: SeHoon
 date: 2023-03-05 15:47:00 +0900
 categories: [Machine Learning, Vision ML]
-tags: [machine learning]
+tags: [machine learning, python]
 math: true
 mermaid: true
 ---
@@ -51,7 +51,7 @@ Each number in the matrix means "white pixels - black pixels" in order in the 'e
 
 ### Example Code
 <center>
-<image src="https://user-images.githubusercontent.com/28240052/222977245-1dadabf9-7f7e-42b1-9dd8-b70f8a0ac247.png" width=500px><br>
+<image src="https://user-images.githubusercontent.com/28240052/222977245-1dadabf9-7f7e-42b1-9dd8-b70f8a0ac247.png" width=500px alt=""><br>
 [4] 'test image'
 </center>
 
@@ -80,7 +80,7 @@ cv2.imshow(image)
 ```
 The result of code
 <center>
-<image src="https://user-images.githubusercontent.com/28240052/222977267-3e40e57b-1d43-4666-b1e2-f56f93ac3b5e.png" width = 500px><br>
+<image src="https://user-images.githubusercontent.com/28240052/222977267-3e40e57b-1d43-4666-b1e2-f56f93ac3b5e.png" width = 500px alt=""><br>
 </center>
 
 ## HOG(Histograms of Oriented Gradients)
