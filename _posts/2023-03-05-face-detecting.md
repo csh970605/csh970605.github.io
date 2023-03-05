@@ -51,7 +51,7 @@ Each number in the matrix means "white pixels - black pixels" in order in the 'e
 
 ### Example Code
 <center>
-<image src="https://user-images.githubusercontent.com/28240052/222977073-f124a61c-64cc-47d7-9b99-2170c98bc8c3.png" width=500px><br>
+<image src="https://user-images.githubusercontent.com/28240052/222977245-1dadabf9-7f7e-42b1-9dd8-b70f8a0ac247.png" width=500px><br>
 [4] 'test image'
 </center>
 
@@ -80,7 +80,7 @@ cv2.imshow(image)
 ```
 The result of code
 <center>
-<image src="https://user-images.githubusercontent.com/28240052/222976979-65527fa6-91be-49b5-a5c6-434ce6cab04c.png" width = 500px><br>
+<image src="https://user-images.githubusercontent.com/28240052/222977267-3e40e57b-1d43-4666-b1e2-f56f93ac3b5e.png" width = 500px><br>
 </center>
 
 ## HOG(Histograms of Oriented Gradients)
