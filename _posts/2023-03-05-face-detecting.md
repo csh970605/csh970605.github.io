@@ -20,9 +20,9 @@ For example, a face consists of eyes, moth, nose and so on.<br>
 ### Step 3
 <center>
 
-<img src="https://user-images.githubusercontent.com/28240052/222949319-922710c1-b41c-4693-927a-01578783d0a6.png" width=800px><sup id="a1">[1](#f1)</sup>
+<img src="https://user-images.githubusercontent.com/28240052/222949319-922710c1-b41c-4693-927a-01578783d0a6.png" width=800px><sup id="a1">[1](#f1)</sup><br>
 
-'casacade'
+'casacade'<br>
 
 </center>
 
@@ -35,10 +35,10 @@ There is image below shows examples of features and the image consists of featur
 <center>
 
 <img src="https://user-images.githubusercontent.com/28240052/222947707-6382c837-614f-4b9c-a55e-3ba3fa1c827d.png" width=300px height=300px><sup id="a2">[2](#f2)</sup><br>
-'examples of features'
+'examples of features'<br>
 
 <img src="https://user-images.githubusercontent.com/28240052/222949169-c22d51bf-18b8-4427-9b22-f4dc956b8c82.png" width=500px height=500px><sup id="a3">[3](#f3)</sup><br>
-'image consists of features'
+'image consists of features'<br>
 </center>
 
 at the end, we will have a matrix of numbers similar to this one below<br>
