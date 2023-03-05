@@ -13,7 +13,7 @@ mermaid: true
 ## Casacade Classifier
 ### Step 1
 Prepare two sets of images.<br>
-First set is positive images, whiel the second set is negative images.
+First set is positive images, while the second set is negative images.
 ### Step 2
 Send all the images to a machine learning algorithm called AdaBoost so that it learns the features of the images as well as the details of a face.<br>
 For example, a face consists of eyes, moth, nose and so on.<br>
