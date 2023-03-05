@@ -2,7 +2,7 @@
 title: Face Detecting
 author: SeHoon
 date: 2023-03-05 15:47:00 +0800
-categories: [Machine Learning, Vision ML]
+categories: [Blogging, Demo]
 tags: [machine learning]
 math: true
 mermaid: true
