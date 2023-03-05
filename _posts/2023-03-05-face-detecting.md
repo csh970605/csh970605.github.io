@@ -9,15 +9,24 @@ mermaid: true
 ---
 
 # Algorithms
+<br>
 
 ## Casacade Classifier
+<br>
+
 ### Step 1
+<br>
+
 Prepare two sets of images.<br>
 First set is positive images, while the second set is negative images.
 ### Step 2
+<br>
+
 Send all the images to a machine learning algorithm called AdaBoost so that it learns the features of the images as well as the details of a face.<br>
 For example, a face consists of eyes, moth, nose and so on.<br>
 ### Step 3
+<br>
+
 <center>
 
 <img src="https://user-images.githubusercontent.com/28240052/222949319-922710c1-b41c-4693-927a-01578783d0a6.png" width=800px><br>
@@ -25,10 +34,12 @@ For example, a face consists of eyes, moth, nose and so on.<br>
 
 </center>
 
-this picture means if any of the features from C1 to CN is False, cascade returns 'No Detection'
+this picture means if any of the features from C1 to CN is False, cascade returns 'No Detection'<br><br>
 
 
 ### AdaBoost
+
+<br>
 AdaBoost select the features of the whole images from top left to the bottom right until it is possible to find a face.<br>
 There is image below shows examples of features and the image consists of features.<br>
 <center>
@@ -47,9 +58,12 @@ at the end, we will have a matrix of numbers similar to this one below<br>
 8 9 2 1<br>
 0 4 8 7<br>
 Each number in the matrix means "white pixels - black pixels" in order in the 'examples of features' image.
-</center>
+</center><br><br>
 
 ### Example Code
+
+<br>
+I'm going to detect faces of 'test image' below by cv2
 <center>
 
 <img src="https://user-images.githubusercontent.com/28240052/222977717-9ffdbd56-0e14-46a1-9c96-bcc03c7018bb.png" width=500px height=500px><br>
@@ -80,17 +94,53 @@ for (x, y, w, h) in detections:
   
 cv2.imshow(image)
 ```
-The result of code
+The result of code.
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/222977716-ab949ff9-f58b-4e02-b265-175fb176379b.png" width=500px height=500px><br>
-</center>
+</center><br><br>
 
 ## HOG(Histograms of Oriented Gradients)
+<br>
 
 ### What is HOG?
-Extract the edges of the image by color variation and consequently identify the object on the format
+<br>
+Extract the edges of the image by color variation and consequently identify the object on the format.
+
+There are two important concepts
+- Derivative<br>
+    Allows to measure the rate of changes(colors) and there are three options.
+    + zero derivative<br>
+        means there is no variation in the image.
+    + small derivative<br>
+        means there is small variation in the image.
+    + high derivative derivative<br>
+        means there is high variation in the image<br> EX) edge of the image.
+- Gradient vector<br>
+    Gradient vector indicates the direction in which the values increase.<br>
+    For example, as image below shows, the gradient vector points upwards because this is where there is the greatest variation in colors from yellow to gray<br>
+    <img src="https://user-images.githubusercontent.com/28240052/222979389-6b604da5-fc93-4be6-8954-6357e90e8284.png"><br>[5] 'gradient vector image'<br><br>
+
+
+### Hog Algorithm
+<br>
+
+#### Step 1
+<br>
+The zero derivative of the image is painted black instead of the original color like images below.<br>
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/222980227-d2ffe26c-6c6e-4afb-a39a-28af4266d3a9.png"> 
+</center>
+<br>
+So we can extract the edges of the image and consequently identify the object based on the formats
+<br>
+
+
+<br>
 
 [1] [casacade image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
 [2] [examples of features image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
 [3] [image consists of features image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
-[4] [test image source](https://www.udemy.com/course/computer-vision-masterclass/)
+[4] [test image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
+[5] [gradient vector image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
+[6] [runner image source](https://learnopencv.com/histogram-of-oriented-gradients/)<br>
+[7] [converted runner image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
