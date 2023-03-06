@@ -12,20 +12,20 @@ mermaid: true
 <br>
 
 ## Casacade Classifier
+---
 <br>
 
 ### Step 1
-<br>
+---
 
 Prepare two sets of images.<br>
 First set is positive images, while the second set is negative images.
 ### Step 2
-<br>
-
+---
 Send all the images to a machine learning algorithm called AdaBoost so that it learns the features of the images as well as the details of a face.<br>
 For example, a face consists of eyes, moth, nose and so on.<br>
 ### Step 3
-<br>
+---
 
 <center>
 
@@ -38,8 +38,8 @@ this picture means if any of the features from C1 to CN is False, cascade return
 
 
 ### AdaBoost
+---
 
-<br>
 AdaBoost select the features of the whole images from top left to the bottom right until it is possible to find a face.<br>
 There is image below shows examples of features and the image consists of features.<br>
 <center>
@@ -61,8 +61,8 @@ Each number in the matrix means "white pixels - black pixels" in order in the 'e
 </center><br><br>
 
 ### Example Code
+---
 
-<br>
 I'm going to detect faces of 'test image' below by cv2
 <center>
 
@@ -100,10 +100,9 @@ The result of code.
 </center><br><br>
 
 ## HOG(Histograms of Oriented Gradients)
-<br>
-
+---
 ### What is HOG?
-<br>
+---
 Extract the edges of the image by color variation and consequently identify the object on the format.
 
 There are two important concepts
@@ -115,7 +114,7 @@ There are two important concepts
         means there is small variation in the image.
     + high derivative derivative<br>
         means there is high variation in the image<br> EX) edge of the image.
-    <br>
+    <br>  
     The zero derivative of the image is painted black instead of the original color like images below.<br>
     <br>
     <center>
