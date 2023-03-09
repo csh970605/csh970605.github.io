@@ -45,7 +45,7 @@ I'm going to detect faces of 'test image' below by openCV
 <center>
 
 <img src="https://user-images.githubusercontent.com/28240052/222977717-9ffdbd56-0e14-46a1-9c96-bcc03c7018bb.png" width=500px height=500px><br>
-[4] 'test image'
+[2] 'test image'
 
 </center>
 
@@ -96,18 +96,48 @@ There are two important concepts
     The zero derivative of the image is painted black instead of the original color like images below.<br>
     <br>
     <center>
-    <img src="https://user-images.githubusercontent.com/28240052/222980227-d2ffe26c-6c6e-4afb-a39a-28af4266d3a9.png"> 
+    <img src="https://user-images.githubusercontent.com/28240052/224040429-834df50f-4d0a-417e-b3a8-4ddb9eaf5ecc.png"> 
     </center>
     <br>
     So we can extract the edges of the image and consequently identify the object based on the formats.
+    <br>
+    <br>
 - Gradient vector<br>
     Gradient vector indicates the direction in which the values increase.<br>
     For example, as image below shows, the gradient vector points upwards because this is where there is the greatest variation in colors from yellow to gray<br>
+    <br>
     <img src="https://user-images.githubusercontent.com/28240052/222979389-6b604da5-fc93-4be6-8954-6357e90e8284.png">[5] 'gradient vector image'<br><br>
 
     We select only that part of head, and can see several arrows pointing to where there is greater gradient vector. Also 'Gradient Direction'(direction of arrow) matrix and 'Gradient Magnitude'(size of arrow) can be made like image below.
     <br>
-    <img src="https://user-images.githubusercontent.com/28240052/222981629-1d4d6447-c521-43b4-ae1e-1118bf247104.png">[8]<br>
+    <br>
+    <img src="https://user-images.githubusercontent.com/28240052/222981629-1d4d6447-c521-43b4-ae1e-1118bf247104.png">[6]<br>
+
+    <br>
+### Role of Gradient Direction & Gradient Magnitude
+---
+<br>
+Gradient Direction & Gradient Magnitude are used to construct the Histogram of Gradients
+as you can see in the image below.<br><br>
+<img src="https://user-images.githubusercontent.com/28240052/224039450-842f22d0-df28-4a92-a446-428bccf45000.png">[7]
+<br>
+
+- The range of the interval is [0,20,40,… ,100], and the total number of bins is 8<br>
+- If Direction is 80 and Magnitude is 2, Fill 2 in the interval corresponding to 80 of the range of bin intervals<br>
+- If Direction is 10 and Magnitude is 4, since 10 corresponds to the range between 0 and 20 of the range of bin intervals, take 2(= $10\over 20$ = $(direction)\over(20-0)$) for each Magnitude.<br>
+
+After Linking all values, generate the final histogram as image below to find out if an image is a particular object that I want to detect.<br>
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/224046668-4454ce21-f5b1-43fc-a682-de036d60c243.png">[8]
+</center><br>
+
+### Result
+---
+<br>
+A Hog like the image below is created by the final histogram.<br><br>
+
+<img src="https://user-images.githubusercontent.com/28240052/224047725-20866a70-fd94-4079-89be-ce1c42f69014.png">[9]
+
 
 
 
@@ -118,12 +148,15 @@ There are two important concepts
 
 
 <br>
+
+---
 
 [1] [casacade image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
-[2] [examples of features image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
-[3] [image consists of features image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
-[4] [test image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
+[2] [test image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
+[3] [runner1 image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
+[4] [runner2 image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
 [5] [gradient vector image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
-[6] [runner image source](https://learnopencv.com/histogram-of-oriented-gradients/)<br>
-[7] [converted runner image source](https://learnopencv.com/histogram-of-oriented-gradients/)<br>
-[7] [converted runner image source](https://learnopencv.com/histogram-of-oriented-gradients/)<br>
+[6] [runner image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
+[7] [histogram of gradients image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
+[8] [Final historam image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
+[8] [HOG image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
