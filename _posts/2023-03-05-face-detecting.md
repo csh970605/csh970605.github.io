@@ -41,7 +41,7 @@ this picture means if any of the features from C1 to CN is False, cascade return
 ### Example Code
 ---
 
-I'm going to detect faces of 'test image' below by cv2
+I'm going to detect faces of 'test image' below by openCV
 <center>
 
 <img src="https://user-images.githubusercontent.com/28240052/222977717-9ffdbd56-0e14-46a1-9c96-bcc03c7018bb.png" width=500px height=500px><br>
