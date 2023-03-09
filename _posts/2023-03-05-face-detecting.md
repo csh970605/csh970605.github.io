@@ -13,7 +13,6 @@ mermaid: true
 
 ## Casacade Classifier
 ---
-<br>
 
 ### Step 1
 ---
