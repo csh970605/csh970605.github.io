@@ -159,4 +159,4 @@ A Hog like the image below is created by the final histogram.<br><br>
 [6] [runner image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
 [7] [histogram of gradients image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
 [8] [Final historam image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
-[8] [HOG image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
+[9] [HOG image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
