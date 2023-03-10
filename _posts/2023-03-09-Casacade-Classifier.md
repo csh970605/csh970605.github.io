@@ -1,5 +1,5 @@
 ---
-title: Face Detecting
+title: Casacade Classifier
 author: SeHoon
 date: 2023-03-10 15:10:00 +0900
 categories: [Machine Learning, Vision ML]
