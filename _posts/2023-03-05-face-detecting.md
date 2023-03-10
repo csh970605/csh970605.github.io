@@ -151,8 +151,7 @@ A Hog like the image below is created by the final histogram.<br><br>
 
 ---
 
-[1] [casacade image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
-[2] [test image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
+
 [3] [runner1 image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
 [4] [runner2 image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
 [5] [gradient vector image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
