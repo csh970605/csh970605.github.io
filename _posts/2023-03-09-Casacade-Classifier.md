@@ -10,16 +10,16 @@ mermaid: true
 
 # Casacade Classifier
 
-### Step 1
+## Step 1
 ---
 
 Prepare two sets of images.<br>
 First set is positive images, while the second set is negative images.
-### Step 2
+## Step 2
 ---
 Send all the images to a machine learning algorithm called [AdaBoost](https://csh970605.github.io/posts/AdaBoost/) so that it learns the features of the images as well as the details of a face.<br>
 For example, a face consists of eyes, moth, nose and so on.<br>
-### Step 3
+## Step 3
 ---
 
 <center>
@@ -34,7 +34,7 @@ this picture means if any of the features from C1 to CN is False, cascade return
 
 
 
-### Example Code
+## Example Code
 ---
 
 I'm going to detect faces of 'test image' below by openCV
