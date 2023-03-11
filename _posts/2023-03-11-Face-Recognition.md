@@ -1,6 +1,6 @@
 ---
 title: Face Recognition
-author: SeHoon
+author: sehoon
 date: 2023-03-11 20:32:00 +0900
 categories: [Vision Machine Learning, Introduction]
 tags: [machine learning, python]
