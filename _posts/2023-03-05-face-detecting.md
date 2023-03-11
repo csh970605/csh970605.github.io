@@ -8,6 +8,12 @@ math: true
 mermaid: true
 ---
 
+# What is Face Detection?
+<br>
+it has the objective of finding the faces (location and size) in an image and probably extract them to be used by the face recognition algorithm.<br>
+
+<br><br>
+
 # Algorithms
 <br>
 There are two algorithms<br><br>
