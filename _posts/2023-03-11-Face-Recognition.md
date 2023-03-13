@@ -22,6 +22,7 @@ We will use LBPH(Local Binary Patterns Histograms)<br>
 <br>
 
 ## What is LBPH?
+---
 <br>
 LBP (Local Binary Patterns) is a feature extraction technique used to recognize or analyze textures in the field of image processing. <br>
 LBPH is a technique that combines LBP and a histogram (H). LBP extracts features of an image by converting the pixel values around each pixel in the image into binary numbers.<br>
