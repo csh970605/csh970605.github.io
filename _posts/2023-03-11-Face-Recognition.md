@@ -31,7 +31,7 @@ If the neighboring pixel is larger than the center pixel, it is represented as 1
 <br>
 <br>
 Using these binary numbers, we can extract texture features for each pixel.<br>
-Extracting Local Binary Patterns (LBPs) can result in specific patterns appearing in specific parts of an image. <br>
+Extracting Local Binary Patterns (LBP) can result in specific patterns appearing in specific parts of an image. <br>
 It uses these patterns to recognize objects or faces in images.<br>
 
 There are more details in [LBPH](https://csh970605.github.io/posts/LBPH) post.
