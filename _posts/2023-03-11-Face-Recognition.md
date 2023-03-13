@@ -28,7 +28,7 @@ LBP (Local Binary Patterns) is a feature extraction technique used to recognize 
 LBPH is a technique that combines LBP and a histogram (H).<br>
 LBP extracts features of an image by converting the pixel values around each pixel in the image into binary numbers.<br>
 Binary numbers are generated based on the relative brightness difference between the center pixel and its neighbors.<br>
-If the neighboring pixel is larger than the center pixel, it is represented as 1, and if it is less than the center pixel, it is represented as 0.
+If the neighboring pixel's value is larger than the center pixel's value, it is represented as 1, and if it is less than the center pixel'value, it is represented as 0.
 <br>
 <br>
 Using these binary numbers, we can extract texture features for each pixel.<br>
