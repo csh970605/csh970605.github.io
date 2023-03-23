@@ -43,5 +43,5 @@ There are more details in [LBPH](https://csh970605.github.io/posts/LBPH) post.
 Feature point values are extracted once more from the faces extracted through face detection.<br>
 Normalize these feature point values to find out the face with the shortest distance, and if it is smaller than the threshold, use it as the predicted value.<br>
 
-There are more details in [Face Recognitin-Dlib](https://csh970605.github.io/posts/FR-Dlib) post.
+There are more details in [Face Recognitin-Dlib](https://csh970605.github.io/posts/FR_Dlib) post.
 <br>
