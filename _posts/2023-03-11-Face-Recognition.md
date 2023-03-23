@@ -16,9 +16,8 @@ mermaid: true
  Face recognition classifies faces with face images extracted from face detection.
 <br><br>
 
-# Algorithm
-<br>
-We will use LBPH(Local Binary Patterns Histograms)<br>
+# Module
+There are two modules which are LBPH(Local Binary Patterns Histograms) and Dlib<br>
 <br>
 
 ## What is LBPH?
@@ -36,3 +35,13 @@ Extracting Local Binary Patterns (LBP) can result in specific patterns appearing
 It uses these patterns to recognize objects or faces in images.<br>
 
 There are more details in [LBPH](https://csh970605.github.io/posts/LBPH) post.
+<br><br>
+
+## What is Dlib?
+---
+<br>
+Feature point values are extracted once more from the faces extracted through face detection.<br>
+Normalize these feature point values to find out the face with the shortest distance, and if it is smaller than the threshold, use it as the predicted value.<br>
+
+There are more details in [Face Recognitin-Dlib](https://csh970605.github.io/posts/FR-Dlib) post.
+<br>
