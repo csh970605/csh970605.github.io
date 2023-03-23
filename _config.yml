@@ -21,10 +21,10 @@ timezone: Asia/Seoul
 
 title: SeHoon                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: A record of my development studies   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  A record of my development studies
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://csh970605.github.io'
