@@ -1,5 +1,5 @@
 ---
-title: Object Tracking
+title: Object Tracking Introduction
 author: SeHoon
 date: 2023-03-24 22:38:00 +0900
 categories: [Vision Machine Learning, Introduction]
@@ -12,6 +12,7 @@ mermaid: true
 + Tracking algorithms <br>
 Tracking algorithms are much faster than detection algorithms because to track an object, the algorithm already knows what it looks like in order to track it in the next frames of the video.
 
+There are more details in [Object Tracking](https://csh970605.github.io/posts/)
 <br><br>
 
 # KCF(Kernel Correlation Filters)
