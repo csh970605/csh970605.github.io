@@ -11,8 +11,8 @@ mermaid: true
 # Object Tracking VS Object Detection
 + Tracking algorithms <br>
 Tracking algorithms are much faster than detection algorithms because to track an object, the algorithm already knows what it looks like in order to track it in the next frames of the video.
-
-There are more details in [Object Tracking](https://csh970605.github.io/posts/)
+<br>
+There are more details in [Object Tracking](https://csh970605.github.io/posts/Object_Tracking/)post
 <br><br>
 
 # KCF(Kernel Correlation Filters)
