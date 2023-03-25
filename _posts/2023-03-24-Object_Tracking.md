@@ -33,11 +33,14 @@ But, tracking algorithm can recognize the faces because tracking algorithm has i
 # KCF(Kernelized Correlation Filters)
 Runs very fast, but the quality is not so good especially in fast videos.<br>
 **Most common problem occurs when the bounding box loses the object.** <br>
+The larger frames that were automatically generated are important to detect changes in the scale which represents the size of the objects.<br>
+Example of size change: if in one frame the object is smaller and in the next frame the object increases size like a person approaching the camera.<br>
 <br>
 
 ## Goal
 ---
 The goal of the KCF is to make several adjustments in bounding boxes in order to circle the object and be able to detect it.<br>
+
 <br>
 
 ## How KCF works?
@@ -75,9 +78,8 @@ This means, it was adjusted to the object.<br>
 <img src="https://user-images.githubusercontent.com/28240052/227716486-98efa8f5-cc24-486d-a772-76345cc8d638.png"><br>
 </center><br>
 <br>
+<br>
 
-The larger frames that were automatically generated are important to detect changes in the scale which represents the size of the objects.<br>
-Example of size change: if in one frame the object is smaller and in the next frame the object increases size like a person approaching the camera.<br><br>
 
 # CSRT(Discriminative Correlation Filter with Channel and Spatial Reliability)
 Runs lower speed, but the quality is higher.<br>
