@@ -1,5 +1,5 @@
 ---
-title: Object Tracking Introduction
+title: Object Tracking
 author: SeHoon
 date: 2023-03-24 22:38:00 +0900
 categories: [Vision Machine Learning, Introduction]
@@ -28,6 +28,7 @@ As you can see image below, their hands are in front of the faces.<br>
 </center><br>
 So, face recognition alogirthm will not recognize the faces.<br>
 But, tracking algorithm can recognize the faces because tracking algorithm has information about the object.
+<br><br>
 
 # KCF(Kernel Correlation Filters)
 runs very fast, but the quality is not so good.<br>
