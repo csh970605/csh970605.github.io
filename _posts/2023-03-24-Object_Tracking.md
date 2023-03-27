@@ -38,4 +38,11 @@ Runs lower speed, but the quality is higher.<br>
 You can see more details in [KCF](https://csh970605.github.io/posts/CSRT) post.<br><br>
 
 # Codes<br>
-You can see my implementation on my [Github](https://github.com/csh970605/Computer-Vision-Masterclass/tree/main/Section%203)
+You can see my implementation on my [Github](https://github.com/csh970605/Computer-Vision-Masterclass/tree/main/Section%203)<br><br>
+
+# Additional Reading<br>
++ [OpenCV documentation](https://docs.opencv.org/4.x/)
++ [Object Tracking: A Literature Review](https://arxiv.org/abs/1409.7618)
++ [KCF Algorithm](https://arxiv.org/abs/1404.7584)
++ [Improvement on KCF Algorithm](https://www.researchgate.net/publication/327844935_Improvement_of_the_KCF_Tracking_Algorithm_through_Object_Detection)
++ [CSRT Algorithm](https://arxiv.org/pdf/1611.08461.pdf)
