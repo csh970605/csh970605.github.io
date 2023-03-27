@@ -25,3 +25,5 @@ There are two algorithms<br><br>
     + A method of extracting a histogram-type feature by considering the angle and size of the pixel variation<br>
     + There are more details in [HOG(Histograms of Oriented Gradients)](https://csh970605.github.io/posts/HOG/) post<br>
 
+# Code<br>
+You can see my implementation on my [Github](https://github.com/csh970605/Computer-Vision-Masterclass/tree/main/Section%201)
