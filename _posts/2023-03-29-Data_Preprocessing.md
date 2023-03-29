@@ -13,9 +13,8 @@ Data preprocessing is a important task that must be conducted before a dataset c
 Raw data is often noisy and unreliable, and may be missing values. <br>
 Using such data for modeling can produce misleading results.<br>
 
-## The need of preprocessed and clean data<br>
----
-<br>
+# The need of preprocessed and clean data<br>
+
 Real world data is gathered from various sources and processes and it may contain irregularities or corrupt data compromising the quality of the dataset.<br>
 The typical data quality issues that arise are
 
@@ -26,9 +25,7 @@ The typical data quality issues that arise are
 Quality data is a prerequisite for quality predictive models.<br>
 To avoid "garbage in, garbage out" and improve data quality and therefore model performance, it is imperative to conduct a data health screen to spot data issues early and decide on the corresponding data processing and cleaning steps.<br><br>
 
-## The major tasks in data preprocessing<br>
----
-<br>
+# The major tasks in data preprocessing
 
 + **Data cleaning**: Fill in missing values, detect, and remove noisy data and outliers.<br>
 + **Data transformation**: Normalize data to reduce dimensions and noise.<br>
@@ -36,7 +33,19 @@ To avoid "garbage in, garbage out" and improve data quality and therefore model 
 + **Data discretization**: Convert continuous attributes to categorical attributes for ease of use with certain machine learning methods.<br>
 + **Text cleaning**: remove embedded characters that may cause data misalignment. For example, embedded tabs in a tab-separated data file, embedded new lines that may break records, for example.
 
-### How to deal with missing values?<br>
+# What is the order of data preprocessing?<br>
+1. **Taking care of missing data**<br>
+2. **Encoding categorical data**<br>
+3. **Splitting the dataset into the training set and test set**<br>
+4. **Feature Scaling**<br><br>
+
+## Why conduct splitting before feature scaling?<br>
+---
+<br>
+
+Because the average and standard deviation of the training set affect the average and standard deviation of the test set when feature scaling is performed first.<br><br>
+
+## How to take care of missing values?<br>
 ---
 <br>
 
@@ -95,6 +104,11 @@ X[:, 1:3] = imputer.transform(X[:, 1:3])
 <br>
 <br>
 
-### How to normalize data?
+
+## How to normalize data?
 ---
 <br>
+
++ **Min-Max Normalization**: Linearly transform the data to a range, say between 0 and 1, where the min value is scaled to 0 and max value to 1.<br>
++ **Z-score Normalization**: Scale data based on mean and standard deviation: divide the difference between the data and the mean by the standard deviation.<br>
++ **Decimal scaling**: Scale the data by moving the decimal point of the attribute value.<br>
