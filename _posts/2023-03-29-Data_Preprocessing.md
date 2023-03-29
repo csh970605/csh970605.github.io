@@ -42,6 +42,7 @@ To avoid "garbage in, garbage out" and improve data quality and therefore model 
 
 + **Deletion**: Remove records with missing values<br>
 There is an example of conducting Deletion<br>
+You can see the example code below.<br>
 
 ```py
 from sklearn.impute import SimpleImputer
@@ -55,6 +56,7 @@ X[:, 1:3] = imputer.transform(X[:, 1:3])
 
 + **Dummy substitution**: Replace missing values with a dummy value: e.g, unknown for categorical or 0 for numerical values.<br>
 There is an example of conducting Deletion<br>
+You can see the example code below.<br>
 ```py
 from sklearn.impute import SimpleImputer
 import numpy as np
@@ -67,6 +69,7 @@ X[:, 1:3] = imputer.transform(X[:, 1:3])
 
 + **Mean substitution**: If the missing data is numerical, replace the missing values with the mean.<br>
 There is an example of conducting Deletion<br>
+You can see the example code below.<br>
 ```py
 from sklearn.impute import SimpleImputer
 import numpy as np
@@ -80,6 +83,7 @@ X[:, 1:3] = imputer.transform(X[:, 1:3])
 
 + **Frequent substitution**: If the missing data is categorical, replace the missing values with the most frequent item<br>
 There is an example of conducting Deletion<br>
+You can see the example code below.<br>
 ```py
 from sklearn.impute import SimpleImputer
 import numpy as np
