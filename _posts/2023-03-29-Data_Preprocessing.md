@@ -8,7 +8,7 @@ math: true
 mermaid: true
 ---
 
-# Why is Preproessing Necessary?<br>
+# What is Data Preprocessing?<br>
 Real world data is gathered from various sources and processes and it may contain irregularities or corrupt data compromising the quality of the dataset.<br>
 The typical data quality issues that arise are:
 
