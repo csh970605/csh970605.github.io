@@ -110,5 +110,21 @@ X[:, 1:3] = imputer.transform(X[:, 1:3])
 <br>
 
 + **Min-Max Normalization**: Linearly transform the data to a range, say between 0 and 1, where the min value is scaled to 0 and max value to 1.<br>
+You can see the example code below.<br>
+```py
+from sklearn.preprocessing import MinMaxScaler
+sc = MinMaxScaler()
+X_train[:, 3:] = sc.fit_transform(X_train[:, 3:])
+X_test[:, 3:] = sc.transform(X_test[:, 3:])
+```
+<br>
+
 + **Z-score Normalization**: Scale data based on mean and standard deviation: divide the difference between the data and the mean by the standard deviation.<br>
-+ **Decimal scaling**: Scale the data by moving the decimal point of the attribute value.<br>
+You can see the example code below.<br>
+```py
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+X_train[:, 3:] = sc.fit_transform(X_train[:, 3:])
+X_test[:, 3:] = sc.transform(X_test[:, 3:])
+```
+<br>
