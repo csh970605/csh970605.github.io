@@ -14,10 +14,10 @@ The typical data quality issues that arise are:
 
 + Incomplete: Data lacks attributes or containing missing values.<br>
 + Noisy: Data contains erroneous records or outliers.<br>
-+ Inconsistent: Data contains conflicting records or discrepancies.<br>
++ Inconsistent: Data contains conflicting records or discrepancies.<br><br>
 
 Quality data is a prerequisite for quality predictive models.<br>
-To avoid "garbage in, garbage out" and improve data quality and therefore model performance, it is imperative to conduct a data health screen to spot data issues early and decide on the corresponding data processing and cleaning steps.
+To avoid "garbage in, garbage out" and improve data quality and therefore model performance, it is imperative to conduct a data health screen to spot data issues early and decide on the corresponding data processing and cleaning steps.<br><br>
 
 # How to deal with missing values?<br>
 + Deletion: Remove records with missing values<br>
