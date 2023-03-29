@@ -104,6 +104,57 @@ X[:, 1:3] = imputer.transform(X[:, 1:3])
 <br>
 <br>
 
+## Why and how to Encoding categorical data?
+---
+<br>
+The reason for encoding is to create a string value as a binary vector that is easy for computers to recognize.<br>
+The reason why it is not a simple "int value" is that it can recognize that there is a correlation between codes during machine learning.<br>
+There are example codes and results below<br>
+
+```py 
+# Example code
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [0])], remainder='passthrough')
+X = np.array(ct.fit_transform(X))
+```
+
+<br><br>
+**result of raw values**
+
+```py
+[['France' 44.0 72000.0]
+ ['Spain' 27.0 48000.0]
+ ['Germany' 30.0 54000.0]
+ ['Spain' 38.0 61000.0]
+ ['Germany' 40.0 63777.77777777778]
+ ['France' 35.0 58000.0]
+ ['Spain' 38.77777777777778 52000.0]
+ ['France' 48.0 79000.0]
+ ['Germany' 50.0 83000.0]
+ ['France' 37.0 67000.0]]
+```
+<br>
+
+**result of changes in values**
+
+```py
+[[1.0 0.0 0.0 44.0 72000.0]
+ [0.0 0.0 1.0 27.0 48000.0]
+ [0.0 1.0 0.0 30.0 54000.0]
+ [0.0 0.0 1.0 38.0 61000.0]
+ [0.0 1.0 0.0 40.0 63777.77777777778]
+ [1.0 0.0 0.0 35.0 58000.0]
+ [0.0 0.0 1.0 38.77777777777778 52000.0]
+ [1.0 0.0 0.0 48.0 79000.0]
+ [0.0 1.0 0.0 50.0 83000.0]
+ [1.0 0.0 0.0 37.0 67000.0]]
+```
+
+
+<br><br>
+
+
 
 ## How to normalize data?
 ---
@@ -127,4 +178,5 @@ sc = StandardScaler()
 X_train[:, 3:] = sc.fit_transform(X_train[:, 3:])
 X_test[:, 3:] = sc.transform(X_test[:, 3:])
 ```
+<br>
 <br>
