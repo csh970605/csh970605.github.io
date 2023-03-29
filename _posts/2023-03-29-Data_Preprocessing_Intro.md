@@ -13,7 +13,14 @@ mermaid: true
 Data preprocessing is a important task that must be conducted before a dataset can be used for model training.<br>
 Raw data is often noisy and unreliable, and may be missing values. <br>
 Using such data for modeling can produce misleading results.<br>
-There are more details in the [Data preprocessing](https://csh970605.github.io) post.
+Five main tasks are performed in data preprocessing<br>
++ **Data cleaning**: Fill in missing values, detect, and remove noisy data and outliers.<br>
++ **Data transformation**: Normalize data to reduce dimensions and noise.<br>
++ **Data reduction**: Sample data records or attributes for easier data handling.<br>
++ **Data discretization**: Convert continuous attributes to categorical attributes for ease of use with certain machine learning methods.<br>
++ **Text cleaning**: remove embedded characters that may cause data misalignment, for example, embedded tabs in a tab-separated data file, embedded new lines that may break records, for example.<br>
+
+There are more details in the [Data preprocessing](https://csh970605.github.io) post.<br>
 
 
 
