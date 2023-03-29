@@ -2,7 +2,7 @@
 title: Data Preprocessing Introduction
 author: SeHoon
 date: 2023-03-29 15:30:00 +0900
-categories: [Machine Learning, Theory]
+categories: [Machine Learning, Introduction]
 tags: [machine learning, python]
 math: true
 mermaid: true
@@ -26,7 +26,7 @@ Five main tasks are performed in data preprocessing<br>
 3. **Splitting the dataset into the training set and test set**<br>
 4. **Feature Scaling**<br><br>
 
-There are more details in the [Data preprocessing](https://csh970605.github.io) post.<br>
+There are more details in the [Data preprocessing](https://csh970605.github.io/posts/Data_Preprocessing/) post.<br>
 
 
 
