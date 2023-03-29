@@ -1,5 +1,5 @@
 ---
-title: Data Preprocessing Introduction
+title: Data Preprocessing
 author: SeHoon
 date: 2023-03-29 20:30:00 +0900
 categories: [Machine Learning, Theory]
