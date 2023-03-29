@@ -154,13 +154,27 @@ X = np.array(ct.fit_transform(X))
 
 <br><br>
 
+## How to split dataset into the training set and test set?
+---
+<br>
 
+```py
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, 
+                                                    y, 
+                                                    test_size=0.2, 
+                                                    random_state=1, 
+                                                    shuffle=False)
+```
+
+<br><br>
 
 ## How to normalize data?
 ---
 <br>
 
 + **Min-Max Normalization**: Linearly transform the data to a range, say between 0 and 1, where the min value is scaled to 0 and max value to 1.<br>
+$scaled\ value = $ $(original\ value - mean\ of\ data)\over (max\ of\ data - min\ of\ data)$<br>
 You can see the example code below.<br>
 ```py
 from sklearn.preprocessing import MinMaxScaler
@@ -171,6 +185,7 @@ X_test[:, 3:] = sc.transform(X_test[:, 3:])
 <br>
 
 + **Z-score Normalization**: Scale data based on mean and standard deviation: divide the difference between the data and the mean by the standard deviation.<br>
+$scaled\ value = $ $(original\ value - mean\ of\ data)\over standard\ deviation\ of\ data$<br>
 You can see the example code below.<br>
 ```py
 from sklearn.preprocessing import StandardScaler
