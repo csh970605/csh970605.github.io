@@ -18,7 +18,6 @@ As a result, the formula for simple linear regression is expressed as the formul
 <center>
 <font size="2"> 
 
-
 $y = ax + b$
 
 </font>
