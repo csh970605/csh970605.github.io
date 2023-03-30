@@ -2,7 +2,7 @@
 title: Casacade Classifier
 author: SeHoon
 date: 2023-03-10 15:10:00 +0900
-categories: [Vision Machine Learning, Theory]
+categories: [Vision Machine Learning, VML_Theory]
 tags: [machine learning, python]
 math: true
 mermaid: true
