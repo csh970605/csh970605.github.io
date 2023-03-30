@@ -2,7 +2,7 @@
 title: Face Detecting
 author: SeHoon
 date: 2023-03-05 15:47:00 +0900
-categories: [Vision Machine Learning, Introduction]
+categories: [Vision Machine Learning, VML_Introduction]
 tags: [machine learning, python]
 math: true
 mermaid: true
