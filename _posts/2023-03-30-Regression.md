@@ -2,7 +2,7 @@
 title: Regression
 author: SeHoon
 date: 2023-03-30 20:30:00 +0900
-categories: [Machine Learning, Introduction]
+categories: [Machine Learning, ML_Introduction]
 tags: [machine learning, python]
 math: true
 mermaid: true
@@ -15,14 +15,14 @@ If your independent variable is time, then you are forecasting future values, ot
 
 # Types of regression<br>
 
-+ [Simple Linear Regression](https://csh970605.github.io)<br>
++ [Simple Linear Regression](https://csh970605.github.io/posts/Simple_Linear_Regression/)<br>
 
-+ [Multiple Linear Regression](https://csh970605.github.io)<br>
++ [Multiple Linear Regression](https://csh970605.github.io/posts/Multiple_Linear_Regression/)<br>
 
-+ [Polynomial Regression](https://csh970605.github.io)<br>
++ [Polynomial Regression](https://csh970605.github.io/posts/Decision_Tree_Regression/)<br>
 
-+ [Support Vector for Regression (SVR)](https://csh970605.github.io)<br>
++ [Support Vector for Regression (SVR)]()<br>
 
-+ [Decision Tree Regression](https://csh970605.github.io)<br>
++ [Decision Tree Regression]()<br>
 
-+ [Random Forest Regression](https://csh970605.github.io)<br>
++ [Random Forest Regression]()<br>
