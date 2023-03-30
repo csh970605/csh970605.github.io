@@ -19,6 +19,11 @@ As a result, the formula for simple linear regression is expressed as the formul
 $y = ax + b$
 
 </font></center>
+You can use simple linear regression when you want to know:<br>
+
++ How strong the relationship is between two variables (e.g., the relationship between rainfall and soil erosion).<br>
++ The value of the dependent variable at a certain value of the independent variable (e.g., the amount of soil erosion at a certain level of rainfall).
+<br>
 <br>
 
 # Example<br>
