@@ -21,8 +21,8 @@ If your independent variable is time, then you are forecasting future values, ot
 
 + [Polynomial Regression](https://csh970605.github.io/posts/Decision_Tree_Regression/)<br>
 
-+ [Support Vector for Regression (SVR)]()<br>
++ [Support Vector for Regression (SVR)](https://csh970605.github.io/posts/SVR/)<br>
 
-+ [Decision Tree Regression]()<br>
++ [Decision Tree Regression](https://csh970605.github.io/posts/Decision_Tree_Regression/)<br>
 
-+ [Random Forest Regression]()<br>
++ [Random Forest Regression](https://csh970605.github.io/posts/Random_Forest_Regression/)<br>
