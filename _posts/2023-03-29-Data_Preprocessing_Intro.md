@@ -27,6 +27,6 @@ Five main tasks are performed in data preprocessing<br>
 4. **Feature Scaling**<br><br>
 
 There are more details in the [Data preprocessing](https://csh970605.github.io/posts/Data_Preprocessing/) post.<br>
-
+<br>
 
 
