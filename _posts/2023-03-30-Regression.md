@@ -13,6 +13,11 @@ Regression models (both linear and non-linear) are used for predicting a real va
 If your independent variable is time, then you are forecasting future values, otherwise your model is predicting present but unknown values.<br>
 <br>
 
+# Regression VS Classification
+
++ Regression : Used to predict continuous real values.
++ Classification : Used to predict categories or classes.
+
 # Types of regression<br>
 
 + [Simple Linear Regression](https://csh970605.github.io/posts/Simple_Linear_Regression/)<br>
