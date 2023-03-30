@@ -14,11 +14,13 @@ Simple linear regression is a statistical method that allows us to summarize and
 + The second variable(Y) is regarded as the response, outcome, or dependent variable.
 
 As a result, the formula for simple linear regression is expressed as the formula below.
-<font size="2"> <center>
+<font size="2"> 
+<center>
 
 $y = ax + b$
 
-</font></center>
+</font>
+</center>
 You can use simple linear regression when you want to know:<br>
 
 + How strong the relationship is between two variables (e.g., the relationship between rainfall and soil erosion).<br>
