@@ -23,8 +23,22 @@ You can use simple linear regression when you want to know:<br>
 
 + How strong the relationship is between two variables (e.g., the relationship between rainfall and soil erosion).<br>
 + The value of the dependent variable at a certain value of the independent variable (e.g., the amount of soil erosion at a certain level of rainfall).
+
 <br>
 <br>
+
+## How is formula made?
+---
+<br>
+<img src="https://user-images.githubusercontent.com/28240052/228837755-7d5f25f7-6019-40f0-ad0f-2dc8ea71eaaf.png"><br><br>
+
+As you can see in the image above, there are **red crosses(y<sub>i</sub>)** with a salary based experience.<br>
+And there are **green crosses(y<sub>i</sub><sup>^</sup>)** which are the modeled values. So, the modeled value represents the experience level at what the salary is.<br>
+**The green lines** therefore represent the difference between actual salary and modled salary.<br>
+Find the straight line where the sum of the distances of the green lines is the minimum, and that becomes the **black line**.<br>
+
+
+<br><br>
 
 # Example<br>
 <br>
