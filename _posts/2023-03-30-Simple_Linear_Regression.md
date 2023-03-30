@@ -22,7 +22,6 @@ As a result, the formula for simple linear regression is expressed as the formul
 $y = ax + b$
 
 </font>
-
 </center>
 You can use simple linear regression when you want to know:<br>
 
@@ -33,8 +32,7 @@ You can use simple linear regression when you want to know:<br>
 <br>
 
 
-## How is formula made?<br>
-
+## How is formula made?
 ---
 <br>
 <img src="https://user-images.githubusercontent.com/28240052/228837755-7d5f25f7-6019-40f0-ad0f-2dc8ea71eaaf.png"><br><br>
