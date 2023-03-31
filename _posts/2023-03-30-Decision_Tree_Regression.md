@@ -53,7 +53,7 @@ Make a split 2 by reference value(X<sub>2</sub> < 170)<br><br>
 ## Step 4
 ---
 <br>
-Make a split 2 by reference value(X<sub>2</sub> < 170)<br><br>
+Make a split 3 by reference value(X<sub>2</sub> < 170)<br><br>
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/229131654-a44519f5-efb0-4dca-bbd0-415c054eb9f8.png" width=500>
 <br><br><br>
@@ -64,9 +64,9 @@ Make a split 2 by reference value(X<sub>2</sub> < 170)<br><br>
 ## Step 5
 ---
 <br>
-Make a split 2 by reference value(X<sub>1</sub> < 40)<br><br>
+Make a split 4 by reference value(X<sub>1</sub> < 40)<br><br>
 <center>
-<img src="https://user-images.githubusercontent.com/28240052/229132959-5b837c7e-b44f-4847-af84-4f3d986c74f3.png" width=500>
+<img src="https://user-images.githubusercontent.com/28240052/229135492-ad5e5a75-3aaa-4803-83d3-aa07afd66b3b.png" width=500>
 <br><br><br>
 <img src="https://user-images.githubusercontent.com/28240052/229132724-57601288-8664-4d0c-bb66-695a38b71a48.png" width=500>
 <br><br>
