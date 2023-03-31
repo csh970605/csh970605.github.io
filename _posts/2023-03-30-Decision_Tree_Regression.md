@@ -84,7 +84,7 @@ Make a split 4 by reference value(X<sub>1</sub> < 40)<br><br>
 from sklearn.tree import DecisionTreeRegressor
 regressor = DecisionTreeRegressor(random_state=0)
 regressor.fit(X, y)
-X_pred = regressor.predict(X_grid)
+X_pred = regressor.predict(X)
 ```
 <br><br>
 
