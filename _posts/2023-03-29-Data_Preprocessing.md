@@ -66,6 +66,7 @@ X[:, 1:3] = imputer.transform(X[:, 1:3])
 + **Dummy substitution**: Replace missing values with a dummy value: e.g, unknown for categorical or 0 for numerical values.<br>
 There is an example of conducting Deletion<br>
 You can see the example code below.<br>
+
 ```py
 from sklearn.impute import SimpleImputer
 import numpy as np
@@ -79,6 +80,7 @@ X[:, 1:3] = imputer.transform(X[:, 1:3])
 + **Mean substitution**: If the missing data is numerical, replace the missing values with the mean.<br>
 There is an example of conducting Deletion<br>
 You can see the example code below.<br>
+
 ```py
 from sklearn.impute import SimpleImputer
 import numpy as np
@@ -93,6 +95,7 @@ X[:, 1:3] = imputer.transform(X[:, 1:3])
 + **Frequent substitution**: If the missing data is categorical, replace the missing values with the most frequent item<br>
 There is an example of conducting Deletion<br>
 You can see the example code below.<br>
+
 ```py
 from sklearn.impute import SimpleImputer
 import numpy as np
@@ -122,7 +125,7 @@ X = np.array(ct.fit_transform(X))
 <br><br>
 **result of raw values**
 
-```py
+```
 [['France' 44.0 72000.0]
  ['Spain' 27.0 48000.0]
  ['Germany' 30.0 54000.0]
@@ -138,7 +141,7 @@ X = np.array(ct.fit_transform(X))
 
 **result of changes in values**
 
-```py
+```
 [[1.0 0.0 0.0 44.0 72000.0]
  [0.0 0.0 1.0 27.0 48000.0]
  [0.0 1.0 0.0 30.0 54000.0]
@@ -176,6 +179,7 @@ X_train, X_test, y_train, y_test = train_test_split(X,
 + **Min-Max Normalization**: Linearly transform the data to a range, say between 0 and 1, where the min value is scaled to 0 and max value to 1.<br>
 $scaled\ value = $ $(original\ value - mean\ of\ data)\over (max\ of\ data - min\ of\ data)$<br>
 You can see the example code below.<br>
+
 ```py
 from sklearn.preprocessing import MinMaxScaler
 sc = MinMaxScaler()
@@ -187,6 +191,7 @@ X_test[:, 3:] = sc.transform(X_test[:, 3:])
 + **Z-score Normalization**: Scale data based on mean and standard deviation: divide the difference between the data and the mean by the standard deviation.<br>
 $scaled\ value = $ $(original\ value - mean\ of\ data)\over standard\ deviation\ of\ data$<br>
 You can see the example code below.<br>
+
 ```py
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
