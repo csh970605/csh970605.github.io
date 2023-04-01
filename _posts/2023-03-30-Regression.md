@@ -9,7 +9,8 @@ mermaid: true
 ---
 
 # What is Regression?<br>
-Regression models (both linear and non-linear) are used for predicting a real value.<br>
+Regression finds correlations between dependent and independent variables. <br>
+Therefore, regression algorithms help predict continuous variables such as house prices, market trends, weather patterns, oil and gas prices, etc.<br>
 If your independent variable is time, then you are forecasting future values, otherwise your model is predicting present but unknown values.<br>
 <br>
 
@@ -17,21 +18,6 @@ If your independent variable is time, then you are forecasting future values, ot
 
 + Regression : Used to predict continuous real values.
 + Classification : Used to predict categories or classes.
-
-# Types of regression<br>
-
-+ [Simple Linear Regression](https://csh970605.github.io/posts/Simple_Linear_Regression/)<br>
-
-+ [Multiple Linear Regression](https://csh970605.github.io/posts/Multiple_Linear_Regression/)<br>
-
-+ [Polynomial Regression](https://csh970605.github.io/posts/Decision_Tree_Regression/)<br>
-
-+ [Support Vector for Regression (SVR)](https://csh970605.github.io/posts/SVR/)<br>
-
-+ [Decision Tree Regression](https://csh970605.github.io/posts/Decision_Tree_Regression/)<br>
-
-+ [Random Forest Regression](https://csh970605.github.io/posts/Random_Forest_Regression/)<br>
-
 <br><br>
 
 # Pros and cons of regression model
