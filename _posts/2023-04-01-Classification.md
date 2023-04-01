@@ -11,12 +11,13 @@ mermaid: true
 # What is Regression?<br>
 Regression models (both linear and non-linear) are used for predicting a real value.<br>
 If your independent variable is time, then you are forecasting future values, otherwise your model is predicting present but unknown values.<br>
-<br>
+<br><br>
 
 # Regression VS Classification
 
 + Regression : Used to predict continuous real values.
 + Classification : Used to predict categories or classes.
+<br><br>
 
 # Pros and cons of classification model
 
