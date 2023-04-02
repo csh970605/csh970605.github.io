@@ -70,8 +70,6 @@ Classify the data by the probabilities calculated in step 1 and step 2.
 ---
 <br>
 
-
-
 + Step 1<br>
 
 <center>
@@ -105,10 +103,27 @@ And in this case, P(X) will be $ 4 \over 30 $ <br>
 
 </center>
 
-
-
 + Step 3<br>
+
+In this step we are going to find $ P(X \vert Walks) $ which expressed by:<br>
+<center>
+<font size=4>
+
+$ P(X \vert Walks) = $ $ Among those who Walk \over Total number of Walkers $
+</font>
+
+And in this case, $ (X \vert Walks) $ will be $3 \over 10 $<br>
+</center>
+
 + Step 4<br>
+
+In this step we are going to find $P(Walks \vert X)$ and it will be:
+<center>
+<font size=4>
+
+$P(Walks \vert X) = \frac{\frac {3}{10} * \frac{10}{30}} {\frac{4}{30}}  = 0.75$
+</font>
+</center>
 
 # Example
 <br><Br>
@@ -118,6 +133,17 @@ And in this case, P(X) will be $ 4 \over 30 $ <br>
 <br>
 
 ```py
+from sklearn.preprocessing import StandardScaler
+from sklearn.naive_bayes import GaussianNB
+
+sc = StandardScaler()
+X_train = sc.fit_transform(X_train)
+X_test = sc.transform(X_test)
+     
+classifier = GaussianNB()
+classifier.fit(X_train, y_train)
+
+y_pred = classifier.predict(X_test)
 ```
 
 <br><br>
@@ -130,5 +156,5 @@ And in this case, P(X) will be $ 4 \over 30 $ <br>
 
 
 <center>
-<img src="">
+<img src="https://user-images.githubusercontent.com/28240052/229357909-502dfc53-8cf6-4738-8b54-83820852be6e.png">
 </center>
