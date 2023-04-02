@@ -70,3 +70,69 @@ $K($ $\overrightarrow{x}$ $, \overrightarrow{l}^{1} )$ $+ K($ $\overrightarrow{x
 + Red when:<br>
 $K($ $\overrightarrow{x}$ $, \overrightarrow{l}^{1} )$ $+ K($ $\overrightarrow{x}$ $, \overrightarrow{l}^{2} ) = 0$
 
+
+# Types of Kernel Function
+
++ Gaussian RBF Kernel<br>
+<center>
+<font size=4>
+
+$K($ $\overrightarrow{x}$ $, \overrightarrow{l}^{1} ) = $ $e^{-\vert \vec{x} - \vec{l} \vert^{2}\over 2\sigma^{2} }$
+
+</font>
+<br>
+<img src="https://user-images.githubusercontent.com/28240052/229349560-87dfa4f1-9c4c-4470-a620-683afda441fe.png" width=400>
+</center>
+
++ Sigmoid Kerenel<br>
+<center>
+<font size=4>
+
+$K(X, Y) = $ $\tanh(\gamma*X^{T}Y + r)$
+
+</font>
+<br>
+<img src="https://user-images.githubusercontent.com/28240052/229349566-c33c86e5-bd69-4bf8-8264-2569c4cf132b.png" width=400>
+</center>
+
++ Polynomial Kernel<br>
+<center>
+<font size=4>
+
+$K(X,Y) = $ $(\gamma*X^{T}Y + r)^{d},r > 0$
+
+</font>
+<br>
+<img src="https://user-images.githubusercontent.com/28240052/229349574-07be2253-3ac9-4fdf-9571-79eb88061f2b.png" width=400>
+</center>
+
+# Example
+<br><br>
+
+## Code
+---
+<br>
+
+```py
+from sklearn.preprocessing import StandardScaler
+from sklearn.svm import SVC
+sc = StandardScaler()
+X_train = sc.fit_transform(X_train)
+X_test = sc.transform(X_test)
+
+
+classifier = SVC(kernel='rbf', random_state=0)
+classifier.fit(X_train, y_train)
+
+y_pred = classifier.predict(X_test)
+```
+
+<br><br>
+
+## Result
+---
+<br>
+
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/229349843-0c56decd-f08f-4866-b709-7394c13f3347.png">
+</center>
