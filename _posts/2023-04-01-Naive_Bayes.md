@@ -101,7 +101,7 @@ $ P(X) = $ $ Number of Similar Observations \over Total Observations $<br>
 
 And in this case, P(X) will be $ 4 \over 30 $ <br>
 
-<img src="https://user-images.githubusercontent.com/28240052/229356365-8e146f78-d768-412d-90aa-c367476d78c5.png"width=400><br>
+<img src="https://user-images.githubusercontent.com/28240052/229357205-b99be7ad-c742-4073-acbb-6330e51f2bba.png" width=400>
 
 </center>
 
