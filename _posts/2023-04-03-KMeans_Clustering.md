@@ -21,7 +21,7 @@ Choose the number K of clusters<br>
 Let's assume that K is 2, and see the data set.<br>
 
 <center>
-<img src="https://user-images.githubusercontent.com/28240052/229432544-a0c127ea-4ecb-42b5-8985-0e629d528213.png"width=500>
+<img src="https://user-images.githubusercontent.com/28240052/229432544-a0c127ea-4ecb-42b5-8985-0e629d528213.png" width=500>
 </center>
 
 + Step 2<br>
@@ -80,6 +80,46 @@ Clustering is done because nothing has changed.<br>
 ---
 <br>
 
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/229446951-3ff8ed3f-5bb4-44fa-a067-ba2cd3fc7b16.png"width=500>
+</center>
+<br>
+How are clusters created in this dataset when K=3?<br><br><br>
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/229447417-5ee0f01f-edad-415d-b8d8-4962e3ecd063.png" width=500>
+</center>
+<br>
+Clustering like image above would be ideal.<br>
+However, as we mentioned in [Step 2](https://csh970605.github.io/posts/KMeans_Clustering/#steps) the centroid can be made randomly.<br>
+Then, if centroids are made like image below, is there any difference between what we expected?
+<br>
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/229448112-6d8feb04-3b5e-4a97-b6d1-6d1d614620d7.png" width=500>
+</center>
+<br><br>
+The answer is yes. As you can see image below, the result is a bit more different than we expected.<br>
+
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/229448431-e947744f-66ff-4f8e-9411-71199f2a8374.png" width=500>
+</center>
+<br><br><br>
+
+To solve this problem, K-Means++ exists, but it can still happen.<br>
+So, it would be good idea to be aware of this issue.<br>
+<br><br>
+
+## How to select the ideal numbers of K?
+---
+<br>
+
+We can choose K by WCSS:
+
+<center>
+<font size=4>
+
+$ WCSS = $
+</font>
+</center>
 # Example
 <br><br>
 
