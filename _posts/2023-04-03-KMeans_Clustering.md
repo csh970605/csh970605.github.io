@@ -81,8 +81,9 @@ Clustering is done because nothing has changed.<br>
 <br>
 
 <center>
-<img src="https://user-images.githubusercontent.com/28240052/229446951-3ff8ed3f-5bb4-44fa-a067-ba2cd3fc7b16.png"width=500>
+<img src="https://user-images.githubusercontent.com/28240052/229450930-c295e418-fedd-4a4f-bd27-3b78346e012e.png"width=500>
 </center>
+
 <br>
 How are clusters created in this dataset when K=3?<br><br><br>
 <center>
@@ -115,11 +116,28 @@ So, it would be good idea to be aware of this issue.<br>
 We can choose K by WCSS:
 
 <center>
-<font size=4>
+<font size=2>
 
-$ WCSS = $
+$ WCSS = \displaystyle\sum_{P_{i} in Cluster 1}^{}{distance(P_{i},C{1})^2} + \displaystyle\sum_{P_{i} in Cluster 2}^{}{distance(P_{i},C{2})^2} + ... + \displaystyle\sum_{P_{i} in Cluster n}^{}{distance(P_{i},C{n})^2}$
 </font>
 </center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Example
 <br><br>
 
