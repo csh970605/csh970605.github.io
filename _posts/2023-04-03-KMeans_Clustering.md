@@ -79,6 +79,7 @@ Clustering is done because nothing has changed.<br>
 ## The K-Means Random Initialization Trap
 ---
 <br>
+The K-Means random initialization trap is that the result is a bit more different than expected.
 
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/229450930-c295e418-fedd-4a4f-bd27-3b78346e012e.png"width=500>
@@ -92,7 +93,7 @@ How are clusters created in this dataset when K=3?<br><br><br>
 <br>
 Clustering like image above would be ideal.<br>
 However, as we mentioned in [Step 2](https://csh970605.github.io/posts/KMeans_Clustering/#steps) the centroid can be made randomly.<br>
-Then, if centroids are made like image below, is there any difference between what we expected?
+Then, if centroids are made like image below, is there any difference between what expected?
 <br>
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/229448112-6d8feb04-3b5e-4a97-b6d1-6d1d614620d7.png" width=500>
@@ -109,7 +110,7 @@ To solve this problem, K-Means++ exists, but it can still happen.<br>
 So, it would be good idea to be aware of this issue.<br>
 <br><br>
 
-## How to select the ideal numbers of K?
+## How to choose the ideal numbers of K?
 ---
 <br>
 
@@ -121,10 +122,23 @@ We can choose K by WCSS:
 $ WCSS = \displaystyle\sum_{P_{i} in Cluster 1}^{}{distance(P_{i},C{1})^2} + \displaystyle\sum_{P_{i} in Cluster 2}^{}{distance(P_{i},C{2})^2} + ... + \displaystyle\sum_{P_{i} in Cluster n}^{}{distance(P_{i},C{n})^2}$
 </font>
 </center>
+<br><br>
 
+**The lower value of WCSS, the more sophisticated the performance.<br>
+Also, the lower value of WCSS, the longer the execution time.**<br>
 
+<br>
+Then, how to choose K?<br> 
+What I recommend is to choose a value for K when there is no more significant change in WCSS value in the graph anymore.<br>
+<br>
+Look at this graph:
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/229453020-844921e8-8db1-4e79-8ff2-bd90d78dfcac.png" width=500>
+</center>
+<br><br><br>
 
-
+When K is 3, there is no more significant change in WCSS value in the graph.<br>
+That's why I pick K as 3.<br>
 
 
 
