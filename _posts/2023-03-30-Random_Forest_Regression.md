@@ -10,7 +10,7 @@ mermaid: true
 
 # What is random forest regression?
 
-It is type of ensemble learning which is the process of using multiple models, trained over the same data, averaging the results of each model ultimately finding a more powerful predictive/classification result.
+It is type of ensemble learning which is the process of using multiple models, trained over the same data, averaging the results of each model ultimately finding a more powerful predictive/classification result.<br><br>
 
 ## The process of making a random forest regression
 ---
