@@ -86,7 +86,7 @@ The K-Means random initialization trap is that the result is a bit more differen
 </center>
 
 <br>
-How are clusters created in this dataset when K=3?<br><br><br>
+How are clusters created in this dataset when K=3?<br><br>
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/229447417-5ee0f01f-edad-415d-b8d8-4962e3ecd063.png" width=500>
 </center>
