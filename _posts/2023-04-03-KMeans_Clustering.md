@@ -82,7 +82,7 @@ Clustering is done because nothing has changed.<br>
 The K-Means random initialization trap is that the result is a bit more different than expected.
 
 <center>
-<img src="https://user-images.githubusercontent.com/28240052/229447417-5ee0f01f-edad-415d-b8d8-4962e3ecd063.png" width=500>
+<img src="https://user-images.githubusercontent.com/28240052/229455796-23ca500b-9f1f-47e0-8a4c-ed6be81557bc.png" width=500>
 </center>
 
 <br>
