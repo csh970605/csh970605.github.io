@@ -82,7 +82,7 @@ Clustering is done because nothing has changed.<br>
 The K-Means random initialization trap is that the result is a bit more different than expected.
 
 <center>
-<img src="https://user-images.githubusercontent.com/28240052/229450930-c295e418-fedd-4a4f-bd27-3b78346e012e.png"width=500>
+<img src="https://user-images.githubusercontent.com/28240052/229455796-23ca500b-9f1f-47e0-8a4c-ed6be81557bc.png"width=500>
 </center>
 
 <br>
@@ -140,18 +140,6 @@ Look at this graph:
 When K is 3, there is no more significant change in WCSS value in the graph.<br>
 That's why I pick K as 3.<br>
 
-
-
-
-
-
-
-
-
-
-
-
-
 # Example
 <br><br>
 
@@ -161,8 +149,27 @@ That's why I pick K as 3.<br>
 <br>
 
 ```py
+from sklearn.cluster import KMeans
+
+wcss = []
+
+for i in range(1, 11):
+    kmeans = KMeans(n_clusters=i, init='k-means++', random_state=42)
+    kmeans.fit(X)
+    wcss.append(kmeans.inertia_)
 ```
 
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/229454523-ed65c594-64e0-44c1-837b-86d8a9cd42a4.png" width=500>
+</center>
+<br><br>
+As you can see, when K is 5, there is no more significant change in WCSS value.<br>
+So, I set K to 5 and implemented it.<br><br>
+
+```py
+kmeans = KMeans(n_clusters=5, init='k-means++', random_state=42)
+y_kmeans = kmeans.fit_predict(X)
+```
 <br><br>
 
 ## Result
@@ -170,5 +177,5 @@ That's why I pick K as 3.<br>
 <br><br>
 
 <center>
-<img src="">
+<img src="https://user-images.githubusercontent.com/28240052/229455063-1f68895e-64be-4fa1-877f-1fead2b310dd.png">
 </center>
