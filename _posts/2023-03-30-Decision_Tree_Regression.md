@@ -13,7 +13,7 @@ mermaid: true
 The entire data set (parent node) is divided into two data sets (child nodes) based on the reference value.<br>
 Repeat the above steps for each child node to create child nodes until only one class of data exists in the child node.<br>
 
-There are example images below that shows step by step how nodes are made.<br>
+There are example images below that shows step by step how nodes are made.<br><br>
 
 ## Step 1
 ---
