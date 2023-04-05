@@ -2,7 +2,7 @@
 title: Hierarchical Clustering
 author: SeHoon
 date: 2023-04-03 15:19:00 +0900
-categories: [Machine Learning, ML_Introduction]
+categories: [Machine Learning, ML_Theory]
 tags: [machine learning, python]
 math: true
 mermaid: true
