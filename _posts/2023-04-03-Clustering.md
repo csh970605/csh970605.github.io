@@ -28,3 +28,7 @@ It can be defined as "A way of grouping the data points into different clusters,
 | --- | --- | --- |
 | K-Means | Easy to understand.<br>Easy to apply.<br>Works great regardless of size.<br>Fast, efficient and high performance. | The number of clusters must be determined. |
 | Hierarchical Clustering | The optimal number of clusters can be obtained from the model itself.<br>Practical visualization through dendrogram. | Not suitable for large data sets. |
+
+<br><br>
+
+You can see my implementation on my [Github](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%204%20-%20Clustering)
