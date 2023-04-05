@@ -19,3 +19,12 @@ It can be defined as "A way of grouping the data points into different clusters,
 
 + [K-Means Clustering](https://csh970605.github.io/posts/KMeans_Clustering/)
 + [Hierarchical Clustering](https://csh970605.github.io/posts/Hierarchical_Clustering/)
+<br><br>
+
+# Pros and cons of clustering models
+<br>
+
+| Clustering Model | Pros | Cons |
+| --- | --- | --- |
+| K-Means | Easy to understand.<br>Easy to apply.<br>Works great regardless of size.<br>Fast, efficient and high performance. | The number of clusters must be determined. |
+| Hierarchical Clustering | The optimal number of clusters can be obtained from the model itself.<br>Practical visualization through dendrogram. | Not suitable for large data sets. |
