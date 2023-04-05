@@ -20,3 +20,6 @@ It is intended to identify strong rules discovered in data set using some measur
 
 + [Apriori](https://csh970605.github.io/posts/Apriori/)<br><br>
 + [Eclat](https://csh970605.github.io/posts/Eclat/)<br>
+
+<br><br>
+You can see my implementation on my [Github](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%205%20-%20Association%20Rule%20Learning)
