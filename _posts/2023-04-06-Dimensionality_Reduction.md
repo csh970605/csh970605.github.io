@@ -24,8 +24,8 @@ There are two types of Dimensionality Reduction techniques:
     + Bidirectional Elimination<br>
     + Score Comparison
 + Feature Extraction
-    + [Principal Component Analysis (PCA)]()<br>
-    + [Linear Discriminant Analysis (LDA)]()<br>
-    + [Kernel PCA]()<br>
+    + [Principal Component Analysis (PCA)](https://csh970605.github.io/posts/PCA/)<br>
+    + [Linear Discriminant Analysis (LDA)](https://csh970605.github.io/posts/LDA/)<br>
+    + [Kernel PCA](https://csh970605.github.io/posts/Kernel_PCA/)<br>
 
 
