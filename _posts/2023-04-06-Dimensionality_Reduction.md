@@ -29,3 +29,6 @@ There are two types of Dimensionality Reduction techniques:
     + [Kernel PCA](https://csh970605.github.io/posts/Kernel_PCA/)<br>
 
 
+<br><br><br>
+
+You can see my implementation on my [Github](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%209%20-%20Dimensionality%20Reduction)
