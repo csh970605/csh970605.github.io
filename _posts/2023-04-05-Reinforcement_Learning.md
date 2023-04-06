@@ -9,3 +9,19 @@ mermaid: true
 ---
 
 # What is Reinforcement Leraning?
+Reinforcement Learning is a powerful branch of Machine Learning.<br>
+It is used to solve interacting problems where the data observed up to time t is considered to decide which action to take at time (t+1).<br>
+It is also used for Artificial Intelligence when training machines to perform tasks such as walking. <br>
+Desired outcomes provide the AI with reward, undesired with punishment. <br>
+Machines learn through trial and error.<br>
+
+<br><br><br>
+
+# Algorithms
+
+
++ [Upper Confidence Bound(UCB)](https://csh970605.github.io/posts/UCB/)<br><br>
++ [Thompson Sampling](https://csh970605.github.io/posts/Thompson_Sampling/)<br>
+
+<br><br>
+You can see my implementation on my [Github](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%206%20-%20Reinforcement%20Learning)
