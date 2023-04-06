@@ -24,4 +24,16 @@ Machines learn through trial and error.<br>
 + [Thompson Sampling](https://csh970605.github.io/posts/Thompson_Sampling/)<br>
 
 <br><br>
+
+# UCB VS Thompson Sampling
+
+<center>
+
+|UCB|Thompson Sampling|
+|---|---|
+|Deterministic algorithm.<br>Easy to modify.<br>Requires update at every round. | Probabilistic algorithm. = Result can be cahnged.<br>Can accommodate delayed feedback.<br>Better empirical evidence. |
+</center>
+
+<br><br>
+
 You can see my implementation on my [Github](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%206%20-%20Reinforcement%20Learning)
