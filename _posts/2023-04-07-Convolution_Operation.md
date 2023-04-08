@@ -71,3 +71,10 @@ Edge detected veirsion:
 
 Then, why do we have lots of versions?<br>
 Because computer can choose the optimal version to carry out the command.
+<br><br><br>
+
+# ReLU layer?
+In ReLU layer, apply rectifier function($\phi(x)\ =\ max(x,\ 0)$) to break linearity of convolutional layer.<br>
+The reason why we wan to break linearity is because images are non linear.<br>
+However, if you create a feature map by applying a convolution operation and activating the feature detector, ther is a risk of creating linearity.<br>
+That's why ReLu layer is applied.
