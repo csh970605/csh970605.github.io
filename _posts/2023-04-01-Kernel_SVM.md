@@ -13,7 +13,7 @@ mermaid: true
 It is a concept that came out to compensate for the disadvantage that SVM cannot handle non linear datasets like image below.<br><br>
 
 <center>
-<img src="https://user-images.githubusercontent.com/28240052/229292582-16000507-a769-45fb-9971-556652d1cae7.png"width=400>
+<img src="https://user-images.githubusercontent.com/28240052/229292582-16000507-a769-45fb-9971-556652d1cae7.png" width=400>
 </center>
 
 <br><br>
