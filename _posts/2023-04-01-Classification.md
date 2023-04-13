@@ -25,7 +25,7 @@ Classification algorithms used in machine learning utilize input training data f
 
 | Classification Model | Pros | Cons |
 | -------------------- | ---- | ---- |
-| [Logistic Regression](https://csh970605.github.io/posts/Rogistic_Regression/)  | Probabilistic approach.<br>Provides information on the statistical significance of features. | Logistic Regression Assumption.|
+| [Logistic Regression](https://csh970605.github.io/posts/Logistic_Regression/)  | Probabilistic approach.<br>Provides information on the statistical significance of features. | Logistic Regression Assumption.|
 | [K Nearest Neighbors(KNN)](https://csh970605.github.io/posts/KNN/) | easy to understand.<br> fast and effective. | The number of neighbors k must be determined. |
 | [Support Vector Machine(SVM)](https://csh970605.github.io/posts/SVM/) | Ideal.<br> Unbiased to outliers.<br> Not sensitive to overfitting. | Not suitable for non-linear data sets.<br> Not effective for datasets with many features. |
 | [Kernel Support Vector Machine(Kernel SVM)](https://csh970605.github.io/posts/Kernel_SVM/) | High performance on nonlinear datasets.<br> Not prone to outliers.<br> Not sensitive to overfitting. | Not effective for datasets with many features.<br> complicated.|
