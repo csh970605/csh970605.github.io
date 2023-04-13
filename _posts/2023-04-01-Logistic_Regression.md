@@ -77,7 +77,7 @@ And the graph will be drawn like:
 So, how could we use this graph? you can get probabilities of each ages like image below.<br><br>
 
 <center>
-<img src="https://user-images.githubusercontent.com/28240052/229273624-044ae587-480c-49ce-a001-0a933808db52.png"width=500>
+<img src="https://user-images.githubusercontent.com/28240052/229273624-044ae587-480c-49ce-a001-0a933808db52.png" width=500>
 </center>
 <br><br>
 
@@ -85,7 +85,7 @@ After get probabilities, classify 0 and 1 based on a specific value set for thes
 <br><br>
 
 <center>
-<img src="https://user-images.githubusercontent.com/28240052/229273727-10025abc-79fb-4ff6-bcc5-ce7ccafd3841.png"width=500>
+<img src="https://user-images.githubusercontent.com/28240052/229273727-10025abc-79fb-4ff6-bcc5-ce7ccafd3841.png" width=500>
 </center>
 <br><br>
 
@@ -118,6 +118,6 @@ y_pred = classifier.predict(X_test)
 
 <center>
 
-<img src="https://user-images.githubusercontent.com/28240052/229273892-bc1cf78f-1299-4d96-a904-28b98eb66dad.png" width=500>
+<img src="https://user-images.githubusercontent.com/28240052/229273892-bc1cf78f-1299-4d96-a904-28b98eb66dad.png">
 
 </center>
