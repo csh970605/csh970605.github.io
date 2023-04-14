@@ -16,10 +16,11 @@ Here is a simple structure of boltzmann machine:
 </center>
 <br>
 
-There are two big differences between boltzmann machine and other neural networks:
+There are four big differences between boltzmann machine and other neural networks:
 + There is no output layer.
 + Everything is connected to everything = hyperconnectivity.
-+ All connections are bidirectional = boltzmann machine is undirected model.<br>
++ All connections are bidirectional = boltzmann machine is undirected model.
++ Boltzmann machine always tries to find the lowest energy state by [EBM](https://csh970605.github.io/posts/EBM/)<br>
 
 Then, Let's start to understand boltzmann machine.<br><br>
 
