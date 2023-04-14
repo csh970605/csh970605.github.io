@@ -34,14 +34,67 @@ And of course, the visible nodes that are reconstructed by hidden nodes are diff
 <br><br>
 This is why the contrastive divergence exists, and the two visible nodes are different.
 <br><br>
+
 RBM performs constrative divergence until the reconstructed visible nodes are the same as before.
 This process is called **Gibbs sampling**.
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/232000048-3907fb89-6ec9-496d-8f23-394a6d98647b.png" width=700>
 </center>
 <br><br>
+<br>
 
+## How to adjust weights in contrastive divergence
+---
+<br>
 
+First, let's say that the graph represents the randomly initialized weight
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/232031849-b5140527-ae2d-428f-93d3-ac1e88f1e404.png" width=800>
+</center>
+<br>
+
+We can know through the formula in the image above that how weights affect to $log$ probability.<br>
+
+As seen in [Energy based model](https://csh970605.github.io/posts/EBM/), in RBM, energy is defined through weights. That is, energy dicate the shape of energy.<br>
+<br>
+So, let's see what happens during the steps of the contrastive divergence.<br>
+<br><br>
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/232037315-71595094-1db5-4cda-9aca-8c2a97c8d5db.png" width=600>
+</center>
+<br>
+First, let's say the green dot represents the first weights which is randomly initialized.
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/232036986-cc71a9fb-d707-4c3f-9052-83b132a09b33.png" width=600>
+</center>
+<br>
+And also, the red dot represents the reconstructed visual node's weights.
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/232036896-e1292cfa-ccdc-4b60-bf66-fc8f9577e930.png" width=600>
+</center>
+<br><br>
+Through contrastive divergence, the dot keeps going toward the lowest energy.
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/232038094-fc090b13-113f-47a0-aa4d-789fde354810.png" width=500>
+</center>
+<br><br>
+At the end of contrastive divergence, the location of dot will be:
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/232039173-7463d2c1-becb-4400-ab86-7e70e0411e53.png" width=500>
+</center>
+<br><br>
+<br>
+But in Hinton's short cut, just two steps are enough to understand how to adjust the curve at an early stage without waiting for the data to converge.<br>
+To do this, adjust the weights so that the green dot has the lowest energy like:
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/232040181-fae076b4-1500-48a6-878c-a474cf26191f.png" width=500>
+</center>
+<br><br>
+And the result will be:
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/232040317-52945c60-1155-4bd7-8779-01b5c33e95c3.png" width=500>
+</center>
+<br><br>
 
 
 
