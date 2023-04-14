@@ -55,7 +55,7 @@ First, let's say that the graph represents the randomly initialized weight
 
 We can know through the formula in the image above that how weights affect to $log$ probability.<br>
 
-As seen in [Energy based model](https://csh970605.github.io/posts/EBM/), in RBM, energy is defined through weights. That is, energy dicate the shape of energy.<br>
+In RBM, energy is defined through weights. That is, energy dicate the shape of energy.<br>
 <br>
 So, let's see what happens during the steps of the contrastive divergence.<br>
 <br><br>
