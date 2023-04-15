@@ -95,11 +95,3 @@ And the result will be:
 <img src="https://user-images.githubusercontent.com/28240052/232040317-52945c60-1155-4bd7-8779-01b5c33e95c3.png" width=500>
 </center>
 <br><br>
-
-
-
-
-<center>
-<img src="" width=400>
-</center>
-<br><br>
