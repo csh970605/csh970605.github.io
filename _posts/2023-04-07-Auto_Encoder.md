@@ -127,12 +127,26 @@ When the whole training set passed through the ANN, that makes an epoch. Redo mo
 <br><br><br>
 
 # Overcomplete Hidden Layers
-# Types of Auto Encoders
-
-
-
-
+Overcomplete hidden layers are used for lots of variations of autoencoders. For example, we want to get more hidden nodes than input layer to use autoencoder as a feature extractor to get more features, we can use overcomplete hidden layers.<br>
+But there is a problem. If there are more hidden layers than input layer, autoencoder can use a cheat like "values in boxes of the same color are always the same."<br>
 <center>
-<img src="" width=400>
+<img src="https://user-images.githubusercontent.com/28240052/232283557-728c8877-d286-4ddb-ab7b-cca8a103c9b8.png" width=400>
 </center>
 <br><br>
+
+In this way, we can't extract any valuable features from autoencoder. To solve this problem, there are several different types of autoencoders and I'll introduce it below.
+<br><br><br>
+
+# Types of Auto Encoders
+
++ [Sparse Autoencoder](https://csh970605.github.io/posts/Sparse_Autoencoder/)<br>
+
++ [Denoising Autoencoder](https://csh970605.github.io/posts/Denoising_Autoencoder/)<br>
+
++ [Contractive Autoencoder](https://csh970605.github.io/posts/Contractive_Autoencoder/)<br>
+
++ [Stacked Autoencoder](https://csh970605.github.io/posts/Stacked_Autoencoder/)<br>
+
++ [Deep Autoencoder](https://csh970605.github.io/posts/Deep_Autoencoder/)<br>
+
+
