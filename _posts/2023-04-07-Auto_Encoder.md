@@ -53,7 +53,7 @@ Computing the input with the weights gives the output "[2 0 0 -2]".
 </center>
 <br><br>
 
-But, this is not the end. By using [softmax function](), the output is "[1 0 0 0]"
+But, this is not the end. By using [softmax function](https://csh970605.github.io/posts/Softmax/), the output is "[1 0 0 0]"
 
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/232228892-b8512a68-c66b-418f-b5ad-9ceca9cf8766.png" width=200>
