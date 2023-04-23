@@ -26,5 +26,6 @@ $ V(s)\ =\ max(R(s,a)\ +\ \gamma V(s')) $
 + a : Action.
 + R(s, a) : Reward.
 
-
+<br><br>
+Since there are few things that are 100% sure in real world, there is more advanced formula based on [MDP](https://csh970605.github.io/posts/MDP/).
 
