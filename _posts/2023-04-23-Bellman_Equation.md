@@ -10,7 +10,7 @@ mermaid: true
 
 # What is Bellman Equation
 Bellman Equation writes the value of a decision problem at a certain point in time in terms of the payoff from some initial choices and the value of the remaining decision problem that results from those initial choices.
-<br><br>
+<br><br><br>
 
 # The formula of Bellman Equation
 
