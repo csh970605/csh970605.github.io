@@ -23,7 +23,14 @@ $ Q_{t}(s, a)\ =\ Q_{t-1}(s,a)\ +\ \alpha(R(s,a)\ +\ \gamma(maxQ(s',a')\ -\ Q_{t
 </font>
 </center>
 
+<br><br><br>
 
+# How does Q Learning learn in deep learning?
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/234829417-fc888828-0fe7-468e-a7a6-246fd78131d5.png" width=700>
+</center>
+<br><br>
+Q-Targets are the values that we calculated through 
 
 
 <center>
