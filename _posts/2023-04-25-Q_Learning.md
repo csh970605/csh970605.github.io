@@ -38,7 +38,7 @@ Q-Targets are the values that we calculated through [Q Learning](https://csh9706
 Deep Q learning tries to make L lower by adjusting weights.
 <br><br>
 
-After learning is finished, deep Q learning choose an action through [softmax function](https://csh970605.github.io/posts/Softmax/).
+After learning finished, deep Q learning choose an action through [softmax function](https://csh970605.github.io/posts/Softmax/).
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/234836858-2c974ffb-464e-46cf-bc35-43df3b884346.png" width=500>
 </center>
