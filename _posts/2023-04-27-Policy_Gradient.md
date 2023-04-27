@@ -24,6 +24,7 @@ $ J(\theta)\ =\ \Sigma_{s\in S}d^{\pi}(s)V^{\pi}(s)\ =\ \Sigma_{s\in S}d^{\pi}(s
 <br><br>
 
 The return of policy gradient affects the reward of [bellman equation](https://csh970605.github.io/posts/Bellman_Equation/).<br>
+The return of policy graddient is:
 
 <center>
 <font size=4>
@@ -33,7 +34,3 @@ $ R_{t}\ =\ \Sigma_{i=t}^{T} \gamma^{i-t}r(s_{i}, a_{i}) $
 </center>
 <br><br>
 
-<center>
-<img src="" width=500>
-</center>
-<br><br>
