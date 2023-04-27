@@ -10,15 +10,19 @@ mermaid: true
 
 # What is Policy Gradient?
 
-Policy Gradient is one of the component of [TD3]().<br>
+Policy Gradient is one of the component of [TD3](https://csh970605.github.io/posts/TD3/).<br>
 
 The goal of policy($\pi $) gradient is to optimize the expected return by optimizing $\theta$.<br>
-Then how policy gradient calculate reward? The reward function is:
+Then how policy gradient update weights? The function is:
 
 <center>
 <font size=4>
 
-$ J(\theta)\ =\ \Sigma_{s\in S}d^{\pi}(s)V^{\pi}(s)\ =\ \Sigma_{s\in S}d^{\pi}(s)\Sigma_{a \in A} \pi_{\theta}(a|s)Q^{\pi}(s,a) $
+$ \theta_{t+1}\ =\ \theta+{t}\ +\ \nabla_{\theta}J(\pi_{\theta})|_{\theta_{t}} $
+<br>
+
+$ \nabla_{\theta}J(\theta)\ =\ \nabla_{\theta}\Sigma_{s\in S}d^{\pi}(s)V^{\pi}(s)\ =\ \nabla_{\theta}\Sigma_{s\in S}d^{\pi}(s)\Sigma_{a \in A} \pi_{\theta}(a|s)Q^{\pi}(s,a) $
+
 </font>
 </center>
 <br><br>
