@@ -17,5 +17,5 @@ In reinforcement learning, agent takes action to the environment and environment
 <br><br>
 And repeat the above process over and over again to understand what actions lead to positive rewards and favorable states and what actions lead to negative rewards and unfavorable states.<br><br>
 
-Apply the bellman equation to the states collected through actions to calculate the probability of the action to be finally taken and take the action.
+Apply the [bellman equation](https://csh970605.github.io/posts/Bellman_Equation/) to the states collected through actions to calculate the probability of the action to be finally taken and take the action.
 And also applies [Living Penalty](https://csh970605.github.io/posts/Living_Penalty/) to avoid infinite loop.
