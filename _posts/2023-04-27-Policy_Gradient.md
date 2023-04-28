@@ -18,7 +18,7 @@ Then how policy gradient update weights? The function is:
 <center>
 <font size=4>
 
-$ \theta_{t+1}\ =\ \theta+{t}\ +\ \nabla_{\theta}J(\pi_{\theta})|_{\theta_{t}} $
+$ \theta_{t+1}\ =\ \theta_{t}\ +\ \alpha \nabla_{\theta}J(\pi_{\theta})|_{\theta_{t}} $
 <br>
 
 $ \nabla_{\theta}J(\theta)\ =\ \nabla_{\theta}\Sigma_{s\in S}d^{\pi}(s)V^{\pi}(s)\ =\ \nabla_{\theta}\Sigma_{s\in S}d^{\pi}(s)\Sigma_{a \in A} \pi_{\theta}(a|s)Q^{\pi}(s,a) $
@@ -35,6 +35,12 @@ The return of policy graddient is:
 
 $ R_{t}\ =\ \Sigma_{i=t}^{T} \gamma^{i-t}r(s_{i}, a_{i}) $
 </font>
+</center>
+<br><br>
+<br>
+And the shape of Policy Gradient is:
+<center>
+<img src="https://user-images.githubusercontent.com/28240052/235079540-87c8ddfe-5f2d-422a-866a-bba49a308ead.png" width=500>
 </center>
 <br><br>
 
