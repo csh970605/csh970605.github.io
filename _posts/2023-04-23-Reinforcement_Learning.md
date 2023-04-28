@@ -19,3 +19,8 @@ And repeat the above process over and over again to understand what actions lead
 
 Apply the [bellman equation](https://csh970605.github.io/posts/Bellman_Equation/) to the states collected through actions to calculate the probability of the action to be finally taken and take the action.
 And also applies [Living Penalty](https://csh970605.github.io/posts/Living_Penalty/) to avoid infinite loop.
+<br><br><br>
+
+# Algorithm of Deep Reinforcement Learning
+
++ [Twin Delayed Deep Deterministic Policy Gradient(TD3)](https://csh970605.github.io/posts/TD3/)
