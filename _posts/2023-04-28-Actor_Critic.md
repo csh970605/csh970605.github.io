@@ -41,10 +41,3 @@ $ \nabla_{\theta}J(\theta)\ =\ \nabla_{\theta}\Sigma_{s\in S}d^{\pi}(s)V^{\pi}(s
 
 </font>
 </center>
-
-
-
-<center>
-<img src="" width=500>
-</center>
-<br><br>
