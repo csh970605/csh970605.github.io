@@ -10,7 +10,7 @@ mermaid: true
 
 # What is Policy Gradient?
 
-Policy Gradient is one of the component of [TD3](https://csh970605.github.io/posts/TD3/).<br>
+Policy Gradient is used to update [actor model](https://csh970605.github.io/posts/Actor_Critic/) through the Q values optimized by [critic model](https://csh970605.github.io/posts/Actor_Critic/).
 
 The goal of policy($\pi $) gradient is to optimize the expected return by optimizing $\theta$.<br>
 Then how policy gradient update weights? The function is:
