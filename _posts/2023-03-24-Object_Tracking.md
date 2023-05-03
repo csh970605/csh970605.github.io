@@ -35,7 +35,7 @@ Runs very fast, but the quality is not so good especially in fast videos.<br>
 You can see more details in [KCF](https://csh970605.github.io/posts/KCF) post.<br><br>
 # CSRT(Discriminative Correlation Filter with Channel and Spatial Reliability)
 Runs lower speed, but the quality is higher.<br>
-You can see more details in [KCF](https://csh970605.github.io/posts/CSRT) post.<br><br>
+You can see more details in [CSRT](https://csh970605.github.io/posts/CSRT) post.<br><br>
 
 # Codes<br>
 You can see my implementation on my [Github](https://github.com/csh970605/Computer-Vision-Masterclass/tree/main/Section%203)<br><br>
