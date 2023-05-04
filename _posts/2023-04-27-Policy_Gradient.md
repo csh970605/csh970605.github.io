@@ -12,16 +12,16 @@ mermaid: true
 
 Policy Gradient is used to update [actor model](https://csh970605.github.io/posts/Actor_Critic/) through the Q values optimized by [critic model](https://csh970605.github.io/posts/Actor_Critic/).
 
-The goal of policy($\pi $) gradient is to optimize the expected return by optimizing $\theta$.<br>
+The goal of policy($\pi_{\phi} $) gradient is to optimize the expected return by optimizing $\phi$.<br>
 Then how policy gradient update weights? The function is:
 
 <center>
 <font size=4>
 
-$ \theta_{t+1}\ =\ \theta_{t}\ +\ \alpha \nabla_{\theta}J(\pi_{\theta})|_{\theta_{t}} $
+$ \phi_{t+1}\ =\ \phi_{t}\ +\ \alpha \nabla_{\phi}J(\pi_{\phi})|_{\phi_{t}} $
 <br>
 
-$ \nabla_{\theta}J(\theta)\ =\ \nabla_{\theta}\Sigma_{s\in S}d^{\pi}(s)V^{\pi}(s)\ =\ \nabla_{\theta}\Sigma_{s\in S}d^{\pi}(s)\Sigma_{a \in A} \pi_{\theta}(a|s)Q^{\pi}(s,a) $
+$ \nabla_{\phi}J(\phi)\ =\ \nabla_{\phi}\Sigma_{s\in S}d^{\pi}(s)V^{\pi}(s)\ =\ \nabla_{\phi}\Sigma_{s\in S}d^{\pi}(s)\Sigma_{a \in A} \pi_{\phi}(a|s)Q^{\pi}(s,a) $
 
 </font>
 </center>
