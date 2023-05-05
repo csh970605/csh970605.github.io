@@ -37,8 +37,6 @@ You can see more details in [KCF](https://csh970605.github.io/posts/KCF) post.<b
 Runs lower speed, but the quality is higher.<br>
 You can see more details in [CSRT](https://csh970605.github.io/posts/CSRT) post.<br><br>
 
-# Codes<br>
-You can see my implementation on my [Github](https://github.com/csh970605/Computer-Vision-Masterclass/tree/main/Section%203)<br><br>
 
 # Additional Reading<br>
 + [OpenCV documentation](https://docs.opencv.org/4.x/)
