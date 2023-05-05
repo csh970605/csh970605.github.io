@@ -47,8 +47,6 @@ As the result of my implementation, Dlib is stronger than LBPH<br>
 There are more details in [Face Recognitin-Dlib](https://csh970605.github.io/posts/FR_Dlib) post.
 <br>
 
-# Code<br>
-You can see my implementation on my [Github](https://github.com/csh970605/Computer-Vision-Masterclass/tree/main/Section%202)<br><br>
 
 # Additional Reading<br>
 + [OpenCV documentation](https://docs.opencv.org/4.x/)
