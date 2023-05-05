@@ -51,3 +51,6 @@ lin_reg_2.fit(X_poly, y)
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/229107607-87fd872e-6551-4a22-a355-6892e8b8c13b.png">
 </center>
+
+<br><br><br><br>
+You can see my implementation on my [Github](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%202%20-%20Regression/Section%206%20-%20Polynomial%20Regression/Python)
