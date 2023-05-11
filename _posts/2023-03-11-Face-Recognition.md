@@ -17,7 +17,9 @@ mermaid: true
 <br><br>
 
 # Module
-There are two modules which are LBPH(Local Binary Patterns Histograms) and Dlib<br>
+There are two modules:<br>
+LBPH(Local Binary Patterns Histograms)<br>
+Dlib<br>
 <br>
 
 ## What is LBPH?
