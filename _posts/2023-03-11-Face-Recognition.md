@@ -16,10 +16,11 @@ mermaid: true
  Face recognition classifies faces with face images extracted from face detection.
 <br><br>
 
-# Module
+# Algorithms
 There are two modules:<br>
-LBPH(Local Binary Patterns Histograms)<br>
-Dlib<br>
+[LBPH(Local Binary Patterns Histograms)](https://csh970605.github.io/posts/LBPH/)<br>
+[Dlib](https://csh970605.github.io/posts/FR_Dlib/)<br>
+[CNN](https://csh970605.github.io/posts/CNN/)<br>
 <br>
 
 ## What is LBPH?
