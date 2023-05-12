@@ -277,4 +277,9 @@ for id_user in range(nb_users):
 
 
 <br><br><br>
-You can see my implementation on my [Github 1](https://github.com/csh970605/Deep_Learning_A-Z/tree/main/Part%206%20-%20AutoEncoders/Section%2019%20-%20AutoEncoders) & [Github 2](https://github.com/csh970605/TensorFlow-2.0-Advanced/tree/main/Section%203)
+
+# Implementation
+
++ [Github 1](https://github.com/csh970605/Deep_Learning_A-Z/tree/main/Part%206%20-%20AutoEncoders/Section%2019%20-%20AutoEncoders)<br>
++ [Github 2](https://github.com/csh970605/TensorFlow-2.0-Advanced/tree/main/Section%203)<br>
++ [Classify autoencoded images by CNN](https://github.com/csh970605/Computer-Vision-Masterclass/tree/main/Section%208)<br>
