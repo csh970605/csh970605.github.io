@@ -29,7 +29,7 @@ But, since we use MPII which detect the points of human, the numbers of the outp
 # Implementation
 <br>
 
-+ [recognize gestures and actions by MPII](https://github.com/csh970605/Computer-Vision-Masterclass/tree/main/Section%2010) 
++ [recognize gestures and actions by Caffe](https://github.com/csh970605/Computer-Vision-Masterclass/tree/main/Section%2010) 
 <br>I used Caffe framework to implement it.
 <center>
 <img src="" width=500>
