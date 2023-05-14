@@ -1,7 +1,7 @@
 ---
 title: DeepDream
 author: SeHoon
-date: 2023-05-13 22:47:00 +0900
+date: 2023-05-13 20:47:00 +0900
 categories: [Vision Machine Learning, VML_Introduction]
 tags: [machine learning, python]
 math: true
