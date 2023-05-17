@@ -31,7 +31,3 @@ Style transfer consits of severl [convolutional layers](https://csh970605.github
 + [Change painting style](https://github.com/csh970605/Computer-Vision-Masterclass/tree/main/Section%2011) I used VGG19 to implement it.
 
 
-<center>
-<img src="" width=500>
-</center>
-<br><br>
