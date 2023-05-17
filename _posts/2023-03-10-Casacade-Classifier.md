@@ -74,8 +74,10 @@ The result of code.
 </center><br><br>
 
 <br><br><br><br>
-You can see my implementation on my [Github](https://github.com/csh970605/Computer-Vision-Masterclass/tree/main/Section%201)
 
----
-[1] [casacade image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
-[2] [test image source](https://www.udemy.com/course/computer-vision-masterclass/)<br>
+# Implementation
+
++ [Image detection](https://github.com/csh970605/Computer-Vision-Masterclass/tree/main/Section%201)<br>
+
++ [Video detection](https://github.com/csh970605/ComputerVision_AtoZ/tree/main/Section%201)<br>
+
