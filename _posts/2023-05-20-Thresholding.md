@@ -44,3 +44,9 @@ As you can see in thresholding, in openCV, thresholding changes the values of pi
 
 + ADAPTIVE_THRESH_MEAN_C : the threshold value T(x,y) is a mean of the blockSize×blockSize neighborhood of (x,y) minus C.
 + ADAPTIVE_THRESH_GAUSSIAN_C :the threshold value T(x,y) is a weighted sum of the blockSize×blockSize neighborhood of (x,y) minus C . 
+
+<br><br><br><br>
+
+# Implementation
+
++ [Thresholding, Binarization & Adaptive Thresholding](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/9.%20Thresholding%2C%20Binarization%20_%20Adaptive%20Thresholding.ipynb)
