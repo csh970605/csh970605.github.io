@@ -11,7 +11,7 @@ mermaid: true
 # What is Arithmetic Operation?
 
 These are simple operations that allow us to directly add or subract to the color intensity.<br>
-Calculates the per-element operation of two arrays. The overall effect is increasing or decreasing brightness. We can use Arithmetic Operation by:
+Calculates the per-element operation of two arrays. The overall effect is increasing or decreasing brightness. We can use Arithmetic Operation as:
 **cv2.add(image, matrix)**.<br>
 You should notice that do not add matrix like "image * matrix". You can get less or more values of added image than you expected.
 <br><br><br>
