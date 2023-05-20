@@ -19,10 +19,10 @@ You should notice that do not add matrix like "image * matrix". You can get less
 # What is Bitwise Operation?
 Bitwise Operation performs bit operation between two images. There is four kind of bitwise operator:<br>
 
-+ **cv2.bitwise_and(image1, image2, dst, mask)** 
-+ **cv2.bitwise_or(image1, image2, dst, mask)** 
-+ **cv2.bitwise_xor(image1, image2, dst, mask)** 
-+ **cv2.bitwise_not(image1, image2, dst, mask)** 
++ cv2.bitwise_and(image1, image2, dst, mask)
++ cv2.bitwise_or(image1, image2, dst, mask)
++ cv2.bitwise_xor(image1, image2, dst, mask)
++ cv2.bitwise_not(image1, image2, dst, mask)
 
 
 parameters:<br>
