@@ -108,5 +108,5 @@ Blob detection is performed by:<br>
 <br><br><br><br>
 
 # Implementation
-[Line, Circle and Blob Detection](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/13_Line%2C_Circle_and_Blob_Detection.ipynb)
+[Line, Circle and Blob Detection](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/13.%20Line%2C%20Circle%20and%20Blob%20Detection.ipynb)
 
