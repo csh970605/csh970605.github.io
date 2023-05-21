@@ -34,3 +34,8 @@ By the output, we can calculate <br>
 + Spatial moments : $ m_{ij}\ =\ \Sigma_{x,y}(array(x,y)*x^{i}y^{j}) $
 + Central moments : $ mu{ij}\ =\ \Sigma_{x,y}(array(x,y)*(x-\bar{x})^{i}(y-\bar{y}^{j})) $
 + Normalized central moments : $ nu_{ij}\ =\ \frac{mu_{ij}}{m_{00}^{\frac{i+j}{2}+1}} $
+
+<br><br><br><br>
+
+# Implementation
+[Moments, Sorting, Approximating & Matching Contours](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/12.%20Moments%2C%20Sorting%2C%20Approximating%20and%20Matching%20Contours.ipynb)
