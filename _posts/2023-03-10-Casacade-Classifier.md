@@ -81,3 +81,7 @@ The result of code.
 
 + [Video detection](https://github.com/csh970605/ComputerVision_AtoZ/tree/main/Section%201)<br>
 
++ [Face & Eye detection](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/16.%20Face%20and%20Eye%20Detection%20with%20Haar%20Cascade%20Classifiers.ipynb)<br>
+
++ [Car & Person detection](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/17.%20Vehicle%20and%20Pedestrian%20Detection.ipynb)<br>
+
