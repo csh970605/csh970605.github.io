@@ -15,7 +15,7 @@ Template matching can be done by:<br>
 **cv2.matchTemplate(image, templ, method) -> result** where :<br>
 + image : Image where the search is running.
 + templ : Searched template. It must be not greater than the source image and have the same data type.
-+ method : Parameter specifying the comparison method. This parameter helps us to find as global minimums(when **TMSQDIFF** was used) or maximums(**TM_CCORR** or **TM_CCOEFF** was used).
++ method : Parameter specifying the comparison method. This parameter helps us to find as global minimums(when **TM_SQDIFF** was used) or maximums(**TM_CCORR** or **TM_CCOEFF** was used).
 + result : we can get "min_val", "max_val", "min_loc", "max_loc" by using **cv2.minMaxLoc(result)**.
 
 <br><br><br><br>
