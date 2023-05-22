@@ -80,7 +80,7 @@ Line detection is performed by:<br>
 Blob detection is performed by:<br>
 **cv2.drawKeypoints(image, keypoints, outImage, color, flags)** where:<br>
 
-+ image : The image detected by **cv2.SimpleBlobDetector_create()**
++ image : The image detected by **cv2.SimpleBlobDetector.create()**
 + keypoints : Keypoints from the source image.
 + outImage : Output image. Its content depends on the flags value defining what is drawn in the output image.
 + color : Color of keypoints. default = Scalar::all(-1)
@@ -98,6 +98,8 @@ Blob detection is performed by:<br>
 
 <br><br><br><br>
 
+
+
 ## Result
 ---
 <br>
@@ -107,6 +109,63 @@ Blob detection is performed by:<br>
 </center>
 <br><br><br><br>
 
+# Counting Blobs
+
+We can count blobs by:<br>
+**cv2.SimpleBlobDetector.Params()**<br>
+We can set the filtering parameters of simpleBlobDetector. Let's see what the parameters are in it.<br>
+
+<center>
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/e636914d-928c-4f09-8fc6-89105bfe89af" width=500>
+</center>
+<br><br>
+
+We can set those parameters by:
+
+```py
+params = cv2.SimpleBlobDetector.Params()
+
+# Set Threshold filtering parameters
+params.minThreshold = 10
+params.maxThreshold = 200
+
+# Set Area filtering parameters
+params.filterByArea = True
+params.minArea = 100
+
+# Set Circularity filtering parameters
+params.filterByCircularity = True 
+params.minCircularity = 0.9
+
+# Set Convexity filtering parameters
+params.filterByConvexity = False
+params.minConvexity = 0.2
+    
+# Set inertia filtering parameters
+params.filterByInertia = True
+params.minInertiaRatio = 0.01
+
+# Create a detector with the parameters
+detector = cv2.SimpleBlobDetector.create(params)
+    
+# Detect blobs
+keypoints = detector.detect(image)
+```
+
+<br><br><br><br>
+
+## Result
+---
+<br>
+
+<center>
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/61049a83-9237-4397-a8ba-2d08da48b596" width=500>
+</center>
+
+<br><br><br><br>
+
+
 # Implementation
-[Line, Circle and Blob Detection](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/13.%20Line%2C%20Circle%20and%20Blob%20Detection.ipynb)
++ [Line, Circle and Blob Detection](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/13.%20Line%2C%20Circle%20and%20Blob%20Detection.ipynb)<br>
++ [Counting Circles, Ellipses and Finding Waldo](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/14.%20Counting%20Circles%2C%20Ellipses%20and%20Finding%20Waldo%20with%20Template%20Matching.ipynb)
 
