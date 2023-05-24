@@ -34,6 +34,7 @@ We can get histogram simply by using:<br>
 <br><br><br><br>
 
 # Obtain the dominant colors in image by [K-Means Clustering](https://csh970605.github.io/posts/KMeans_Clustering/)
+We can fit our image by KMeans to get classified values. By those values, in my implementation, I made a bar shaped histogram that can get the dominant colors in the image.
 
 <br><br><br><br>
 
