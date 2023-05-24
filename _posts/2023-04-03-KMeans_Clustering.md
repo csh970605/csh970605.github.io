@@ -185,4 +185,4 @@ y_kmeans = kmeans.fit_predict(X)
 # Implementation
 
 + [K-Means Clustering](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%204%20-%20Clustering/Section%2024%20-%20K-Means%20Clustering/Python)<br>
-+ [K-Means Clustering & Histograms]()
++ [K-Means Clustering & Histograms](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/19.%20Histograms%20and%20K-Means%20Clustering%20for%20Dominant%20Colors.ipynb)
