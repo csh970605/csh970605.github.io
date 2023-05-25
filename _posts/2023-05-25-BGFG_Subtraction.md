@@ -38,11 +38,36 @@ Or, we can just create background subtractor by **cv2.createBackgroundSubtractor
 
 <center>
 
-<img src="" width=500>
-
+Original Image
+<img src="https://drive.google.com/uc?export=view&id=1Z-ckZnZ3Cwpel8Kp7qL0Lp7xPvugyzHK">
 <br><br>
 
-<img src="" width=500>
+MOG
+<img src="https://drive.google.com/uc?export=view&id=1I7zpPIHMI8XKn4DD2oBM_pnwcbQ5bhAp">
+<br><br>
+
+GSOC
+<img src="https://drive.google.com/uc?export=view&id=14L5lNqIaoaf6jMHrPFAkfR0yBlNGJy4O">
+<br><br>
+
+CNT
+<img src="https://drive.google.com/uc?export=view&id=1eV_DI4fmYR7MUQ_vJMHBs4JheFXU6XXP">
+<br><br>
+
+GMG
+<img src="https://drive.google.com/uc?export=view&id=1W_SapOTS9HpYQ-7QjugxU7PI0nZ5-_PA">
+<br><br>
+
+LSBP
+<img src="https://drive.google.com/uc?export=view&id=1vRjc7rC_fpDQsj-GhAYr488K7fldv7Rs">
+<br><br>
+
+KNN
+<img src="https://drive.google.com/uc?export=view&id=1_vDIN7iq1-WO3uQaNBbryPcj5OqA9FcB">
+<br><br>
+
+MOG2
+<img src="https://drive.google.com/uc?export=view&id=1_vDIN7iq1-WO3uQaNBbryPcj5OqA9FcB">
 </center>
 <br><br><br><br>
 
@@ -66,3 +91,15 @@ Foreground subtraction is a technique for generating a background mask. We can p
 ---
 <br>
 
+Original Image
+<img src="https://drive.google.com/uc?export=view&id=1Z-ckZnZ3Cwpel8Kp7qL0Lp7xPvugyzHK">
+<br><br>
+
+<img src="https://drive.google.com/uc?export=view&id=1whfVO6wG_KwNyQhtUeT8edyC2uM5QKL5">
+
+
+<br><br><br><br>
+
+# Implementation
+
++ [Background and Foreground Subtraction](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/23.%20Background%20and%20Foreground%20Subtraction.ipynb)
