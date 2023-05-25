@@ -35,6 +35,9 @@ As you can see in thresholding, in openCV, thresholding changes the values of pi
 + THRESH_TRUNC : $dst(x, y) = \begin{cases}threshold\ if\ src(x,y)\ >\ thresh \\ xrc(x,y)\ \ otherwise \end{cases} $
 + THRESH_TOZERO : $dst(x, y) = \begin{cases}src(x,y)\ if\ src(x,y)\ >\ thresh \\ 0\ \ otherwise \end{cases} $
 + THRESH_TOZERO_INV : $dst(x, y) = \begin{cases}0\ if\ src(x,y)\ >\ thresh \\ src(x,y)\ \ otherwise \end{cases} $
++ THRESH_MASK 
++ THRESH_OTSU : Flag. Use Otsu algorithm to choose the optimal threshold value.
++ THRESH_TRIANGLE Flag. Use Triangle algorithm to choose the optimal threshold value.
 
 <br><br>
 
