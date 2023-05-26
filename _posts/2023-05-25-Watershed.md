@@ -104,8 +104,3 @@ Perform **cv2.connectedComponents(image)** with foreground that we got at step 2
 # Implementation
 
 + [Watershed Algorithm for marker-based image segmentation](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/22.%20Watershed%20Algorithm%20marker-based%20image%20segmentation.ipynb)
-
-<center>
-<img src="" width=500>
-</center>
-<br><br>
