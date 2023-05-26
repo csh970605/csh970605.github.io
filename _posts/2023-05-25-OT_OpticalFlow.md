@@ -46,9 +46,9 @@ It can be done by **cv2.calcOpticalFlowPyrLK(prevImg, nextImg, prevPts, nextPts,
 
     +  nextImg : 8-bit input image.
 
-    +  prevPts : Vector of 2D points for which the flow needs to be found
+    +  prevPts : Vector of 2D points for which the flow needs to be found.
 
-    +  nextPts : Output vector of 2D points containing the calculated new positions of input features in the second image
+    +  nextPts : Output vector of 2D points containing the calculated new positions of input features in the second image.
 
     +  winSize : Size of the search window at each pyramid level.
 
@@ -86,5 +86,63 @@ detected_next = nextPts[status==1]
 <br><br><br><br>
 
 ## Steps of Gunner Farneback Optical Flow
+---
+<br>
 
-1. 
+1. Computes the dense optical flow using **cv2.calcOpticalFlowFarneback(prev, next, flow, pyr_scale, levels, winsize, iterations, poly_n, poly_sigma, flags) -> flow** where<br>
+
+    + prev : Input image.
+    
+    + next : Input image.
+
+    + flow : Computed flow image. Output.
+
+    + pyr_scale : Specifying the image scale (<1) to build pyramids for each image.<br>
+    For example, pyr_scale=0.5 means a classical pyramid, where each next layer is twice smaller than the previous one.
+
+    + levels : Number of pyramid layers including the initial image.<br>
+    For example, levels=1 means that no extra layers are created and only the original images are used.
+
+    + winsize : Averaging window size. Larger values increase the algorithm robustness to image noise and give more chances for fast motion detection, but yield more blurred motion field.
+
+    + iterations : Number of iterations the algorithm does at each pyramid level.
+
+    + poly_n : Size of the pixel neighborhood used to find polynomial expansion in each pixels. Larger values mean that the image will be approximated with smoother surfaces, yielding more robust algorithm and more blurred motion field.<br>
+    Usually, it would be 5 or 7.
+
+    + poly_sigma : Standard deviation of the Gaussian that is used to smooth derivatives used as a basis for the polynomial expansion. <br>
+    For example, poly_n=5, you can set poly_sigma=1.1. poly_n=7, a good value would be poly_sigma=1.5.
+
+    + flags : Operation flags that can be a combination where :<br>
+
+        + OPTFLOW_USE_INITIAL_FLOW : Uses the input flow as an initial flow approximation.
+
+        + OPTFLOW_FARNEBACK_GAUSSIAN : uses the Gaussian **winsize * winsize** filter instead of a box filter of the same size for optical flow estimation.
+
+<br><br>
+
+2. Calculate the magnitude (speed) and angle of motion using **cv2.cartToPolar(x, y) -> magnitude, angle** where<br>
+
+    + x : flow[..., 0] that obtained in step 1.
+
+    + y : flow[..., 1] that obtained in step 1.
+
+<br><br>
+
+3. Calculate the color to reflect speed and angle.<br>
+
+```py
+hsv[..., 0] = angle * (180 / (np.pi / 2))
+hsv[..., 1] = 255
+hsv[..., 2] = cv2.normalize(magnitude, None, 0, 255, cv2.NORM_MINMAX)
+
+final_image = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
+```
+
+
+<br><br><br><br>
+
+
+# Implementation
+
++ [Object Tracking with Optical Flow](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/25.%20Object%20Tracking%20with%20Optical%20Flow.ipynb)
