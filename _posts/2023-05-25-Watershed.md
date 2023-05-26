@@ -64,12 +64,19 @@ Perform **cv2.connectedComponents(image)** with foreground that we got at step 2
 <br>
 
 + DIST_USER : User defined distance.
+
 + DIST_L1 : distance = $|x1-x2| + |y1-y2|$
+
 + DIST_L2 : the simple euclidean distance
+
 + DIST_C : distance = $max(|x1-x2|,|y1-y2|)$
+
 + DIST_L12 : L1-L2 metric: distance = $2(\sqrt{1+x*\frac{x}{2}} - 1)$
+
 + DIST_FAIR : distance = $c^2(\frac{|x|}{c}-log(\frac{1+|x|}{c}))$, c = 1.3998
+
 + DIST_WELSCH : distance = $\frac{c^{2}}{2}(1-e^{-(x/c)^{2}}), c = 2.9846$
+
 + DIST_HUBER : distance = $|x|<c\ ?\ \frac{x^{2}}{2}\ :\ c(|x|-\frac{c}{2}), c=1.345$
 <br><br><br><br>
 
