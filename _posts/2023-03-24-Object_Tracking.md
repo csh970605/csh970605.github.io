@@ -32,15 +32,11 @@ But, tracking algorithm can recognize the faces because tracking algorithm has i
 
 # KCF(Kernelized Correlation Filters)
 Runs very fast, but the quality is not so good especially in fast videos.<br>
-You can see more details in [KCF](https://csh970605.github.io/posts/KCF) post.<br><br>
+You can see more details in [KCF](https://csh970605.github.io/posts/KCF) post.<br><br><br><br>
 # CSRT(Discriminative Correlation Filter with Channel and Spatial Reliability)
 Runs lower speed, but the quality is higher.<br>
-You can see more details in [CSRT](https://csh970605.github.io/posts/CSRT) post.<br><br>
+You can see more details in [CSRT](https://csh970605.github.io/posts/CSRT) post.<br><br><br><br>
 
-
-# Additional Reading<br>
-+ [OpenCV documentation](https://docs.opencv.org/4.x/)
-+ [Object Tracking: A Literature Review](https://arxiv.org/abs/1409.7618)
-+ [KCF Algorithm](https://arxiv.org/abs/1404.7584)
-+ [Improvement on KCF Algorithm](https://www.researchgate.net/publication/327844935_Improvement_of_the_KCF_Tracking_Algorithm_through_Object_Detection)
-+ [CSRT Algorithm](https://arxiv.org/pdf/1611.08461.pdf)
+# OpticalFlow
+Optical flow is the pattern of apparent motion of image objects between two consecutive frames caused by the movemement of object or camera.
+You can see more details in [Optical Flow](https://csh970605.github.io/posts/OT_OpticalFlow/) post.<br><br><br><br>
