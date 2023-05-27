@@ -40,3 +40,6 @@ You can see more details in [CSRT](https://csh970605.github.io/posts/CSRT) post.
 # OpticalFlow
 Optical flow is the pattern of apparent motion of image objects between two consecutive frames caused by the movemement of object or camera.
 You can see more details in [Optical Flow](https://csh970605.github.io/posts/OT_OpticalFlow/) post.<br><br><br><br>
+
+# Mean Shift & Cam Shift
+Mean shift is a hill climbing algorithm which involves shifting this kernel iteratively to a higher density region until convergence. You can see more details in [Mean Shift & Cam Shift](https://csh970605.github.io/posts/OBT_MCShift/) post.<br><br><br><br>
