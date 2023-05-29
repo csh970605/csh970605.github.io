@@ -60,3 +60,9 @@ It can be used by **cv2.grabCut(img, mask, rect, bgdModel, fgdModel, iterCount, 
 + cv2.GC_EVAL : The value means that the algorithm should just resume.
 
 + cv2.GC_EVAL_FREEZE_MODEL : The value means that the algorithm should just run the grabCut algorithm (a single iteration) with the fixed model
+
+<br><br><br><br>
+
+# Implementation
+
++ [GrabCut Algorithm for Background Removal](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/30.%20GrabCut%20Algorithm%20for%20Background%20Removal.ipynb)
