@@ -64,7 +64,7 @@ It is used as **configu='--oem 1 --psm 0**
 
     + 0 : Legacy engine only.
     
-    + 1 : LSTM engine only.
+    + 1 : [LSTM](https://csh970605.github.io/posts/LSTM/) engine only.
 
     + 2 : Legacy + LSTM engines.
 
