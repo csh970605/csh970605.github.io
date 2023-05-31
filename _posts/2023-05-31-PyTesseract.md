@@ -58,7 +58,7 @@ Python-tesseract is an optical character recognition (OCR) tool for python. That
 ## Flags of config
 ---
 <br>
-It is used as **configu='--oem 1 --psm 0**
+It is used as **configu= '--oem 1 --psm 0'**
 
 + oem : OCR Engine mode
 
