@@ -100,5 +100,12 @@ It is used as **configu= '--oem 1 --psm 0'**
 
     + 13 : Raw line. Treat the image as a single text line, bypassing hacks that are Tesseract-specific.
 
+<br><br><br><br>
     
-    
+# Steps to get more accurate OCR
+
+1. Convert image to HSV
+
+2. [Thresholding] the converted image.
+
+3. Perform OCR
