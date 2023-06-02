@@ -30,4 +30,6 @@ Style transfer consits of severl [convolutional layers](https://csh970605.github
 
 + [Change painting style](https://github.com/csh970605/Computer-Vision-Masterclass/tree/main/Section%2011) I used VGG19 to implement it.
 
++ [Neural Style Transfer with OpenCV](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/34.%20Neural%20Style%20Transfer%20with%20OpenCV.ipynb) I used ECCV16 and t7 PyTorch models to implement it.
+
 
