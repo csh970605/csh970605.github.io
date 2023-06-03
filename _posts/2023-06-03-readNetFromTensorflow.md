@@ -2,7 +2,7 @@
 title: readNetFromTensorflow
 author: SeHoon
 date: 2023-06-03 14:09:00 +090
-categories: [Vision Machine Learning, VML_Introduction]
+categories: [Vision Machine Learning, OpenCV]
 tags: [machine learning, python]
 math: true
 mermaid: true
