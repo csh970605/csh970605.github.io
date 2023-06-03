@@ -16,3 +16,25 @@ The colorize model consists of many [convolutional layers](https://csh970605.git
 <center>
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/8e40261b-9297-403c-8508-c2b269724a17" width=800>
 </center>
+<br><br>
+<br><br>
+
+## Steps of colorizing image using OpenCV
+---
+<br>
+
+1. Get the Caffe model by [readNetFromCaffe]().
+
+2. Load cluster centers.
+
+3. Populate cluster centers as 181 convolution kernel.
+
+4. Convert image to LAB.
+
+5. Get the L channel of image only.
+
+6. Resize the image to network input size(224,224).
+
+7. Subtract 50 for mean-centering.
+
+8. Concatenate with original image L.
