@@ -23,7 +23,7 @@ The colorize model consists of many [convolutional layers](https://csh970605.git
 ---
 <br>
 
-1. Get the Caffe model by [readNetFromCaffe]().
+1. Get the Caffe model by [readNetFromCaffe](https://csh970605.github.io/posts/readNetFromCaffe/).
 
 2. Load cluster centers.
 
