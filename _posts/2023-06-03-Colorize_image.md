@@ -38,3 +38,10 @@ The colorize model consists of many [convolutional layers](https://csh970605.git
 7. Subtract 50 for mean-centering.
 
 8. Concatenate with original image L.
+
+<br><br>
+<br><br>
+
+# Implementation
+
++ [Colorize Black and White Photos using a Caffe Model in OpenCV](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/36.%20Colorize%20Black%20and%20White%20Photos%20using%20a%20Caffe%20Model%20in%20OpenCV.ipynb)
