@@ -152,9 +152,11 @@ y_pred = classifier.predict(X_test)
 ---
 <br>
 
-
-
-
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/229357909-502dfc53-8cf6-4738-8b54-83820852be6e.png">
 </center>
+<br><br><br><br>
+
+# Implementation
+
++ [Naive Bayse](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%203%20-%20Classification/Section%2018%20-%20Naive%20Bayes/Python)
