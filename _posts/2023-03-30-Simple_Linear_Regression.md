@@ -71,4 +71,8 @@ regressor.fit(X_train, y_train)
 
 
 <br><br><br><br>
-You can see my implementation on my [Github 1](https://github.com/csh970605/TensorFlow-2.0-Practical/blob/main/Section%202/Develop_A_Single_Neuron_Model_to_Convert_C_to_F.ipynb) & [Github 2](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%202%20-%20Regression/Section%204%20-%20Simple%20Linear%20Regression/Python)
+
+# Implementation
++ [Simple Linear Regression 1](https://github.com/csh970605/TensorFlow-2.0-Practical/blob/main/Section%202/Develop_A_Single_Neuron_Model_to_Convert_C_to_F.ipynb) 
+
++ [Simple Linear Regression 2](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%202%20-%20Regression/Section%204%20-%20Simple%20Linear%20Regression/Python)
