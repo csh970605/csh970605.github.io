@@ -34,5 +34,3 @@ Classification algorithms used in machine learning utilize input training data f
 | [Random Forest Classification](https://csh970605.github.io/posts/Random_Forest_Classification/) |Powerful and precise.<br> Shows good performance on non-linear datasets.| Uninterpretable.<br>Overfitting easily occurs.<br> You must select the number of trees.|
 
 <br>
-
-You can see my implementation on my [Github](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%203%20-%20Classification)
