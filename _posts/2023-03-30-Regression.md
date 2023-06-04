@@ -31,5 +31,10 @@ If your independent variable is time, then you are forecasting future values, ot
 | [Random Forest Regression](https://csh970605.github.io/posts/Random_Forest_Regression/) | Powerful and accurate.<br>Gives good results on many data sets. | Not ideal.<br>Easy to be overfitted.<br>Number of trees to be determined. |
 
 <br>
+<br>
+<br>
+<br>
 
-You can see my implementation on my [Github](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%202%20-%20Regression)
+# Implementation
+
++ [Regression](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%202%20-%20Regression)
