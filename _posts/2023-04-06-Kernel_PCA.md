@@ -74,3 +74,8 @@ y_pred = classifier.predict(X_test)
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/230393501-3cd4c65d-3586-4a72-9229-4e6bd5402015.png">
 </center>
+<br><br><br><br>
+
+# Implementation
+
++ [Kernel pca](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%209%20-%20Dimensionality%20Reduction/Section%2045%20-%20Kernel%20PCA/Python)
