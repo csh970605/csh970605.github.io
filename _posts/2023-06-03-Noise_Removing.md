@@ -78,4 +78,8 @@ There are 4 ways to remove noise that can be applied in each situation.
     + searchWindowSize : Size in pixels of the window that is used to compute weighted average for given pixel. The value sholud be odd. And the value of 21 is recommended.
 
     Images from imgToDenoiseIndex - temporalWindowSize / 2 to imgToDenoiseIndex - temporalWindowSize / 2 from srcImgs will be used to denoise srcImgs[imgToDenoiseIndex] image.
-    <br><br>
+    <br><br><br><br>
+
+# Implementation
+
++ [Add and Remove Noisen](https://github.com/csh970605/Modern_Computer_Vision/blob/main/OpenCV/38-1.%20Add%20and%20Remove%20Noise.ipynb)
