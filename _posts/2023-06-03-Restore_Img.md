@@ -2,7 +2,7 @@
 title: Restore Damged Photos
 author: SeHoon
 date: 2023-06-03 20:09:00 +0900
-categories: [Vision Machine Learning, VML_Introduction]
+categories: [Vision Machine Learning, OpenCV]
 tags: [machine learning, python]
 math: true
 mermaid: true
