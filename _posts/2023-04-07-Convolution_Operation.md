@@ -38,8 +38,21 @@ We will create a feature map by multiplying the matrix extracted from the input 
 Continuing this, we get the feature map:
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/230701780-163df4fb-a917-47a4-80b0-a7cadb5552fe.png" width=300>
+</center><br><br>
+
+And shape of return will be(N, $C_{out}$, $H_{out}$, $W_{out}$) where:<br>
+<br>
+
+<center>
+<font size=4>
+
+$H_{out} = floor(\frac{H_{in}\ +\ 2\ *\ padding[0]\ -\ dilation[0]\ *\ (kernelsize[0]\ -\ 1)\ -\ 1}{stride[0]})\ + 1$
+<br><br>
+
+$W_{out} = floor(\frac{W_{in}\ +\ 2\ *\ padding[1]\ -\ dilation[1]\ *\ (kernelsize[1]\ -\ 1)\ -\ 1}{stride[1]})\ + 1$
+</font>
 </center>
-<br><br><br>
+<br><br><br><br>
 
 ## Why we use feature detector?
 ---
