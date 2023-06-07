@@ -52,6 +52,13 @@ $H_{out} = floor(\frac{H_{in}\ +\ 2\ *\ padding[0]\ -\ dilation[0]\ *\ (kernelsi
 $W_{out} = floor(\frac{W_{in}\ +\ 2\ *\ padding[1]\ -\ dilation[1]\ *\ (kernelsize[1]\ -\ 1)\ -\ 1}{stride[1]})\ + 1$
 </font>
 </center>
+
+```py
+def cnn_calculator(w_in, h_in, kernel_size, padding=(0,0), stride=(1,1), dilation=(1,1)):
+  w_out = math.floor((w_in + 2*padding[0] - dilation[0]*(kernel_size[0] - 1) - 1) / stride[0]) + 1
+  h_out = math.floor((h_in + 2*padding[1] - dilation[1]*(kernel_size[1] - 1) - 1) / stride[1]) + 1
+  return w_out, h_out
+```
 <br><br><br><br>
 
 ## Why we use feature detector?
