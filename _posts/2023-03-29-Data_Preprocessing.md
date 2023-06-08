@@ -199,4 +199,9 @@ X_train[:, 3:] = sc.fit_transform(X_train[:, 3:])
 X_test[:, 3:] = sc.transform(X_test[:, 3:])
 ```
 <br>
+<br><br>
 <br>
+
+# Implementation
+
++ [Data Preprocessing Template](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%201%20-%20DataProcessing/Section2/Python)
