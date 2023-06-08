@@ -7,3 +7,6 @@ tags: [deep learning, python]
 math: true
 mermaid: true
 ---
+
+# What is BatchNorm?
+It is a way to perform [Regularization](https://csh970605.github.io/posts/Regularization/)
