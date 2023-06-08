@@ -19,13 +19,13 @@ If weights have too big values, the function will be made like:
 
 # Types of regularization
 
-+ [L2 Regularization]()
++ [L2 Regularization](https://csh970605.github.io/posts/L2_Regularization/)
 
-+ [Data Augmentation]()
++ [Data Augmentation](https://csh970605.github.io/posts/Data_Augmentation/)
 
-+ [Dropout]()
++ [Dropout](https://csh970605.github.io/posts/Dropout/)
 
-+ [BatchNorm]()
++ [BatchNorm](https://csh970605.github.io/posts/BatchNorm/)
 
 <br><br>
 <br><br>
