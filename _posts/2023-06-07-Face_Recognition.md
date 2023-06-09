@@ -2,7 +2,7 @@
 title: Face-Recognition
 author: SeHoon
 date: 2023-06-07 16:32:00 +0900
-categories: [Vision Machine Learning, VML_Introduction]
+categories: [Vision Machine Learning, VML_Theory]
 tags: [machine learning, python]
 math: true
 mermaid: true
