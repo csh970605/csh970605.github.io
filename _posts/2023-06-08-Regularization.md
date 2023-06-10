@@ -25,6 +25,8 @@ If weights have too big values, the function will be made like:
 
 + [Dropout](https://csh970605.github.io/posts/Dropout/)
 
++ [DropBlock](https://csh970605.github.io/posts/DropBlock/)
+
 + [BatchNorm](https://csh970605.github.io/posts/BatchNorm/)
 
 <br><br>
