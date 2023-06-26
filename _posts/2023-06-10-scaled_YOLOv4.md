@@ -22,11 +22,17 @@ Then, let's see the structure of scaled-YOLOv4.
 
 + Backbone : CSPDarknet53 with no computation of down-sampling convolution for cross-stage process. And scaled-YOLOv4 is separated YOLOv4-tiny and YOLOv4-large
 
-    + YOLOv4-tiny : CSPOSANet with PCB architecture to form the backbone of YOLOv4.
+    + YOLOv4-tiny : CSPOSANet with PCB architecture to form the backbone of YOLOv4.<br>
+
+        where <br>
+        b = channel of base layer.<br>
+        k = numbers of layer.
+
 
     <center>
     <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/c1aa1824-f510-4290-8103-128ce4f1e932" width=500>
     </center><br><br>
+    
 
     + YOLOv4-large : A fully CSP-ized model YOLOv4-P5 and scaling it up to YOLOv4-P6 and YOLOv4-P7.<br>
     YOLOv4-p6 reaches real-time performance at 30 FPS video when the width scaling factor is equal to 1.<br>
