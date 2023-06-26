@@ -23,14 +23,15 @@ Then, let's see the structure of scaled-YOLOv4.
 + Backbone : CSPDarknet53 with no computation of down-sampling convolution for cross-stage process. And scaled-YOLOv4 is separated YOLOv4-tiny and YOLOv4-large
 
     + YOLOv4-tiny : CSPOSANet with PCB architecture to form the backbone of YOLOv4.<br>
-
-        where <br>
-        b = channel of base layer.<br>
-        k = numbers of layer.
-
+        To make YOLOv4-tiny compute as low as possible then $O(whkb^2)$, it performs model scaling by :<br>
 
     <center>
-    <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/c1aa1824-f510-4290-8103-128ce4f1e932" width=500>
+    <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/c1aa1824-f510-4290-8103-128ce4f1e932" width=500><br>
+    computational block of YOLOv4-tiny where<br> 
+    b = channel of base layer.<br>
+    k = numbers of layer.<br>
+    g = growth rate.
+
     </center><br><br>
     
 
