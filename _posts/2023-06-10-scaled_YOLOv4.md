@@ -25,14 +25,17 @@ Then, let's see the structure of scaled-YOLOv4.
     + YOLOv4-tiny : CSPOSANet with PCB architecture to form the backbone of YOLOv4.<br>
         And also to make YOLOv4-tiny compute as low as possible then $O(whkb^2)$, it performs model scaling by :<br>
 
-    <center>
-    <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/c1aa1824-f510-4290-8103-128ce4f1e932" width=500><br>
-    computational block of YOLOv4-tiny where<br> 
-    b = channel of base layer.<br>
-    k = numbers of layer.<br>
-    g = growth rate.
+        <center>
+        <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/c1aa1824-f510-4290-8103-128ce4f1e932" width=500><br>
+        computational block of YOLOv4-tiny where<br> 
+        </center><br>
+        b = channel of base layer.<br>
+        k = numbers of layer.<br>
+        g = growth rate which is the number of filters used in each convolutional layer.
 
-    </center><br><br>
+        <br><br>
+
+    
     
 
     + YOLOv4-large : A fully CSP-ized model YOLOv4-P5 and scaling it up to YOLOv4-P6 and YOLOv4-P7.<br>
