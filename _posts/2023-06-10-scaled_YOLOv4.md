@@ -38,6 +38,16 @@ Then, let's see the structure of scaled-YOLOv4.
     
     
 
+
+
+
+
++ Neck : Use CSP-ize the PAN architecture in YOLOv4((a) in image below) and 2 reversed CSP dark layers((b) in image below). Unlike the original SPP module, in scaled-YOLOv4, SPP module is inserted in the middle position of the first computation list group of the CSPPAN.
+
+    <center>
+    <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/b6c7c8de-9cd7-440d-b63a-0c5848096f7d" width=500>
+    </center><br><br>
+
     + YOLOv4-large : A fully CSP-ized model YOLOv4-P5 and scaling it up to YOLOv4-P6 and YOLOv4-P7.<br>
     YOLOv4-p6 reaches real-time performance at 30 FPS video when the width scaling factor is equal to 1.<br>
     YOLOv4-P7 reaches real-time performance at 16 FPS video when the width scaling factor is equal to 1.25.
@@ -50,14 +60,7 @@ Then, let's see the structure of scaled-YOLOv4.
 
     + BOS for backbone :[CSP](https://csh970605.github.io/posts/CSP/), MiWRC
 
-
-
-+ Neck : Use CSP-ize the PAN architecture in YOLOv4((a) in image below) and 2 reversed CSP dark layers((b) in image below). Unlike the original SPP module, in scaled-YOLOv4, SPP module is inserted in the middle position of the first computation list group of the CSPPAN.
-
-<center>
-<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/b6c7c8de-9cd7-440d-b63a-0c5848096f7d" width=500>
-</center><br><br>
-
+<br><br><br><br>
 
 
 + Head : [YOLOv3](https://csh970605.github.io/posts/YOLOv3/)
