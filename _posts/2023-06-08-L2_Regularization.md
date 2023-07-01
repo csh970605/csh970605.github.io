@@ -18,4 +18,4 @@ L2 Regularization adds the absolute value of the weight to the cost function:
 
 $Cost = \frac{1}{n} \Sigma_{i=1}^{n}(L(y_{i}, \hat{y_{i}}) + \frac{\lambda}{2}|w|^{2})$
 </font><br>
-where $L(y_{i}, \hat{y_{i}})$ : Existing cost function.
+where $L(y_{i}, \hat{y_{i}})$ : Existing [cost function](https://csh970605.github.io/posts/Cost_function/).
