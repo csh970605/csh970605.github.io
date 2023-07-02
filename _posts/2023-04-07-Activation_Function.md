@@ -100,11 +100,13 @@ Mish avoids saturation due to capping because the graph tends towards positive i
 <font size=4>
 
 $\phi(x)\ =\ xtanh(softplus(x))\ =\ xtanh(ln(1+e^{x}))$
+</font>
+</center>
 <br><br>
 
+<center>
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/de351852-b52f-437e-b1dd-fdd52d2e1379" width=400>
 </center><br><br>
-</font>
 
 ## **SiLU Activation**
 ---
