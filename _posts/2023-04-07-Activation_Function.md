@@ -117,7 +117,9 @@ Mish avoids saturation due to capping because the graph tends towards positive i
 
 $\phi(x)\ =\ x*\theta(x)$ where $\theta(x)$ is the logistic sigmoid.
 <br><br>
+</font>
+
+<center>
 
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/774ab84d-1f45-49da-8d95-82441f4fa4da" width=400>
 </center><br><br>
-</font>
