@@ -106,28 +106,12 @@ $\phi(x)\ =\ xtanh(softplus(x))\ =\ xtanh(ln(1+e^{x}))$
 </center><br><br>
 </font>
 
-## **Mish Activation**
----
-<br>
-Mish avoids saturation due to capping because the graph tends towards positive inifity. Also it can decrease overffiting and strong regularation may appear because of bounded below.<br><br>
-<center>
-<font size=4>
-
-$\phi(x)\ =\ xtanh(softplus(x))\ =\ xtanh(ln(1+e^{x}))$
-<br><br>
-
-<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/de351852-b52f-437e-b1dd-fdd52d2e1379" width=400>
-
-</center><br><br>
-</font>
-
 ## **SiLU Activation**
 ---
 <br>
 Mish avoids saturation due to capping because the graph tends towards positive inifity. Also it can decrease overffiting and strong regularation may appear because of bounded below.<br><br>
 <center>
 <font size=4>
-</center>
 
 $\phi(x)\ =\ x*\theta(x)$ where $\theta(x)$ is the logistic sigmoid.
 <br><br>
