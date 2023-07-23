@@ -16,6 +16,7 @@ Cost function is a function that needs to find the maximum or minimum value in a
 
 # Types of cost function
 
+
 + MSE(Mean Squared Error) : $\frac{1}{N} \Sigma_{i=1}^{N}(y_{i}\ -\ \hat{y_{i}})^{2}$<br>
 
 
