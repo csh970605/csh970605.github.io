@@ -2,7 +2,7 @@
 title: Barcode & QR Reading
 author: SeHoon
 date: 2023-06-01 18:11:00 +0900
-categories: [Vision Machine Learning, VML_Introduction]
+categories: [Vision Machine Learning, OpenCV]
 tags: [machine learning, python]
 math: true
 mermaid: true
