@@ -29,7 +29,7 @@ Before starting steps, let's assume that we have a data set like image.<br>
 <img src="https://user-images.githubusercontent.com/28240052/229355657-a9928c9b-49b4-4bad-b0bd-b8c2d1da8873.png" width=500>
 </center>
 <br>
-Green dot is a data that we want to predict.<br>
+Gray dot is a data that we want to predict.<br>
 Then we will predict the category between "Walks" and "Drives" by probability:<br>
 
 + Walks probability:<br>
