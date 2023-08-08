@@ -24,3 +24,15 @@ And also applies [Living Penalty](https://csh970605.github.io/posts/Living_Penal
 # Algorithm of Deep Reinforcement Learning
 
 + [Twin Delayed Deep Deterministic Policy Gradient(TD3)](https://csh970605.github.io/posts/TD3/)
+
+<br><br><br><br>
+
+## Implementations
+---
+<br>
+
++ [Stock Prediction with TD3](https://github.com/csh970605/Complete-Guide-on-TensorFlow-2.0/tree/main/Section%208)
+
++ [Auto walking](https://github.com/csh970605/Deep-Reinforcement-Learning-2.0)
+
++ [Self driving car](https://github.com/csh970605/Self_Driving_Car)
