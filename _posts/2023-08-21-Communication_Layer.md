@@ -8,7 +8,7 @@ math: true
 mermaid: true
 ---
 
-# Communication Layer
+# What is Communication Layer?
 
 Communication Layer is one of the composition of [ROS](https://csh970605.github.io/posts/ROS/).<br>
 
