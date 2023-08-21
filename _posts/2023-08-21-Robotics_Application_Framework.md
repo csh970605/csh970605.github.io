@@ -8,7 +8,7 @@ math: true
 mermaid: true
 ---
 
-# Robotics Application Framework
+# What is Robotics Application Framework?
 
 Robotics Application Framework is one of the composition of [ROS](https://csh970605.github.io/posts/ROS/).<br>
 
