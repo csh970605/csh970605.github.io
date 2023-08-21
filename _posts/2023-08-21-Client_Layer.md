@@ -12,7 +12,7 @@ mermaid: true
 
 Client Layer is one of the composition of [ROS](https://csh970605.github.io/posts/ROS/).<br>
 
-Client Layer supports multiple programming language.
+Client Layer is used to support multiple programming language.
 <br><br><br><br>
 
 ## Compositions of Client Layer
