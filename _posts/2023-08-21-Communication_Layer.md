@@ -9,3 +9,7 @@ mermaid: true
 ---
 
 # Communication Layer
+
+Communication Layer is one of the composition of [ROS](https://csh970605.github.io/posts/ROS/).<br>
+
+Communication Layer is used for data communication.
