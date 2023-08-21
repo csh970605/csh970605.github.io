@@ -8,4 +8,17 @@ math: true
 mermaid: true
 ---
 
-# Simulation
+# What is Simulation?
+
+Simulation is one of the composition of [ROS](https://csh970605.github.io/posts/ROS/).<br>
+
+Simulation is used to control a robot in a virtual space.
+
+<br><br><br><br>
+
+## Compositions of Simulation
+---
+
++ gazebo ros pkgs
+
++ stage ros
