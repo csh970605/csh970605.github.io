@@ -8,7 +8,7 @@ math: true
 mermaid: true
 ---
 
-# Robotics Application
+# What is Robotics Application?
 
 
 Robotics Application is one of the composition of [ROS](https://csh970605.github.io/posts/ROS/).<br>
