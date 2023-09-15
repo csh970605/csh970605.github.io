@@ -3,7 +3,7 @@ title: Gaussian Distribution
 author: SeHoon
 date: 2023-09-15 10:42:30 +0900
 categories: [Mathmatics, Statistics]
-tags: [robotics]
+tags: [mathmatics, statistics]
 math: true
 mermaid: true
 ---
