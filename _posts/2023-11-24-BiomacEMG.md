@@ -53,7 +53,74 @@ the wrist.<br>
 
 + Musculus extensor carpi radialis, which is responsible for extension and radial deviation of the wrist.<br>
 
-You can see which muscles are used in the pictures below:
+You can see which muscles are used at the pictures below:
 <center>
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/39c46a76-ef03-45ee-8885-10b1a8f93e85" width="330" height="300"><img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/a54f1c86-ba1e-4ce2-ae9d-18bc0cc83bef" width="350" height="300">
 </center>
+<br><br>
+<br><br>
+
+# Steps of classifing gestures
+
+1. Feature extraction<br>
+    In this article, it extracted 9 features which are:
+
+    + Standard deviation
+
+    + Minimum
+
+    + Maximum
+
+    + Crossing the zero axis
+
+    + Average change in amplitude
+
+    + The first amplitude jump
+
+    + Mean absolute value
+
+    + Wave length
+
+    + Wilson amplitude
+
+    Each methods will be explaned below.
+
+2. [PCA](https://csh970605.github.io/posts/PCA/)
+
+3. [Random Forest Classification](https://csh970605.github.io/posts/Random_Forest_Classification/)
+
+4. Pareto Optimization
+
+<br><br>
+
+## Standard Deviation
+Standard deviation is a measure of absolute variability that shows how individual
+observations are grouped with respect to the mean.<br>
+The equation of Standard Deviation is:
+<center>
+
+$ \sigma = \sqrt{\frac{\Sigma^{N}_{i=1}(x_{i}-\mu)^2}{N}} $
+</center>
+
+where $ \sigma$ is the standard deviation of the EMG signal, $ \mu$ is the average of the EMG signal, $ x$ is the value of the EMG signal at the $ i $-th time instant $ N$ is the number of measurements in the EMG signal.
+<br><br>
+
+## Minimum 
+To choose the best discrimation of the gesture, the minimum value operator which is obtained by searching for the minimum value in the EMG signal.
+The equation of minimum is:
+<center>
+
+$ X_{min}\ = min_{1 \leq I \leq N}(x_{i})$
+</center>
+<br><br>
+
+## Maximum
+To choose the best discrimation of the gesture, the maximum value operator which is obtained by searching for the maximum value in the EMG signal.
+The equation of maximum is:
+<center>
+
+$ X_{max}\ = max_{1 \leq I \leq N}(x_{i})$
+</center>
+<br><br>
+
+## Crossing the zero axis
