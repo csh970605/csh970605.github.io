@@ -54,6 +54,7 @@ the wrist.<br>
 + Musculus extensor carpi radialis, which is responsible for extension and radial deviation of the wrist.<br>
 
 You can see which muscles are used in the picture below:
+
 <center>
 
 ![손사진](https://github.com/csh970605/csh970605.github.io/assets/28240052/39c46a76-ef03-45ee-8885-10b1a8f93e85){: width="50%" height="50%"}
