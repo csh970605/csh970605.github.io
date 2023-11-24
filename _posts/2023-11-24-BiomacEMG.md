@@ -65,7 +65,7 @@ You can see which muscles are used at the pictures below:
 1. Feature extraction<br>
     In this article, it extracted 9 features which are:
 
-    + Standard deviation
+    + [Standard deviation](https://csh970605.github.io/posts/BiomacEMG/#standard-deviation)
 
     + Minimum
 
@@ -124,3 +124,25 @@ $ X_{max}\ = max_{1 \leq I \leq N}(x_{i})$
 <br><br>
 
 ## Crossing the zero axis
+
+<br><br>
+
+## Average change in amplitude
+
+<br><br>
+
+## The first amplitude jump
+
+<br><br>
+
+## Mean absolute value
+
+<br><br>
+
+## Wave length
+
+<br><br>
+
+## Wilson amplitude
+
+<br><br>
