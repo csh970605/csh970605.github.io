@@ -61,4 +61,7 @@ You can see which muscles are used in the picture below:
 
 </center>
 
+<center>
+
 ![팔](https://github.com/csh970605/csh970605.github.io/assets/28240052/a54f1c86-ba1e-4ce2-ae9d-18bc0cc83bef){: width="50%" height="50%"}
+</center>
