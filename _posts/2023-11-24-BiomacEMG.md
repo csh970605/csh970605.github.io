@@ -13,6 +13,10 @@ mermaid: true
 BiomacEMG is a concept that is suggested by [Article](https://www.mdpi.com/2076-3417/13/9/5744).
 <br>
 In the article, biomacEMG classifies 7 handgestures with Machine Learning. <br>
+The gestures are:
+<center>
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/f644544b-37d5-451e-9e22-cc6a294f813d" width=300 height=500>
+</center>
 Then, let's see how it works.
 <br><br><br><br>
 
@@ -85,9 +89,11 @@ You can see which muscles are used at the pictures below:
 
     You can see how the methods are used by clicking the link on the method.
 
-2. [PCA](https://csh970605.github.io/posts/PCA/)
+2. [PCA](https://csh970605.github.io/posts/PCA/)<br>
+    PCA showed that gesture classes overlap strongly in the feature space.
 
-3. [Random Forest Classification](https://csh970605.github.io/posts/Random_Forest_Classification/)
+3. [Random Forest Classification](https://csh970605.github.io/posts/Random_Forest_Classification/)<br>
+    Since the signal data is non-linear, They choose Random Forest Classification which is non-linear classification method.
 
 4. Pareto Optimization
 
@@ -158,6 +164,7 @@ where x = amplitude value
 <br><br>
 
 ## The first amplitude jump
+Literally, the first amplitude jump means the first major change or increase that occurs at a specific point in time.
 
 <br><br>
 
@@ -195,6 +202,7 @@ usually chosen between 10 and 100 mV, which depends on the gain setting of the i
 <center>
 
 $WAMP \ = \ \Sigma^{N-1}_{i=1}f(\left | x_{i} \ - \ x_{i+1}  \right |)$<br>
+
 $f(x) \ = \ \left\{\begin{matrix}
 1 \ \ \ if(x \geq y)
 \\ 
@@ -202,4 +210,38 @@ $f(x) \ = \ \left\{\begin{matrix}
 \end{matrix}\right.$
 </center>
 
-<br><br>
+<br><br><br><br>
+
+# Result
+Each contraction of the arm muscles during one of the seven movements was recorded
+by 8 EMG sensors. The result of each methods:
+<center>
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/07a4a9f4-a672-4e7c-876c-b6009f5621cd" width=500 height=500>
+</center>
+And also, the minimum, mean, and maximum values of the gesture features are summarized in table below:
+
+<center>
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/50c294f7-b838-41c4-a264-49c64dc4b243">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/0760a9b8-8b9f-4693-958b-505be607ff06">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/5942d5ee-2690-4b8c-ad01-8414deff5a22">
+</center>
+
+Through PCA, distinguishable data consisting of P1, P2, and P3 can be obtained which is:
+<center>
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/4925d84b-d3fd-464a-a043-0d2226cef647" width=600 height=500>
+
+</center>
+<br>
+
+At the end, we can see the classification result with random forest classifier.
+<center>
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/566b56d8-4683-459e-8baf-0a3ba32a9d5b">
+</center>
+
+<br><br><br><br>
+
+# Opinion
+
+At the article, they said the accuracy is 92% but, by simple calculation, the accuracy must be 84%.<br>
+Unlike other studies that used deep learning such as RNN or CNN, they just use machine learning.<br>
+However, it must be the fastest way to classify the handgesture. I also want to know the performance of the other hand gestures to be used in real life.
