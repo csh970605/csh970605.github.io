@@ -67,23 +67,23 @@ You can see which muscles are used at the pictures below:
 
     + [Standard deviation](https://csh970605.github.io/posts/BiomacEMG/#standard-deviation)
 
-    + Minimum
+    + [Minimum](https://csh970605.github.io/posts/BiomacEMG/#minimum)
 
-    + Maximum
+    + [Maximum](https://csh970605.github.io/posts/BiomacEMG/#maximum)
 
-    + Crossing the zero axis
+    + [Crossing the zero axis](https://csh970605.github.io/posts/BiomacEMG/#crossing-the-zero-axis)
 
-    + Average change in amplitude
+    + [Average change in amplitude](https://csh970605.github.io/posts/BiomacEMG/#average-change-in-amplitude)
 
-    + The first amplitude jump
+    + [The first amplitude jump](https://csh970605.github.io/posts/BiomacEMG/#the-first-amplitude-jump)
 
-    + Mean absolute value
+    + [Mean absolute value](https://csh970605.github.io/posts/BiomacEMG/#mean-absolute-value)
 
-    + Wave length
+    + [Wave length](https://csh970605.github.io/posts/BiomacEMG/#wave-length)
 
-    + Wilson amplitude
+    + [Wilson amplitude](https://csh970605.github.io/posts/BiomacEMG/#wilson-amplitude)
 
-    Each methods will be explaned below.
+    You can see how the methods are used by clicking the link on the method.
 
 2. [PCA](https://csh970605.github.io/posts/PCA/)
 
