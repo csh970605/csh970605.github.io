@@ -95,7 +95,11 @@ You can see which muscles are used at the pictures below:
 3. [Random Forest Classification](https://csh970605.github.io/posts/Random_Forest_Classification/)<br>
     Since the signal data is non-linear, They choose Random Forest Classification which is non-linear classification method.
 
-4. Pareto Optimization
+4. [Pareto Optimization](https://csh970605.github.io/posts/Pareto_Front/)<br>
+    In the context of EMG feature selection, they use Pareto optimization to identify the optimal subset of EMG features that best represent the underlying signal while minimizing the number of features required for classification. <br>
+    To do this, a Pareto front is first constructed by generating multiple solutions that represent different trade-offs between performance and feature number. <br>
+    Each solution is evaluated on the basis of its classification accuracy and the number of features it employs. <br>
+    The set of all solutions that cannot be improved in one objective without sacrificing performance in another objective is called the Pareto front.
 
 <br><br>
 
@@ -217,14 +221,15 @@ Each contraction of the arm muscles during one of the seven movements was record
 by 8 EMG sensors. The result of each methods:
 <center>
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/07a4a9f4-a672-4e7c-876c-b6009f5621cd" width=500 height=500>
-</center>
+</center><br>
+
 And also, the minimum, mean, and maximum values of the gesture features are summarized in table below:
 
 <center>
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/50c294f7-b838-41c4-a264-49c64dc4b243">
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/0760a9b8-8b9f-4693-958b-505be607ff06">
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/5942d5ee-2690-4b8c-ad01-8414deff5a22">
-</center>
+</center><br>
 
 Through PCA, distinguishable data consisting of P1, P2, and P3 can be obtained which is:
 <center>
