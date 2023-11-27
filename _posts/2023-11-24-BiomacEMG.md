@@ -125,24 +125,81 @@ $ X_{max}\ = max_{1 \leq I \leq N}(x_{i})$
 
 ## Crossing the zero axis
 
+Crossing the zero axis is a convenient and fast way to estimate the frequency of a
+sampled sequence of data.<br>
+A zero crossing is the point where the sign of a function inverts
+into opposite.<br>
+It is a signal evaluation indicator often employed in electronics, mathematics, acoustics, and
+image processing.<br>
+The equation of zero crossing is:
+<center>
+
+$ s(x,y) \ = \ \left\{\begin{matrix}
+1 \ \ \ if(xy) < 0
+\\ 
+0 \ \ \ if(xy) > 0
+\end{matrix}\right.$
+
+$ZC(V) = \Sigma^{n-1}_{i=1}s(V_i, V_{i+1})$
+<br>
+where ZC is the zero crossing value, x and y are the EMG signal values.
+</center>
 <br><br>
 
 ## Average change in amplitude
+The average amplitude is the average magnitude of all instantaneous values in the
+EMG time signal.<br>
+The equation of average change is:
+<center>
 
+$i_{Avg} \ = \ \frac{1}{N}\Sigma^{N}_{i=1}x_i$<br>
+where x = amplitude value
+</center>
 <br><br>
 
 ## The first amplitude jump
 
 <br><br>
 
-## Mean absolute value
+## Mean absolute value(MAV)
+Mean absolute average deviation, also known as mean aboslute average error, is a
+measure of the accuracy of a forecasting method, such as trend estimation, and is also used
+as a loss function.<br>
+MAV is a method to determine and evaluate the level of muslce contraction.<br>
+The equation of average change is:
+<center>
+
+$MAV \ = \ \frac{1}{N}\left | x_{i} \right |$
+</center>
 
 <br><br>
 
 ## Wave length
+Wave length is intuitively the total length of the waveform in a segment.<br>
+The resulting waveform length count values provide a measure of the amplitude,
+frequency, and duration of the waveform.<br>
+Te equation of average change is:
+<center>
 
+$WL = \Sigma^{N-1}_{i=1}\left | x_{i+1} \ - \ x_{i}  \right |$
+</center>
 <br><br>
 
-## Wilson amplitude
+## Wilson amplitude(WAMP)
+WAMP is the number of times the difference between the
+amplitudes of the sEMG signal of two adjacent segments exceeds a predetermined threshold
+to reduce the effects of noise.<br>
+WAMP is related to the level of motor unit action
+potential (MUAP) and muscle contraction. A suitable value for the threshold parameter is
+usually chosen between 10 and 100 mV, which depends on the gain setting of the instrument.<br>
+<center>
+
+$WAMP \ = \ \Sigma^{N-1}_{i=1}f(\left | x_{i} \ - \ x_{i+1}  \right |)$<br>
+$f(x) \ = \ \left\{\begin{matrix}
+1 \ \ \ if(x \geq y)
+\\ 
+0 \ \ \ otherwise
+\end{matrix}\right.$
+</center>
 
 <br><br>
