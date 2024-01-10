@@ -2,6 +2,9 @@
 
 source "https://rubygems.org"
 
+# test
+ruby '3.2'
+
 gemspec
 
 group :test do
