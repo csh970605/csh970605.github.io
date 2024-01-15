@@ -1,7 +1,7 @@
 ---
 title: Mobile ALOHA
 author: SeHoon
-date: 2024-01-15 10:42:30 +0900
+date: 2024-01-12 10:42:30 +0900
 categories: [Papers, DeepLearning]
 tags: [Papers, DeepLearning, ImitationLearning, AMRLabs]
 math: true
@@ -10,7 +10,7 @@ mermaid: true
 
 # Mobile ALOHA
 
-Mobile ALOHA is a low cost and whole body teleoperation system for data collection. It augments the [ALOHA]() system for data collection.<br>
+Mobile ALOHA is a low cost and whole body teleoperation system for data collection. It augments the [ALOHA](https://csh970605.github.io/posts/ALOHA/) system for data collection.<br>
 
 With the data collected by Mobile ALOHA perform supervised behavior cloning and find co-training with existing static ALOHA datasets to booost performance on mobile manipulation tasks.<br>
 
