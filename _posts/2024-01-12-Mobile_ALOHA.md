@@ -56,7 +56,8 @@ For "Whole-body teleoperation", they selected a teleoperation system that allows
 Finally, they soved the "Untetherd" problem by attaching the battery and laptop on the robot like:
 <center>
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/0313ac9c-c735-4d58-b30f-5d5a9684625e", width=500, height=500><br><br><br><br>
-</center><br><br>
+</center><br><br><br><br>
+
 
 # How They Did Co-training with Static ALOHA Data?
 
@@ -86,4 +87,58 @@ where :<br>
 + $D_{static}$ : static ALOHA data<br>
  
 The Formula means:
-+ The sum of the expected values of $L(a^{i}_{arms},[0,0], \pi(o^{i}))$ for o, a, and $\pi^{m}(o^{i})$ sampled from $D^{m}_{mobile}$ and the expected values of L2 for a2, b2 sampled from D2
++ The sum of the expected values of $L(a^{i}_{arms},[0,0], \pi^{m}(o^{i}))$ for $o^{i}$, $a^{i}_{arms}$, and $a^{i}_{arms}$ sampled from $D^{m}_{mobile}$ and the expected values of $L(a^{i}_{arms},[0,0], \pi^{m}(o^{i}))$ for $o^{i}$, $a^{i}_{arms}$ sampled from $D_{static}$.<br>
+
+
+
+They sample with equal probability from the $D_{static}$ and the $D^{m}_{mobile}$ and also, they set the batch size to be 16.<br>
+Since $D_{static}$ datapoints have no mobile base actions, they added zero-pad to the action labels to make two datasets have same dimension.<br>
+Also, they ignored the front camera in the $D_{static}$ data so that both datasets have 3 cameras.<br>
+Finally, They normalized every action absed on the statistics of the $D^{m}_{mobile}$ alone.
+<br>
+
+In their experiments, they combine co-training recipe with multiple base imitation learning approaches including [ACT](), [Diffusion Policy](), and [VINN]().
+
+<br><br><br><br>
+
+# Tasks
+
+They selected 6 tasks:
+
++ [Wipe Wine]()<br>
+
++ [Cook Shrimp]()<br>
+
++ [Wash Pan]()<br>
+
++ [Use Cabinet]()<br>
+
++ [Take Elevator]()<br>
+
++ [Push Chairs]()<br>
+
+<br><br>
+
+## Wipe Wine
+
+<br><br>
+
+## Cook Shrimp
+
+<br><br>
+
+## Wash Pan
+
+<br><br>
+
+## Use Cabinet
+
+<br><br>
+
+## Take Elevator
+
+<br><br>
+
+## Push Chairs
+
+<br><br>
