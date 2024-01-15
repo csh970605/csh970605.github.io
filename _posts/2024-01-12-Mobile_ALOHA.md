@@ -117,6 +117,8 @@ They selected 6 tasks:
 
 + [Push Chairs](https://csh970605.github.io/posts/Mobile_ALOHA/#push-chairs)<br>
 
++ [High Five]()<br>
+
 <br><br>
 
 ## Wipe Wine
@@ -126,15 +128,28 @@ Then turns around and approaches the kitchen island, picks up the wine glass(ran
 Puts down the wine glass on the table(#3).<br>
 Each demo has 1300 steps or 26 seconds.<br>
 <center>
-<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/e21beb8c-6c8b-4e8b-98b3-9ec28be86fb1">
-<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/ca1742dd-7949-404f-9095-5fd89f66d9fe">
-<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/12ecb523-fb27-46e3-abb4-8ac912f1a077">
-<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/60f2f8f7-0cf7-4122-94c8-670b47efc6a5">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/091e6d7b-38ff-49df-bbf3-f2070f8661f6">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/459da415-bab6-4511-9562-0df94a148104">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/a52b6ea6-3df5-4125-ba1e-8bfd3b4b9a0e">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/1d0fedc7-8a4f-4349-9261-28fecdbd2041">
 </center>
 
 <br><br>
 
 ## Cook Shrimp
+The robot is randomized up to 5cm and all objects up to 2cm(init).<br>
+The right gripper first pours oil into the hot pan(#1).<br>
+After that, pours raw shrimp into the hot pan(#2).<br>
+With left gripper lifting the pan at an angle, the right gripper grasps the spatula and flips the shrimp(#3).<br>
+The robot then turns around and pours the shrimp into an empty bowl(#4).<br>
+Each demo has 3750 steps or 75 seconds.<br>
+<center>
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/b2f47b1c-cd01-4536-9267-d69fece67075">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/06c29bbe-4e71-4343-a615-a0cb368e66b8">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/f6d5a8ed-fa87-406c-ba2f-a633b56a4ccd">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/780c6c63-3731-4a00-a071-e885d13231f9">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/1e2ab957-a0d5-4f97-a18c-b2bbe443c499">
+</center>
 
 <br><br>
 
@@ -153,3 +168,5 @@ Each demo has 1300 steps or 26 seconds.<br>
 ## Push Chairs
 
 <br><br>
+
+## High Five
