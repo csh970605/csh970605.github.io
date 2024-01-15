@@ -240,3 +240,4 @@ And you can see all tasks:
 
 It is a very clever idea that can train robots by teleoperation.<br>
 Because anyone who don't have any knowledge about robots can train exact motions by teleoperation.<br>
+And also, mobile ALOHA covers the disadvantage of traditional robot arm manipulation algorithm such as KDL or something.
