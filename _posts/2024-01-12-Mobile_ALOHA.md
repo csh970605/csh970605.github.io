@@ -120,6 +120,17 @@ They selected 6 tasks:
 <br><br>
 
 ## Wipe Wine
+The robot base is initialized within a square of 1.5m x 1.5m with yaw up to 30°(Init).<br>
+It first navigates to the sink and picks up the towel hainging on the faucet(#1).<br>
+Then turns around and approaches the kitchen island, picks up the wine glass(randomized in 30cm x 30cm), wipes the spilled wine(#2).<br>
+Puts down the wine glass on the table(#3).<br>
+Each demo has 1300 steps or 26 seconds.<br>
+<center>
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/e21beb8c-6c8b-4e8b-98b3-9ec28be86fb1">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/ca1742dd-7949-404f-9095-5fd89f66d9fe">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/12ecb523-fb27-46e3-abb4-8ac912f1a077">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/60f2f8f7-0cf7-4122-94c8-670b47efc6a5">
+</center>
 
 <br><br>
 
