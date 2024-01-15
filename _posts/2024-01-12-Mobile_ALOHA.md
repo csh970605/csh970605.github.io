@@ -183,7 +183,7 @@ And you can see all tasks:
 + The robot backs up and closes both cabinet doors(#4).<br>
 + Each demo has 1500 steps or 30 seoncds.<br>
 <center>
-<img src="ttps://github.com/csh970605/csh970605.github.io/assets/28240052/92cc4b26-5c19-4117-9beb-bc12ecfc5342">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/92cc4b26-5c19-4117-9beb-bc12ecfc5342">
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/00ef7d9e-2ff0-4550-a404-b6af06f72081">
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/54069880-5fb2-4a3a-85ab-ddfd9006e3d5">
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/39ab347c-1dad-471c-a899-ba02df2d70b4">
@@ -229,3 +229,14 @@ And you can see all tasks:
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/54dd2d6c-31eb-41ef-8eb3-56fb641e9ca1">
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/9d11a79d-4979-42ab-93bd-538def4c0ad4">
 </center>
+
+<br><br><br><br>
+
+# Result
+
+<center>
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/12f366bf-881d-43b3-9c11-0036dfd8e2e4">
+</center>
+
+It is a very clever idea that can train robots by teleoperation.<br>
+Because anyone who don't have any knowledge about robots can train exact motions by teleoperation.<br>
