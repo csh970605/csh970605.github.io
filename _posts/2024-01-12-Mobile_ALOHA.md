@@ -105,17 +105,17 @@ In their experiments, they combine co-training recipe with multiple base imitati
 
 They selected 6 tasks:
 
-+ [Wipe Wine]()<br>
++ [Wipe Wine](https://csh970605.github.io/posts/Mobile_ALOHA/#wipe-wine)<br>
 
-+ [Cook Shrimp]()<br>
++ [Cook Shrimp](https://csh970605.github.io/posts/Mobile_ALOHA/#cook-shrimp)<br>
 
-+ [Wash Pan]()<br>
++ [Wash Pan](https://csh970605.github.io/posts/Mobile_ALOHA/#wash-pan)<br>
 
-+ [Use Cabinet]()<br>
++ [Use Cabinet](https://csh970605.github.io/posts/Mobile_ALOHA/#use-cabinet)<br>
 
-+ [Take Elevator]()<br>
++ [Take Elevator](https://csh970605.github.io/posts/Mobile_ALOHA/#take-elevator)<br>
 
-+ [Push Chairs]()<br>
++ [Push Chairs](https://csh970605.github.io/posts/Mobile_ALOHA/#push-chairs)<br>
 
 <br><br>
 
