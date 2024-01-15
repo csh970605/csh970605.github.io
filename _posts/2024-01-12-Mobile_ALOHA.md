@@ -117,16 +117,24 @@ They selected 6 tasks:
 
 + [Push Chairs](https://csh970605.github.io/posts/Mobile_ALOHA/#push-chairs)<br>
 
-+ [High Five]()<br>
++ [High Five](https://csh970605.github.io/posts/Mobile_ALOHA/#high-five)<br>
+
+<br><br>
+And you can see all tasks:
+
+<center>
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/d84b9dda-807c-49fd-91ed-b43d7a87117c">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/05d7aedb-0e61-464c-bfff-9daeb4c3cdbc">
+</center>
 
 <br><br>
 
 ## Wipe Wine
-The robot base is initialized within a square of 1.5m x 1.5m with yaw up to 30°(Init).<br>
-It first navigates to the sink and picks up the towel hainging on the faucet(#1).<br>
-Then turns around and approaches the kitchen island, picks up the wine glass(randomized in 30cm x 30cm), wipes the spilled wine(#2).<br>
-Puts down the wine glass on the table(#3).<br>
-Each demo has 1300 steps or 26 seconds.<br>
++ The robot base is initialized within a square of 1.5m x 1.5m with yaw up to 30°(Init).<br>
++ It first navigates to the sink and picks up the towel hainging on the faucet(#1).<br>
++ Turns around and approaches the kitchen island, picks up the wine glass(randomized in 30cm x 30cm), wipes the spilled wine(#2).<br>
++ Puts down the wine glass on the table(#3).<br>
++ Each demo has 1300 steps or 26 seconds.<br>
 <center>
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/091e6d7b-38ff-49df-bbf3-f2070f8661f6">
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/459da415-bab6-4511-9562-0df94a148104">
@@ -137,12 +145,12 @@ Each demo has 1300 steps or 26 seconds.<br>
 <br><br>
 
 ## Cook Shrimp
-The robot is randomized up to 5cm and all objects up to 2cm(init).<br>
-The right gripper first pours oil into the hot pan(#1).<br>
-After that, pours raw shrimp into the hot pan(#2).<br>
-With left gripper lifting the pan at an angle, the right gripper grasps the spatula and flips the shrimp(#3).<br>
-The robot then turns around and pours the shrimp into an empty bowl(#4).<br>
-Each demo has 3750 steps or 75 seconds.<br>
++ The robot is randomized up to 5cm and all objects up to 2cm(init).<br>
++ The right gripper first pours oil into the hot pan(#1).<br>
++ After that, pours raw shrimp into the hot pan(#2).<br>
++ With left gripper lifting the pan at an angle, the right gripper grasps the spatula and flips the shrimp(#3).<br>
++ The robot then turns around and pours the shrimp into an empty bowl(#4).<br>
++ Each demo has 3750 steps or 75 seconds.<br>
 <center>
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/b2f47b1c-cd01-4536-9267-d69fece67075">
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/06c29bbe-4e71-4343-a615-a0cb368e66b8">
@@ -154,19 +162,70 @@ Each demo has 3750 steps or 75 seconds.<br>
 <br><br>
 
 ## Wash Pan
++ The pan randomized up to 10cm with yaw up to $45^{\circ}$.<br>
++ The left gripper grasps the pan(#1).<br>
++ The right gripper opens then closes the faucet with left gripper holding the pan to receive the water(#2).<br>
++ The left gripper then swirls the water inside the pan, pours it out(#3).<br>
++ Each demo has 110 steps or 22 seconds.<br>
+<center>
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/d52a06ca-c072-4733-90b5-200bc730d928">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/ac6c360c-2679-4a59-82fc-bfc0b53dcc22">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/0d86bb1c-7470-4f61-8c73-ea4425bbbc97">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/e0d45fa9-6958-41ba-b042-bfd5a4593ba1">
+</center>
 
 <br><br>
 
 ## Use Cabinet
++ The robot is randomized up to 10cm and pots up to 5cm(init).<br>
++ The robot apporaches the cabinet and grasp both handles, then backs up pulling bot doors open(#1).<br>
++ both arms grasp the handles of the pot, move forward, and place it inside the cabinet(#2).<br>
++ The robot backs up and closes both cabinet doors(#4).<br>
++ Each demo has 1500 steps or 30 seoncds.<br>
+<center>
+<img src="ttps://github.com/csh970605/csh970605.github.io/assets/28240052/92cc4b26-5c19-4117-9beb-bc12ecfc5342">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/00ef7d9e-2ff0-4550-a404-b6af06f72081">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/54069880-5fb2-4a3a-85ab-ddfd9006e3d5">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/39ab347c-1dad-471c-a899-ba02df2d70b4">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/1353c398-8225-4731-b17f-17ad78a292c1">
+</center>
 
 <br><br>
 
 ## Take Elevator
++ The robot starts 15m from the elevator and is raondomized across the 10m wide lobby(init).<br>
++ The robot goes around a column to reach the elevator button(#1).<br>
++ The right gripper presses the button(#2).<br>
++ The robot enters the elevator(#3).<br>
++ Each demo has 2250 steps or 45 seconds.<br>
+<center>
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/1330c6ed-3414-4fdb-ab46-304d7967e948">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/3fadfe0d-a08d-4afc-8630-f035b0f7ec17">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/27e22abd-10b3-4dc8-9760-9fc9dc369f50">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/1c281376-fe4e-46b6-bf30-4695d7c4c0f7">
+</center>
 
 <br><br>
 
 ## Push Chairs
++ The robot's initial position is randomized up to 10cm(init).<br>
++ Demonstration dataset contains pushing in the first 3 chairs(#1, #2, #3).<br>
++ Each demo has 2000 steps or 40 seconds.<br>
+<center>
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/0f8cec80-2619-4f80-8964-c90f05cf0e12">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/92ff0df7-b6b4-4fc9-952c-e2a17c24b8ec">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/3b1f2790-b24f-4347-9acf-a8da944428d7">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/07c61284-8e7b-467f-9d54-f60cd5006457">
+</center>
 
 <br><br>
 
 ## High Five
++ The robot base is initialized next to the kitchen island(init).<br>
++ The robot keeps moving around the kitchen island until a human is in front of it, then high five with the human(#1, #2).<br>
++ Each demo has 2000 steps or 40 seconds.<br>
+<center>
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/36d6836e-d2b7-468a-aadd-a4ecf22da1ba">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/54dd2d6c-31eb-41ef-8eb3-56fb641e9ca1">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/9d11a79d-4979-42ab-93bd-538def4c0ad4">
+</center>
