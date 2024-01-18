@@ -31,7 +31,7 @@ To solve that problem, paper studied the feasibility of extending imitation lear
 They encountered two main factors that hinder the wide adoption of imitation learning for bimanual mobile manipulation while they made Mobile ALOHA.<br>
 
 1. Lack accessible, plug-and-play hardware for whole body teleoperation:<br>
-    - They used additional hardware and calibration to enable teleoperation on the robot platform like:
+    - They used additional hardware and calibration to enable teleoperation on the robot platform like:<br>
 
     <center>
     <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/b8297056-2532-4beb-9f6f-c4e89752898b", width=500, height=500><br><br>
@@ -53,7 +53,7 @@ As a result, they got the following four results:<br>
 
 They choose AgileX Tracer AGV("Tracer") as the mobile base at "Mobile" and "Stable" as you can see above.<br>
 For "Whole-body teleoperation", they selected a teleoperation system that allows simultaneous control of both the base and two arms.<br>
-Finally, they soved the "Untetherd" problem by attaching the battery and laptop on the robot like:
+Finally, they soved the "Untetherd" problem by attaching the battery and laptop on the robot like:<br>
 <center>
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/b8297056-2532-4beb-9f6f-c4e89752898b", width=500, height=500><br><br><br><br>
 </center><br><br><br><br>
