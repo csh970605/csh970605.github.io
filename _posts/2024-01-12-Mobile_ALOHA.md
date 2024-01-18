@@ -55,10 +55,12 @@ As a result, they got the following four results:<br>
 They choose AgileX Tracer AGV("Tracer") as the mobile base at "Mobile" and "Stable" as you can see above.<br>
 For "Whole-body teleoperation", they selected a teleoperation system that allows simultaneous control of both the base and two arms.<br>
 Finally, they soved the "Untetherd" problem by attaching the battery and laptop on the robot like:<br>
+
 <center>
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/b8297056-2532-4beb-9f6f-c4e89752898b", width=500, height=500>
 </center><br><br><br><br>
 
+![image](https://github.com/csh970605/csh970605.github.io/assets/28240052/fc374e66-4111-4acb-81ae-4fe2e56bbb7f)
 
 # How They Did Co-training with Static ALOHA Data?
 
