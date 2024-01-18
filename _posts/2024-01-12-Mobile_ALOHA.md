@@ -34,7 +34,7 @@ They encountered two main factors that hinder the wide adoption of imitation lea
     - They used additional hardware and calibration to enable teleoperation on the robot platform like:<br>
 
     <center>
-    <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/b8297056-2532-4beb-9f6f-c4e89752898b", width="500", height="500">
+    <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/b8297056-2532-4beb-9f6f-c4e89752898b" width="500" height="500">
     </center>
     <br><br>
 
@@ -58,7 +58,7 @@ Finally, they soved the "Untetherd" problem by attaching the battery and laptop 
 
 <center>
 
-<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/b8297056-2532-4beb-9f6f-c4e89752898b", width="500", height="500">
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/b8297056-2532-4beb-9f6f-c4e89752898b" width="500" height="500">
 </center><br><br><br><br>
 
 
