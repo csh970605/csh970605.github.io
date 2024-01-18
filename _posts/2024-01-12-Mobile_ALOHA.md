@@ -34,7 +34,7 @@ They encountered two main factors that hinder the wide adoption of imitation lea
     - They used additional hardware and calibration to enable teleoperation on the robot platform like:
 
     <center>
-    <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/0313ac9c-c735-4d58-b30f-5d5a9684625e", width=500, height=500><br><br>
+    <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/b8297056-2532-4beb-9f6f-c4e89752898b", width=500, height=500><br><br>
     </center>
 
 2. Prior robot learning(ALOHA) works have not demonstrated high-performance bimanual mobile manipulation for complex tasks:<br>
@@ -55,7 +55,7 @@ They choose AgileX Tracer AGV("Tracer") as the mobile base at "Mobile" and "Stab
 For "Whole-body teleoperation", they selected a teleoperation system that allows simultaneous control of both the base and two arms.<br>
 Finally, they soved the "Untetherd" problem by attaching the battery and laptop on the robot like:
 <center>
-<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/0313ac9c-c735-4d58-b30f-5d5a9684625e", width=500, height=500><br><br><br><br>
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/b8297056-2532-4beb-9f6f-c4e89752898b", width=500, height=500><br><br><br><br>
 </center><br><br><br><br>
 
 
