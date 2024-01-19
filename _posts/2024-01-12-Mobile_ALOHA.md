@@ -14,7 +14,7 @@ Mobile ALOHA is a low cost and whole body teleoperation system for data collecti
 
 With the data collected by Mobile ALOHA perform supervised behavior cloning and find co-training with existing static ALOHA datasets to booost performance on mobile manipulation tasks.<br>
 
-According to the paper, they increased success rates by up to 90% allowing Mobile ALOHA to autonomously complete complex mobile manipulation tasks.<br>
+According to the [paper](https://arxiv.org/abs/2401.02117), they increased success rates by up to 90% allowing Mobile ALOHA to autonomously complete complex mobile manipulation tasks.<br>
 
 <br><br><br>
 
