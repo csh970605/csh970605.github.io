@@ -90,7 +90,8 @@ where :<br>
 
 + $D_{static}$ : static ALOHA data<br>
  
-The Formula means:
+The Formula means:<br>
+
 + The sum of the expected values of $L(a^{i}_{arms},[0,0], \pi^{m}(o^{i}))$ for $o^{i}$, $a^{i}_{arms}$, and $a^{i}_{arms}$ sampled from $D^{m}_{mobile}$ and the expected values of $L(a^{i}_{arms},[0,0], \pi^{m}(o^{i}))$ for $o^{i}$, $a^{i}_{arms}$ sampled from $D_{static}$.<br>
 
 
