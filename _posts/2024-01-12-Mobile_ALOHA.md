@@ -102,7 +102,7 @@ Also, they ignored the front camera in the $D_{static}$ data so that both datase
 Finally, They normalized every action absed on the statistics of the $D^{m}_{mobile}$ alone.
 <br>
 
-In their experiments, they combine co-training recipe with multiple base imitation learning approaches including [ACT](), [Diffusion Policy](), and [VINN]().
+In their experiments, they combine co-training recipe with multiple base imitation learning approaches including ACT, Diffusion Policy, and VINN.
 
 <br><br><br><br>
 
