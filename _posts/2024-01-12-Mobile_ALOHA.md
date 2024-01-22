@@ -96,10 +96,10 @@ The Formula represents:<br>
 + The sum of the expected values of $$L(a^{i}_{arms},[0,0], \pi^{m}(o^{i}))$$ for $o^{i}$, $$a^{i}_{arms}$$, and $$a^{i}_{arms}$$ sampled from $$D^{m}_{mobile}$$ and the expected values of $$L(a^{i}_{arms},[0,0], \pi^{m}(o^{i}))$$ for $$o^{i}$$, $$a^{i}_{arms}$$ sampled from $$D_{static}$$.<br>
 
 
-They sample with equal probability from the $D_{static}$ and the $D^{m}_{mobile}$ and also, they set the batch size to be 16.<br>
-Since $D_{static}$ datapoints have no mobile base actions, they added zero-pad to the action labels to make two datasets have same dimension.<br>
-Also, they ignored the front camera in the $D_{static}$ data so that both datasets have 3 cameras.<br>
-Finally, They normalized every action absed on the statistics of the $D^{m}_{mobile}$ alone.
+They sample with equal probability from the $$D_{static}$$ and the $$D^{m}_{mobile}$$ and also, they set the batch size to be 16.<br>
+Since $$D_{static}$$ datapoints have no mobile base actions, they added zero-pad to the action labels to make two datasets have same dimension.<br>
+Also, they ignored the front camera in the $$D_{static}$$ data so that both datasets have 3 cameras.<br>
+Finally, They normalized every action absed on the statistics of the $$D^{m}_{mobile}$$ alone.
 <br>
 
 In their experiments, they combine co-training recipe with multiple base imitation learning approaches including ACT, Diffusion Policy, and VINN.
