@@ -63,7 +63,7 @@ Finally, they soved the "Untetherd" problem by attaching the battery and laptop 
 
 
 
-# How They Did Co-training with Static ALOHA Data?
+# How Did They do Co-training with Static ALOHA Data?
 
 To solve the problem that the policies trained on the specialized datasets which is collected by human operator are often not robust to the perceptual perturbations such as distractors or lighting changes due to the limited visual diversity in the datasets, they used a co-training pipeline that leverages the existing static ALOHA datasets to improve the performance of imitation learning.
 
