@@ -10,7 +10,7 @@ mermaid: true
 
 # Kalman Filter
 
-Kalman Filter is an estimator using the state-space equation of the system and it is an optimal data processing algorithm with a recursive structure.<br>
+Kalman Filter is an **[estimator](https://csh970605.github.io/posts/Kalman_Filter/#estimator)** using the state-space equation of the system and it is an optimal data processing algorithm with a recursive structure.<br>
 Initially, Kalman Filters could only be used in linear systems, and a method that could be applied to nonlinear systems was devised later.<br>
 
 <br><br>
