@@ -58,7 +58,8 @@ System parameters are variables that do not change or change slowly over time. H
 
 <br><br>
 
-## Dynamic system model
-..
+## System excercise model
+
+One of the available information, the system excercise model, is a mathematical model that descirbes how excercise properties of dynamic systems change over time.
 <br><br>
 
