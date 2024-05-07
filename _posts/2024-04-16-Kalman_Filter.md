@@ -67,7 +67,20 @@ System dynamics model needs to be modeled to accurately describe real-world moti
 These uncertainties are caused by various approximation processes while deriving mathematical dynamics models, unexpected increasing of system complexity while operating and disruption from outside the system or changes in the operating environment. And also, It happens because only important system dynamics modes are intentionally modeled and the rest are not modeled. In some cases, it may be due to a lack of understanding of the system, too expensive and time-consuming to obtain a model, or due to special conditions.<br>
 
 Given the uncertainty inherent in these mathematical dynamics models, the best modeling method is to use probabilities to express the uncertainty.<br>
-So, the mathmatical dynamics model can be made as **[state-space equation]()**.
+So, the mathmatical dynamics model can be made as **[state-space equation](https://csh970605.github.io/posts/Kalman_Filter/#state-space-equation)**.<br>
+
+However, Kalman filters should not be developed as continuous-time models as shown in the formula [1] but as [discrete-time models](https://csh970605.github.io/posts/Kalman_Filter/#discrete-time-model).<br>
+
+Finally, the system model will be expressed as :
+<center>
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/a43ae4a4-e53d-4fbd-ad31-da60c5332f9e">
+</center>
+<br>
+
+The performance of Kalman filters depends on the accuracy of the system model. Therefore, in order to properly select and build a system model, you need to understand the system, state variables, parameters, etc.
+<br><br>
+
 
 ### State-Space Equation
 
@@ -87,4 +100,19 @@ where
 
 <br><br>
 
+### Discrete-Time Model
 
+
+Discrete-time model is a special occlusion continuous-time model which measurements are sampled in discrete-time and system inputs are kept constant within sampling time. And it is expressed as a difference equation as follows :
+
+<p align="center">
+    <span>$x(k+1) = f(x(k), u(k), w(k), k)$</span>
+    <span style="float: right;">[1]</span>
+</p>
+
+where
++ $k$ : Time index.
++ $x(k)$ : $x(kT)$, $T$ means sampling time.
+<br>
+
+It will be discussed later.
