@@ -56,15 +56,15 @@ State variables are variables that can be changed extremly over time by external
 
 System parameters are variables that do not change or change slowly over time. However, if necessary, the system parameters are sometimes considered as state variables. For example, if the parameter is the unknown quantity to be estimated, the parameter is regarded as a state variable.
 
-<br><br>
+<br><br><br><br>
 
-## System Dynamics Model
+## Dynamics Model
 
-One of the available information, the System dynamics model, is a mathematical model that descirbes how excercise properties of dynamic systems change over time.<br>
-System exercise model are built to describe specific state variables and parameters of interest and interrelationships between system inputs and outputs using Newton's laws of motion, empirical insights, experiments, etc.<br>
+One of the available information, the dynamics model, is a mathematical model that descirbes how excercise properties of dynamic systems change over time.<br>
+dynamics model are built to describe specific state variables and parameters of interest and interrelationships between system inputs and outputs using Newton's laws of motion, empirical insights, experiments, etc.<br>
 
-System dynamics model needs to be modeled to accurately describe real-world motion, but it involves lots of uncertainties in practice.<br>
-These uncertainties are caused by various approximation processes while deriving mathematical dynamics models, unexpected increasing of system complexity while operating and disruption from outside the system or changes in the operating environment. And also, It happens because only important system dynamics modes are intentionally modeled and the rest are not modeled. In some cases, it may be due to a lack of understanding of the system, too expensive and time-consuming to obtain a model, or due to special conditions.<br>
+Dynamics model needs to be modeled to accurately describe real-world motion, but it involves lots of uncertainties in practice.<br>
+These uncertainties are caused by various approximation processes while deriving mathematical dynamics models, unexpected increasing of system complexity while operating and disruption from outside the system or changes in the operating environment. And also, It happens because only important dynamics modes are intentionally modeled and the rest are not modeled. In some cases, it may be due to a lack of understanding of the system, too expensive and time-consuming to obtain a model, or due to special conditions.<br>
 
 Given the uncertainty inherent in these mathematical dynamics models, the best modeling method is to use probabilities to express the uncertainty.<br>
 So, the mathmatical dynamics model can be made as **[state-space equation](https://csh970605.github.io/posts/Kalman_Filter/#state-space-equation)**.<br>
@@ -107,7 +107,7 @@ Discrete-time model is a special occlusion continuous-time model which measureme
 
 <p align="center">
     <span>$x(k+1) = f(x(k), u(k), w(k), k)$</span>
-    <span style="float: right;">[1]</span>
+    <span style="float: right;">[2]</span>
 </p>
 
 where
@@ -116,3 +116,7 @@ where
 <br>
 
 It will be discussed later.
+
+<br><br><br><br>
+
+## System Measurement Model
