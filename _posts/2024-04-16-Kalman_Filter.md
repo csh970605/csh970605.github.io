@@ -12,6 +12,12 @@ mermaid: true
 
 Kalman Filter is an **[estimator](https://csh970605.github.io/posts/Kalman_Filter/#estimator)** using the state-space equation of the system and it is an optimal data processing algorithm with a recursive structure.<br>
 Initially, Kalman Filters could only be used in linear systems, and a method that could be applied to nonlinear systems was devised later.<br>
+Basic kalman filter looks like:
+
+<center>
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/27e45739-cd80-452e-b80f-f413a54ef2d0">
+</center>
 
 <br><br>
 
@@ -143,3 +149,4 @@ Finally, the measurement model will be expressed as :
 
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/c9cd08a1-12eb-43e8-8134-b0fa84975671">
 </center>
+
