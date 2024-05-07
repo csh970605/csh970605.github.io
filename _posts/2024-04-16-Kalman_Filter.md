@@ -71,7 +71,7 @@ So, the mathmatical dynamics model can be made as **[state-space equation](https
 
 However, Kalman filters should not be developed as continuous-time models as shown in the formula [1] but as [discrete-time models](https://csh970605.github.io/posts/Kalman_Filter/#discrete-time-model).<br>
 
-Finally, the system model will be expressed as :
+Finally, the dynamics model will be expressed as :
 <center>
 
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/a43ae4a4-e53d-4fbd-ad31-da60c5332f9e">
@@ -119,4 +119,27 @@ It will be discussed later.
 
 <br><br><br><br>
 
-## System Measurement Model
+## Measurement Model
+
+The Measurement Model is a mathematical expression of the functional relationship between measurement values, which are data acquired as output values from various sensors to observe the motion of the system, and state variables and parameters.<br>
+Since the dynamics of system can be explained by using a change in time of state variables, sensor must measure the state variables. However, since measurement of sensor can be contaminated by noise or bias, sensor can not measure the exact values as it intend.<br>
+
+To solve that problem, kalman filter devise a mathmetical tool to infer the unmeasured data by using contaminated measurement data.<br>
+Measurement model assumes as measurements are collected at discrete time and expresses as follows:
+
+<p align="center">
+    <span>$z(k) = h(x(k),k) + v(k)$</span>
+    <span style="float: right;">[3]</span>
+</p>
+
+where
+
++ $z(k)\in R^{p}$ : Measurements.
++ $v(k) \in R^{p}$ : Measurement noises. It is a variable for expressing the error inherent in the measurement as probability.
++ $h(x(k),k)$ : It is a non-linear function for expressing the functional relationship between state variables and outputs.
+
+Finally, the measurement model will be expressed as :
+<center>
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/c9cd08a1-12eb-43e8-8134-b0fa84975671">
+</center>
