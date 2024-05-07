@@ -2,7 +2,7 @@
 title: Kalman Filter
 author: SeHoon
 date: 2024-04-16 10:01:30 +0900
-categories: [Mathmatics, prediction]
+categories: [Papers, Mathmatics]
 tags: [Papers, Mathmatics, MultiObjectTracking]
 math: true
 mermaid: true
