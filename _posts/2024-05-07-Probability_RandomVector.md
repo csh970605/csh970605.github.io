@@ -17,3 +17,9 @@ $P\{A\}$, which means the probability that event $A$ will occur in sample space 
 + Axiom 3 : In the case of mutually exclusive events A and B, the relational expression of $P\{A \cup B\}=P\{A\}+P\{B\}$ is established. Where mutually exclusive events mean that $A \cap B = \varnothing$ and $\cup, \cap$ and $\varnothing$ means union, intersectionand empty respectively.<br>
 
 Probability defined by a given case. Therefore, from 3 axioms above, we can know  $P\{\varnothing\}=0, P\{A\}=1-P\{ \bar{A} \}$ is established. Where $\bar{A}$ means that it is complementary event of $A$.
+
+<br><br><br><br>
+
+# Random Variable
+
+Random variable $X\equiv X(e)$ is defined as a function that corresponds to one real number to each element($e$) constituting a sample space. 
