@@ -22,4 +22,10 @@ Probability defined by a given case. Therefore, from 3 axioms above, we can know
 
 # Random Variable
 
-Random variable $X\equiv X(e)$ is defined as a function that corresponds to one real number to each element($e$) constituting a sample space. 
+Random variable $X\equiv X(e)$ is defined as a function that corresponds to one real number to each element($e$) constituting a sample space. Random variable is written in upper case and the value that random variable will actually take is written in lower case.
+
+e.g. $X(e)=x$ means that the real number of the random variable corresponding to the random experience is x. In short, it can be written as $X=x$.
+
+The domain of random variable is sample space and the range is $-\infty \leq X \leq \infty$, the whole real number area.
+
+Since an event is a set of $e$ as an element, which is the result of random experiment, there is a corresponding interver $I$ for each event $A$.
