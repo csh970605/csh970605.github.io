@@ -2,8 +2,8 @@
 title: Kalman Filter
 author: SeHoon
 date: 2024-04-16 10:01:30 +0900
-categories: [Papers, DeepLearning]
-tags: [Papers, DeepLearning, MultiObjectTracking]
+categories: [Papers, Mathmatics]
+tags: [Papers, Mathmatics, MultiObjectTracking]
 math: true
 mermaid: true
 ---
@@ -58,8 +58,24 @@ System parameters are variables that do not change or change slowly over time. H
 
 <br><br>
 
-## System excercise model
+## System Dynamics Model
 
-One of the available information, the system excercise model, is a mathematical model that descirbes how excercise properties of dynamic systems change over time.
+One of the available information, the System dynamics model, is a mathematical model that descirbes how excercise properties of dynamic systems change over time.<br>
+System exercise model are built to describe specific state variables and parameters of interest and interrelationships between system inputs and outputs using Newton's laws of motion, empirical insights, experiments, etc.<br>
+
+System dynamics model needs to be modeled to accurately describe real-world motion, but it involves lots of uncertainties in practice.<br>
+These uncertainties are caused by various approximation processes while deriving mathematical dynamics models, unexpected increasing of system complexity while operating and disruption from outside the system or changes in the operating environment. And also, It happens because only important system dynamics modes are intentionally modeled and the rest are not modeled. In some cases, it may be due to a lack of understanding of the system, too expensive and time-consuming to obtain a model, or due to special conditions.<br>
+
+Given the uncertainty inherent in these mathematical dynamics models, the best modeling method is to use probabilities to express the uncertainty.<br>
+So, the mathmatical dynamics model can be made as state-space equation like:
+
+<center>
+
+$\dot{x}(t)=f(x(t), u(t), w(t),t)$
+</center>
+
+where $x(t) \in R^{p}$ is a state variable, $w(t) \in R^{m}$ is a process noise, $u(t) \in R^{q}$ is a input of system.
+
+
 <br><br>
 
