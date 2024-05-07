@@ -70,7 +70,7 @@ Given the uncertainty inherent in these mathematical dynamics models, the best m
 So, the mathmatical dynamics model can be made as state-space equation like:
 
 <p align="center">
-    <span>$a+b$</span>
+    <span>$\dot{x}(t)=f(x(t), u(t), w(t),t)$</span>
     <span style="float: right;">[1]</span>
 </p>
 
