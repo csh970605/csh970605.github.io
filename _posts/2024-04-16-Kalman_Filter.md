@@ -69,12 +69,16 @@ These uncertainties are caused by various approximation processes while deriving
 Given the uncertainty inherent in these mathematical dynamics models, the best modeling method is to use probabilities to express the uncertainty.<br>
 So, the mathmatical dynamics model can be made as state-space equation like:
 
-<center>
+<p align="center">
+    <span>$a+b$</span>
+    <span style="float: right;">[1]</span>
+</p>
 
-$\dot{x}(t)=f(x(t), u(t), w(t),t)$
-</center>
 
-where $x(t) \in R^{p}$ is a state variable, $w(t) \in R^{m}$ is a process noise, $u(t) \in R^{q}$ is a input of system.
+where 
++ $x(t) \in R^{p}$ : A state variable. 
++ $w(t) \in R^{m}$ : A process noise.
++ $u(t) \in R^{q}$ : A input of system.
 
 
 <br><br>
