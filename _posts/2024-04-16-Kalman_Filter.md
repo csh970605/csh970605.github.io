@@ -67,8 +67,11 @@ System dynamics model needs to be modeled to accurately describe real-world moti
 These uncertainties are caused by various approximation processes while deriving mathematical dynamics models, unexpected increasing of system complexity while operating and disruption from outside the system or changes in the operating environment. And also, It happens because only important system dynamics modes are intentionally modeled and the rest are not modeled. In some cases, it may be due to a lack of understanding of the system, too expensive and time-consuming to obtain a model, or due to special conditions.<br>
 
 Given the uncertainty inherent in these mathematical dynamics models, the best modeling method is to use probabilities to express the uncertainty.<br>
-So, the mathmatical dynamics model can be made as state-space equation like:
+So, the mathmatical dynamics model can be made as **[state-space equation]()**.
 
+### State-Space Equation
+
+The state-space equation is expressed as follows:
 <p align="center">
     <span>$\dot{x}(t)=f(x(t), u(t), w(t),t)$</span>
     <span style="float: right;">[1]</span>
@@ -76,10 +79,12 @@ So, the mathmatical dynamics model can be made as state-space equation like:
 
 
 where 
-+ $x(t) \in R^{p}$ : A state variable. 
-+ $w(t) \in R^{m}$ : A process noise.
-+ $u(t) \in R^{q}$ : A input of system.
-
++ $x(t) \in R^{p}$ : A state variable. It is introduced to express the uncertainty inherent in the mathematical dynamic model.
++ $w(t) \in R^{m}$ : A process noise. It is called noise model that model the probabilitic feature of w(t).
++ $u(t) \in R^{q}$ : A input of system. It is also referred to as the "control input" and is assumed to be accurately known.
++ $f(\cdot,t)$ : Time-varying non-linear function that include system parameters.
++ $x(t)$ : At a given time, it is assumed to contain all the relevant information to describe the motion of the system.
 
 <br><br>
+
 
