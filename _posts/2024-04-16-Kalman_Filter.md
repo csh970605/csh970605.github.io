@@ -42,7 +42,7 @@ And Estimator is classified into **prediction**, **filtering**, **smoothing** ac
     <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/3ad1fc7f-d057-42e7-ae8d-42f919769118">
     </center><br>
 
-+ Filtering : Infer present state variables based on measurement data from the past to the future. It is used to estimate the state of the system by post-processing measurement data accumulated in a test or experiment.<br><br>
++ Smoothing : Infer present state variables based on measurement data from the past to the future. It is used to estimate the state of the system by post-processing measurement data accumulated in a test or experiment.<br><br>
 
     <center>
     <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/0b31f93f-d961-4f6f-ac4c-488675bde63d">
