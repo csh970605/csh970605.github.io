@@ -293,8 +293,15 @@ Thus, the probability distribution function of $Z$ is formula [22]
 $F_{Z}(z) = P(Z \leq z)$
 <p align="center">
     <span>$= P(X+Y \leq z)$</span>
-    <span style="float: right;">[21]</span>
+    <span style="float: right;">[22]</span>
 </p>
 
 $=\int_{-\infty}^{\infty} \int_{-\infty}^{z-x} p_{XY}(x, y)dydx$
 </center>
+
+$\therefore$ The probability density function of $Z$ is formula [23]
+
+<p align="center">
+    <span>$p_{Z}(z) = \frac{dF_{Z}(z)}{dz} = \int_{-\infty}^{infty}\frac{d}{dz}\int_{-\infty}^{z-x}p_{XY}(x,y)dydz$</span>
+    <span style="float: right;">[22]</span>
+</p>
