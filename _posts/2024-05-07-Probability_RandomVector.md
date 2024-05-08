@@ -92,7 +92,7 @@ $P(a < X \leq b) = F_{X}(X \leq b) - F_{X}(X \leq a)$
 <br>
 
 
-According to the definition of probability density function, $p_{X}(x) \geq 0, \int^{\infty}_{- \infty} p_{X}(x)dx=1$.
+According to the definition of probability density function,$p_{X}(x) \geq 0, \int_{- \infty}^{\infty} p_{X}(x)dx=1$.
 
 <br><br>
 
