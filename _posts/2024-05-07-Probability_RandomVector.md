@@ -57,14 +57,19 @@ According to the definition, $F_{X}(-\infty) = 0, F_{X}(\infty) = 1$. Also, if $
 The probability density function of $p_{X}(x)$ defines the following integral expression[2] as a function that satisfies.
 
 <p align="center">
-    <span>$int_{-infty}^{x} p_{X}(x)dx = P(X \leq x) = F_{X}(x)$</span>
+    <span>$\int_{-infty}^{x} p_{X}(x)dx = P(X \leq x) = F_{X}(x)$</span>
     <span style="float: right;">[2]</span>
 </p>
 
 According to the definition above, if probability density function can be differntiated, probability density function can be expressed as follows:
 
+<center>
+
+$p_{X}(x) = \frac{dF_{X}(x)}{dx}$
+</center>
+
 <p align="center">
-    <span>$p_{X}(x) = \frac{dF_{X}(x)}{dx}$<br>
+    <span><br>
     = \lim_{\Delta x \rightarrow 0} \frac{F_{X}(x+\Delta x) - F_{X}(x)}{\Delta x}</span>
     <span style="float: right;">[3]</span>
 </p>
