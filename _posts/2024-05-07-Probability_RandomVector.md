@@ -178,7 +178,7 @@ The probability that event A occurs under a given condition of event B is called
     <span style="float: right;">[11]</span>
 </p><br>
 
-The conditional probability density function of $X$ ($p_{X|Y}(x|y)$), given the random variable Y as y, is defined as a relational expression with the condition probability that an event
+The conditional probability density function of $X$ ($p_{X|Y}(x|y)$)
 
 <p align="center">
     <span>$P(X \leq x | Y = y) = \int_{-\infty}^{x} p_{X|Y}(x|y)dx$</span>
