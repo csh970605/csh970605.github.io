@@ -63,12 +63,12 @@ The probability density function of $p_{X}(x)$ defines the following integral ex
 
 According to the definition above, if probability density function can be differntiated, probability density function can be expressed as follows:
 
-<pre align="center">
+<div align="center">
     <p> $p_{X}(x) = \frac{dF_{X}(x)}{dx}$ </p>
     <p> <span>          $= \lim_{\Delta x \rightarrow 0} \frac{F_{X}(x+\Delta x) - F_{X}(x)}{\Delta x}$</span>
     <span style="float: right;">[3]</span> </p>
     <p>          $= \lim_{\Delta x \rightarrow 0} \frac{P(x < X \leq x + \Delta x)}{\Delta x}$ </p>
-</pre>
+</div>
 
 <center>
 
