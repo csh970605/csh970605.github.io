@@ -302,11 +302,11 @@ $=\int_{-\infty}^{\infty} \int_{-\infty}^{z-x} p_{XY}(x, y)dydx$
 $\therefore$ The probability density function of $Z$ is formula [23]
 
 <p align="center">
-    <span>$p_{Z}(z) = \frac{dF_{Z}(z)}{dz} = \int_{-\infty}^{infty}\frac{d}{dz}\int_{-\infty}^{z-x}p_{XY}(x,y)dydz$</span>
+    <span>$p_{Z}(z) = \frac{dF_{Z}(z)}{dz} = \int_{-\infty}^{\infty}\frac{d}{dz}\int_{-\infty}^{z-x}p_{XY}(x,y)dydz$</span>
     <span style="float: right;">[23]</span>
 </p>
 
-Next, to solve the formula[23], we use Leibniz interal law[26] to become fromula [24].
+Next, to solve the formula[23], we use Leibniz interal law[27] to become fromula [24].
 
 <p align="center">
     <span>$p_{Z}(z) = \int_{-\infty}^{infty}p_{XY}(x, z-x)dx$</span>
@@ -319,3 +319,21 @@ Like wise, formula [24] can be written like formula [25].
     <span>$p_{Z}(z) = \int_{-\infty}^{infty}p_{XY}(z-y,y)dy$</span>
     <span style="float: right;">[25]</span>
 </p>
+
+If X and Y are independence, formula[25] become convolution like formula[26].
+
+<center>
+
+$p_{Z}(z)=\int_{-\infty}^{\infty}p_{X}(z-y)p_{Y}(y)dy$
+<p align="center">
+    <span>$= \int_{-\infty}^{\infty}p_{X}(x)p_{x}(z-x)dx$</span>
+    <span style="float: right;">[26]</span>
+</p>
+
+$\equiv p_{X}(x) \ast p_{Y}(z)$
+
+</center>
+
+## Leibniz interal law
+
+$\frac{d}{dx}\int_{a(x)}^{b(x)}f(x,t)dt = f(x, b(x)){b}'(x)-f(x, a(x)){a}'(x) + \int_{a(x)}^{b(x)} \frac{\partial}{\partial x}f(x, t)dt$
