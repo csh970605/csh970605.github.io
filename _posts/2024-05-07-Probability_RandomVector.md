@@ -186,15 +186,15 @@ The conditional probability density function of $X$ ($p_{X\mid Y}(x\mid y)$), gi
     <span style="float: right;">[12]</span>
 </p>
 
-If event A is $(X \leq x) and (Y=y) is in the micronet, event B is ($y < Y \leq y+dy$). Therefore, $p_{X\mid Y}(x\mid y)$ is from formula [11] as follow:
+If event A is $(X \leq x)$ and $(Y=y)$ is in the micronet, event B is ($y < Y \leq y+dy$). Therefore, $p_{X\mid Y}(x\mid y)$ is from formula [11] as follow:
 <p align="center">
-    <span>$p_{X\mid Y}(x\mid y) = frac{p_{XY}(x, y)}{p_{Y}(y)}, p_{Y} \neq 0$</span>
+    <span>$p_{X\mid Y}(x\mid y) = \frac{p_{XY}(x, y)}{p_{Y}(y)}, p_{Y} \neq 0$</span>
     <span style="float: right;">[13]</span>
 </p>
 
 Else if the probability of event A will occur under the condition $X = x$ is :
 <p align="center">
-    <span>$p_{X\mid Y}(x\mid y) = frac{p_{XY}(x, y)}{p_{Y}(y)}, p_{Y} \neq 0$</span>
+    <span>$p_{X\mid Y}(x\mid y) = \frac{p_{XY}(x, y)}{p_{Y}(y)}, p_{Y} \neq 0$</span>
     <span style="float: right;">[14]</span>
 </p>
 Opposely, the conditional probability density function of X will occur under the condition event $A$ is:
@@ -309,14 +309,14 @@ $\therefore$ The probability density function of $Z$ is formula [23]
 Next, to solve the formula[23], we use Leibniz interal law[27] to become fromula [24].
 
 <p align="center">
-    <span>$p_{Z}(z) = \int_{-\infty}^{infty}p_{XY}(x, z-x)dx$</span>
+    <span>$p_{Z}(z) = \int_{-\infty}^{\infty}p_{XY}(x, z-x)dx$</span>
     <span style="float: right;">[24]</span>
 </p>
 
 Like wise, formula [24] can be written like formula [25].
 
 <p align="center">
-    <span>$p_{Z}(z) = \int_{-\infty}^{infty}p_{XY}(z-y,y)dy$</span>
+    <span>$p_{Z}(z) = \int_{-\infty}^{\infty}p_{XY}(z-y,y)dy$</span>
     <span style="float: right;">[25]</span>
 </p>
 
