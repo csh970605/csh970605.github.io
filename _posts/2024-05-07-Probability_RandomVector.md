@@ -90,7 +90,8 @@ $P(a < X \leq b) = F_{X}(X \leq b) - F_{X}(X \leq a)$
     <span style="float: right;">[4]</span>
 </p>
 
-According to the definition of probability density function, $o_{X}(x) \geq 0, \int^{\infty}_{-\infty} p_{X}(x)dx=1$.
+
+According to the definition of probability density function, $p_{X}(x) \geq 0, \int^{\infty}_{-\infty} p_{X}(x)dx=1$.
 
 <br><br>
 
@@ -108,7 +109,7 @@ where $x_{i}, i = 1, ..., n$ is all elements in sample space.<br>
 If you use Dirac delta function ($\delta(x)$), you can express probability mass function to the form of probability density function.
 
 <p align="center">
-    <span>p_{X}(x)=\Sigma^{n}_{i=1}w_{X}(x_{i})\delta (x-x_{i})$</span>
+    <span>$p_{X}(x)=\Sigma^{n}_{i=1}w_{X}(x_{i})\delta (x-x_{i})$</span>
     <span style="float: right;">[6]</span>
 </p>
 
