@@ -57,7 +57,7 @@ According to the definition, $F_{X}(-\infty) = 0, F_{X}(\infty) = 1$. Also, if $
 The probability density function of $p_{X}(x)$ defines the following integral expression[2] as a function that satisfies.
 
 <p align="center">
-    <span>$\int_{-infty}^{x} p_{X}(x)dx = P(X \leq x) = F_{X}(x)$</span>
+    <span>$\int_{-\infty}^{x} p_{X}(x)dx = P(X \leq x) = F_{X}(x)$</span>
     <span style="float: right;">[2]</span>
 </p>
 
