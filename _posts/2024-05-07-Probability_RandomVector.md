@@ -303,5 +303,5 @@ $\therefore$ The probability density function of $Z$ is formula [23]
 
 <p align="center">
     <span>$p_{Z}(z) = \frac{dF_{Z}(z)}{dz} = \int_{-\infty}^{infty}\frac{d}{dz}\int_{-\infty}^{z-x}p_{XY}(x,y)dydz$</span>
-    <span style="float: right;">[22]</span>
+    <span style="float: right;">[23]</span>
 </p>
