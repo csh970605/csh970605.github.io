@@ -146,6 +146,6 @@ $=P(X \leq x, Y \leq y)$
 **Joint probability density function** ($p_{XY}(x, y)$) is defined from the joint probability distribution function as follows:
 
 <p align="center">
-    <span>$F_{XY}(x, y) = \int_{-infty}^{y} \int_{-infty}^{x} p_{XY}(x, y)dxdy$</span>
+    <span>$F_{XY}(x, y) = \int_{-\infty}^{y} \int_{-\infty}^{x} p_{XY}(x, y)dxdy$</span>
     <span style="float: right;">[8]</span>
 </p>
