@@ -225,5 +225,34 @@ Likewise, if the probability density function of random variable  satisfies form
 
 <p align="center">
     <span>$p_{X{1},...X_{n}} = \prod_{i=1}^{n}p_{X_{i}}(x_{i})$</span>
-    <span style="float: right;">[17]</span>
+    <span style="float: right;">[18]</span>
 </p>
+
+If two random variable X and Y are independence, conditional probability density function becomes a function independent of the condition like formula[19].
+
+<p align="center">
+    <span>$p_{X\mid Y}(x \mid y) = p_{X}(x)$</span>
+    <span style="float: right;">[19]</span>
+</p>
+
+<center>
+
+$p_{X\mid Y}(x \mid y) = p_{Y}(y)$
+</center>
+
+<br><br><br><br>
+
+# Function of Random Variables
+
+If the random variable Y is givn as a function $Y = g(X)$ of the random variable X , the probability of event $Y \neq y$ is the same as the probability that the random variable X belongs to the real number area ${X \in I_{x}}$ satisfying $g(X) \leq y, so the probability distribution function can be calculated as formula [20].
+
+<center>
+
+$F_{Y}(y) = P(Y \leq y)$
+<p align="center">
+    <span>$= P(g(X) \leq y)$</span>
+    <span style="float: right;">[20]</span>
+</p>
+
+$= P(X \in I_{x})$
+</center>
