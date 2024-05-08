@@ -34,7 +34,7 @@ And also, if random variable($X$) takes a discrete value, it is called a discret
 
 <br><br><br><br>
 
-# Probability Distribution Function and Probability Density Function
+# Probability Distribution Function, Probability Density Function and Probability Mass Function
 
 <br><br>
 
@@ -90,4 +90,35 @@ $P(a < X \leq b) = F_{X}(X \leq b) - F_{X}(X \leq a)$
     <span style="float: right;">[4]</span>
 </p>
 
-According to the definition of probability density function, $o_{X}(x) \geq 0, \int^{\infty}{-\infty} p_{X}(x)dx=1$.
+According to the definition of probability density function, $o_{X}(x) \geq 0, \int^{\infty}_{-\infty} p_{X}(x)dx=1$.
+
+<br><br>
+
+## Probability Mass Function
+
+At the discrete random variable $X$ uses probability mass function $w_{X}(x_{i})$ instead of probability density function.
+
+<p align="center">
+    <span>$w_{X}(x_{i})=P(X=x_{i}), i= 1, ..., n$</span>
+    <span style="float: right;">[5]</span>
+</p>
+
+where $x_{i}, i = 1, ..., n$ is all elements in sample space.<br>
+
+If you use Dirac delta function ($\delta(x)$), you can express probability mass function to the form of probability density function.
+
+<p align="center">
+    <span>p_{X}(x)=\Sigma^{n}_{i=1}w_{X}(x_{i})\delta (x-x_{i})$</span>
+    <span style="float: right;">[6]</span>
+</p>
+
+Note that Dirac delta function is defined as a function that satifies two properties as follows:
+
+<center>
+
+$\delta (x) = \left\{\begin{matrix}
+\infty, x=0\\
+0, x\neq 0 
+
+\end{matrix}\right.$
+</center>
