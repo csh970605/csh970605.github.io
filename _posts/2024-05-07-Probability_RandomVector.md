@@ -281,7 +281,7 @@ And we can calculate the probability density function of Y as formula [22].
 $= F_{X}(\frac{y-3}{2})$
 </center>
 
-Of course, calculating the probability density function of two random variables is possible. Let's assume that $Z$ is the sum of two random variables $X$ and $Y$ like: $Z = X + Y$. And, assume again, we know the joint probability density function $p_{XY}(x, y) also. Then, $P(Z \leq z)$ equals to $X + Y \leq z$ like:
+Of course, calculating the probability density function of two random variables is possible. Let's assume that $Z$ is the sum of two random variables $X$ and $Y$ like: $Z = X + Y$. And, assume again, we know the joint probability density function $p_{XY}(x, y)$ also. Then, $P(Z \leq z)$ equals to $X + Y \leq z$ like:
 <center>
 
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/0077e53e-01cc-493a-bae7-7a1c4c080114">
