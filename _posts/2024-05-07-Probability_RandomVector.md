@@ -149,3 +149,37 @@ $=P(X \leq x, Y \leq y)$
     <span>$F_{XY}(x, y) = \int_{-\infty}^{y} \int_{-\infty}^{x} p_{XY}(x, y)dxdy$</span>
     <span style="float: right;">[8]</span>
 </p>
+
+if $F_{XY}(x, y)$ can be differentiated, joint probability density function can be expressed as follows:
+
+<p align="center">
+    <span>$p_{XY}(x, y) = frac{\partial^{2}F_{XY}(x, y)}{\partial x \partial y}$</span>
+    <span style="float: right;">[9]</span>
+</p>
+
+<center>
+
+$=\lim_{\Delta x, \Delta y \rightarrow} \frac{P(x < X \leq x + \Delta x, y < Y \leq y+ \Delta y)}{\Delta x \Delta y}$
+</center>
+
+Since $F_{X}(x) = F_{XY}(x, \infty)$ is True, you can get the probability density function of only X by formula[10]. It is called **marginal density function** of X.
+
+<p align="center">
+    <span>$p_{X}(x) = \int_{-\infty}^{infty}p_{XY}(x ,y)dy$</span>
+    <span style="float: right;">[10]</span>
+</p>
+
+# Conditional Probability
+
+The probability that event A occurs under a given condition of event B is called the conditional probability of event A. And defines as formula [11].
+<p align="center">
+    <span>$P(A|B) = \frac{P(A,B)}{P(B)}$</span>
+    <span style="float: right;">[11]</span>
+</p>
+
+The conditional probability density function of $X$ ($p_{X|Y}(x|y)$), given the random variable Y as y, is defined as a relational expression with the condition probability that an event $(X \leq x)$ will occur under the condition $Y=y$, as shown in formula [12]
+
+<p align="center">
+    <span>$P(X \leq x | Y = y) = \int_{-\infty}^{x} p_{X|Y}(x|y)dx$</span>
+    <span style="float: right;">[12]</span>
+</p>
