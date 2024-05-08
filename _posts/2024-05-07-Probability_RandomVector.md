@@ -3,7 +3,7 @@ title: Probability and Random Vector
 author: SeHoon
 date: 2024-04-16 10:02:30 +0900
 categories: [Mathmatics, Probabilitics]
-tags: [Mathmatics MultiObjectTracking]
+tags: [Mathmatics, Kalman Filter]
 math: true
 mermaid: true
 ---
