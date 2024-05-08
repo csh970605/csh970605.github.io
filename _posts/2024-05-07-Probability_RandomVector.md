@@ -58,5 +58,13 @@ The probability density function of $p_{X}(x)$ defines the following integral ex
 
 <p align="center">
     <span>$int^{x}_{-infty}p_{X}(x)dx = P(X \leq x) = F_{X}(x)$</span>
-    <span style="float: right;">[1]</span>
+    <span style="float: right;">[2]</span>
+</p>
+
+According to the definition above, if probability density function can be differntiated, probability density function can be expressed as follows:
+
+<p align="center">
+    <span>$p_{X}(x) = \frac{dF_{X}(x)}{dx}$<br>
+                = \lim_{\Delta x \rightarrow 0} \frac{F_{X}(x+\Delta x) - F_{X}(x)}{\Delta x}</span>
+    <span style="float: right;">[3]</span>
 </p>
