@@ -256,3 +256,27 @@ $F_{Y}(y) = P(Y \leq y)$
 
 $= P(X \in I_{x})$
 </center>
+
+For example, let's assume the function relationship between two random variable X and B as $Y = 2X + 3$. Then, the interval of X that satisfies $Y = 2X + 3 \leq y$ is calculated as formula [21].
+
+<center>
+
+$F_{Y}(y) = P(Y \leq y)$
+<p align="center">
+    <span>$= P(X \leq \frac{y-3}{2})$</span>
+    <span style="float: right;">[21]</span>
+</p>
+
+$= F_{X}(\frac{y-3}{2})$
+</center>
+
+And we can calculate the probability density function of Y as formula [22].
+<center>
+
+<p align="center">
+    <span>$= P_{Y}(y) = \frac{dF_{Y}(y)}{dy} = \frac{d}{dy}[F_{X}(\frac{y-3}{2})]$</span>
+    <span style="float: right;">[21]</span>
+</p>
+
+$= F_{X}(\frac{y-3}{2})$
+</center>
