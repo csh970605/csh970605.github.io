@@ -82,10 +82,12 @@ The probability that random variable $X$ belongs to $(a, b])$ is calculated by u
 
 <center>
 
-$P(a < X \leqb) = F_{X}(X \leq b) - F_{X}(X \leq a)$
+$P(a < X \leq b) = F_{X}(X \leq b) - F_{X}(X \leq a)$
 </center>
 
 <p align="center">
-    <span>$\int^{b}_{a} p_{X}(x)dx$</span>
-    <span style="float: right;">[3]</span>
+    <span>$= \int^{b}_{a} p_{X}(x)dx$</span>
+    <span style="float: right;">[4]</span>
 </p>
+
+According to the definition of probability density function, $o_{X}(x) \geq 0, \int^{\infty}{-\infty} p_{X}(x)dx=1$.
