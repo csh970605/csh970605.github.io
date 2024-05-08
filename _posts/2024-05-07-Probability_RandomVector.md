@@ -305,3 +305,17 @@ $\therefore$ The probability density function of $Z$ is formula [23]
     <span>$p_{Z}(z) = \frac{dF_{Z}(z)}{dz} = \int_{-\infty}^{infty}\frac{d}{dz}\int_{-\infty}^{z-x}p_{XY}(x,y)dydz$</span>
     <span style="float: right;">[23]</span>
 </p>
+
+Next, to solve the formula[23], we use Leibniz interal law[26] to become fromula [24].
+
+<p align="center">
+    <span>$p_{Z}(z) = \int_{-\infty}^{infty}p_{XY}(x, z-x)dx$</span>
+    <span style="float: right;">[24]</span>
+</p>
+
+Like wise, formula [24] can be written like formula [25].
+
+<p align="center">
+    <span>$p_{Z}(z) = \int_{-\infty}^{infty}p_{XY}(z-y,y)dy$</span>
+    <span style="float: right;">[25]</span>
+</p>
