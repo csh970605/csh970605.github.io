@@ -168,6 +168,7 @@ Since $F_{X}(x) = F_{XY}(x, \infty)$ is True, you can get the probability densit
     <span>$p_{X}(x) = \int_{-\infty}^{infty}p_{XY}(x ,y)dy$</span>
     <span style="float: right;">[10]</span>
 </p>
+<br><br><br><br>
 
 # Conditional Probability
 
@@ -183,4 +184,46 @@ The conditional probability density function of $X$ ($p_{X\mid Y}(x\mid y)$), gi
 <p align="center">
     <span>$P(X \leq x \mid Y = y) = \int_{-\infty}^{x} p_{X\mid Y}(x\mid y)dx$</span>
     <span style="float: right;">[12]</span>
+</p>
+
+If event A is $(X \leq x) and (Y=y) is in the micronet, event B is ($y < Y \leq y+dy$). Therefore, $p_{X\mid Y}(x\mid y)$ is from formula [11] as follow:
+<p align="center">
+    <span>$p_{X\mid Y}(x\mid y) = frac{p_{XY}(x, y)}{p_{Y}(y)}, p_{Y} \neq 0$</span>
+    <span style="float: right;">[13]</span>
+</p>
+
+Else if the probability of event A will occur under the condition $X = x$ is :
+<p align="center">
+    <span>$p_{X\mid Y}(x\mid y) = frac{p_{XY}(x, y)}{p_{Y}(y)}, p_{Y} \neq 0$</span>
+    <span style="float: right;">[14]</span>
+</p>
+Opposely, the conditional probability density function of X will occur under the condition event $A$ is:
+<p align="center">
+    <span>$p_{X|A}(x|A) = \frac{P(A, x)}{P(A)}$</span>
+    <span style="float: right;">[15]</span>
+</p>
+
+<br><br><br><br>
+
+# Independence Random Variable
+
+If the joint probability of A and B is equal to the product of the probabilities of A and B, then events A and B are called **independent events** :
+
+<p align="center">
+    <span>$P(A, B) = P(A)P(B)$</span>
+    <span style="float: right;">[16]</span>
+</p>
+
+And if the joint probability of the N events $A_{i}, i=1, ... n$ satisfies formula 17, the set is called independent.
+
+<p align="center">
+    <span>$P(\bigcap_{i=1}^{n}A_{i}) = \prod_{i=1}^{n}P(A_{i})$</span>
+    <span style="float: right;">[17]</span>
+</p>
+
+Likewise, if the probability density function of random variable  satisfies formula 18, the N random variables are independent.
+
+<p align="center">
+    <span>$p_{X{1},...X_{n}} = \prod_{i=1}^{n}p_{X_{i}}(x_{i})$</span>
+    <span style="float: right;">[17]</span>
 </p>
