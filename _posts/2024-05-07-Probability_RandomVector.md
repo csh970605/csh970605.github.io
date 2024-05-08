@@ -122,5 +122,11 @@ $\delta (x) = \left\{\begin{matrix}
 \infty, x=0\\
 0, x\neq 0 
 
-\end{matrix}\right.$
+\end{matrix}\right.$<br>
+
+$\int_{- \infty}^{infty} \delta(x)dx = 1$
 </center>
+
+<br><br><br><br>
+
+# Joint Probability Function 
