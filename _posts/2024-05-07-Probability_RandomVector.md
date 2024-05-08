@@ -130,3 +130,22 @@ $\int_{- \infty}^{\infty} \delta(x)dx = 1$
 <br><br><br><br>
 
 # Joint Probability Function 
+
+**Joint probability distribution function** of random variable $X$ and $Y$ ($F_{XY}(x,y)$) is defined as probability of joint event as follows:
+
+<p align="center">
+    <span>$F_{XY}(x, y) = P((X \leq x) \cap (Y \leq y))$</span>
+    <span style="float: right;">[7]</span>
+</p>
+
+<center>
+
+$=P(X \leq x, Y \leq y)$
+</center>
+
+**Joint probability density function** ($p_{XY}(x, y)$) is defined from the joint probability distribution function as follows:
+
+<p align="center">
+    <span>$F_{XY}(x, y) = \int_{-infty}^{y} \int_{-infty}^{x} p_{XY}(x, y)dxdy$</span>
+    <span style="float: right;">[8]</span>
+</p>
