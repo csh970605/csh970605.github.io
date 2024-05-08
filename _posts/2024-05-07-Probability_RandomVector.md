@@ -2,8 +2,8 @@
 title: Probability and Random Vector
 author: SeHoon
 date: 2024-04-16 10:02:30 +0900
-categories: [Papers, DeepLearning]
-tags: [Papers, DeepLearning, MultiObjectTracking]
+categories: [Mathmatics, Probabilitics]
+tags: [Mathmatics MultiObjectTracking]
 math: true
 mermaid: true
 ---
@@ -124,7 +124,7 @@ $\delta (x) = \left\{\begin{matrix}
 
 \end{matrix}\right.$<br>
 
-$\int_{- \infty}^{infty} \delta(x)dx = 1$
+$\int_{- \infty}^{\infty} \delta(x)dx = 1$
 </center>
 
 <br><br><br><br>
