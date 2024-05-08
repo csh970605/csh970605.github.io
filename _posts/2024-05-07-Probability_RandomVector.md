@@ -69,7 +69,7 @@ $p_{X}(x) = \frac{dF_{X}(x)}{dx}$
 </center>
 
 <p align="center">
-    <span>$ \ \ \ \ \ = \lim_{\Delta x \rightarrow 0} \frac{F_{X}(x+\Delta x) - F_{X}(x)}{\Delta x}$</span>
+    <span>$= \lim_{\Delta x \rightarrow 0} \frac{F_{X}(x+\Delta x) - F_{X}(x)}{\Delta x}$</span>
     <span style="float: right;">[3]</span>
 </p>
 
@@ -77,3 +77,15 @@ $p_{X}(x) = \frac{dF_{X}(x)}{dx}$
 
 $= \lim_{\Delta x \rightarrow 0} \frac{P(x < X \leq x + \Delta x)}{\Delta x}$
 </center>
+
+The probability that random variable $X$ belongs to $(a, b])$ is calculated by using probability density function as follows:
+
+<center>
+
+$P(a < X \leqb) = F_{X}(X \leq b) - F_{X}(X \leq a)$
+</center>
+
+<p align="center">
+    <span>$\int^{b}_{a} p_{X}(x)dx$</span>
+    <span style="float: right;">[3]</span>
+</p>
