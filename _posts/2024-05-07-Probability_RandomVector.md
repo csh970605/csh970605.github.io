@@ -429,10 +429,10 @@ Answer.
 
 ---
 
-a
 
 
-$\left\{\begin{matrix}
+
+$\left\{ \begin{matrix}
 1\\ 
 0
 \end{matrix}\right.$
