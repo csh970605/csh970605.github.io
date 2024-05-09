@@ -350,4 +350,33 @@ $\equiv p_{X}(x) \ast p_{Y}(z)$
 
 # Sampling 
 
-The sample that extracted from random variable X whose probability density function is $p_{X}(x) is written as follows:
+The sample that extracted from random variable X whose probability density function is $p_{X}(x)$ is written as follows:
+
+<p align="center">
+    <span>$x~p_{X}(x)$</span>
+    <span style="float: right;">[29]</span>
+</p>
+
+Assume that $N$ number of samples extracted from random variable is {$x^{(1)}, x^{(2)}, ..., x^{(N)}$}, if each samples are extracted independently and fairwisely,the probability of each sample being extracted is the same as formula [30].
+
+<center>
+
+$w_{X}(x^{(i)}) = P(X=x^{(i)})$
+<p align="center">
+    <span>$=\frac{1}{N}, i = 1, 2, ..., N$</span>
+    <span style="float: right;">[30]</span>
+</p>
+
+
+</center>
+
+
+As in Formula [30], if each sample is independently and equitably extracted from a population with some probabilistic features, the extracted sample is called an **IID(independent and identically distributed) sample**.
+
+<center>
+
+$p_{X}(x) \approx \Sigma_{N}^{i=1}w_{X}(x^{(i)})\delta (x-x^{(i)})$
+<p align="center">
+    <span>$=\frac{1}{N}\Sigma_{N}^{i=1} \delta(x-x^{(i)})$</span>
+    <span style="float: right;">[30]</span>
+</p>
