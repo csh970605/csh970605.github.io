@@ -73,6 +73,6 @@ where $p_{X}(x)$ is prior probability density function, $p_{X \mid Y}(x \mid y)$
 Of course again, the occasion that events and random variables are mixed, the bayes' theorem is formula [5].
 
 <p align="center">
-    <span>$P(B_{i} \mid y) = \frac{p_{Y \mid \B_{i}}(y \mid B_{i})P(B_{i})}{\Sigma_{j=1}^{n}p_{Y \mid B_{j}}(y \mid B_{j})P(B_{j})}$</span>
+    <span>$P(B_{i} \mid y) = \frac{p_{Y \mid B_{i}}(y \mid B_{i})P(B_{i})}{\Sigma_{j=1}^{n}p_{Y \mid B_{j}}(y \mid B_{j})P(B_{j})}$</span>
     <span style="float: right;">[5]</span>
 </p>
