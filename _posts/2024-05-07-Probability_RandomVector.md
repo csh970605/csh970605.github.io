@@ -416,7 +416,7 @@ Assume that $X$ and $Y$ is the independent random variable. And the probability 
 $p_{X}(x)=\left\{\begin{matrix}
 1, \ \ 0\leq x \leq 1\\ 
 0, \ \ otherwise
-\end{matrix}\right.$
+\end{matrix}\right.asdfasdf$
 
 $p_{X}(x)=\left\{\begin{matrix}
 1, \ \ 0\leq x \leq 1\\ 
