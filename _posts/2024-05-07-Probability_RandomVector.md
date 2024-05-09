@@ -442,12 +442,12 @@ $p_{Z}(z) = \int_{-\infty}^{\infty}p_{X}(x)p_{Y}(z-x)dx=\int_{0}^{1}p_{X}(z-y)dy
 $p_{X}(z-y)=\left\{\begin{matrix}
 1, \ \ 0\leq z-y \leq 1\\
 0, \ \ otherwise
-\end{matrix}\right..$
+\end{matrix}\right.a$
 
 $=\left\{\begin{matrix}
 1, \ \ z-1\leq y \leq z\\ 
 0, \ \ otherwise
-\end{matrix}\right..$
+\end{matrix}\right.a$
 
 Therefore, 
 1. $p_{Z}(z)=0, z <0$
