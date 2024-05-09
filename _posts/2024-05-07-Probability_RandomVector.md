@@ -371,12 +371,24 @@ $w_{X}(x^{(i)}) = P(X=x^{(i)})$
 </center>
 
 
-As in Formula [30], if each sample is independently and equitably extracted from a population with some probabilistic features, the extracted sample is called an **IID(independent and identically distributed) sample**.
+As in Formula [30], if each sample is independently and equitably extracted from a population with some probabilistic features, the extracted sample is called an **IID(independent and identically distributed) sample**. By using formula[6], it can apporximate $p_{X}(x)$ as follows:
 
 <center>
 
 $p_{X}(x) \approx \Sigma_{N}^{i=1}w_{X}(x^{(i)})\delta (x-x^{(i)})$
 <p align="center">
     <span>$=\frac{1}{N}\Sigma_{N}^{i=1} \delta(x-x^{(i)})$</span>
-    <span style="float: right;">[30]</span>
+    <span style="float: right;">[31]</span>
+</p>
+
+Then we can calculate the probability $P(x < X \leq x + \Delta x)$ of belonging $X$ to the intever $(x, x+\Delta x]$ as formula [32].
+
+<center>
+
+$\int_{x}^{x+\Delta x}p_{X}(x)dx \approx \int_{x}^{x+\Delta x}\frac{1}{N} \Sigma_{i=1}^{N} \delta (x-x^{(i)})dx$
+
+$=\frac{1}{N}\Sigma_{i=1}^{N} \int_{x}^{x+\Delta x}\delta (x-x^{(i)})$
+<p align="center">
+    <span>$=\frac{the number of samples that belongs to the interver (x, x+\Delta x]}{N}$</span>
+    <span style="float: right;">[31]</span>
 </p>
