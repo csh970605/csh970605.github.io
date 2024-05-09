@@ -275,7 +275,7 @@ And we can calculate the probability density function of Y as formula [22].
 
 <p align="center">
     <span>$= P_{Y}(y) = \frac{dF_{Y}(y)}{dy} = \frac{d}{dy}[F_{X}(\frac{y-3}{2})]$</span>
-    <span style="float: right;">[21]</span>
+    <span style="float: right;">[22]</span>
 </p>
 
 $= F_{X}(\frac{y-3}{2})$
@@ -287,53 +287,67 @@ Of course, calculating the probability density function of two random variables 
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/0077e53e-01cc-493a-bae7-7a1c4c080114">
 </center>
 
-Thus, the probability distribution function of $Z$ is formula [22]
+Thus, the probability distribution function of $Z$ is formula [23]
 <center>
 
 $F_{Z}(z) = P(Z \leq z)$
 <p align="center">
     <span>$= P(X+Y \leq z)$</span>
-    <span style="float: right;">[22]</span>
+    <span style="float: right;">[23]</span>
 </p>
 
 $=\int_{-\infty}^{\infty} \int_{-\infty}^{z-x} p_{XY}(x, y)dydx$
 </center>
 
-$\therefore$ The probability density function of $Z$ is formula [23]
+$\therefore$ The probability density function of $Z$ is formula [24]
 
 <p align="center">
     <span>$p_{Z}(z) = \frac{dF_{Z}(z)}{dz} = \int_{-\infty}^{\infty}\frac{d}{dz}\int_{-\infty}^{z-x}p_{XY}(x,y)dydz$</span>
-    <span style="float: right;">[23]</span>
-</p>
-
-Next, to solve the formula[23], we use Leibniz interal law[27] to become fromula [24].
-
-<p align="center">
-    <span>$p_{Z}(z) = \int_{-\infty}^{\infty}p_{XY}(x, z-x)dx$</span>
     <span style="float: right;">[24]</span>
 </p>
 
-Like wise, formula [24] can be written like formula [25].
+Next, to solve the formula[24], we use Leibniz interal Rule[28] to become fromula [24].
 
 <p align="center">
-    <span>$p_{Z}(z) = \int_{-\infty}^{\infty}p_{XY}(z-y,y)dy$</span>
+    <span>$p_{Z}(z) = \int_{-\infty}^{\infty}p_{XY}(x, z-x)dx$</span>
     <span style="float: right;">[25]</span>
 </p>
 
-If X and Y are independence, formula[25] become convolution like formula[26].
+Like wise, formula [25] can be written like formula [26].
+
+<p align="center">
+    <span>$p_{Z}(z) = \int_{-\infty}^{\infty}p_{XY}(z-y,y)dy$</span>
+    <span style="float: right;">[26]</span>
+</p>
+
+If X and Y are independence, formula[26] become convolution like formula[27].
 
 <center>
 
 $p_{Z}(z)=\int_{-\infty}^{\infty}p_{X}(z-y)p_{Y}(y)dy$
 <p align="center">
     <span>$= \int_{-\infty}^{\infty}p_{X}(x)p_{x}(z-x)dx$</span>
-    <span style="float: right;">[26]</span>
+    <span style="float: right;">[27]</span>
 </p>
 
 $\equiv p_{X}(x) \ast p_{Y}(z)$
 
 </center>
 
-## Leibniz interal law
+<br><br>
 
-$\frac{d}{dx}\int_{a(x)}^{b(x)}f(x,t)dt = f(x, b(x)){b}'(x)-f(x, a(x)){a}'(x) + \int_{a(x)}^{b(x)} \frac{\partial}{\partial x}f(x, t)dt$
+## Leibniz Interal Rule
+
+<p align="center">
+    <span>$\frac{d}{dx}\int_{a(x)}^{b(x)}f(x,t)dt = f(x, b(x)){b}'(x)-f(x, a(x)){a}'(x) + \int_{a(x)}^{b(x)} \frac{\partial}{\partial x}f(x, t)dt$</span>
+    <span style="float: right;">[28]</span>
+</p>
+
+
+
+
+<br><br><br><br>
+
+# Sampling 
+
+The sample that extracted from random variable X whose probability density function is $p_{X}(x) is written as follows:
