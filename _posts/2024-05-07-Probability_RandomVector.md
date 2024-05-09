@@ -420,13 +420,15 @@ $p_{X}(x)=\left\{\begin{matrix}
 1, \ \ 0\leq y \leq 1\\ 
 0, \ \ otherwise
 \end{matrix}\right.$
-</center>
-
 
 $p_{X}(x)=\left\{\begin{matrix}
 1, \ \ 0\leq x \leq 1\\ 
 0, \ \ otherwise
-\end{matrix}\right.$
+\end{matrix}\right.
+
+</center>
+
+
 
 Get the probability density function of $Z=X+Y$.
 <br><br><br><br>
