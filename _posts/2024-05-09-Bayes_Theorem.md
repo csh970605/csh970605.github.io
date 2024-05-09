@@ -17,7 +17,7 @@ $n$ numbers of events $B_{i}, i=1, 2, ..., n$ are exclusive each other like imag
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/25299ac0-9669-48c4-84d2-ff6cb8c8cd98">
 </center>
 
-And considering the entire sample space, $\Sigma_{i=1}^{n}P(B_{i})=1$. Then, the probability of random event $A$ is expressed as formula [33]:
+And considering the entire sample space, $\Sigma_{i=1}^{n}P(B_{i})=1$. Then, the probability of random event $A$ is expressed as formula [1]:
 
 <center>
 
@@ -26,12 +26,12 @@ $P(A) = \Sigma_{i=1}^{n}P(A, B_{i})$<br>
 
 <p align="center">
     <span>$=\Sigma_{i=1}^{n}P(A|B_{i})P(B_{i})$</span>
-    <span style="float: right;">[33]</span>
+    <span style="float: right;">[1]</span>
 </p>
 
 </center>
 
-Formula [33] is called total probability theorem.<br>
+Formula [1] is called **total probability theorem**.<br>
 
 In order to induce the bayes' theorem, we sholud know about the conditional probability. The conditional probability is:
 
@@ -41,21 +41,21 @@ $P(B_{i} \mid A) = \frac{P(A,B_{i})}{P(A)}$
 
 <p align="center">
     <span>$=\frac{P(A \mid B_{i})P(B_{i})}{P(A)}$</span>
-    <span style="float: right;">[34]</span>
+    <span style="float: right;">[2]</span>
 </p>
 
 </center>
 
-If you substitue the total probability theorem into formula [34]:
+If you substitue the total probability theorem into formula [2]:
 
 <p align="center">
     <span>$=\frac{P(A \mid B_{i})P(B_{i})}{\Sigma_{i=1}^{n}P(A|B_{i})P(B_{i})}$</span>
-    <span style="float: right;">[35]</span>
+    <span style="float: right;">[3]</span>
 </p>
 
-Formula [35] is called the **Bayes' theorem**.<br>
+Formula [3] is called the **Bayes' theorem**.<br>
 
-Of course, it can be expressed as probability density function as formula [36].
+Of course, it can be expressed as probability density function as formula [4].
 
 <center>
 
@@ -63,9 +63,16 @@ $p_{X \mid Y}(x \mid y) = p_{Y \mid X}(y \mid x)p_{X}(x)$
 
 <p align="center">
     <span>$=\frac{p_{Y \mid X}(y \mid x)p_{X}(x)}{\int_{-\infty}^{\infty}p_{Y \mid X}(y \mid x)p_{X}(x)dx}$</span>
-    <span style="float: right;">[34]</span>
+    <span style="float: right;">[4]</span>
 </p>
 
 </center>
 
 where $p_{X}(x)$ is prior probability density function, $p_{X \mid Y}(x \mid y)$ is posterior probability density function.
+
+Of course again, the occasion that events and random variables are mixed, the bayes' theorem is formula [5].
+
+<p align="center">
+    <span>$P(B_{i} \mid y) = \frac{p_{Y \mid \B_{i}}(y \mid B_{i})P(B_{i})}{\Sigma_{j=1}^{n}p_{Y \mid B_{j}}(y \mid B_{j})P(B_{j})}$</span>
+    <span style="float: right;">[4]</span>
+</p>
