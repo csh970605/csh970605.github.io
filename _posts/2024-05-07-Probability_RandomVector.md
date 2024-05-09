@@ -416,9 +416,6 @@ Assume that $X$ and $Y$ is the independent random variable. And the probability 
 $p_{X}(x)=\left\{\begin{matrix}
 1, \ \ 0\leq x \leq 1\\ 
 0, \ \ otherwise
-\end{matrix}\right., \ \ \ \ p_{Y}(y)=\left\{\begin{matrix}
-1, \ \ 0\leq y \leq 1\\ 
-0, \ \ otherwise
 \end{matrix}\right.$
 
 $p_{X}(x)=\left\{\begin{matrix}
