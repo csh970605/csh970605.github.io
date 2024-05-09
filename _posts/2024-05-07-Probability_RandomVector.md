@@ -392,7 +392,7 @@ $=\frac{1}{N}\Sigma_{i=1}^{N} \int_{x}^{x+\Delta x}\delta (x-x^{(i)})$<br>
 
 <p align="center">
     <span>$=\frac{the \ number \ of \ samples \ that \ belongs \ to \ the \ interver (x, x+\Delta x]}{N}$</span>
-    <span style="float: right;">[31]</span>
+    <span style="float: right;">[32]</span>
 </p>
 
 </center>
@@ -465,3 +465,53 @@ Therefore,
 2. $p_{Z}(z)= \int_{0}^{z}dx = z, 0 \leq z \leq 1$
 3. $p_{Z}(z)= \int_{z-1}^{1}dx = 2-z, 1 < z \leq 2$
 4. $p_{Z}(z)= 0, z > 2$
+
+<br><br><br><br>
+
+# Bayes' theorem
+
+$n$ numbers of events $B_{i}, i=1, 2, ..., n$ are exclusive each other like image below, $P(B_{i}, B_{j})=0, \forall i \neq j$. 
+
+<center>
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/25299ac0-9669-48c4-84d2-ff6cb8c8cd98">
+</center>
+
+And considering the entire sample space, $\Sigma_{i=1}^{n}P(B_{i})=1$. Then, the probability of random event $A$ is expressed as formula [33]:
+
+<center>
+
+$P(A) = \Sigma_{i=1}^{n}P(A, B_{i})$<br>
+
+
+<p align="center">
+    <span>$=\Sigma_{i=1}^{n}P(A|B_{i})P(B_{i})$</span>
+    <span style="float: right;">[33]</span>
+</p>
+
+</center>
+
+Formula [33] is called total probability theorem.<br>
+
+In order to induce the bayes' theorem, we sholud know about the conditional probability. The conditional probability is:
+
+<center>
+
+$P(B_{i} \mid A) = \frac{P(A,B_{i})}{P(A)}$
+
+<p align="center">
+    <span>$=\frac{P(A \mid B_{i})P(B_{i})}{P(A)}$</span>
+    <span style="float: right;">[34]</span>
+</p>
+
+</center>
+
+If you substitue the total probability theorem into formula [34]:
+
+<p align="center">
+    <span>$=\frac{P(A \mid B_{i})P(B_{i})}{\Sigma_{i=1}^{n}P(A|B_{i})P(B_{i})}$</span>
+    <span style="float: right;">[35]</span>
+</p>
+
+Formula [35] is called the **Bayes' theorem**.
+
