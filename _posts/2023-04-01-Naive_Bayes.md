@@ -18,6 +18,8 @@ $ P(A\vert B) = $ $ P(B\vert A) * P(A) \over P(B) $ $ = $ $ P(A \cap B) \over P(
 
 </font>
 </center>
+
+And you can get more information about Bayes' Therom in [here](https://csh970605.github.io/posts/Bayes_Theorem/)
 <br><br>
 
 # What is Naive bayes?
