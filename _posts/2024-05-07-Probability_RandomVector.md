@@ -422,9 +422,10 @@ $p_{X}(x)=\left\{\begin{matrix}
 \end{matrix}\right.$
 </center>
 
-$\left\{ \begin{matrix}
-1\\ 
-0
+
+$p_{X}(x)=\left\{\begin{matrix}
+1, \ \ 0\leq x \leq 1\\ 
+0, \ \ otherwise
 \end{matrix}\right.$
 
 Get the probability density function of $Z=X+Y$.
