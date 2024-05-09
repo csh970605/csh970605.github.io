@@ -385,9 +385,10 @@ Then we can calculate the probability $P(x < X \leq x + \Delta x)$ of belonging 
 
 <center>
 
-$\int_{x}^{x+\Delta x}p_{X}(x)dx \approx \int_{x}^{x+\Delta x}\frac{1}{N} \Sigma_{i=1}^{N} \delta (x-x^{(i)})dx$
+$\int_{x}^{x+\Delta x}p_{X}(x)dx \approx \int_{x}^{x+\Delta x}\frac{1}{N} \Sigma_{i=1}^{N} \delta (x-x^{(i)})dx$<br>
 
-$=\frac{1}{N}\Sigma_{i=1}^{N} \int_{x}^{x+\Delta x}\delta (x-x^{(i)})$
+$=\frac{1}{N}\Sigma_{i=1}^{N} \int_{x}^{x+\Delta x}\delta (x-x^{(i)})$<br>
+
 <p align="center">
     <span>$=\frac{the \ number \ of \ samples \ that \ belongs \ to \ the \ interver (x, x+\Delta x]}{N}$</span>
     <span style="float: right;">[31]</span>
