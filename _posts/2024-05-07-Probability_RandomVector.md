@@ -380,6 +380,7 @@ $p_{X}(x) \approx \Sigma_{N}^{i=1}w_{X}(x^{(i)})\delta (x-x^{(i)})$
     <span>$=\frac{1}{N}\Sigma_{N}^{i=1} \delta(x-x^{(i)})$</span>
     <span style="float: right;">[31]</span>
 </p>
+</center>
 
 Then we can calculate the probability $P(x < X \leq x + \Delta x)$ of belonging $X$ to the intever $(x, x+\Delta x]$ as formula [32].
 
@@ -393,3 +394,55 @@ $=\frac{1}{N}\Sigma_{i=1}^{N} \int_{x}^{x+\Delta x}\delta (x-x^{(i)})$<br>
     <span>$=\frac{the \ number \ of \ samples \ that \ belongs \ to \ the \ interver (x, x+\Delta x]}{N}$</span>
     <span style="float: right;">[31]</span>
 </p>
+
+</center>
+
+<br>
+
+Therefore, the histogram that shows the number of samples belongs to the arbitrary bin has the same shape of the approximation of probability density function $p_{X}(x)$. There is one thing that differ to the probability density function is the area of probability density function must be 1. So, if the area of histogram is normalized to 1, we can get closer shape to the shape of the probability density function.
+
+<br>
+<br>
+
+## Example
+
+Question.
+
+---
+
+Assume that $X$ and $Y$ is the independent random variable. And the probability density functions are:
+<center>
+
+$p_{X}(x)=\left\{\begin{matrix}
+1, \ \ 0\leq x \leq 1\\ 
+0, \ \ otherwise
+\end{matrix}\right., \ \ \ \ p_{Y}(y)=\left\{\begin{matrix}
+1, \ \ 0\leq y \leq 1\\ 
+0, \ \ otherwise
+\end{matrix}\right.$
+</center>
+
+Get the probability density function of $Z=X+Y$.
+<br><br><br><br>
+
+Answer.
+
+---
+
+$p_{Z}(z) = \int_{-\infty}^{\infty}p_{X}(x)p_{Y}(z-x)dx=\int_{0}^{1}p_{X}(z-y)dy$
+
+$p_{X}(z-y) = \left\{\begin{matrix}
+1, \ \ 0\leq z-y \leq 1 \\
+0, \ \ otherwise
+\end{matrix}\right.$
+
+$= \left\{\begin{matrix}
+1, \ \ z-1\leq y \leq z\\ 
+0, \ \ otherwise
+\end{matrix}\right.$
+
+Therefore, 
+1. $p_{Z}(z)=0, z <0$
+2. $p_{Z}(z)= \int_{0}^{z}dx = z, 0 \leq z \leq 1$
+3. $p_{Z}(z)= \int_{z-1}^{1}dx = 2-z, 1 < z \leq 2$
+4. $p_{Z}(z)= 0, z > 2$
