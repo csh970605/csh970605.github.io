@@ -441,9 +441,7 @@ $p_{Z}(z) = \int_{-\infty}^{\infty}p_{X}(x)p_{Y}(z-x)dx=\int_{0}^{1}p_{X}(z-y)dy
 $p_{X}(x)=\left\{\begin{matrix}
 1, \ \ 0\leq x \leq 1\\ 
 0, \ \ otherwise
-\end{matrix}\right.$<br>
-
-$=\left\{\begin{matrix}
+\end{matrix}\right., \ \ \ \ p_{Y}(y)=\left\{\begin{matrix}
 1, \ \ 0\leq y \leq 1\\ 
 0, \ \ otherwise
 \end{matrix}\right.$
