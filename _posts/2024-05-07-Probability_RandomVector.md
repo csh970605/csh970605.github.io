@@ -399,7 +399,16 @@ $=\frac{1}{N}\Sigma_{i=1}^{N} \int_{x}^{x+\Delta x}\delta (x-x^{(i)})$<br>
 
 <br>
 
-Therefore, the histogram that shows the number of samples belongs to the arbitrary bin has the same shape of the approximation of probability density function $p_{X}(x)$. There is one thing that differ to the probability density function is the area of probability density function must be 1. So, if the area of histogram is normalized to 1, we can get closer shape to the shape of the probability density function.
+Therefore, the histogram that shows the number of samples belongs to the arbitrary bin has the same shape of the approximation of probability density function $p_{X}(x)$. There is one thing that differ to the probability density function is the area of probability density function must be 1. So, if the area of histogram is normalized to 1, we can get closer shape to the shape of the probability density function.<br>
+
+For example, let's approximate the probability density function of $Z$ obtained in [example](https://csh970605.github.io/posts/Probability_RandomVector/#example) by extracting 10,000 samples each from X and Y. The image below is the picture of drawing probability density function of $Z$ that is calculated approximately by using sample $z^{(i)}$.
+
+<center>
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/cf24190c-7fdc-4190-8b2c-b543a48a3044">
+</center>
+
+As you can see at the picture above, it is merely correspond to the result of example.
 
 <br>
 <br>
@@ -437,7 +446,7 @@ Answer.
 <center>
 
 
-$p_{Z}(z) = \int_{-\infty}^{\infty}p_{X}(x)p_{Y}(z-x)dx=\int_{0}^{1}p_{X}(z-y)dy$<br>
+$p_{Z}(z) = \int_{-\infty}^{\infty}p_{X}(x)p_{Y}(z-x)dx=\int_{0}^{1}p_{X}(z-y)dy$<br><br>
 
 $p_{X}(x)=\left\{\begin{matrix}
 1, \ \ 0\leq x \leq 1\\ 
