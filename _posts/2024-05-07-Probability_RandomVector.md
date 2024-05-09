@@ -422,6 +422,11 @@ $p_{X}(x)=\left\{\begin{matrix}
 \end{matrix}\right.$
 </center>
 
+$\left\{ \begin{matrix}
+1\\ 
+0
+\end{matrix}\right.$
+
 Get the probability density function of $Z=X+Y$.
 <br><br><br><br>
 
@@ -432,10 +437,7 @@ Answer.
 
 
 
-$\left\{ \begin{matrix}
-1\\ 
-0
-\end{matrix}\right.$
+
 
 $p_{Z}(z) = \int_{-\infty}^{\infty}p_{X}(x)p_{Y}(z-x)dx=\int_{0}^{1}p_{X}(z-y)dy$<br>
 
