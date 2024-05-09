@@ -412,12 +412,6 @@ Question.
 
 Assume that $X$ and $Y$ is the independent random variable. And the probability density functions are:
 <center>
-
-$p_{X}(x)=\left\{\begin{matrix}
-1, \ \ 0\leq x \leq 1\\ 
-0, \ \ otherwise
-\end{matrix}\right.asdfasdf$
-
 $p_{X}(x)=\left\{\begin{matrix}
 1, \ \ 0\leq x \leq 1\\ 
 0, \ \ otherwise
@@ -445,19 +439,12 @@ Answer.
 $p_{Z}(z) = \int_{-\infty}^{\infty}p_{X}(x)p_{Y}(z-x)dx=\int_{0}^{1}p_{X}(z-y)dy$<br>
 
 
-<!-- $p_{X}(z-y)=\left\{\begin{matrix}
+$p_{X}(z-y)=\left\{\begin{matrix}
 1, \ \ 0\leq z-y \leq 1\\
 0, \ \ otherwise
-\end{matrix}\right.$ <br> -->
+\end{matrix}\right.$<br>
 
-
-$p_{X}(z-y)=\left\{\begin{matrix}
-1\\
-0
-\end{matrix}\right.$ <br>
-
-$=$
-$\left\{\begin{matrix}
+$=\left\{\begin{matrix}
 1, \ \ z-1\leq y \leq z\\ 
 0, \ \ otherwise
 \end{matrix}\right.$
