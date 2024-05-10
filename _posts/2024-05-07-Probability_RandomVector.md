@@ -165,7 +165,7 @@ $=\lim_{\Delta x, \Delta y \rightarrow} \frac{P(x < X \leq x + \Delta x, y < Y \
 Since $F_{X}(x) = F_{XY}(x, \infty)$ is True, you can get the probability density function of only X by formula[10]. It is called **marginal density function** of X.
 
 <p align="center">
-    <span>$p_{X}(x) = \int_{-\infty}^{infty}p_{XY}(x ,y)dy$</span>
+    <span>$p_{X}(x) = \int_{-\infty}^{\infty}p_{XY}(x ,y)dy$</span>
     <span style="float: right;">[10]</span>
 </p>
 <br><br><br><br>
