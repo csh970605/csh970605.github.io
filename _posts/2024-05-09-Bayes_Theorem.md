@@ -66,6 +66,8 @@ $p_{X \mid Y}(x \mid y) = p_{Y \mid X}(y \mid x)p_{X}(x)$
     <span style="float: right;">[4]</span>
 </p>
 
+$= \frac{p_{XY}(x,y)}{p_{Y}(y)}$
+
 </center>
 
 where $p_{X}(x)$ is prior probability density function, $p_{X \mid Y}(x \mid y)$ is posterior probability density function.
