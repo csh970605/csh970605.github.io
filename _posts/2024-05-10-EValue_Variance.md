@@ -55,3 +55,15 @@ The expectaion of function of random variable $X$ and $Y$ $g(X, Y)$ is defined a
 <br><br><br><br>
 
 # Variance
+
+The variance of random variable is defined as formula [5].
+
+<center>
+
+$Var(X) = E[(X-E[X])^{2}]$
+<p align="center">
+    <span>$= \int_{-\infty}^{\infty}(x-E[X])^{2}p_{X}(x)dx$</span>
+    <span style="float: right;">[4]</span>
+</p>
+</center>
+
