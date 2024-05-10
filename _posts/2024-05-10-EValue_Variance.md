@@ -16,3 +16,19 @@ The expectation or mean of [random variable](https://csh970605.github.io/posts/P
     <span>$E[X] = \int_{-\infty}^{\infty}xp_{X}(x)dx$</span>
     <span style="float: right;">[1]</span>
 </p>
+
+And the $k^{th}$ moment of random varialbe X $E[X]$ is defined as formula [2].
+
+<p align="center">
+    <span>$E[X^{k}] = \int_{-\infty}^{\infty}x^{k}p_{X}(x)dx$</span>
+    <span style="float: right;">[2]</span>
+</p>
+
+Where the first moment is expectation and second moment is mean square or average power of random variable.<br>
+
+And the function of random variable $X$ $g(X)$ is defined as formula [3].
+
+<p align="center">
+    <span>$E[g()] = \int_{-\infty}^{\infty}g(x)p_{X}(x)dx$</span>
+    <span style="float: right;">[3]</span>
+</p>
