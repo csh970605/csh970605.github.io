@@ -111,3 +111,23 @@ $Cor(X,Y) = E[XY] = E[X][Y]$
 
 And if $E[XY] = 0$, it is called **orthogonal**. 
 
+<br><br><br><br>
+
+
+# Conditional Expectation and Variance
+
+The conditional expectation of $X$ that is given random variable $Y$ to $y$ is defined as formula [10].
+
+<p align="center">
+    <span>$E[X \mid Y = y] = \int_{-\infty}^{\infty}xp_{X \mid Y}(x \mid y) dx$</span>
+    <span style="float: right;">[10]</span>
+</p>
+
+And conditional expectation of $X$ that is conditioning the random variable $Y$ is defined as formula [11].
+
+<p align="center">
+    <span>$E[X \mid Y] = \int_{-\infty}^{\infty}xp_{X \mid Y}(x \mid Y) dx$</span>
+    <span style="float: right;">[11]</span>
+</p>
+
+<span style="color: red;">**Note that $E[X \mid Y=y]$ is a real number as a function of real number $y$, but $E[X \mid Y]$ is a random variable as a function of random variable $Y$.**</span>
