@@ -116,7 +116,7 @@ And if $E[XY] = 0$, it is called **orthogonal**.
 
 # Conditional Expectation and Variance
 
-The conditional expectation of $X$ that is given random variable $Y$ to $y$ is defined as formula [10].
+The conditional expectation of $X$ that is given random variable $Y$ as $y$ is defined as formula [10].
 
 <p align="center">
     <span>$E[X \mid Y = y] = \int_{-\infty}^{\infty}xp_{X \mid Y}(x \mid y) dx$</span>
@@ -131,3 +131,17 @@ And conditional expectation of $X$ that is conditioning the random variable $Y$ 
 </p>
 
 <span style="color: red;">**Note that $E[X \mid Y=y]$ is a real number as a function of real number $y$, but $E[X \mid Y]$ is a random variable as a function of random variable $Y$.**</span>
+
+<br><br>
+
+The conditional expectaion of $X$ that is given random variable $Y$ as $y$ and the conditional expectation of $X$ That is conditioning the random variable $Y$ are defined as fromula [12], [13] respectively.
+
+<p align="center">
+    <span>$E[g(X) \mid Y=y] = \int_{-\infty}^{\infty}g(x)p_{X \mid Y}(x \mid y) dx$</span>
+    <span style="float: right;">[12]</span>
+</p>
+
+<p align="center">
+    <span>$E[g(X) \mid Y] = \int_{-\infty}^{\infty}g(x)p_{X \mid Y}(x \mid Y) dx$</span>
+    <span style="float: right;">[13]</span>
+</p>
