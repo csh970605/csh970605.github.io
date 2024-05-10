@@ -153,7 +153,7 @@ $=P(X \leq x, Y \leq y)$
 if $F_{XY}(x, y)$ can be differentiated, joint probability density function can be expressed as follows:
 
 <p align="center">
-    <span>$p_{XY}(x, y) = frac{\partial^{2}F_{XY}(x, y)}{\partial x \partial y}$</span>
+    <span>$p_{XY}(x, y) = \frac{\partial^{2}F_{XY}(x, y)}{\partial x \partial y}$</span>
     <span style="float: right;">[9]</span>
 </p>
 
