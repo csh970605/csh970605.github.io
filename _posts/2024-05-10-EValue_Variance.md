@@ -70,7 +70,7 @@ $Var(X) = E[(X-E[X])^{2}]$
 Rhe **standard deviation** of $X$ is defined as $\sigma_{X} = \sqrt{Var(X)}$. And the $k^{th}$ central moment $E[(X-\mu_{X})^{k}]$ is defined as formula [7].
 
 <p align="center">
-    <span>E[(X - E[X])^{k}] = \int_{-\infty}^{\infty}(x-E[X])^{k}p_{X}(x)dx$</span>
+    <span>$E[(X - E[X])^{k}] = \int_{-\infty}^{\infty}(x-E[X])^{k}p_{X}(x)dx$</span>
     <span style="float: right;">[7]</span>
 </p>
 
