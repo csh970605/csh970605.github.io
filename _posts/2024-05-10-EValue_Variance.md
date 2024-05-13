@@ -69,6 +69,8 @@ $Var(X) = E[X^{2}] - (E[X])^{2}$
 
 $= \int_{-\infty}^{\infty}(x-E[X])^{2}p_{X}(x)dx$
 
+</center>
+
 The **standard deviation** of $X$ is defined as $\sigma_{X} = \sqrt{Var(X)}$. And the $k^{th}$ central moment $E[(X-\mu_{X})^{k}]$ is defined as formula [7].
 
 <p align="center">
@@ -174,22 +176,19 @@ The conditional variance of $X$ that is given random variable $Y$ as $y$ and the
 <center>
 
 $Var(X \mid Y = y) = E[(X-E[X \mid Y=y)]^{2} \mid Y=y]$
-</center>
 
 <p align="center">
     <span>$= E[X^{2} \mid Y] - (E[X \mid Y = y])^{2}$</span>
     <span style="float: right;">[15]</span>
 </p>
-<center>
 
 $Var(X \mid Y) = E[(X - E[X \mid Y])^{2} \mid y] $
-</center>
 <p align="center">
     <span>$= E[X^{2} \mid Y] - (E[X \mid Y])^{2}$</span>
     <span style="float: right;">[16]</span>
 </p>
 
-
+</center>
 
 As [conditional expectaion](https://csh970605.github.io/posts/EValue_Variance/#conditional-expectaion) does, <span style="color: red;">**note that $Var[X \mid Y=y]$ is a real number as a function of real number $y$, but $Var[X \mid Y]$ is a random variable as a function of random variable $Y$.**</span>
 
@@ -199,14 +198,12 @@ And also, since $E(X \mid Y)$ is also random variable, the expectation can be ca
 
 $Var(E[X \mid Y]) = E[(E[X \mid Y] - E[E[X \mid Y]])^{2}]$
 
-</center>
-
 <p align="center">
     <span>$= E[(E[X \mid Y])^{2} - (E[X])^{2}]$</span>
     <span style="float: right;">[17]</span>
 </p>
 
-
+</center>
 
 According to the definition of [variance](https://csh970605.github.io/posts/EValue_Variance/#variance), $Var(X)$ can be expressed as follows:
 
