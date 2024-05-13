@@ -125,7 +125,9 @@ The covariance matrix $Cov(X)$ of random vector $X=[X_{1}, X_{2}, ..., X_{n}]^{T
 <center>
 
 $Cov(X) = E[(X-E[X])(X-E[X])^{T}]$
+
 $= \int_{-\infty}^{\infty}(x-E[X])(X-E[X])^{T}p_{X}(x)dx$
+
 <p align="center">
     <span>$\begin{bmatrix}
  \sigma_{11}&  \sigma_{12}& \cdots & \sigma_{1n}\\ 
@@ -133,6 +135,55 @@ $= \int_{-\infty}^{\infty}(x-E[X])(X-E[X])^{T}p_{X}(x)dx$
  \vdots & \vdots & \ddots & \vdots \\ 
  \sigma_{n1}&  \sigma_{n2}& \cdots & \sigma_{nn}
 \end{bmatrix}$</span>
-    <span style="float: right;">[4]</span>
+    <span style="float: right;">[6]</span>
 </p>
 </center>
+
+Where $\sigma_{ij} = \sigma_{ji} = E[(X_{i} - E[X_{i}])(X_{j}-E[X_{j}])]$.
+
+And the correlation matrix of random vector $X$ and $Y$ is defined as:
+
+<center>
+
+$E[XY^{T}] = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} xy^{T}p_{XY}(x,y)dxdy$
+</center>
+
+And the inter-covariance matrix of random vector $X$ and $Y$ is defined as:
+
+<center>
+
+$E[(X-E[X])(Y-E[Y])^{T}] = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty}(x-E[X])(y-E[Y])^{T}p_{XY}(x,y)dxdy$
+</center>
+
+If the inter-covariance matrix of $X$ and $Y$ is 0, $X$ and $Y$ are in the **uncorrelated** to each other.<br>
+If $E[X^{T}Y]=0$, $X$ and $Y$ are **orthogonal** to each other.<br>
+
+If $p_{XY}(x,y)=p_{X}(x)p_{Y}(y)$, $X$ and $Y$ are independent.
+
+The conditional expectation of $X$ that is given random variable $Y$ as $y$ is defined as formula [7].
+
+<p align="center">
+    <span>$E[X \mid Y = y] = \int_{-\infty}^{\infty}xp_{X \mid Y}(x \mid y) dx$</span>
+    <span style="float: right;">[7]</span>
+</p>
+
+And conditional expectation of $X$ that is conditioning the random variable $Y$ is defined as formula [8].
+
+<p align="center">
+    <span>$E[X \mid Y] = \int_{-\infty}^{\infty}xp_{X \mid Y}(x \mid Y) dx$</span>
+    <span style="float: right;">[8]</span>
+</p>
+
+<span style="color: red;">**Note that $E[X \mid Y=y]$ is a real number as a function of real number $y$, but $E[X \mid Y]$ is a random variable as a function of random variable $Y$.**</span>
+
+The conditional covariance matrix of $X$ that is given random variable $Y$ as $y$ and the conditional covariance matrix of $X$ That is conditioning the random variable $Y$ are defined as fromula [9], [10] respectively.
+
+<p align="center">
+    <span>$Cov[X \mid Y=y] = E[(X - E[X \mid Y=y])(X - E[X \mid Y=y])^{T} \mid Y=y]$</span>
+    <span style="float: right;">[9]</span>
+</p>
+
+<p align="center">
+    <span>$Cov[X \mid Y] = E[(X - E[X \mid Y])(X - E [X \mid Y])^{T} \mid Y]$</span>
+    <span style="float: right;">[10]</span>
+</p>
