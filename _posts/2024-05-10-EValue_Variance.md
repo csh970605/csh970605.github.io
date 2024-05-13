@@ -116,6 +116,10 @@ And if $E[XY] = 0$, it is called **orthogonal**.
 
 # Conditional Expectation and Variance
 
+<br><br>
+
+## Conditional Expectaion
+
 The conditional expectation of $X$ that is given random variable $Y$ as $y$ is defined as formula [10].
 
 <p align="center">
@@ -145,3 +149,27 @@ The conditional expectaion of $X$ that is given random variable $Y$ as $y$ and t
     <span>$E[g(X) \mid Y] = \int_{-\infty}^{\infty}g(x)p_{X \mid Y}(x \mid Y) dx$</span>
     <span style="float: right;">[13]</span>
 </p>
+
+<br><br>
+
+## Conditional variance
+
+The conditional variance of $X$ that is given random variable $Y$ as $y$ and the conditional variance of $X$ That is conditioning the random variable $Y$ are defined as fromula [14], [15] respectively.
+
+<center>
+
+$Var(X \mid Y = y) = E[(X-E[X \mid Y=y)]^{2} \mid Y=y]$
+
+<p align="center">
+    <span>$= E[X^{2} \mid Y] - (E[X \mid Y = y])^{2}$</span>
+    <span style="float: right;">[12]</span>
+</p>
+
+As [conditional expectaion] does, <span style="color: red;">**note that $E[X \mid Y=y]$ is a real number as a function of real number $y$, but $E[X \mid Y]$ is a random variable as a function of random variable $Y$.**</span>
+
+<p align="center">
+    <span>$E[g(X) \mid Y] = \int_{-\infty}^{\infty}g(x)p_{X \mid Y}(x \mid Y) dx$</span>
+    <span style="float: right;">[13]</span>
+</p>
+
+</center>
