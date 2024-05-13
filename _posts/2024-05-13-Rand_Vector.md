@@ -61,3 +61,45 @@ And the conditional probability density function of random vector $X$ that is gi
     <span>$P(X \leq x \bar Y = y)= \int_{-\infty}^{\infty}p_{X \mid Y}(x \mid y)dx$</span>
     <span style="float: right;">[4]</span>
 </p>
+
+where
+
+<center>
+
+$(X \leq x) = (X_{1} \leq x_{1}, X_{2} \leq x_{2}, ..., X_{n} \leq x_{n})$
+
+$(Y \leq t) = (Y_{1} \leq y_{1}, Y_{2} \leq y_{2}, ..., Y_{n} \leq y_{n})$
+
+$p_{X \mid Y}(x \mid y) = p_{X_{1}, ..., X_{n} \mid Y_{1}, ..., Y_{m}}(x_{1}, ..., x_{n} \mid y_{1}, ..., y_{m})$
+
+$ = \frac{p_{XY}(x,y)}{p_{Y}(y)} = \frac{p_{X_{1}, ..., X_{n} \mid Y_{1}, ..., Y_{m}}(x_{1}, ..., x_{n} \mid y_{1}, ..., y_{m})}{p_{Y_{1}, ..., Y_{m}}(x_{1}, ..., x_{n} \mid y_{1}, ..., y_{m})}$
+
+</center>
+
+And $P_{X \mid Y}(x \mid y)$ is a multi variable function.
+
+<br><br><br><br>
+
+
+# Expectation and Covariance
+
+The Expectation or mean of random vector $X=[X_{1}, X_{2}, ..., X_{n}]^{T}$ is defined as the expectation of each random vector element as formula [5].
+
+<center>
+
+$E[X] = \begin{bmatrix}
+E[X_{1}]\\ 
+\vdots \\
+E[X_{n}]
+\end{bmatrix} = \int_{-\infty}^{\infty}\begin{bmatrix}
+x_{1}\\ 
+\vdots \\
+x_{n}
+\end{bmatrix}p_{X}(x)dx$
+
+<p align="center">
+    <span>$\int_{-\infty}^{\infty}xp_{X}(x)dx$</span>
+    <span style="float: right;">[5]</span>
+</p>
+
+</center>
