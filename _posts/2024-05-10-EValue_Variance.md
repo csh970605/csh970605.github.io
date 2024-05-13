@@ -200,4 +200,12 @@ $Var(E[X \mid Y]) = E[(E[X \mid Y] - E[E[X \mid Y]])^{2}]$
     <span>$= E[(E[X \mid Y])^{2} - (E[X])^{2}]$</span>
     <span style="float: right;">[17]</span>
 </p>
+
+</center>
+
+According to the definition of [variance](https://csh970605.github.io/posts/EValue_Variance/#variance), $Var(X)$ can be expressed as follows:
+
+<center>
+
+$Var(X) = E[Var(X \mid Y)] + Var(E[X \mid Y])$
 </center>
