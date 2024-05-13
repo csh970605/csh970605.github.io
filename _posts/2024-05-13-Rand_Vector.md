@@ -58,7 +58,7 @@ Where $p_{X}(x)$ is a multivariate function that is $p_{X}(x) = p_{X_{1}}, ..., 
 And the conditional probability density function of random vector $X$ that is given random vector $Y$ is $Y=y$ is defined as formula [4].
 
 <p align="center">
-    <span>$P(X \leq x \bar Y = y)= \int_{-\infty}^{\infty}p_{X \mid Y}(x \mid y)dx$</span>
+    <span>$P(X \leq x \mid Y = y)= \int_{-\infty}^{\infty}p_{X \mid Y}(x \mid y)dx$</span>
     <span style="float: right;">[4]</span>
 </p>
 
@@ -83,6 +83,10 @@ And $P_{X \mid Y}(x \mid y)$ is a multi variable function.
 
 # Expectation and Covariance
 
+<br><br>
+
+## Expectation
+
 The Expectation or mean of random vector $X=[X_{1}, X_{2}, ..., X_{n}]^{T}$ is defined as the expectation of each random vector element as formula [5].
 
 <center>
@@ -98,8 +102,37 @@ x_{n}
 \end{bmatrix}p_{X}(x)dx$
 
 <p align="center">
-    <span>$\int_{-\infty}^{\infty}xp_{X}(x)dx$</span>
+    <span>$=\int_{-\infty}^{\infty}xp_{X}(x)dx$</span>
     <span style="float: right;">[5]</span>
 </p>
 
+</center>
+
+where $x = [x_{1}, x_{2}, ..., x_{n}]^{T}$.<br>
+
+The expectation of function $g(X)$ of random vector $X$ is defined as:
+
+<center>
+
+$E[g(X)] = \int_{-\infty}^{\infty}g(x)p_{X}(x)dx$
+</center>
+<br><br>
+
+## Covariance
+
+The covariance matrix $Cov(X)$ of random vector $X=[X_{1}, X_{2}, ..., X_{n}]^{T}$ is defined as symmetric matrix as formula [6].
+
+<center>
+
+$Cov(X) = E[(X-E[X])(X-E[X])^{T}]$
+$= \int_{-\infty}^{\infty}(x-E[X])(X-E[X])^{T}p_{X}(x)dx$
+<p align="center">
+    <span>$\begin{bmatrix}
+ \sigma_{11}&  \sigma_{12}& \cdots & \sigma_{1n}\\ 
+ \sigma_{21}&  \sigma_{22}& \cdots & \sigma_{2n}\\ 
+ \vdots & \vdots & \ddots & \vdots \\ 
+ \sigma_{n1}&  \sigma_{n2}& \cdots & \sigma_{nn}
+\end{bmatrix}$</span>
+    <span style="float: right;">[4]</span>
+</p>
 </center>
