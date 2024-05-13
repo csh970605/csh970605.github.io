@@ -165,7 +165,7 @@ $Var(X \mid Y = y) = E[(X-E[X \mid Y=y)]^{2} \mid Y=y]$
     <span style="float: right;">[12]</span>
 </p>
 
-As [conditional expectaion] does, <span style="color: red;">**note that $E[X \mid Y=y]$ is a real number as a function of real number $y$, but $E[X \mid Y]$ is a random variable as a function of random variable $Y$.**</span>
+As [conditional expectaion] does, <span style="color: red;">**note that $Var[X \mid Y=y]$ is a real number as a function of real number $y$, but $Var[X \mid Y]$ is a random variable as a function of random variable $Y$.**</span>
 
 <p align="center">
     <span>$E[g(X) \mid Y] = \int_{-\infty}^{\infty}g(x)p_{X \mid Y}(x \mid Y) dx$</span>
