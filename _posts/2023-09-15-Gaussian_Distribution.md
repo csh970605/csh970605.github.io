@@ -22,5 +22,5 @@ $f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}$<br>
 
 Where <br>
 
-+ $\mu$ : The mean or expectation of distribution and<br>
-+ $\sigma$ : standard deviation
++ $\mu$ : The mean or expectation of distribution.<br>
++ $\sigma$ : standard deviation.
