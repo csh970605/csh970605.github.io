@@ -29,7 +29,7 @@ Where the first moment is expectation and the second moment is mean square or av
 And the function of random variable $X$ $g(X)$ is defined as formula [3].
 
 <p align="center">
-    <span>$E[g()] = \int_{-\infty}^{\infty}g(x)p_{X}(x)dx$</span>
+    <span>$E[g(X)] = \int_{-\infty}^{\infty}g(x)p_{X}(x)dx$</span>
     <span style="float: right;">[3]</span>
 </p>
 
@@ -60,14 +60,16 @@ The variance of random variable is defined as formula [6].
 
 <center>
 
-$Var(X) = E[(X-E[X])^{2}]$
+$Var(X) = E[X^{2}] - (E[X])^{2}$
+
 <p align="center">
-    <span>$= \int_{-\infty}^{\infty}(x-E[X])^{2}p_{X}(x)dx$</span>
+    <span>$= E[(X-E[X])^{2}]$</span>
     <span style="float: right;">[6]</span>
 </p>
-</center>
 
-Rhe **standard deviation** of $X$ is defined as $\sigma_{X} = \sqrt{Var(X)}$. And the $k^{th}$ central moment $E[(X-\mu_{X})^{k}]$ is defined as formula [7].
+$= \int_{-\infty}^{\infty}(x-E[X])^{2}p_{X}(x)dx$
+
+The **standard deviation** of $X$ is defined as $\sigma_{X} = \sqrt{Var(X)}$. And the $k^{th}$ central moment $E[(X-\mu_{X})^{k}]$ is defined as formula [7].
 
 <p align="center">
     <span>$E[(X - E[X])^{k}] = \int_{-\infty}^{\infty}(x-E[X])^{k}p_{X}(x)dx$</span>
