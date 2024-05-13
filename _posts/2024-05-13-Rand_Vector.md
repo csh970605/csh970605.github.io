@@ -203,7 +203,7 @@ where $\omega =[\omega_{1}, \omega_{2}, ..., \omega_{n}]^{T}$ is a $n$-dimension
 According to the definition of expectation, formula [11] can be written as formula [12].
 
 <p align="center">
-    <span>$\Phi_{X}(\omega) = \int_{-\infth}^{\infty}e^{j\omega^{T}X}p_{X}(x)dx$</span>
+    <span>$\Phi_{X}(\omega) = \int_{-\infty}^{\infty}e^{j\omega^{T}X}p_{X}(x)dx$</span>
     <span style="float: right;">[12]</span>
 </p>
 
