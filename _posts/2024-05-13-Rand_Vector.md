@@ -187,3 +187,29 @@ The conditional covariance matrix of $X$ that is given random variable $Y$ as $y
     <span>$Cov[X \mid Y] = E[(X - E[X \mid Y])(X - E [X \mid Y])^{T} \mid Y]$</span>
     <span style="float: right;">[10]</span>
 </p>
+
+<br><br><br><br>
+
+# Characteristic function
+
+The characteristic function of random vector $X$ is defined as formula [11].
+
+<p align="center">
+    <span>$\Phi_{X}(\omega) = E[e^{j\omega^{T}X}]$</span>
+    <span style="float: right;">[11]</span>
+</p>
+
+where $\omega =[\omega_{1}, \omega_{2}, ..., \omega_{n}]^{T}$ is a $n$-dimensional real number vector, $n$ is the dimension of $X$.<br>
+According to the definition of expectation, formula [11] can be written as formula [12].
+
+<p align="center">
+    <span>$\Phi_{X}(\omega) = \int_{-\infth}^{\infty}e^{j\omega^{T}X}p_{X}(x)dx$</span>
+    <span style="float: right;">[12]</span>
+</p>
+
+As you can see at the formula [12], the characteristic function of random vector $X$ is the multi-dimensional inverse Fourier transform of probability density function. Thus, the probability of $X$ can be get by transforming the characteristic function as:
+
+<center>
+
+$p_{X}(x) = \frac{1}{(2\pi)^{n}} \int_{-\infty}^{\infty}\Phi_{X}(\omega)e^{-j\omega^{T}X}d\omega$
+</center>
