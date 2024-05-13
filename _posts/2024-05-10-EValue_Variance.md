@@ -150,11 +150,24 @@ The conditional expectaion of $X$ that is given random variable $Y$ as $y$ and t
     <span style="float: right;">[13]</span>
 </p>
 
+Since $Var(X \mid Y)$ is also rnadomvariable, the expectation can be caluclated as formula [14].
+
+<center>
+
+$E[Var(X \mid Y)] = E[E[X^{2} \mid Y] - (E[X \mid Y])^{2}]$
+
+<p align="center">
+    <span>$= E[X^{2}] - E[(E[X \mid Y])^{2}]$</span>
+    <span style="float: right;">[14]</span>
+</p>
+</center>
+
+
 <br><br>
 
 ## Conditional variance
 
-The conditional variance of $X$ that is given random variable $Y$ as $y$ and the conditional variance of $X$ That is conditioning the random variable $Y$ are defined as fromula [14], [15] respectively.
+The conditional variance of $X$ that is given random variable $Y$ as $y$ and the conditional variance of $X$ That is conditioning the random variable $Y$ are defined as fromula [15], [16] respectively.
 
 <center>
 
@@ -162,14 +175,27 @@ $Var(X \mid Y = y) = E[(X-E[X \mid Y=y)]^{2} \mid Y=y]$
 
 <p align="center">
     <span>$= E[X^{2} \mid Y] - (E[X \mid Y = y])^{2}$</span>
-    <span style="float: right;">[12]</span>
+    <span style="float: right;">[15]</span>
 </p>
 
-As [conditional expectaion] does, <span style="color: red;">**note that $Var[X \mid Y=y]$ is a real number as a function of real number $y$, but $Var[X \mid Y]$ is a random variable as a function of random variable $Y$.**</span>
+$Var(X \mid Y) = E[(X - E[X \mid Y])^{2} \mid y] $
+<p align="center">
+    <span>$= E[X^{2} \mid Y] - (E[X \mid Y])^{2}$</span>
+    <span style="float: right;">[16]</span>
+</p>
+
+</center>
+
+As [conditional expectaion](https://csh970605.github.io/posts/EValue_Variance/#conditional-expectaion) does, <span style="color: red;">**note that $Var[X \mid Y=y]$ is a real number as a function of real number $y$, but $Var[X \mid Y]$ is a random variable as a function of random variable $Y$.**</span>
+
+And also, since $E(X \mid Y)$ is also rnadomvariable, the expectation can be caluclated as formula [17].
+
+<center>
+
+$Var(E[X \mid Y]) = E[(E[X \mid Y] - E[E[X \mid Y]])^{2}]$
 
 <p align="center">
-    <span>$E[g(X) \mid Y] = \int_{-\infty}^{\infty}g(x)p_{X \mid Y}(x \mid Y) dx$</span>
-    <span style="float: right;">[13]</span>
+    <span>$= E[(E[X \mid Y])^{2} - (E[X])^{2}]$</span>
+    <span style="float: right;">[17]</span>
 </p>
-
 </center>
