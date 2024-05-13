@@ -150,7 +150,7 @@ The conditional expectaion of $X$ that is given random variable $Y$ as $y$ and t
     <span style="float: right;">[13]</span>
 </p>
 
-Since $Var(X \mid Y)$ is also rnadomvariable, the expectation can be caluclated as formula [14].
+Since $Var(X \mid Y)$ is also random variable, the expectation can be caluclated as formula [14].
 
 <center>
 
@@ -188,7 +188,7 @@ $Var(X \mid Y) = E[(X - E[X \mid Y])^{2} \mid y] $
 
 As [conditional expectaion](https://csh970605.github.io/posts/EValue_Variance/#conditional-expectaion) does, <span style="color: red;">**note that $Var[X \mid Y=y]$ is a real number as a function of real number $y$, but $Var[X \mid Y]$ is a random variable as a function of random variable $Y$.**</span>
 
-And also, since $E(X \mid Y)$ is also rnadomvariable, the expectation can be caluclated as formula [17].
+And also, since $E(X \mid Y)$ is also random variable, the expectation can be caluclated as formula [17].
 
 <center>
 
