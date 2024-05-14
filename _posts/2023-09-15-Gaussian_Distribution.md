@@ -2,8 +2,8 @@
 title: Gaussian Distribution
 author: SeHoon
 date: 2023-09-15 10:42:30 +0900
-categories: [Mathematic, Statistics]
-tags: [Mathematic, Statistics]
+categories: [Mathematics, Statistics]
+tags: [Mathematics, Statistics]
 math: true
 mermaid: true
 ---
