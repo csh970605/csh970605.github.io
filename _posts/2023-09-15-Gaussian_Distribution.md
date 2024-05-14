@@ -51,4 +51,4 @@ $p_{X}(x) = N(x \mid \mu_{X}, P_{XX})$
 Where
 
 + $\mu_{X}$ : Expectation.
-+ $P_{XX}$ : Covariance.
++ $P_{XX}$ : Covariance
