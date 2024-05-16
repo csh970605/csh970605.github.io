@@ -152,3 +152,21 @@ v_{1} & v_{2}
 + $E^{T}E$ : $I$
 
 
+Since $P_{XX}^{-1} = E \wedge^{-1} E^{T}$ accordingly, let $y = E^{T}(X- \mu_{X})$. Then, the formula $(x-\mu_{X})^{T}P_{XX}^{-1}(x-\mu_{X})$ becomes:
+
+<center>
+
+$(x-\mu_{X})^{T}P_{XX}^{-1}(x-\mu_{X}) = (x-\mu_{X})^{T}E \wedge^{-1} E^{T}(X-\mu_{X})$
+
+$= y^{T}\wedge^{-1}y$
+
+$= \frac{y_{1}^{2}}{\lambda_{1}} + \frac{y_{2}^{2}}{\lambda_{2}} $
+
+$= c_{2}$
+</center>
+
+where $y=\begin{bmatrix}
+y_{1} & y_{2}
+\end{bmatrix}^{T}$.
+
+So, the contour of gaussian probability density function is an ellipse centered around $\mu_{X}$, the length of the main axis is $sqrt{\lambda_{1}}$ and $sqrt{\lambda_{2}}$, and the direction of the main axis is $v_{1}, v_{2}$ respectively.
