@@ -8,7 +8,7 @@ math: true
 mermaid: true
 ---
 
-# What is Gaussian Distribution?
+# Gaussian Distribution?
 
 Gaussian distribution also known as normal distribution is a type of continuous probability distribution.<br>
 The general form of its [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) is :
@@ -42,7 +42,7 @@ $p_{X}(x) = N(x \mid \mu_{X}, P_{XX})$
 
 <p align="center">
     <span>$= \frac{1}{\sqrt{(2 \pi)^{n}detP_{XX}}}e^{-\frac{1}{2}(x-\mu_{X})^{T}P_{XX}^{-1}(x-\mu_{X})}$</span>
-    <span style="float: right;">[2]</span>
+    <span style="float: right;">[1]</span>
 </p>
 
 </center>
@@ -149,6 +149,6 @@ v_{1} & v_{2}
 
 + $\wedge$ : $diag(\lambda_{1}, \lambda_{2})$
 
-+ $E_{T}E$ : $I$
++ $E^{T}E$ : $I$
 
 
