@@ -14,10 +14,9 @@ Gaussian distribution also known as normal distribution is a type of continuous 
 The general form of its [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) is :
 
 <center>
-<font size=4>
 
 $f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}$<br>
-</font>
+
 </center>
 
 Where <br>
@@ -42,7 +41,7 @@ The probability density function of gaussian random vector $X$ is defined as for
 $p_{X}(x) = N(x \mid \mu_{X}, P_{XX})$
 
 <p align="center">
-    <span>$= \frac{1}{\sqrt{(2 \pi)^{n}detP_{XX}}e^{-\frac{1}{2}(x-\mu_{X})^{T}P_{XX}^{-1}(x-\mu_{X})}}$</span>
+    <span>$= \frac{1}{\sqrt{(2 \pi)^{n}detP_{XX}}}e^{-\frac{1}{2}(x-\mu_{X})^{T}P_{XX}^{-1}(x-\mu_{X})}$</span>
     <span style="float: right;">[2]</span>
 </p>
 
@@ -51,4 +50,77 @@ $p_{X}(x) = N(x \mid \mu_{X}, P_{XX})$
 Where
 
 + $\mu_{X}$ : Expectation.
-+ $P_{XX}$ : Covariance
++ $P_{XX}$ : Covariance.
++ $n$ : Dimension of $X$.
++ $detP_{XX}$ : determinant of $P_{XX}$.
+
+The gaussian random variable $X$ is expressed simply as $X \sim N(x \mid \mu, \sigma^{2})$, and the gaussian random vector X is expressed simply as $X \sim N(X \mid \mu_{X}, P_{XX})$
+
+There are images that drawing the shape of 2-dimensional gaussian probability density function following several expectations and covariances:
+
+<center>
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/ed93ccbd-8629-401e-9dee-46c4556217d0">
+
+$\mu_{X} = \begin{bmatrix}
+0 & 0
+\end{bmatrix}^{T}, \ P_{XX} = \begin{bmatrix}
+1 & 0\\ 
+0 & 1
+\end{bmatrix}$
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/8dc73f2b-7a9b-4b58-b910-86bba9ab2638">
+
+$\mu_{X} = \begin{bmatrix}
+2 & 2
+\end{bmatrix}^{T}, \ P_{XX} = \begin{bmatrix}
+1 & 0\\ 
+0 & 1
+\end{bmatrix}$
+
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/fda429eb-b433-497c-802a-06371666d645">
+
+$\mu_{X} = \begin{bmatrix}
+0 & 0
+\end{bmatrix}^{T}, \ P_{XX} = \begin{bmatrix}
+1 & 0.5\\ 
+0.5 & 1
+\end{bmatrix}$
+
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/6992fa4d-4f04-4160-bac1-935ce0dcebf8">
+
+$\mu_{X} = \begin{bmatrix}
+0 & 0
+\end{bmatrix}^{T}, \ P_{XX} = \begin{bmatrix}
+1 & -0.5\\ 
+-0.5 & 2
+\end{bmatrix}$
+
+</center>
+
+According to the images above, if the values of off-diagonal terms are 0, the contour is a circle around the expectation, and if the values of off-diagonal terms are not 0, the contour is a ellipse around the expectation. You can see the proof [here]().
+
+<br><br><br><br>
+
+
+# Proof
+
+<br><br>
+
+## Proof 1.
+
+Show that given the expected value of Gaussian random vector $X=\begin{bmatrix}
+X_{1} & X_{2}
+\end{bmatrix}^{T}$ as $\mu_{X}$ and the covariance matrix as $P_{XX}$, the contour is an ellipse centered around $\mu_{X}$.
+<br><br>
+
+---
+
+The formula of the contour that the value of probability density function is $c_{1}$ follows as:
+
+<center>
+
+$p_{X}(X) = \frac{1}{\sqrt{(2 \pi)^{n}detP_{XX}}}e^{-\frac{1}{2}(x-\mu_{X})^{T}P_{XX}^{-1}(x-\mu_{X})}$
+</center>
