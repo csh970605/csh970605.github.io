@@ -100,7 +100,7 @@ $\mu_{X} = \begin{bmatrix}
 
 </center>
 
-According to the images above, if the values of off-diagonal terms are 0, the contour is a circle around the expectation, and if the values of off-diagonal terms are not 0, the contour is a ellipse around the expectation. You can see the proof [here]().
+According to the images above, if the values of off-diagonal terms are 0, the contour is a circle around the expectation, and if the values of off-diagonal terms are not 0, the contour is a ellipse around the expectation. You can see the proof [here](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-1).
 
 <br><br><br><br>
 
