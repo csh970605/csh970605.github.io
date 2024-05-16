@@ -34,7 +34,11 @@ The shape of gaussian distribution is:
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/04a3e688-62ca-45e3-b253-73717f7bb95d">
 </center>
 
-The probability density function of gaussian random vector $X$ is defined as formula[1].
+<br><br>
+
+## Gaussian Random Vector
+
+The probability density function of gaussian [random vector](https://csh970605.github.io/posts/Rand_Vector/) $X$ is defined as formula[1].
 
 <center>
 
@@ -101,6 +105,19 @@ $\mu_{X} = \begin{bmatrix}
 </center>
 
 According to the images above, if the values of off-diagonal terms are 0, the contour is a circle around the expectation, and if the values of off-diagonal terms are not 0, the contour is a ellipse around the expectation. You can see the proof [here](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-1).
+
+<br><br>
+
+## Characteristic Function of Gaussian Random Vector
+
+The [characteristic function](https://csh970605.github.io/posts/Rand_Vector/#characteristic-function) of random vector $N(x \mid \mu_{X}, P_{XX})$ is:
+
+<center>
+
+$\Phi_{X}(\omega) = e^{j\omega^{T} \mu_{X} - \frac{1}{2} \omega^{T}P_{XX}\omega}$
+
+</center>
+
 
 <br><br><br><br>
 
@@ -170,3 +187,4 @@ y_{1} & y_{2}
 \end{bmatrix}^{T}$.
 
 So, the contour of gaussian probability density function is an ellipse centered around $\mu_{X}$, the length of the main axis is $sqrt{\lambda_{1}}$ and $sqrt{\lambda_{2}}$, and the direction of the main axis is $v_{1}, v_{2}$ respectively.
+
