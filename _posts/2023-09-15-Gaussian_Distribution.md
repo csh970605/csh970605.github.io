@@ -8,7 +8,7 @@ math: true
 mermaid: true
 ---
 
-# Gaussian Distribution?
+# Gaussian Distribution
 
 Gaussian distribution also known as normal distribution is a type of continuous probability distribution.<br>
 The general form of its [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) is :
@@ -34,9 +34,10 @@ The shape of gaussian distribution is:
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/04a3e688-62ca-45e3-b253-73717f7bb95d">
 </center>
 
-<br><br>
+<br><br><br><br>
 
-## Gaussian Random Vector
+
+# Gaussian Random Vector
 
 The probability density function of gaussian [random vector](https://csh970605.github.io/posts/Rand_Vector/) $X$ is defined as formula[1].
 
@@ -104,11 +105,21 @@ $\mu_{X} = \begin{bmatrix}
 
 </center>
 
-According to the images above, if the values of off-diagonal terms are 0, the contour is a circle around the expectation, and if the values of off-diagonal terms are not 0, the contour is a ellipse around the expectation. You can see the proof [here](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-1).
+According to the images above, if the values of off-diagonal terms are 0, the contour is a circle around the expectation, and if the values of off-diagonal terms are not 0, the contour is a ellipse around the expectation. You can see the proof [here](https://csh970605.github.io/posts/Gaussian_Distribution/#proof).
 
 <br><br>
 
-## Characteristic Function of Gaussian Random Vector
+## Joint Gaussian Random Vector
+
+If the random vector $Y = \begin{bmatrix}
+X \\
+Y
+\end{bmatrix}$ that consist of random vector $X$ and $Y$ has gaussian distribution,
+
+<br><br><br><br>
+
+
+# Characteristic Function of Gaussian Random Vector
 
 The [characteristic function](https://csh970605.github.io/posts/Rand_Vector/#characteristic-function) of random vector $N(x \mid \mu_{X}, P_{XX})$ is:
 
@@ -123,10 +134,6 @@ $\Phi_{X}(\omega) = e^{j\omega^{T} \mu_{X} - \frac{1}{2} \omega^{T}P_{XX}\omega}
 
 
 # Proof
-
-<br><br>
-
-## Proof 1.
 
 Show that given the expected value of Gaussian random vector $X=\begin{bmatrix}
 X_{1} & X_{2}
