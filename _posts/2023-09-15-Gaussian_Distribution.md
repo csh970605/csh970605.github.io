@@ -124,3 +124,31 @@ The formula of the contour that the value of probability density function is $c_
 
 $p_{X}(X) = \frac{1}{\sqrt{(2 \pi)^{n}detP_{XX}}}e^{-\frac{1}{2}(x-\mu_{X})^{T}P_{XX}^{-1}(x-\mu_{X})}$
 </center>
+
+Since all values except $X$ are constant, the formula above can be written as:
+
+<center>
+
+$(x-\mu_{X})^{T}P_{XX}^{-1}(x-\mu_{X})=c_{2} > 0$
+</center>
+
+Where $c_{2}$ is a constant.
+
+Because $P_{XX}$ is a positive-definite matrix, it has eigenvalue $\lambda_{1}, \lambda_{2}$ which are bigger than 0, and eigenvector $v_{1}, v_{2}$ which are orthogonal. Thus, we can divide $P_{XX}$ as:
+
+<center>
+
+$P_{XX} = E\wedge E_{T}$
+</center>
+
+Where
+
++ $E$ : $\begin{bmatrix}
+v_{1} & v_{2}
+\end{bmatrix}$
+
++ $\wedge$ : $diag(\lambda_{1}, \lambda_{2})$
+
++ $E_{T}E$ : $I$
+
+
