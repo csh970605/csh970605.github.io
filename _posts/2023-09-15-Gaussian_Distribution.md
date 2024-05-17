@@ -157,10 +157,10 @@ $X \sim N(z \mid A\mu_{X}, AP_{XX}A^{T})$.
 
 3. The non-correlated gaussian random vectors are independent of each other.
 
-4. If two gaussain random vector $X$ and $Z$ are independent, sum of the two vectors is gaussian random vector. That is, if $X \sim N(x \mid \mu_{X}, P_{XX})$, $Z \sim N(z \mid \mu_{Z}, P_{ZZ})$,<br>
+4. If two gaussain random vector $X$ and $Z$ are independent to each other, sum of the two vectors is gaussian random vector. That is, if $X \sim N(x \mid \mu_{X}, P_{XX})$, $Z \sim N(z \mid \mu_{Z}, P_{ZZ})$,<br>
 $X + Z \sim N(\mu_{X} + \mu_{Z}, P_{XX} + P_{ZZ})$
 
-5. If two random vectors $X$ and $Z$ has joint gaussian distribution, the probability density function of $X$ or $Z$ is gaussian too.
+5. If two random vectors $X$ and $Z$ has joint gaussian distribution, the conditional probability density function of $X$ or $Z$ is gaussian too.
 <br>
 
 You can see the prooves of five features here [1](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-2), [2](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-3), [3](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-4), [4](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-5), [5](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-6)
@@ -370,11 +370,27 @@ Proof the fourth feature of gaussian random vector.
 
 ---
 
+Let the sum of two independent random variables $X$ $Z$ is $Y$. Then, the characteristic function of $Y$ is :
+
+<center>
+
+$\Phi_{Y}(\omega) = E[e^{jw^{T}Y}] = E[e^{jw^{T}(X+Z)}] = E[e^{jw^{T}X}e^{jw^{T}Z}]$
+
+$=E[e^{jw^{T}X}]E[e^{jw^{T}Z}] = \Phi_{X}(\omega)\Phi_{Z}(\omega)$
+
+$= e^{j\omega^{T}\mu_{X}-\frac{1}{2}\omega^{T}P_{XX}\omega}e^{j\omega^{T}\mu_{Z}-\frac{1}{2}\omega^{T}P_{ZZ}\omega}$
+
+$=e^{j\omega^{T}(\mu_{X} + \mu_{Z}) - \frac{1}{2}\omega^{T}(P_{XX} + P_{ZZ})\omega}$
+
+$\therefore Y \sim N(\mu_{X}+\mu_{Z}, P_{XX} + P_{ZZ})$
+</center>
 <br><br>
 
 ## Proof 6.
 
 Proof the fifth feature of gaussian random vector.
 <br><br>
+
+
 
 ---
