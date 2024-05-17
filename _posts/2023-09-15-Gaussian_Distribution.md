@@ -158,12 +158,12 @@ $X \sim N(z \mid A\mu_{X}, AP_{XX}A^{T})$.
 3. When random vector $X$ and $Z$ has joint gaussian distribution, if $X$ and $Z$ are uncorrelated, they are independent.
 
 4. If two gaussain random vector $X$ and $Z$ are independent, sum of the two vectors is gaussian random vector. That is, if $X \sim N(x \mid \mu_{X}, P_{XX})$, $Z \sim N(z \mid \mu_{Z}, P_{ZZ})$,<br>
-$X + Z \sim \N(\mu_{X} + \mu_{Z}, P_{XX} + P_{ZZ})$
+$X + Z \sim N(\mu_{X} + \mu_{Z}, P_{XX} + P_{ZZ})$
 
 5. If two random vectors $X$ and $Z$ has joint gaussian distribution, the probability density function of $X$ or $Z$ is gaussian too.
 <br>
 
-You can see the proof of five features here [1](), [2](), [3](), [4](), [5]()
+You can see the prooves of five features here [1](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-2), [2](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-3), [3](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-4), [4](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-5), [5](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-6)
 <br><br><br><br>
 
 
@@ -256,6 +256,21 @@ Proof the first feature of gaussian random vector.
 
 ---
 
+Let the random vector $Y$ is th linear transform of gaussian random vector $X$.<br>
+
+Then, check the characteristic function of random vector $Y$.<br>
+
+<center>
+
+$\Phi_{Y}(\omega) = E[e^{jw^{T}Y}] = E[e^{jw^{T}AX}]$
+
+$=\Phi_{X}(A^{T}\omega)$
+
+$= e^{j\omega^{T}A\mu_{X}-\frac{1}{2}\omega^{T}AP_{XX}A^{T}\omega}$
+
+$\therefore Y = AX \sim N(y \mid A\mu_{X}, AP_{XX}A^{T})$
+</center>
+
 <br><br>
 
 ## Proof 3.
@@ -265,6 +280,50 @@ Proof the second feature of gaussian random vector.
 
 ---
 
+Let $Y= \begin{bmatrix}
+X \\
+Z
+\end{bmatrix}$, where $X$ and $Z$ are random vector respectively.<br>
+
+Then, $X=\begin{bmatrix}
+I & 0
+\end{bmatrix}\begin{bmatrix}
+X \\
+Z
+\end{bmatrix} = \begin{bmatrix}
+I & 0
+\end{bmatrix}Y$.
+
+Therefore, according to the [first feature of gaussian random vector](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-2), $X$ must be a gaussian vector.
+
+In detail, the expectation and covariance of $X$ are:
+
+<center>
+
+$E[X] = \begin{bmatrix}
+I & 0
+\end{bmatrix}\mu_{Y} = \begin{bmatrix}
+I & 0
+\end{bmatrix}\begin{bmatrix}
+\mu_{X} \\
+\mu_{Z}
+\end{bmatrix} = \mu_{X}$
+
+$Cov(X) = \begin{bmatrix}
+I & 0
+\end{bmatrix}P_{XX}\begin{bmatrix}
+I \\
+0
+\end{bmatrix} = \begin{bmatrix}
+I & 0
+\end{bmatrix} \begin{bmatrix}
+P_{XX} & P_{XZ} \\
+P_{ZX} & P_{ZZ}
+\end{bmatrix} \begin{bmatrix}
+I \\
+0
+\end{bmatrix} = P_{XX}$
+</center>
 <br><br>
 
 ## Proof 4.
