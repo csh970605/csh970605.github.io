@@ -105,7 +105,7 @@ $\mu_{X} = \begin{bmatrix}
 
 </center>
 
-According to the images above, if the values of off-diagonal terms are 0, the contour is a circle around the expectation, and if the values of off-diagonal terms are not 0, the contour is a ellipse around the expectation. You can see the proof [here](https://csh970605.github.io/posts/Gaussian_Distribution/#proof).
+According to the images above, if the values of off-diagonal terms are 0, the contour is a circle around the expectation, and if the values of off-diagonal terms are not 0, the contour is a ellipse around the expectation. You can see the proof [here](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-1).
 
 <br><br>
 
@@ -119,7 +119,51 @@ Y
 <center>
 
 $p_{XZ}(x, z) = p_{Y}(y) = N(y\mid \mu_{Y}, P_{YY})$
+</center>
 
+And express the expectation and the covariance of $Y$ with the expectation and the covariance of $X$ and $Z$ is:
+
+<center>
+
+$\mu_{Y} = \begin{bmatrix}
+\mu_{X} \\
+\mu_{Z}
+\end{bmatrix}, P_{YY} = \begin{bmatrix}
+P_{XX} & P_{XZ}\\
+P_{ZX} & P_{ZZ}
+\end{bmatrix}$
+</center>
+
+Where
+
++ $P_{XX}$ : $E[(X - \mu_{X})(X-\mu_{X})^{T}]$
+
++ $P_{ZZ}$ : $E[(Z - \mu_{Z})(Z-\mu_{Z})^{T}]$
+
++ $P_{XZ}$ : $E[(X - \mu_{X})(Z-\mu_{Z})^{T}]$
+
++ $P_{ZX}$ : $E[(Z - \mu_{Z})(X-\mu_{X})^{T}]$
+
+<br><br>
+
+## Feature of Gaussian Random Vector
+
+There are 5 feature of gaussian random vector.
+
+1. The linear transform of the gaussian random vector is a gaussian random vector.
+
+2. If random vector $X$ and $Z$ has joint gaussian distribution, $X$ and $Z$ are gaussian random vector respectively. That is, if $p_{XZ}(x, z) = p_{Y}(y)=N(y \mid \mu_{Y}, P_{YY})$,<br>
+$X \sim N(z \mid A\mu_{X}, AP_{XX}A^{T})$.
+
+3. When random vector $X$ and $Z$ has joint gaussian distribution, if $X$ and $Z$ are uncorrelated, they are independent.
+
+4. If two gaussain random vector $X$ and $Z$ are independent, sum of the two vectors is gaussian random vector. That is, if $X \sim N(x \mid \mu_{X}, P_{XX})$, $Z \sim N(z \mid \mu_{Z}, P_{ZZ})$,<br>
+$X + Z \sim \N(\mu_{X} + \mu_{Z}, P_{XX} + P_{ZZ})$
+
+5. If two random vectors $X$ and $Z$ has joint gaussian distribution, the probability density function of $X$ or $Z$ is gaussian too.
+<br>
+
+You can see the proof of five features here [1](), [2](), [3](), [4](), [5]()
 <br><br><br><br>
 
 
@@ -138,6 +182,10 @@ $\Phi_{X}(\omega) = e^{j\omega^{T} \mu_{X} - \frac{1}{2} \omega^{T}P_{XX}\omega}
 
 
 # Proof
+
+<br><br>
+
+## Proof 1.
 
 Show that given the expected value of Gaussian random vector $X=\begin{bmatrix}
 X_{1} & X_{2}
@@ -199,3 +247,47 @@ y_{1} & y_{2}
 
 So, the contour of gaussian probability density function is an ellipse centered around $\mu_{X}$, the length of the main axis is $sqrt{\lambda_{1}}$ and $sqrt{\lambda_{2}}$, and the direction of the main axis is $v_{1}, v_{2}$ respectively.
 
+<br><br>
+
+## Proof 2.
+
+Proof the first feature of gaussian random vector.
+<br><br>
+
+---
+
+<br><br>
+
+## Proof 3.
+
+Proof the second feature of gaussian random vector.
+<br><br>
+
+---
+
+<br><br>
+
+## Proof 4.
+
+Proof the third feature of gaussian random vector.
+<br><br>
+
+---
+
+<br><br>
+
+## Proof 5.
+
+Proof the fourth feature of gaussian random vector.
+<br><br>
+
+---
+
+<br><br>
+
+## Proof 6.
+
+Proof the fifth feature of gaussian random vector.
+<br><br>
+
+---
