@@ -188,18 +188,18 @@ The conditional probability density function of $X$ ($p_{X\mid Y}(x\mid y)$), gi
 
 If event A is $(X \leq x)$ and $(Y=y)$ is in the micronet, event B is ($y < Y \leq y+dy$). Therefore, $p_{X\mid Y}(x\mid y)$ is from formula [11] as follow:
 <p align="center">
-    <span>$p_{X\mid Y}(x\mid y) = \frac{p_{XY}(x, y)}{p_{Y}(y)}, p_{Y} \neq 0$</span>
+    <span>$p_{X\mid Y}(x\mid y) = \frac{p_{XY}(x, y)}{p_{Y}(y)}, p_{Y}(y) \neq 0$</span>
     <span style="float: right;">[13]</span>
 </p>
 
 Else if the probability of event A will occur under the condition $X = x$ is :
 <p align="center">
-    <span>$p_{X\mid Y}(x\mid y) = \frac{p_{XY}(x, y)}{p_{Y}(y)}, p_{Y} \neq 0$</span>
+    <span>$p_{X|A}(a|x) = \frac{P(a, x)}{P_{X}(a)}, p_{X}(x) \neq 0$</span>
     <span style="float: right;">[14]</span>
 </p>
 Opposely, the conditional probability density function of X will occur under the condition event $A$ is:
 <p align="center">
-    <span>$p_{X|A}(x|A) = \frac{P(A, x)}{P(A)}$</span>
+    <span>$p_{X|A}(X|A) = \frac{P(A, x)}{P(A)}$</span>
     <span style="float: right;">[15]</span>
 </p>
 
