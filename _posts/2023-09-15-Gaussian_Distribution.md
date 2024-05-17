@@ -155,7 +155,7 @@ There are 5 feature of gaussian random vector.
 2. If random vector $X$ and $Z$ has joint gaussian distribution, $X$ and $Z$ are gaussian random vector respectively. That is, if $p_{XZ}(x, z) = p_{Y}(y)=N(y \mid \mu_{Y}, P_{YY})$,<br>
 $X \sim N(z \mid A\mu_{X}, AP_{XX}A^{T})$.
 
-3. When random vector $X$ and $Z$ has joint gaussian distribution, if $X$ and $Z$ are uncorrelated, they are independent.
+3. The non-correlated gaussian random vectors are independent of each other.
 
 4. If two gaussain random vector $X$ and $Z$ are independent, sum of the two vectors is gaussian random vector. That is, if $X \sim N(x \mid \mu_{X}, P_{XX})$, $Z \sim N(z \mid \mu_{Z}, P_{ZZ})$,<br>
 $X + Z \sim N(\mu_{X} + \mu_{Z}, P_{XX} + P_{ZZ})$
@@ -332,6 +332,34 @@ Proof the third feature of gaussian random vector.
 <br><br>
 
 ---
+
+Let there are two gaussian random vectors $X \sim N(\mu_{X}, P_{XX}), Z \sim N(\mu_{Z}, P_{ZZ})$. If $X$ and $Z$ are non-correlated, $P_{XZ} = P_{ZX} = 0$ because $E[(X-\mu_{X})(Z-\mu_{Z})^{T}] = [(Z-\mu_{Z})(X-\mu_{X})^{T}] = 0$.
+
+Then, the covariance of joint gaussian random vector is:
+<center>
+
+$P_{YY} = \begin{bmatrix}
+P_{XX} & 0 \\
+0 & P_{ZZ}
+\end{bmatrix}$
+
+$\therefore P_{YY}^{-1} = \begin{bmatrix}
+P_{XX}^{-1} & 0 \\
+0 & P_{ZZ}^{-1}
+\end{bmatrix}, detP_{YY} = detP_{XX}detP_{ZZ}$
+</center>
+
+Finally,
+<center>
+
+$p_{XZ}(x, z) = p_{Y}(y) = N(y \mid \mu_{Y}, P_{YY})$
+
+$= N(x \mid \mu_{X}, P_{XX})N(z \mid \mu_{Z}, P_{ZZ})$
+
+$= p_{X}(x)p_{Z}(z)$
+</center>
+
+So, $X$ and $Z$ are independent to each other.
 
 <br><br>
 
