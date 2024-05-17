@@ -114,7 +114,11 @@ According to the images above, if the values of off-diagonal terms are 0, the co
 If the random vector $Y = \begin{bmatrix}
 X \\
 Y
-\end{bmatrix}$ that consist of random vector $X$ and $Y$ has gaussian distribution,
+\end{bmatrix}$ that consist of random vector $X$ and $Y$ has gaussian distribution, it is called **joint gaussian random vector**. And the probability density function is 
+
+<center>
+
+$p_{XZ}(x, z) = p_{Y}(y) = N(y\mid \mu_{Y}, P_{YY})$
 
 <br><br><br><br>
 
