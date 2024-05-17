@@ -160,7 +160,7 @@ $X \sim N(z \mid A\mu_{X}, AP_{XX}A^{T})$.
 4. If two gaussain random vector $X$ and $Z$ are independent to each other, sum of the two vectors is gaussian random vector. That is, if $X \sim N(x \mid \mu_{X}, P_{XX})$, $Z \sim N(z \mid \mu_{Z}, P_{ZZ})$,<br>
 $X + Z \sim N(\mu_{X} + \mu_{Z}, P_{XX} + P_{ZZ})$
 
-5. If two random vectors $X$ and $Z$ has joint gaussian distribution, the conditional probability density function of $X$ or $Z$ is gaussian too.
+5. If two random vectors $X$ and $Z$ has joint gaussian distribution, the [conditional probability](https://csh970605.github.io/posts/Probability_RandomVector/#conditional-probability) density function of $X$ or $Z$ is gaussian too.
 <br>
 
 You can see the prooves of five features here [1](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-2), [2](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-3), [3](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-4), [4](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-5), [5](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-6)
@@ -391,6 +391,47 @@ $\therefore Y \sim N(\mu_{X}+\mu_{Z}, P_{XX} + P_{ZZ})$
 Proof the fifth feature of gaussian random vector.
 <br><br>
 
-
-
 ---
+
+Let $X \sim N(\mu_{X}, P_{XX}), Z \sim N(\mu_{Z}, P_{ZZ})$, then,
+
+<center>
+
+$p_{X \mid Z}(x \mid z) = \frac{p_{XZ}(x, z)}{p_{Z}(z)} = \frac{p_{Y}(y)}{p_{Z}(z)}$<br><br>
+$= \frac{\sqrt{(2\pi)^{p}detP_{ZZ}}e^{-\frac{1}{2}((y-\mu_{Y})^{T}P_{YY}^{-1}(y-\mu_{Y})-(z-\mu_{Z}^{T}P_{ZZ}^{-1}(z-\mu_{Z})))}}{\sqrt{(2\pi)^{n+p}detP_{YY}}}$
+</center>
+
+where
+
++ $P_{YY}^{-1}$ : $\begin{bmatrix}
+D^{-1} & -D^{-1}P_{XZ}P_{ZZ}^{-1} \\
+-P_{ZZ}^{-1}P_{ZX}D^{-1} & P_{ZZ}^{-1} + P_{ZZ}^{-1}P_{ZX}D^{-1}P_{XZ}P_{ZZ}^{-1}
+\end{bmatrix}$
+
++ $D$ : $P_{XX}-P_{XZ}P_{ZZ}^{-1}P_{ZX}$
+
+To make the formula which is in { } simple,
+
+<center>
+
+$(y-\mu_{Y})^{T}P_{YY}^{-1}(y-\mu_{Y})-(z-\mu_{Z})^{T}P_{ZZ}^{-1}(z-\mu_{Z})$
+
+$= (x-\mu_{X})^{T}D^{-1}(x-\mu_{X})$
+
+$-(x-\mu_{X})^{T}D^{-1}P_{XZ}P_{ZZ}^{-1}(z-\mu_{Z})$
+
+$-(z-\mu_{Z})^{T}P_{ZZ}^{-1}P_{ZX}D^{-1}(x-\mu_{X})$
+
+$+(z-\mu_{Z})^{T}(P_{ZZ}^{-1}+P_{ZZ}^{-1}P_{ZX}D^{-1}P_{XZ}P_{ZZ}^{-1})(z-\mu_{Z})$
+
+$-(z-\mu_{Z})^{T}P_{ZZ}^{-1}(z-\mu_{Z})$
+
+$\therefore \ (y-\mu_{Y})^{T}P_{YY}^{-1}(y-\mu_{Y})-(z-\mu_{Z})^{T}P_{ZZ}^{-1}(z-\mu_{Z}) = -\frac{1}{2}((x-\mu_{x \mid z})^{T}P_{X\mid Z}^{-1}(x-\mu_{X \mid Z}))$
+</center>
+
+Where
+
++ $R_{X \mid Z} = D$
++ $\mu_{X \mid Z} = \mu_{X} p_{XZ}P_{ZZ}^{-1}(z-\mu_{Z})$
+
+Therefore, conditional probability density function of random vector $X$ is gaussian.
