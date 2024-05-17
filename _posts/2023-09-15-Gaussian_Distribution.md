@@ -425,6 +425,7 @@ $-(z-\mu_{Z})^{T}P_{ZZ}^{-1}P_{ZX}D^{-1}(x-\mu_{X})$
 $+(z-\mu_{Z})^{T}(P_{ZZ}^{-1}+P_{ZZ}^{-1}P_{ZX}D^{-1}P_{XZ}P_{ZZ}^{-1})(z-\mu_{Z})$
 
 $-(z-\mu_{Z})^{T}P_{ZZ}^{-1}(z-\mu_{Z})$
+<br><br>
 
 $\therefore \ (y-\mu_{Y})^{T}P_{YY}^{-1}(y-\mu_{Y})-(z-\mu_{Z})^{T}P_{ZZ}^{-1}(z-\mu_{Z}) = -\frac{1}{2}((x-\mu_{x \mid z})^{T}P_{X\mid Z}^{-1}(x-\mu_{X \mid Z}))$
 </center>
