@@ -54,9 +54,9 @@ $X(k) \equiv X(k,e) = [X_{1}(k,e)X_{2}(k,e), ..., X_{n}(k,e)]^{T}$
 Where $k$ is index of time.
 <br><br><br><br>
 
-# Mean Function and Autocorrelation Function and Autocovariance Function
+# Mean Function and Auto-correlation Function and Auto-covariance Function
 
-In this section, we will see **mean function**, **autocorrelation function**, **autocovariance function**.
+In this section, we will see **mean function**, **auto-correlation function**, **auto-covariance function**.
 
 Except those, the other definition of random sequence is the same as random process
 
@@ -75,10 +75,10 @@ $\mu_{X}(t_{1}) = E[X(t_{1})]$
 
 <br><br>
 
-## Autocorrelation Function
+## Auto-correlation Function
 
 At time $t_{1}$ and $t_{2}$, two random vectors have [joint probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#joint-probability-function) $p_{X}(x(t_{1}), x(t_{2}))$.
-To show autocorrelation at different points in time of random process, we define autocorrelation function $R_{XX}(t_{1}, t_{2})$ as follows:
+To show auto-correlation at different points in time of random process, we define auto-correlation function $R_{XX}(t_{1}, t_{2})$ as follows:
 
 <center>
 
@@ -90,11 +90,14 @@ E[X_{1}(t_{1}), X_{1}(t_{2})] & \cdots & E[X_{1}(t_{1}), X_{n}(t_{2})]\\
 E[X_{n}(t_{1}), X_{1}(t_{2})] & \cdots & E[X_{n}(t_{1}), X_{n}(t_{2})]
 \end{bmatrix}$
 </center>
+<br>
+
+Auto-correlation function represents the auto-correlation of random processes in the time domain and represents the power or distribution of energy that process contains in the frequency domain.
 <br><br>
 
-## Autocovariance Function
+## Auto-covariance Function
 
-Autocovariance Function $P_{XX}(t_{1}, t_{2})$ is defined as:
+Auto-covariance Function $P_{XX}(t_{1}, t_{2})$ is defined as:
 
 <center>
 
@@ -125,7 +128,7 @@ If at a probability density function of random process $X(t)$, when taking any $
 $p_{X}(x(t_{1}), x(t_{2}), ..., x(t_{m})) = p_{X}(x(t_{1} + h), x(t_{2} + h), ..., x(t_{m} + h))$
 </center>
 
-If $X(t)$ is SSS process, a mean of ensemble becomes constant and autocorrelation function $R_{XX}(t_{1}, t_{2})$ at any two time points $X(t_{1})$ and $X(t_{2})$ becomse a function of the time difference between two time points $(t_{2} - t_{1})$.<br>
+If $X(t)$ is SSS process, a mean of ensemble becomes constant and auto-correlation function $R_{XX}(t_{1}, t_{2})$ at any two time points $X(t_{1})$ and $X(t_{2})$ becomse a function of the time difference between two time points $(t_{2} - t_{1})$.<br>
 That is,
 
 + $E[X(t)] = constant$
@@ -175,4 +178,88 @@ Power spectral density $S_{XX}(\omega)$ of WSS random process is defined as four
 
 $S_{XX}(\omega) = \int_{-\infty}^{\infty}R_{XX}(\tau)e^{-j\omega \tau}d\tau$
 
+</center>
+
+where $\omega$ is frequency in $rad/sec$.
+<br>
+
+We can get auto-correation function by using fourier inverse transform from power spectral density as:
+
+<center>
+
+$R_{XX}(\tau) = \frac{1}{2\pi}\int_{-\infty}^{\infty}S_{XX}(\omega)e^{j\omega\tau}d\omega$
+</center>
+<br>
+
+The power of $X(t)$ is calculated from auto-correaltion function or power spectral density as:
+
+<center>
+
+$E[X(t)X^{T}(t)] = R_{XX}(0) = \frac{1}{2\pi}\int_{-\infty}^{\infty}S_{XX}(\omega)d\omega$
+</center>
+<br>
+
+The power spectral density of WSS random sequence $S_{XX}(\hat{\omega})$ is defined by discrete-time fourier transform of auto-correlation function as:
+
+<center>
+
+$S_{XX}(\hat{\omega}) = \Sigma_{n=-\infty}^{\infty}R_{XX}(n)e^{-j\hat{\omega}n}$
+</center>
+<br>
+
+where $\hat{\omega}$ is discrete-time frequency and the range is $\hat{\omega} \in [-\pi, \pi]$.<br>
+
+Also, we can get a auto-correlation function by discrete-time fourier inverse transform from power spectral density as:
+
+<center>
+
+$R_{XX}(n) = \frac{1}{2\pi}\int_{-\pi}^{\pi}S_{XX}(\hat{\omega})e^{j\hat{\omega}n}d\hat{\omega}$
+</center><br>
+
+A power of random sequence $X(k)$ can be calculated from auto-correlation function or power spectral density as:
+
+<center>
+
+$E[X(k)X^{T}(k)] = R_{XX}(0) = \frac{1}{2\pi}\int_{-\pi}^{\pi}S_{XX}(\hat{\omega})d\hat{\omega}$
+
+$\int e^{(a-jw)\tau}d\tau$
+</center>
+
+<br><br><br><br>
+
+# White Noise
+
+A random process that is in non-relationship timely is called **white noise** $V(t)$. And it is an impulse-like signal in a deterministic system, defined as a WSS process in which the auto-correlation function is given as a [Dirac delta function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-mass-function) as follows:
+
+<center>
+
+$E[V(t)V^{T}(t+\tau)] = R_{VV}(\tau) = S_{0}\delta(\tau)$
+</center>
+
+where $S_{0}$ is const matrix.<br>
+
+And the power spectral density is:
+
+<center>
+
+$S_{VV}(\omega) = \int_{-\infty}^{\infty}R_{VV}(\tau)e^{-j\omega \tau}d\tau = S_{0}\int_{-\infty}^{\infty}\delta(\tau)e^{-j\omega \tau}d\tau = S_{0}$
+</center>
+
+Therefore, a white noise has same power spectral density value at all of the frquency domain.<br>
+
+Meanwhile, WSS random sequence $V(k)$ that the auto-correlation function is given as a kronecker delta function as follows is called **white noise sequence**.
+
+<center>
+
+$E[V(k)V^{T}(k+m)] = R_{VV}(m) = S_{0}\delta_{m}$
+</center>
+
+where $\delta_{m}$ is a kronecker delta function and is defined as:
+
+<center>
+
+$\delta_{m} = \left\{\begin{matrix}
+1, \ m=0\\ 
+0, \ m \neq 0
+\end{matrix}\right.$
 </center>
