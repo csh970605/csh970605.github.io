@@ -110,21 +110,46 @@ Stationarity process means the partial or entire probabilitic feature of random 
 
 In stationarity process, there are two process:
 
-+ [Strict-sense stationary(SSS)](https://csh970605.github.io/posts/Probability_RandomVector/#strict-sense-stationary)
++ [Strict-sense stationary(SSS)](https://csh970605.github.io/posts/Rand_Process/#strict-sense-stationarysss)
 
-+ [Wide-sense stationary(WSS)](https://csh970605.github.io/posts/Probability_RandomVector/#wide-sense-stationary)
++ [Wide-sense stationary(WSS)](https://csh970605.github.io/posts/Probability_RandomVector/#wide-sense-stationarywss)
 
 <br><br>
 
 ## Strict Sense Stationary(SSS)
 
-If at a probability density function of random process $X(t)$, when taking any $m$ time point $t_{1} < t_{2} < ... < t_{m}$, joint probability density functions of $X(t_{m}), X(t_{m}), ..., X(t_{m})$ satisfy the following expression for any $h > 0$, $X(t)$ is called **SSS process**
+If at a probability density function of random process $X(t)$, when taking any $m$ time points $t_{1} < t_{2} < ... < t_{m}$, joint probability density functions of $X(t_{m}), X(t_{m}), ..., X(t_{m})$ satisfy the following expression for any $h > 0$, $X(t)$ is called **SSS process**
 
 <center>
+
+$p_{X}(x(t_{1}), x(t_{2}), ..., x(t_{m})) = p_{X}(x(t_{1} + h), x(t_{2} + h), ..., x(t_{m} + h))$
+</center>
+
+If $X(t)$ is SSS process, a mean of ensemble becomes constant and autocorrelation function $R_{XX}(t_{1}, t_{2})$ at any two time points $X(t_{1})$ and $X(t_{2})$ becomse a function of the time difference between two time points $(t_{2} - t_{1})$.<br>
+That is,
+
++ $E[X(t)] = constant$
+
++ $R_{XX}(t_{1}, t_{2}) = R_{XX}(t_{2} - t_{1}) = R_{XX}(\tau)$
 <br><br>
 
 ## Wide Sense Stationary(WSS)
 
-...
+If a mean of ensemble of random process $X(t)$ is constant and $R_{XX}(t_{1}, t_{2} = RXX_{\tau})$, $X(t)$ is called **WSS process**.<br>
 
+If $X(t)$ is SSS process, $X(t)$ is WSS process also but inverse is not established.<br>
+
+WSS is a general condition that can also be applied to multi-dimensional signals, that is, time series data of vector values, but there is also a scalar WSS used when the WSS condition is applied to a single variable (scalar) time signal.
+
+<br><br>
+
+### Scalar WSS
+
+At scalar WSS, the feature of auto-correation funtion $R_{XX}(\tau)$ of $X(t)$ and $Y(t)$ is:
+
++ $E[X^{2}(t)] = R_{XX}(0) \geq 0$
+
++ $R_{XX}(\tau) = R_{XX}(-\tau)$
+
++ $\left | R_{XX}(\tau) \right | \leq R_{XX}(0)$
 <br><br>
