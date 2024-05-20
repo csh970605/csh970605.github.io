@@ -246,8 +246,11 @@ $S_{VV}(\omega) = \int_{-\infty}^{\infty}R_{VV}(\tau)e^{-j\omega \tau}d\tau = S_
 </center>
 
 Therefore, a white noise has same power spectral density value at all of the frquency domain.<br>
+<br>
 
-Meanwhile, WSS random sequence $V(k)$ that the auto-correlation function is given as a kronecker delta function as follows is called **white noise sequence**.
+## White Noise Sequence
+
+WSS random sequence $V(k)$ that the auto-correlation function is given as a kronecker delta function as follows is called **white noise sequence**.
 
 <center>
 
@@ -263,3 +266,33 @@ $\delta_{m} = \left\{\begin{matrix}
 0, \ m \neq 0
 \end{matrix}\right.$
 </center>
+
+And the power spectral density of white noise sequnce is:
+
+<center>
+
+$S_{VV}(\hat{\omega}) = \Sigma_{n=-\infty}^{\infty}R_{VV}(n)e^{-j\hat{\omega}n} = S_{0}$
+</center>
+
+And it has same power spectrum density values in all frequency domain.
+
+<br><br>
+
+## Gaussian White Noise
+
+In every time point $t$ or $k$, a probability density function of white noise $V(t) or V(k) is given as a gaussian function, it is called **gaussian white noise**.
+
+<br><br><br><br>
+
+# Ergodic Process in The Mean
+
+A time average and time correlation of any deterministic function $x(t)$ is defined as formula [1] and formula [2] respectively.
+
+<p align="center">
+    <span>&lt; $x(t)$ &gt; $=lim_{T \rightarrow \inft} \int_{-\frac{T}{2}}^{\frac{T}{2}}x(t)dt$</span>
+    <span style="float: right;">[1]</span>
+</p>
+<p align="center">
+    <span>$P(X \leq x \mid Y = y)= \int_{-\infty}^{\infty}p_{X \mid Y}(x \mid y)dx$</span>
+    <span style="float: right;">[2]</span>
+</p>
