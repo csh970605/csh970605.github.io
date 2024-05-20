@@ -37,8 +37,64 @@ And it is simply called random process.
 
 ## Sample Function
 
-Random processe is usually capitalized and lowercase in the time function that random processe can actually take. That is if the time function of random process mapping the probability experiment result $E$ is $x(t), random process is written as $X(T, e) = x(t, e) or X(t) = x(t)$.<br>
+Random processe is usually capitalized and lowercase in the time function that random processe can actually take. That is if the time function of random process mapping the probability experiment result $E$ is $x(t)$, random process is written as $X(T, e) = x(t, e) or X(t) = x(t)$.<br>
 
 $x(t)$ means the state of random process at time $t$, and it is called **sample function**. More speceifically, if e is fixed as $e = e_{1}$, random process becomes sample function $X(t, e_{1}) = x(t, e_{1})$. One more example, if e is fixed as $e = e_{2}$, random process becomes sample function $X(t, e_{2}) = x(t, e_{2})$.<br>
 
 As you can see at the example, sample function is deterministic function and all the samples are called **ensemble**.
+<br><br>
+
+And if time is discrete, the random process is called **discrete-time** or **random sequence**. It is expressed as :
+
+<center>
+
+$X(k) \equiv X(k,e) = [X_{1}(k,e)X_{2}(k,e), ..., X_{n}(k,e)]^{T}$
+</center>
+
+Where $k$ is index of time.
+<br><br><br><br>
+
+# Mean Function and Autocorrelation Function and Autocovariance Function
+
+In this section, we will see **mean function**, **autocorrelation function**, **autocovariance function**.
+
+Except those, the other definition of random sequence is the same as random process
+
+<br><br>
+
+## Mean Function
+
+The [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) of random process is a function of time because it can vary from time to time. And written as $p_{X}(x(t))$. At the time $t = t_{1}$, a expectation or ensemble mean function is defined as expectations of the elements of a random vector respectively.
+
+That is,
+
+<center>
+
+$\mu_{X}(t_{1}) = E[X(t_{1})]$
+</center>
+
+<br><br>
+
+## Autocorrelation Function
+
+At time $t_{1}$ and $t_{2}$, two random vectors have [joint probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#joint-probability-function) $p_{X}(x(t_{1}), x(t_{2}))$.
+To show autocorrelation at different points in time of random process, we define autocorrelation function $R_{XX}(t_{1}, t_{2})$ as follows:
+
+<center>
+
+$R_{XX}(t_{1}, t_{2}) = E[X(t_{1}), X^{T}(t_{2})]$
+
+$= \begin{bmatrix}
+E[X_{1}(t_{1}), X_{1}(t_{2})] & \cdots & E[X_{1}(t_{1}), X_{n}(t_{2})]\\
+\vdots & \ddots & \vdots\\
+E[X_{n}(t_{1}), X_{1}(t_{2})] & \cdots & E[X_{n}(t_{1}), X_{n}(t_{2})]
+\end{bmatrix}$
+</center>
+
+## Autocovariance Function
+
+Autocovariance Function $P_{XX}(t_{1}, t_{2})$ is defined as:
+
+<center>
+
+$P_{XX}(t_{1}, t_{2}) = E[(X(t_{1})-E[X(t_{1})])(X(t_{2})-E[X(t_{2})])^{T}]$
