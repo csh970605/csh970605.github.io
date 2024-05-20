@@ -137,8 +137,20 @@ That is,
 
 If a mean of ensemble of random process $X(t)$ is constant and $R_{XX}(t_{1}, t_{2} = RXX_{\tau})$, $X(t)$ is called **WSS process**.<br>
 
-If $X(t)$ is SSS process, $X(t)$ is WSS process also but inverse is not established.<br>
+If $X(t)$ is SSS process, $X(t)$ is WSS process also but inverse is not established.<br><br>
 
+In the WSS, a sharp decrease in $R_{XX}$ for $\tau$ as shown in the image [1] results in a sharp decrease in the correlation between the two time points. Conversely, a gradual decrease in $R_{XX}$ for $\tau$ as shown in the image [2] results in a gradual decrease in the correlation between the two time points. <br>
+
+Thus, $R_{XX}(\tau)$ functions as a measure of the rate of change of $X(t)$ relative to time $t$. In other words, it acts as a kind of frequency response to $X$.
+
+<center>
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/c9705da9-6b4f-4b13-ba82-9cc59621c8d6">
+image [1]<br><br>
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/c8c40ceb-11e9-4283-a8be-0295a08b98d5">
+image [2]
+</center>
 WSS is a general condition that can also be applied to multi-dimensional signals, that is, time series data of vector values, but there is also a scalar WSS used when the WSS condition is applied to a single variable (scalar) time signal.
 
 <br><br>
@@ -153,3 +165,14 @@ At scalar WSS, the feature of auto-correation funtion $R_{XX}(\tau)$ of $X(t)$ a
 
 + $\left | R_{XX}(\tau) \right | \leq R_{XX}(0)$
 <br><br>
+<br><br>
+
+# Power Spectral Density(PSD)
+
+Power spectral density $S_{XX}(\omega)$ of WSS random process is defined as fourier transform of auto-correation function. The function of $S_{XX}(\omega)$ is :
+
+<center>
+
+$S_{XX}(\omega) = \int_{-\infty}^{\infty}R_{XX}(\tau)e^{-j\omega \tau}d\tau$
+
+</center>
