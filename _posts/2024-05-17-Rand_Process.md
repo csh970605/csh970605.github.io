@@ -90,6 +90,7 @@ E[X_{1}(t_{1}), X_{1}(t_{2})] & \cdots & E[X_{1}(t_{1}), X_{n}(t_{2})]\\
 E[X_{n}(t_{1}), X_{1}(t_{2})] & \cdots & E[X_{n}(t_{1}), X_{n}(t_{2})]
 \end{bmatrix}$
 </center>
+<br><br>
 
 ## Autocovariance Function
 
@@ -98,3 +99,32 @@ Autocovariance Function $P_{XX}(t_{1}, t_{2})$ is defined as:
 <center>
 
 $P_{XX}(t_{1}, t_{2}) = E[(X(t_{1})-E[X(t_{1})])(X(t_{2})-E[X(t_{2})])^{T}]$
+</center>
+
+<br><br>
+<br><br>
+
+# Stationarity Process
+
+Stationarity process means the partial or entire probabilitic feature of random process is time-invariant.<br>
+
+In stationarity process, there are two process:
+
++ [Strict-sense stationary(SSS)](https://csh970605.github.io/posts/Probability_RandomVector/#strict-sense-stationary)
+
++ [Wide-sense stationary(WSS)](https://csh970605.github.io/posts/Probability_RandomVector/#wide-sense-stationary)
+
+<br><br>
+
+## Strict Sense Stationary(SSS)
+
+If at a probability density function of random process $X(t)$, when taking any $m$ time point $t_{1} < t_{2} < ... < t_{m}$, joint probability density functions of $X(t_{m}), X(t_{m}), ..., X(t_{m})$ satisfy the following expression for any $h > 0$, $X(t)$ is called **SSS process**
+
+<center>
+<br><br>
+
+## Wide Sense Stationary(WSS)
+
+...
+
+<br><br>
