@@ -289,10 +289,10 @@ In every time point $t$ or $k$, a probability density function of white noise $V
 A time average and time correlation of any deterministic function $x(t)$ is defined as formula [1] and formula [2] respectively.
 
 <p align="center">
-    <span>&lt; $x(t)$ &gt; $=lim_{T \rightarrow \inft} \int_{-\frac{T}{2}}^{\frac{T}{2}}x(t)dt$</span>
+    <span>&lt; $x(t)$ &gt; $=lim_{T \rightarrow \infty} \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}x(t)dt$</span>
     <span style="float: right;">[1]</span>
 </p>
 <p align="center">
-    <span>$P(X \leq x \mid Y = y)= \int_{-\infty}^{\infty}p_{X \mid Y}(x \mid y)dx$</span>
+    <span>&lt; $x(t)x^{T}(t+\tau)$ &gt; $=lim_{T \rightarrow \infty} \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}x(t)x^{T}(t+\tau)dt$</span>
     <span style="float: right;">[2]</span>
 </p>
