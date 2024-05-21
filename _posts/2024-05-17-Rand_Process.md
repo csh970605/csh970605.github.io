@@ -296,3 +296,17 @@ A time average and time correlation of any deterministic function $x(t)$ is defi
     <span>&lt; $x(t)x^{T}(t+\tau)$ &gt; $=lim_{T \rightarrow \infty} \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}x(t)x^{T}(t+\tau)dt$</span>
     <span style="float: right;">[2]</span>
 </p>
+
+And let $x(t)$ is a sample function of stationarity process, if the ensemble mean $E[X(t)]$ of $X(t)$ equals to time average $<x(t)>$, $X(t)$ is called a **ergodic process in the mean**.<br>
+Also, if ensemble correation $E[X(t)X^{T}(t+\tau)]$ of $X(t)$ equals to time correlation $<x(t)x^{T}(t+\tau)>$, $X(t)$ is called **correation ergodic process in the mean**.<br>
+
+In random sequence, time average and time correlation is defined as formula [3] and formula [4] respectively.
+
+<p align="center">
+    <span>&lt; $x(k)$ &gt; $=lim_{T \rightarrow \infty} \frac{1}{2N+1}\Sigma_{k=-n}^{N}x(k)$</span>
+    <span style="float: right;">[1]</span>
+</p>
+<p align="center">
+    <span>&lt; $x(t)x^{T}(t+\tau)$ &gt; $=lim_{T \rightarrow \infty} \frac{1}{2N+1}\Sigma_{k=-n}^{N}x(k)X^{T}(k+m)$</span>
+    <span style="float: right;">[2]</span>
+</p>
