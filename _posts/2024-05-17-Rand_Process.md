@@ -343,3 +343,33 @@ $p_{X}(s(k) \mid x(k-1), x(k-2), ..., x(0)) = p_{X}(x(k) \mid x(k-1)), \ \ \fora
 
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/27150017-1960-463c-88f7-44749beb755f">
 </center>
+
+# Differentiation of Random Process
+
+If a random process $X(t)$ satisfies the following formula, $X(t)$ is called **ontinuity in the maen square sense** at time $t=t_{0}$.
+
+<center>
+
+$lim_{t \rightarrow t_{0}} E[(X(t) - X(t_{0}))^{2}] = 0$
+</center><br>
+
+If a random process is continuity in the mean square sense at $t=t_{0}$, it is written simply as general deterministic function as:
+
+<center>
+
+$lim_{t \rightarrow t_{0}} X(t) = X(t_{0})$
+</center>
+
+<br>
+
+A random process can be differentiated because it change over time. The differientation $X'(t)$ of a random process $X(t)$ is defined as :
+
+<center>
+
+$X'(t) = \frac{dX(t)}{dt} = lim_{h \rightarrow 0} \frac{X(t+h)-X(t)}{h}$
+</center>
+
+<font color='red'>
+
+Note that the law of exchange holds for the differentiation or integral of the random process and the average operator $E$.
+</font>
