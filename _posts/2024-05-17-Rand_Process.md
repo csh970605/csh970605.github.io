@@ -286,6 +286,9 @@ In every time point $t$ or $k$, a probability density function of white noise $V
 
 # Ergodic Process in The Mean
 
+An ergodic process in the mean means that a sample function extracted stationarity random process randomly is a process that includes all probabilitic information of a random process. Although it is very hard to prove whether it is a ergodic process or not, <span style="color: red;">note that a white noise is a ergodic process.</span>
+
+
 A time average and time correlation of any deterministic function $x(t)$ is defined as formula [1] and formula [2] respectively.
 
 <p align="center">
@@ -307,6 +310,36 @@ In random sequence, time average and time correlation is defined as formula [3] 
     <span style="float: right;">[1]</span>
 </p>
 <p align="center">
-    <span>&lt; $x(t)x^{T}(t+\tau)$ &gt; $=lim_{T \rightarrow \infty} \frac{1}{2N+1}\Sigma_{k=-n}^{N}x(k)X^{T}(k+m)$</span>
+    <span>&lt; $x(k)x^{T}(k+m)$ &gt; $=lim_{T \rightarrow \infty} \frac{1}{2N+1}\Sigma_{k=-n}^{N}x(k)X^{T}(k+m)$</span>
     <span style="float: right;">[2]</span>
 </p>
+
+<br><br><br><br>
+
+# Idependent, Identically Distributed(IID)
+
+If all random vectors that consist random process $X(t)$ are independent and have the same probability density funciton, $X(t)$ is called **IID**.<br>
+If all random vectors that consist random sequnce $X(t)$ are independent and have the same probability density funciton, $X(t)$ is called **IID sequence**.
+
+<br><br><br><br>
+
+# Markov Process
+
+Markov process means that it is a random process which under conditions where current probability information is given, the future and the past are irrelevant or conditional independent.<br>
+That is, when the probability distribution of a random process $X(t)$ is given at a specific time point $t_{1}$, if probability distribution of $X(t)$ at time point $t > t_{1}$ is irrelevent to the probability distribution of $X(s)$ at time point $s < t_{1}$, $X(t)$ is defined as **markov process**.<br>
+And markov process is expressed as probability as follows:
+
+<center>
+
+$p_{X}(x(t) \mid x(s) \leq t_{1}) = p_{X}(x(t) \mid x(t_{1})), \ \ \forall t > t_{1}$
+</center>
+<br>
+
+Same as the markov process, a definition of markov sequence is determined by a probability distribution of one-step ago. The formula of markov sequence $X(k)$ by using probability density function and image of markov sequence is :
+
+<center>
+
+$p_{X}(s(k) \mid x(k-1), x(k-2), ..., x(0)) = p_{X}(x(k) \mid x(k-1)), \ \ \forall k$<br>
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/27150017-1960-463c-88f7-44749beb755f">
+</center>
