@@ -179,14 +179,14 @@ The probability that an event A occurs under a given condition of an event B is 
     <span style="float: right;">[11]</span>
 </p><br>
 
-The conditional probability density function of $X$ ($p_{X\mid Y}(x\mid y)$), given the random variable Y as y, is defined as a relational expression with the condition probability that an event $(X \leq x)$ will occur under the condition $Y=y$, as shown in formula [12]<br>
+The conditional probability density function $p_{X\mid Y}(x\mid y)$ of $X$ , given the random variable Y as y, is defined as a relational expression with the condition probability that an event $(X \leq x)$ will occur under the condition $Y=y$, as shown in formula [12]<br>
 
 <p align="center">
     <span>$P(X \leq x \mid Y = y) = \int_{-\infty}^{x} p_{X\mid Y}(x\mid y)dx$</span>
     <span style="float: right;">[12]</span>
 </p>
 
-If event A is $(X \leq x)$ and $(Y=y)$ is in the micronet, event B is ($y < Y \leq y+dy$). Therefore, $p_{X\mid Y}(x\mid y)$ is from formula [11] as follow:
+If an event A is $(X \leq x)$ and $(Y=y)$ is in the infinitesimal interval, event B is ($y < Y \leq y+dy$). Therefore, $p_{X\mid Y}(x\mid y)$ is from formula [11] as follow:
 <p align="center">
     <span>$p_{X\mid Y}(x\mid y) = \frac{p_{XY}(x, y)}{p_{Y}(y)}, p_{Y}(y) \neq 0$</span>
     <span style="float: right;">[13]</span>
