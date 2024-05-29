@@ -98,9 +98,9 @@ The state-space equation is expressed as follows:
 
 
 where 
-+ $x(t) \in R^{p}$ : A state variable. It is introduced to express the uncertainty inherent in the mathematical dynamic model.
-+ $w(t) \in R^{m}$ : A process noise. It is called noise model that model the probabilitic feature of w(t).
-+ $u(t) \in R^{q}$ : A input of system. It is also referred to as the "control input" and is assumed to be accurately known.
++ $x(t) \in \matbb{R}^{p}$ : A state variable. It is introduced to express the uncertainty inherent in the mathematical dynamic model.
++ $w(t) \in \matbb{R}^{m}$ : A process noise. It is called noise model that model the probabilitic feature of w(t).
++ $u(t) \in \matbb{R}^{q}$ : A input of system. It is also referred to as the "control input" and is assumed to be accurately known.
 + $f(\cdot,t)$ : Time-varying non-linear function that include system parameters.
 + $x(t)$ : At a given time, it is assumed to contain all the relevant information to describe the motion of the system.
 
@@ -140,8 +140,8 @@ Measurement model assumes as measurements are collected at discrete time and exp
 
 where
 
-+ $z(k)\in R^{p}$ : Measurements.
-+ $v(k) \in R^{p}$ : Measurement noises. It is a variable for expressing the error inherent in the measurement as probability.
++ $z(k)\in \matbb{R}^{p}$ : Measurements.
++ $v(k) \in \matbb{R}^{p}$ : Measurement noises. It is a variable for expressing the error inherent in the measurement as probability.
 + $h(x(k),k)$ : It is a non-linear function for expressing the functional relationship between state variables and outputs.
 
 Finally, the measurement model will be expressed as :
