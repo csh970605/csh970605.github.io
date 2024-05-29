@@ -88,3 +88,61 @@ The combination of measurement vectors that collect all random measurement vecto
 <center>
 
 $Z_{k} = \{Z(0), Z(1), ..., Z(k) \}$
+</center><br>
+
+And the combination of the measured values of random measurement vectors are expressed as follows:
+
+<center>
+
+$z_{k} = \{z(0), z(1), ..., z(k) \}$
+
+</center>
+
+where <center>
+
+$Z_{k} = z_{k}:\{Z(0)=z(0), Z(1) = z(1), ..., Z(k) = z(k) \}$
+</center><br><br>
+
+## Static Estimation Problem
+
+A static estimation problem is a problem that designs a estimator of a constant vectors which as a function of a combination of measurement vectors $z_{k}$ as follows:
+
+<center>
+
+$\hat{x}(k) = g(z_{k})$
+</center>
+<br>
+
+If the measurement vectors are given as $Z_{k}=z_{k}$, the estimation values are deterministcic values, however if the measurement vectors are given as random vectors, the estimation values are random vectors also as follows:
+
+<center>
+
+$\hat{X}(k) = g(Z_{k})$
+</center>
+<br>
+
+Depending on what unkown nature X is defined, the estimator is divided into two methods:
+
++ Bayesian approach
+
++ non-Bayesian approach
+
+<br><br>
+
+### Bayesian Approach
+
+In a bayesian approach, $X$ is a random vector. Therefore, assume that we know a priori probability information of $X$.<br>
+
+A measurement vector $Z$ reinforce the probability information of $X$ more precisely.<br>
+
+[MAP estimator](https://csh970605.github.io/posts/Gaussian_Distribution/#MAP_Estimator) and [MMSE estimator](https://csh970605.github.io/posts/MMSE_Estimator) are a bayesian approach estimator.
+<br><br>
+
+### non-Bayesian Approach
+
+In a non-bayesian approach, $X$ is a unknown deterministic value. Therefore, asume that there is no a priori probability information, and the information of $X$ can only be obatined by a measurement vector $Z$.
+
+[ML estimator](https://csh970605.github.io/posts/Gaussian_Distribution/#ML_Estimator) and [WLS estimator](https://csh970605.github.io/posts/WLS_Estimator) are a bayesian approach estimator.
+
+
+
