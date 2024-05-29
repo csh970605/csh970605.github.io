@@ -163,20 +163,20 @@ In a non-bayesian approach, $X$ is a unknown deterministic value. Therefore, asu
 </center>
 <br><br>
 
-### Bias
+# Bias
 
 When a unkown constant vector $X$ is a random vector and probability information is given as [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) $p_{X}(x)$, if there is a estimator that $E[\hat{X}] = E[X]$, it is called a **unbaised estimator**. Or, if the estimator is $E[\hat{X}] = x$ where $X$ is a unknown constant vector which is $x$, it is also called a **unbaised estimator**.<br>
 When $k \rightarrow \infty$, if $E[\hat{X}] = E[X] , E[\hat{X}] = x$ are established, it is called a **asymptotically unbiased estimator**.
 
 <br><br>
 
-### Consistency
+# Consistency
 
 When a unkown constant vector $X$ is a random vector, if there is a estimator that $lim_{k \rightarrow \infty}E[(X-\hat{X}(k))^{T}(X-\hat{X}(k))]$, it is called a **consistent estimator**. Or, if the estimator is $lim_{k \rightarrow \infty}E[(x-\hat{X}(k))^{T}(x-\hat{X}(k))]$ where $X$ is a unknown constant vector which is $x$, it is also called a **consistent estimator**.
 
 <br><br>
 
-### Covariance of Estimation Errors
+# Covariance of Estimation Errors
 
 Covariance of estimation errors is used to evaluate the quality. That is, the smaller covariance value, the better estimate value.
 
