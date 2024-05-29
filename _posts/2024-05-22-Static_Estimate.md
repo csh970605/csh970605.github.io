@@ -127,6 +127,14 @@ Depending on what unkown nature X is defined, the estimator is divided into two 
 
 + non-Bayesian approach
 
+The evaluation elements of a estimator is:
+
++ Bias
+
++ Consistency
+
++ Covariance of estimation errors
+
 <br><br>
 
 ### Bayesian Approach
@@ -135,14 +143,53 @@ In a bayesian approach, $X$ is a random vector. Therefore, assume that we know a
 
 A measurement vector $Z$ reinforce the probability information of $X$ more precisely.<br>
 
-[MAP estimator](https://csh970605.github.io/posts/MAP_Estimator) and [MMSE estimator](https://csh970605.github.io/posts/MMSE_Estimator) are a bayesian approach estimator.
+[MAP estimator](https://csh970605.github.io/posts/MAP_Estimator) and [MMSE estimator](https://csh970605.github.io/posts/MMSE_Estimator) are a bayesian approach estimator. The basic form of bayesian approach estimator is :
+
+<center>
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/3fc974d3-2cad-4134-959d-4cf4de672689">
+</center>
 <br><br>
 
 ### non-Bayesian Approach
 
 In a non-bayesian approach, $X$ is a unknown deterministic value. Therefore, asume that there is no a priori probability information, and the information of $X$ can only be obatined by a measurement vector $Z$.
 
-[ML estimator](https://csh970605.github.io/posts/ML_Estimator) and [WLS estimator](https://csh970605.github.io/posts/WLS_Estimator) are a bayesian approach estimator.
+[ML estimator](https://csh970605.github.io/posts/ML_Estimator) and [WLS estimator](https://csh970605.github.io/posts/WLS_Estimator) are a non-bayesian approach estimator. The basic form of bayesian approach estimator is :
 
+<center>
 
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/f5353493-76eb-4e99-bfcd-e5eba47d2f80">
+</center>
+<br><br>
 
+### Bias
+
+When a unkown constant vector $X$ is a random vector and probability information is given as [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) $p_{X}(x)$, if there is a estimator that $E[\hat{X}] = E[X]$, it is called a **unbaised estimator**. Or, if the estimator is $E[\hat{X}] = x$ where $X$ is a unknown constant vector which is $x$, it is also called a **unbaised estimator**.<br>
+When $k \rightarrow \infty$, if $E[\hat{X}] = E[X] , E[\hat{X}] = x$ are established, it is called a **asymptotically unbiased estimator**.
+
+<br><br>
+
+### Consistency
+
+When a unkown constant vector $X$ is a random vector, if there is a estimator that $lim_{k \rightarrow \infty}E[(X-\hat{X}(k))^{T}(X-\hat{X}(k))]$, it is called a **consistent estimator**. Or, if the estimator is $lim_{k \rightarrow \infty}E[(x-\hat{X}(k))^{T}(x-\hat{X}(k))]$ where $X$ is a unknown constant vector which is $x$, it is also called a **consistent estimator**.
+
+<br><br>
+
+### Covariance of Estimation Errors
+
+Covariance of estimation errors is used to evaluate the quality. That is, the smaller covariance value, the better estimate value.
+
+When a unkown constant vector $X$ is a random vector, the covariance of estimation errors of estimator without bias is given as:
+
+<center>
+
+$E[(X-\hat{X})(X-\hat{X})^{T}]$
+</center>
+
+and when $X$ is a unknown constant vector which is $x$, the covariance of estimation errors of estimator without bias is given as:
+
+<center>
+
+$E[(x-\hat{X})(x-\hat{X})^{T}]$
+</center>
