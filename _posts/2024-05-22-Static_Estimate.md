@@ -135,14 +135,14 @@ In a bayesian approach, $X$ is a random vector. Therefore, assume that we know a
 
 A measurement vector $Z$ reinforce the probability information of $X$ more precisely.<br>
 
-[MAP estimator](https://csh970605.github.io/posts/Gaussian_Distribution/#MAP_Estimator) and [MMSE estimator](https://csh970605.github.io/posts/MMSE_Estimator) are a bayesian approach estimator.
+[MAP estimator](https://csh970605.github.io/posts/MAP_Estimator) and [MMSE estimator](https://csh970605.github.io/posts/MMSE_Estimator) are a bayesian approach estimator.
 <br><br>
 
 ### non-Bayesian Approach
 
 In a non-bayesian approach, $X$ is a unknown deterministic value. Therefore, asume that there is no a priori probability information, and the information of $X$ can only be obatined by a measurement vector $Z$.
 
-[ML estimator](https://csh970605.github.io/posts/Gaussian_Distribution/#ML_Estimator) and [WLS estimator](https://csh970605.github.io/posts/WLS_Estimator) are a bayesian approach estimator.
+[ML estimator](https://csh970605.github.io/posts/ML_Estimator) and [WLS estimator](https://csh970605.github.io/posts/WLS_Estimator) are a bayesian approach estimator.
 
 
 
