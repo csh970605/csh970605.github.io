@@ -76,4 +76,15 @@ $Z(k) = h(X, k) + V(k)$ : additional
 
 $Z(k) = H(k)X + V(k)$ : linear
 </center>
+<br>
 
+Where $k$ is time index.
+<br>
+
+Since measurements are measured independently, the measurement noises are independent or uncorrelated to time.<br>
+
+The combination of measurement vectors that collect all random measurement vectors from $k=0$ to $k$ is expressed as follows:
+
+<center>
+
+$Z_{k} = \{Z(0), Z(1), ..., Z(k) \}$
