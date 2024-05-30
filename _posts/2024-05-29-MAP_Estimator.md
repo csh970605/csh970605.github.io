@@ -23,4 +23,24 @@ Where
 
 + $p_{Z_{k}}(z_{k})$ : A probability density function of the measurement vectors set $Z_{k}$, representing the probability information of the measurement progress.
 
-+ $p_{X \mid Z_{k}}(x \mid z_{k})$ : A [conditional probability](https://csh970605.github.io/posts/Probability_RandomVector/#conditional-probability) density function()
++ $p_{Z_{k} \mid X}(z_{k} \mid x)$ : A [conditional probability](https://csh970605.github.io/posts/Probability_RandomVector/#conditional-probability) density function of $Z_{k}$ which conditions $X=x$. It is a likelihood function that representing how oftendoes a specific set of measurement vectors $z_{k}$ appear depending on $x$
+
++ $p_{X \mid Z_{k}}(x \mid z_{k})$: A conditional probability density function of X given as $Z_{k} = z_{k}$ post-measurement.
+<br><br>
+
+
+MAP estimator is defined as estimation value of $X$ when the conditional probability density function of the unkown random vector $X$ is a maximum value. 
+As an image:
+<center>
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/d0ef1ffa-ad62-430d-baa9-58d5a9057220">
+</center><br><br>
+
+As a formula:
+
+<center>
+
+$\hat{x}^{MAP} = argmax \ (p_{X \mid Z_{k}}(x \mid z_{k}))$
+
+$= argmax \ (p_{Z_{k}\mid X}(z_{k} \mid x)p_{X}(x))$
+</center>
