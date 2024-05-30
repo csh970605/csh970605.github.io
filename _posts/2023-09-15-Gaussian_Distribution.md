@@ -435,4 +435,4 @@ Where
 + $R_{X \mid Z} = D$
 + $\mu_{X \mid Z} = \mu_{X} p_{XZ}P_{ZZ}^{-1}(z-\mu_{Z})$
 
-Therefore, conditional probability density function of random vector $X$ is gaussian.
+Therefore, [conditional probability](https://csh970605.github.io/posts/Probability_RandomVector/#conditional-probability) density function of random vector $X$ is gaussian.
