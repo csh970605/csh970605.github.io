@@ -161,4 +161,4 @@ y_pred = classifier.predict(X_test)
 
 # Implementation
 
-+ [Naive Bayse](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%203%20-%20Classification/Section%2018%20-%20Naive%20Bayes/Python)
++ [Naive Bayes](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%203%20-%20Classification/Section%2018%20-%20Naive%20Bayes/Python)
