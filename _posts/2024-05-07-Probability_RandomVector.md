@@ -179,7 +179,7 @@ The probability that an event A occurs under a given condition of an event B is 
     <span style="float: right;">[11]</span>
 </p><br>
 
-The conditional probability density function $p_{X\mid Y}(x\mid y)$ of $X$ , given the random variable Y as y, is defined as a relational expression with the condition probability that an event $(X \leq x)$ will occur under the condition $Y=y$, as shown in formula [12]<br>
+The [conditional probability](https://csh970605.github.io/posts/Probability_RandomVector/#conditional-probability) density function $p_{X\mid Y}(x\mid y)$ of $X$ , given the random variable Y as y, is defined as a relational expression with the condition probability that an event $(X \leq x)$ will occur under the condition $Y=y$, as shown in formula [12]<br>
 
 <p align="center">
     <span>$P(X \leq x \mid Y = y) = \int_{-\infty}^{x} p_{X\mid Y}(x\mid y)dx$</span>
