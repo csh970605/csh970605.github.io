@@ -37,3 +37,5 @@ $\therefore \hat{x}^{MMSE} = E[x \mid Z_{k}=z_{k}]$
 $= \int_{-\infty}^{\infty}xp_{X \mid Z_{k}}(x \mid z_{k})dx$
 $= \frac{\int_{-\infty}^{\infty}xp_{Z_{k} \mid X}(z_{k} \mid x)p_{X}(x)dx}{\int_{-\infty}^{\infty}p_{Z_{k} \mid X}(z_{k} \mid x)p_{X}(x)dx}$
 </center>
+
+Same as formula above, 
