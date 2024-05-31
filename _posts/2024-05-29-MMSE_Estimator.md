@@ -8,7 +8,7 @@ math: true
 mermaid: true
 ---
 
-# MMSE(Minimum Mea-Square error) Estimator
+# MMSE(Minimum Mean-Square error) Estimator
 
 When a set of measurment vectors is given $Z_{k} = z_{k}$, MMSE estimator is defined as a estimator that makes conditional average estimation error or conditional mean-square error minimum as follows:
 
