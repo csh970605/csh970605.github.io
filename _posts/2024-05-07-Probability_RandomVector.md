@@ -229,7 +229,7 @@ Likewise, if the probability density function of random variable  satisfies form
     <span style="float: right;">[18]</span>
 </p>
 
-If two random variable X and Y are independence, conditional probability density function becomes a function independent of the condition like formula[19].
+If two random variables X and Y are independent, conditional probability density function becomes a function independent of the condition like formula[19].
 
 <p align="center">
     <span>$p_{X\mid Y}(x \mid y) = p_{X}(x)$</span>
@@ -245,7 +245,7 @@ $p_{X\mid Y}(x \mid y) = p_{Y}(y)$
 
 # Function of Random Variables
 
-If the random variable Y is givn as a function $Y = g(X)$ of the random variable X , the probability of event $Y \neq y$ is the same as the probability that the random variable X belongs to the real number area ${X \in I_{x}}$ satisfying $g(X) \leq y, so the probability distribution function can be calculated as formula [20].
+If the random variable Y is given as a function $Y = g(X)$ of the random variable $X$ , the probability of event $Y \neq y$ is the same as the probability that the random variable $X$ belongs to the real number area ${X \in I_{x}}$ satisfying $g(X) \leq y$, so the probability distribution function can be calculated as formula [20].
 
 <center>
 
