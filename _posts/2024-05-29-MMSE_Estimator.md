@@ -50,7 +50,11 @@ $\hat{X}^{MMSE} = \mathbb{E}[X \mid Z_{k}]$
 
 ## Check The Performance of The MMSE Estimator
 
-To get the performance of the MMSE estimator, let's define the estimation error $\tilde{X}$as follows:
+<br><br>
+
+### Mean of The MMSE Estimator
+
+The estimation error $\tilde{X}$ is defined as follows:
 
 <center>
 
@@ -68,4 +72,8 @@ $= \mathbb{E}[X] - \mathbb{E}[\mathbb{E}[X \mid Z_{k}]]$
 
 $= \mathbb{E}[X] - \mathbb{E}[X] = 0$
 </center>
+
+<br><br>
+
+### Covariance of The MMSE Estimator
 
