@@ -66,9 +66,9 @@ Then, get the average of $\tilde{X}$.
 
 <center>
 
-$\mathbb{E}[\tilde{X}] = \mathbb{E}[X-\hat{X}^{MMSE}]$
+$\mathbb{E}[\tilde{X}] = \mathbb{E}[X-\hat{X}^{MMSE}]$<br>
 
-$= \mathbb{E}[X] - \mathbb{E}[\mathbb{E}[X \mid Z_{k}]]$
+$= \mathbb{E}[X] - \mathbb{E}[\mathbb{E}[X \mid Z_{k}]]$<br>
 
 $= \mathbb{E}[X] - \mathbb{E}[X] = 0$
 </center>
@@ -83,11 +83,11 @@ The covariance of the estimation error $\tilde{X}$ is given as the mean of the c
 
 <center>
 
-$P_{\tilde{X}\tilde{X}} = \mathbb{E}[(\tilde{X}-\mathbb{E}[\tilde{X}])(\tilde{X}-\mathbb{E}[\tilde{X}])^{T}]$
+$P_{\tilde{X}\tilde{X}} = \mathbb{E}[(\tilde{X}-\mathbb{E}[\tilde{X}])(\tilde{X}-\mathbb{E}[\tilde{X}])^{T}]$<br>
 
-$=\mathbb{E}[\tilde{X}\tilde{X}^{T}]$
+$=\mathbb{E}[\tilde{X}\tilde{X}^{T}]$<br>
 
-$=\mathbb{E}[\mathbb{E}[\tilde{X}\tilde{X}^{T} \mid Z_{k}]]$
+$=\mathbb{E}[\mathbb{E}[\tilde{X}\tilde{X}^{T} \mid Z_{k}]]$<br>
 
 $=\mathbb{E}[P_{XX\mid Z_{k}}]$
 </center>
@@ -97,9 +97,9 @@ If the measurement vector is given as $Z_{k} = z_{k}$, the covariance of estimat
 
 <center>
 
-$P_{\tilde{X}\tilde{X}} = \mathbb{E}[\tilde{X}\tilde{X}^{T}]$
+$P_{\tilde{X}\tilde{X}} = \mathbb{E}[\tilde{X}\tilde{X}^{T}]$<br>
 
-$= \mathbb{E}[(X-\mathbb{E}[X \mid Z_{k}=z_{k}])(X-\mathbb{E}[X \mid Z_{k}=z_{k}])^{T}]$
+$= \mathbb{E}[(X-\mathbb{E}[X \mid Z_{k}=z_{k}])(X-\mathbb{E}[X \mid Z_{k}=z_{k}])^{T}]$<br>
 
 $=P_{XX \mid Z_{k}}$
 </center>
