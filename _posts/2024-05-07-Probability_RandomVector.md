@@ -206,7 +206,7 @@ Opposely, the conditional probability density function of $X$ will occur under t
 
 <br><br><br><br>
 
-# Independence Random Variable
+# Independent Random Variable
 
 If the joint probability of A and B equals to the product of the probabilities of A and B, then events A and B are called **independent events** :
 
@@ -215,21 +215,21 @@ If the joint probability of A and B equals to the product of the probabilities o
     <span style="float: right;">[16]</span>
 </p>
 
-And if the joint probability of the N events $A_{i}, i=1, ... n$ satisfies formula 17, the set is called independent.
+And if the joint probability of the N events $A_{i}, i=1, ... n$ satisfies formula 17, the set is called independence.
 
 <p align="center">
     <span>$P(\bigcap_{i=1}^{n}A_{i}) = \prod_{i=1}^{n}P(A_{i})$</span>
     <span style="float: right;">[17]</span>
 </p>
 
-Likewise, if the probability density function of random variable  satisfies formula 18, the N random variables are independent.
+Likewise, if the probability density function of random variable  satisfies formula 18, the N random variables are independence.
 
 <p align="center">
     <span>$p_{X_{1},...X_{n}} = \prod_{i=1}^{n}p_{X_{i}}(x_{i})$</span>
     <span style="float: right;">[18]</span>
 </p>
 
-If two random variables X and Y are independent, conditional probability density function becomes a function independent of the condition like formula[19].
+If two random variables X and Y are independence, conditional probability density function becomes a function independent of the condition like formula[19].
 
 <p align="center">
     <span>$p_{X\mid Y}(x \mid y) = p_{X}(x)$</span>
@@ -321,13 +321,13 @@ Like wise, formula [25] can be written like formula [26].
     <span style="float: right;">[26]</span>
 </p>
 
-If X and Y are independence, formula[26] become convolution like formula[27].
+If $X$ and $Y$ are independence, formula[26] becomes convolution like formula[27].
 
 <center>
 
 $p_{Z}(z)=\int_{-\infty}^{\infty}p_{X}(z-y)p_{Y}(y)dy$
 <p align="center">
-    <span>$= \int_{-\infty}^{\infty}p_{X}(x)p_{x}(z-x)dx$</span>
+    <span>$= \int_{-\infty}^{\infty}p_{X}(x)p_{X}(z-x)dx$</span>
     <span style="float: right;">[27]</span>
 </p>
 
@@ -420,7 +420,7 @@ Question.
 
 ---
 
-Assume that $X$ and $Y$ is the independent random variable. And the probability density functions are:
+Assume that $X$ and $Y$ is the independence random variable. And the probability density functions are:
 <center>
 $p_{X}(x)=\left\{\begin{matrix}
 1, \ \ 0\leq x \leq 1\\ 
