@@ -73,7 +73,33 @@ $= \mathbb{E}[X] - \mathbb{E}[\mathbb{E}[X \mid Z_{k}]]$
 $= \mathbb{E}[X] - \mathbb{E}[X] = 0$
 </center>
 
+Because mean of $\tilde{X}$ is 0, the expectation value of estimation value of MMSE equals to the expectation value of unknown random vector $X$. That is, the MMSE estimator is a estimator without bias.
+
 <br><br>
 
-### Covariance of The MMSE Estimator
+### [Covariance](https://csh970605.github.io/posts/Rand_Vector/#covariance) of The Estimation Error
 
+The covariance of the estimation error $\tilde{X}$ is given as the mean of the conditional covariance of $X$ conditioned on the set of measurement vectors $Z_{k}$ as follows.
+
+<center>
+
+$P_{\tilde{X}\tilde{X}} = \mathbb{E}[(\tilde{X}-\mathbb{E}[\tilde{X}])(\tilde{X}-\mathbb{E}[\tilde{X}])^{T}]$
+
+$=\mathbb{E}[\tilde{X}\tilde{X}^{T}]$
+
+$=\mathbb{E}[\mathbb{E}[\tilde{X}\tilde{X}^{T} \mid Z_{k}]]$
+
+$=\mathbb{E}[P_{XX\mid Z_{k}}]$
+</center>
+<br>
+
+If the measurement vector is given as $Z_{k} = z_{k}$, the covariance of estimation error $\tilde{X}$ is as follows:
+
+<center>
+
+$P_{\tilde{X}\tilde{X}} = \mathbb{E}[\tilde{X}\tilde{X}^{T}]$
+
+$= \mathbb{E}[(X-\mathbb{E}[X \mid Z_{k}=z_{k}])(X-\mathbb{E}[X \mid Z_{k}=z_{k}])^{T}]$
+
+$=P_{XX \mid Z_{k}}$
+</center>
