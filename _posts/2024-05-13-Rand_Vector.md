@@ -91,10 +91,10 @@ The Expectation or mean of random vector $X=[X_{1}, X_{2}, ..., X_{n}]^{T}$ is d
 
 <center>
 
-$E[X] = \begin{bmatrix}
-E[X_{1}]\\ 
+$\mathbb{E}[X] = \begin{bmatrix}
+\mathbb{E}[X_{1}]\\ 
 \vdots \\
-E[X_{n}]
+\mathbb{E}[X_{n}]
 \end{bmatrix} = \int_{-\infty}^{\infty}\begin{bmatrix}
 x_{1}\\ 
 \vdots \\
@@ -114,7 +114,7 @@ The expectation of function $g(X)$ of random vector $X$ is defined as:
 
 <center>
 
-$E[g(X)] = \int_{-\infty}^{\infty}g(x)p_{X}(x)dx$
+$\mathbb{E}[g(X)] = \int_{-\infty}^{\infty}g(x)p_{X}(x)dx$
 </center>
 <br><br>
 
@@ -124,9 +124,9 @@ The covariance matrix $Cov(X)$ of random vector $X=[X_{1}, X_{2}, ..., X_{n}]^{T
 
 <center>
 
-$Cov(X) = E[(X-E[X])(X-E[X])^{T}]$
+$Cov(X) = \mathbb{E}[(X-\mathbb{E}[X])(X-\mathbb{E}[X])^{T}]$
 
-$= \int_{-\infty}^{\infty}(x-E[X])(X-E[X])^{T}p_{X}(x)dx$
+$= \int_{-\infty}^{\infty}(x-\mathbb{E}[X])(X-\mathbb{E}[X])^{T}p_{X}(x)dx$
 
 <p align="center">
     <span>$\begin{bmatrix}
@@ -139,52 +139,52 @@ $= \int_{-\infty}^{\infty}(x-E[X])(X-E[X])^{T}p_{X}(x)dx$
 </p>
 </center>
 
-Where $\sigma_{ij} = \sigma_{ji} = E[(X_{i} - E[X_{i}])(X_{j}-E[X_{j}])]$.
+Where $\sigma_{ij} = \sigma_{ji} = \mathbb{E}[(X_{i} - \mathbb{E}[X_{i}])(X_{j}-\mathbb{E}[X_{j}])]$.
 
 And the correlation matrix of random vector $X$ and $Y$ is defined as:
 
 <center>
 
-$E[XY^{T}] = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} xy^{T}p_{XY}(x,y)dxdy$
+$\mathbb{E}[XY^{T}] = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} xy^{T}p_{XY}(x,y)dxdy$
 </center>
 
 And the inter-covariance matrix of random vector $X$ and $Y$ is defined as:
 
 <center>
 
-$E[(X-E[X])(Y-E[Y])^{T}] = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty}(x-E[X])(y-E[Y])^{T}p_{XY}(x,y)dxdy$
+$\mathbb{E}[(X-\mathbb{E}[X])(Y-\mathbb{E}[Y])^{T}] = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty}(x-\mathbb{E}[X])(y-\mathbb{E}[Y])^{T}p_{XY}(x,y)dxdy$
 </center>
 
 If the inter-covariance matrix of $X$ and $Y$ is 0, $X$ and $Y$ are in the **uncorrelated** to each other.<br>
-If $E[X^{T}Y]=0$, $X$ and $Y$ are **orthogonal** to each other.<br>
+If $\mathbb{E}[X^{T}Y]=0$, $X$ and $Y$ are **orthogonal** to each other.<br>
 
 If $p_{XY}(x,y)=p_{X}(x)p_{Y}(y)$, $X$ and $Y$ are independent.
 
 The conditional expectation of $X$ that is given random variable $Y$ as $y$ is defined as formula [7].
 
 <p align="center">
-    <span>$E[X \mid Y = y] = \int_{-\infty}^{\infty}xp_{X \mid Y}(x \mid y) dx$</span>
+    <span>$\mathbb{E}[X \mid Y = y] = \int_{-\infty}^{\infty}xp_{X \mid Y}(x \mid y) dx$</span>
     <span style="float: right;">[7]</span>
 </p>
 
 And conditional expectation of $X$ that is conditioning the random variable $Y$ is defined as formula [8].
 
 <p align="center">
-    <span>$E[X \mid Y] = \int_{-\infty}^{\infty}xp_{X \mid Y}(x \mid Y) dx$</span>
+    <span>$\mathbb{E}[X \mid Y] = \int_{-\infty}^{\infty}xp_{X \mid Y}(x \mid Y) dx$</span>
     <span style="float: right;">[8]</span>
 </p>
 
-<span style="color: red;">**Note that $E[X \mid Y=y]$ is a real number as a function of real number $y$, but $E[X \mid Y]$ is a random variable as a function of random variable $Y$.**</span>
+<span style="color: red;">**Note that $\mathbb{E}[X \mid Y=y]$ is a real number as a function of real number $y$, but $\mathbb{E}[X \mid Y]$ is a random variable as a function of random variable $Y$.**</span>
 
 The conditional covariance matrix of $X$ that is given random variable $Y$ as $y$ and the conditional covariance matrix of $X$ That is conditioning the random variable $Y$ are defined as fromula [9], [10] respectively.
 
 <p align="center">
-    <span>$Cov[X \mid Y=y] = E[(X - E[X \mid Y=y])(X - E[X \mid Y=y])^{T} \mid Y=y]$</span>
+    <span>$Cov[X \mid Y=y] = \mathbb{E}[(X - \mathbb{E}[X \mid Y=y])(X - \mathbb{E}[X \mid Y=y])^{T} \mid Y=y]$</span>
     <span style="float: right;">[9]</span>
 </p>
 
 <p align="center">
-    <span>$Cov[X \mid Y] = E[(X - E[X \mid Y])(X - E [X \mid Y])^{T} \mid Y]$</span>
+    <span>$Cov[X \mid Y] = \mathbb{E}[(X - \mathbb{E}[X \mid Y])(X - \mathbb{E} [X \mid Y])^{T} \mid Y]$</span>
     <span style="float: right;">[10]</span>
 </p>
 
@@ -195,7 +195,7 @@ The conditional covariance matrix of $X$ that is given random variable $Y$ as $y
 The characteristic function of random vector $X$ is defined as formula [11].
 
 <p align="center">
-    <span>$\Phi_{X}(\omega) = E[e^{j\omega^{T}X}]$</span>
+    <span>$\Phi_{X}(\omega) = \mathbb{E}[e^{j\omega^{T}X}]$</span>
     <span style="float: right;">[11]</span>
 </p>
 
