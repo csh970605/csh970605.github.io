@@ -351,14 +351,14 @@ $\equiv p_{X}(x) \ast p_{Y}(z)$
 
 # Sampling 
 
-The sample that extracted from random variable X whose probability density function is $p_{X}(x)$ is written as follows:
+The sample that extracted from random variable $X$ whose probability density function is $p_{X}(x)$ is written as follows:
 
 <p align="center">
     <span>$x~p_{X}(x)$</span>
     <span style="float: right;">[29]</span>
 </p>
 
-Assume that $N$ number of samples extracted from random variable is {$x^{(1)}, x^{(2)}, ..., x^{(N)}$}, if each samples are extracted independently and fairwisely,the probability of each sample being extracted is the same as formula [30].
+Assume that $N$ number of samples extracted from random variable are {$x^{(1)}, x^{(2)}, ..., x^{(N)}$}, if each samples are extracted independently and fairwisely, the probability of each sample being extracted is the same as formula [30].
 
 <center>
 
@@ -383,7 +383,7 @@ $p_{X}(x) \approx \Sigma_{N}^{i=1}w_{X}(x^{(i)})\delta (x-x^{(i)})$
 </p>
 </center>
 
-Then we can calculate the probability $P(x < X \leq x + \Delta x)$ of belonging $X$ to the intever $(x, x+\Delta x]$ as formula [32].
+Then we can calculate the probability $P(x < X \leq x + \Delta x)$ of belonging $X$ to the interval $(x, x+\Delta x]$ as formula [32].
 
 <center>
 
