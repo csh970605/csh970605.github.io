@@ -98,10 +98,13 @@ $z_{k} = \{z(0), z(1), ..., z(k) \}$
 
 </center>
 
-where <center>
+where 
+
+<center>
 
 $Z_{k} = z_{k}:\{Z(0)=z(0), Z(1) = z(1), ..., Z(k) = z(k) \}$
 </center>
+
 <br><br>
 
 ## Static Estimation Problem
