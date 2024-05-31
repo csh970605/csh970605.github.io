@@ -136,13 +136,13 @@ P_{ZX} & P_{ZZ}
 
 Where
 
-+ $P_{XX}$ : $E[(X - \mu_{X})(X-\mu_{X})^{T}]$
++ $P_{XX}$ : $\mathbb{E}[(X - \mu_{X})(X-\mu_{X})^{T}]$
 
-+ $P_{ZZ}$ : $E[(Z - \mu_{Z})(Z-\mu_{Z})^{T}]$
++ $P_{ZZ}$ : $\mathbb{E}[(Z - \mu_{Z})(Z-\mu_{Z})^{T}]$
 
-+ $P_{XZ}$ : $E[(X - \mu_{X})(Z-\mu_{Z})^{T}]$
++ $P_{XZ}$ : $\mathbb{E}[(X - \mu_{X})(Z-\mu_{Z})^{T}]$
 
-+ $P_{ZX}$ : $E[(Z - \mu_{Z})(X-\mu_{X})^{T}]$
++ $P_{ZX}$ : $\mathbb{E}[(Z - \mu_{Z})(X-\mu_{X})^{T}]$
 
 <br><br>
 
@@ -214,25 +214,25 @@ Because $P_{XX}$ is a positive-definite matrix, it has eigenvalue $\lambda_{1}, 
 
 <center>
 
-$P_{XX} = E\wedge E_{T}$
+$P_{XX} = \mathbb{E}\wedge \mathbb{E}_{T}$
 </center>
 
 Where
 
-+ $E$ : $\begin{bmatrix}
++ $\mathbb{E}$ : $\begin{bmatrix}
 v_{1} & v_{2}
 \end{bmatrix}$
 
 + $\wedge$ : $diag(\lambda_{1}, \lambda_{2})$
 
-+ $E^{T}E$ : $I$
++ $\mathbb{E}^{T}\mathbb{E}$ : $I$
 
 
-Since $P_{XX}^{-1} = E \wedge^{-1} E^{T}$ accordingly, let $y = E^{T}(X- \mu_{X})$. Then, the formula $(x-\mu_{X})^{T}P_{XX}^{-1}(x-\mu_{X})$ becomes:
+Since $P_{XX}^{-1} = \mathbb{E} \wedge^{-1} \mathbb{E}^{T}$ accordingly, let $y = \mathbb{E}^{T}(X- \mu_{X})$. Then, the formula $(x-\mu_{X})^{T}P_{XX}^{-1}(x-\mu_{X})$ becomes:
 
 <center>
 
-$(x-\mu_{X})^{T}P_{XX}^{-1}(x-\mu_{X}) = (x-\mu_{X})^{T}E \wedge^{-1} E^{T}(X-\mu_{X})$
+$(x-\mu_{X})^{T}P_{XX}^{-1}(x-\mu_{X}) = (x-\mu_{X})^{T}\mathbb{E} \wedge^{-1} \mathbb{E}^{T}(X-\mu_{X})$
 
 $= y^{T}\wedge^{-1}y$
 
@@ -262,7 +262,7 @@ Then, check the characteristic function of random vector $Y$.<br>
 
 <center>
 
-$\Phi_{Y}(\omega) = E[e^{jw^{T}Y}] = E[e^{jw^{T}AX}]$
+$\Phi_{Y}(\omega) = \mathbb{E}[e^{jw^{T}Y}] = \mathbb{E}[e^{jw^{T}AX}]$
 
 $=\Phi_{X}(A^{T}\omega)$
 
@@ -300,7 +300,7 @@ In detail, the expectation and covariance of $X$ are:
 
 <center>
 
-$E[X] = \begin{bmatrix}
+$\mathbb{E}[X] = \begin{bmatrix}
 I & 0
 \end{bmatrix}\mu_{Y} = \begin{bmatrix}
 I & 0
@@ -333,7 +333,7 @@ Proof the third feature of gaussian random vector.
 
 ---
 
-Let there are two gaussian random vectors $X \sim N(\mu_{X}, P_{XX}), Z \sim N(\mu_{Z}, P_{ZZ})$. If $X$ and $Z$ are non-correlated, $P_{XZ} = P_{ZX} = 0$ because $E[(X-\mu_{X})(Z-\mu_{Z})^{T}] = [(Z-\mu_{Z})(X-\mu_{X})^{T}] = 0$.
+Let there are two gaussian random vectors $X \sim N(\mu_{X}, P_{XX}), Z \sim N(\mu_{Z}, P_{ZZ})$. If $X$ and $Z$ are non-correlated, $P_{XZ} = P_{ZX} = 0$ because $\mathbb{E}[(X-\mu_{X})(Z-\mu_{Z})^{T}] = [(Z-\mu_{Z})(X-\mu_{X})^{T}] = 0$.
 
 Then, the covariance of joint gaussian random vector is:
 <center>
@@ -374,9 +374,9 @@ Let the sum of two independent random variables $X$ $Z$ is $Y$. Then, the charac
 
 <center>
 
-$\Phi_{Y}(\omega) = E[e^{jw^{T}Y}] = E[e^{jw^{T}(X+Z)}] = E[e^{jw^{T}X}e^{jw^{T}Z}]$
+$\Phi_{Y}(\omega) = \mathbb{E}[e^{jw^{T}Y}] = \mathbb{E}[e^{jw^{T}(X+Z)}] = \mathbb{E}[e^{jw^{T}X}e^{jw^{T}Z}]$
 
-$=E[e^{jw^{T}X}]E[e^{jw^{T}Z}] = \Phi_{X}(\omega)\Phi_{Z}(\omega)$
+$=\mathbb{E}[e^{jw^{T}X}]\mathbb{E}[e^{jw^{T}Z}] = \Phi_{X}(\omega)\Phi_{Z}(\omega)$
 
 $= e^{j\omega^{T}\mu_{X}-\frac{1}{2}\omega^{T}P_{XX}\omega}e^{j\omega^{T}\mu_{Z}-\frac{1}{2}\omega^{T}P_{ZZ}\omega}$
 
