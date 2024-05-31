@@ -37,7 +37,7 @@ And it is simply called random process.
 
 ## Sample Function
 
-Random processe is usually capitalized and lowercase in the time function that random processe can actually take. That is if the time function of random process mapping the probability experiment result $E$ is $x(t)$, random process is written as $X(T, e) = x(t, e) or X(t) = x(t)$.<br>
+Random processe is usually capitalized and lowercase in the time function that random processe can actually take. That is if the time function of random process mapping the probability experiment result $\mathbb{E}$ is $x(t)$, random process is written as $X(T, e) = x(t, e) or X(t) = x(t)$.<br>
 
 $x(t)$ means the state of random process at time $t$, and it is called **sample function**. More speceifically, if e is fixed as $e = e_{1}$, random process becomes sample function $X(t, e_{1}) = x(t, e_{1})$. One more example, if e is fixed as $e = e_{2}$, random process becomes sample function $X(t, e_{2}) = x(t, e_{2})$.<br>
 
@@ -70,7 +70,7 @@ That is,
 
 <center>
 
-$\mu_{X}(t_{1}) = E[X(t_{1})]$
+$\mu_{X}(t_{1}) = \mathbb{E}[X(t_{1})]$
 </center>
 
 <br><br>
@@ -82,12 +82,12 @@ To show auto-correlation at different points in time of random process, we defin
 
 <center>
 
-$R_{XX}(t_{1}, t_{2}) = E[X(t_{1}), X^{T}(t_{2})]$
+$R_{XX}(t_{1}, t_{2}) = \mathbb{E}[X(t_{1}), X^{T}(t_{2})]$
 
 $= \begin{bmatrix}
-E[X_{1}(t_{1}), X_{1}(t_{2})] & \cdots & E[X_{1}(t_{1}), X_{n}(t_{2})]\\
+\mathbb{E}[X_{1}(t_{1}), X_{1}(t_{2})] & \cdots & \mathbb{E}[X_{1}(t_{1}), X_{n}(t_{2})]\\
 \vdots & \ddots & \vdots\\
-E[X_{n}(t_{1}), X_{1}(t_{2})] & \cdots & E[X_{n}(t_{1}), X_{n}(t_{2})]
+\mathbb{E}[X_{n}(t_{1}), X_{1}(t_{2})] & \cdots & \mathbb{E}[X_{n}(t_{1}), X_{n}(t_{2})]
 \end{bmatrix}$
 </center>
 <br>
@@ -101,7 +101,7 @@ Auto-covariance Function $P_{XX}(t_{1}, t_{2})$ is defined as:
 
 <center>
 
-$P_{XX}(t_{1}, t_{2}) = E[(X(t_{1})-E[X(t_{1})])(X(t_{2})-E[X(t_{2})])^{T}]$
+$P_{XX}(t_{1}, t_{2}) = \mathbb{E}[(X(t_{1})-\mathbb{E}[X(t_{1})])(X(t_{2})-\mathbb{E}[X(t_{2})])^{T}]$
 </center>
 
 <br><br>
@@ -131,7 +131,7 @@ $p_{X}(x(t_{1}), x(t_{2}), ..., x(t_{m})) = p_{X}(x(t_{1} + h), x(t_{2} + h), ..
 If $X(t)$ is SSS process, a mean of ensemble becomes constant and auto-correlation function $R_{XX}(t_{1}, t_{2})$ at any two time points $X(t_{1})$ and $X(t_{2})$ becomse a function of the time difference between two time points $(t_{2} - t_{1})$.<br>
 That is,
 
-+ $E[X(t)] = constant$
++ $\mathbb{E}[X(t)] = constant$
 
 + $R_{XX}(t_{1}, t_{2}) = R_{XX}(t_{2} - t_{1}) = R_{XX}(\tau)$
 <br><br>
@@ -162,7 +162,7 @@ WSS is a general condition that can also be applied to multi-dimensional signals
 
 At scalar WSS, the feature of auto-correation funtion $R_{XX}(\tau)$ of $X(t)$ and $Y(t)$ is:
 
-+ $E[X^{2}(t)] = R_{XX}(0) \geq 0$
++ $\mathbb{E}[X^{2}(t)] = R_{XX}(0) \geq 0$
 
 + $R_{XX}(\tau) = R_{XX}(-\tau)$
 
@@ -195,7 +195,7 @@ The power of $X(t)$ is calculated from auto-correaltion function or power spectr
 
 <center>
 
-$E[X(t)X^{T}(t)] = R_{XX}(0) = \frac{1}{2\pi}\int_{-\infty}^{\infty}S_{XX}(\omega)d\omega$
+$\mathbb{E}[X(t)X^{T}(t)] = R_{XX}(0) = \frac{1}{2\pi}\int_{-\infty}^{\infty}S_{XX}(\omega)d\omega$
 </center>
 <br>
 
@@ -220,7 +220,7 @@ A power of random sequence $X(k)$ can be calculated from auto-correlation functi
 
 <center>
 
-$E[X(k)X^{T}(k)] = R_{XX}(0) = \frac{1}{2\pi}\int_{-\pi}^{\pi}S_{XX}(\hat{\omega})d\hat{\omega}$
+$\mathbb{E}[X(k)X^{T}(k)] = R_{XX}(0) = \frac{1}{2\pi}\int_{-\pi}^{\pi}S_{XX}(\hat{\omega})d\hat{\omega}$
 
 $\int e^{(a-jw)\tau}d\tau$
 </center>
@@ -233,7 +233,7 @@ A random process that is in non-relationship timely is called **white noise** $V
 
 <center>
 
-$E[V(t)V^{T}(t+\tau)] = R_{VV}(\tau) = S_{0}\delta(\tau)$
+$\mathbb{E}[V(t)V^{T}(t+\tau)] = R_{VV}(\tau) = S_{0}\delta(\tau)$
 </center>
 
 where $S_{0}$ is const matrix.<br>
@@ -254,7 +254,7 @@ WSS random sequence $V(k)$ that the auto-correlation function is given as a kron
 
 <center>
 
-$E[V(k)V^{T}(k+m)] = R_{VV}(m) = S_{0}\delta_{m}$
+$\mathbb{E}[V(k)V^{T}(k+m)] = R_{VV}(m) = S_{0}\delta_{m}$
 </center>
 
 where $\delta_{m}$ is a kronecker delta function and is defined as:
@@ -300,8 +300,8 @@ A time average and time correlation of any deterministic function $x(t)$ is defi
     <span style="float: right;">[2]</span>
 </p>
 
-And let $x(t)$ is a sample function of stationarity process, if the ensemble mean $E[X(t)]$ of $X(t)$ equals to time average $<x(t)>$, $X(t)$ is called a **ergodic process in the mean**.<br>
-Also, if ensemble correation $E[X(t)X^{T}(t+\tau)]$ of $X(t)$ equals to time correlation $<x(t)x^{T}(t+\tau)>$, $X(t)$ is called **correation ergodic process in the mean**.<br>
+And let $x(t)$ is a sample function of stationarity process, if the ensemble mean $\mathbb{E}[X(t)]$ of $X(t)$ equals to time average $<x(t)>$, $X(t)$ is called a **ergodic process in the mean**.<br>
+Also, if ensemble correation $\mathbb{E}[X(t)X^{T}(t+\tau)]$ of $X(t)$ equals to time correlation $<x(t)x^{T}(t+\tau)>$, $X(t)$ is called **correation ergodic process in the mean**.<br>
 
 In random sequence, time average and time correlation is defined as formula [3] and formula [4] respectively.
 
@@ -350,7 +350,7 @@ If a random process $X(t)$ satisfies the following formula, $X(t)$ is called **o
 
 <center>
 
-$lim_{t \rightarrow t_{0}} E[(X(t) - X(t_{0}))^{2}] = 0$
+$lim_{t \rightarrow t_{0}} \mathbb{E}[(X(t) - X(t_{0}))^{2}] = 0$
 </center><br>
 
 If a random process is continuity in the mean square sense at $t=t_{0}$, it is written simply as general deterministic function as:
@@ -371,5 +371,5 @@ $X'(t) = \frac{dX(t)}{dt} = lim_{h \rightarrow 0} \frac{X(t+h)-X(t)}{h}$
 
 <font color='red'>
 
-Note that the law of exchange holds for the differentiation or integral of the random process and the average operator $E$.
+Note that the law of exchange holds for the differentiation or integral of the random process and the average operator $\mathbb{E}$.
 </font>
