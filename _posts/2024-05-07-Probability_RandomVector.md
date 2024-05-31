@@ -258,7 +258,7 @@ $F_{Y}(y) = P(Y \leq y)$
 $= P(X \in I_{x})$
 </center>
 
-For example, let's assume the function relationship between two random variable X and B as $Y = 2X + 3$. Then, the interval of X that satisfies $Y = 2X + 3 \leq y$ is calculated as formula [21].
+For example, let's assume the function relationship between two random variable $X$ and $Y$ as $Y = 2X + 3$. Then, the interval of $X$ that satisfies $Y = 2X + 3 \leq y$ is calculated as formula [21].
 
 <center>
 
@@ -271,11 +271,11 @@ $F_{Y}(y) = P(Y \leq y)$
 $= F_{X}(\frac{y-3}{2})$
 </center>
 
-And we can calculate the probability density function of Y as formula [22].
+And we can calculate the probability density function of $Y$ as formula [22].
 <center>
 
 <p align="center">
-    <span>$= P_{Y}(y) = \frac{dF_{Y}(y)}{dy} = \frac{d}{dy}[F_{X}(\frac{y-3}{2})]$</span>
+    <span>$P_{Y}(y) = \frac{dF_{Y}(y)}{dy} = \frac{d}{dy}[F_{X}(\frac{y-3}{2})]$</span>
     <span style="float: right;">[22]</span>
 </p>
 
@@ -307,7 +307,7 @@ $\therefore$ The probability density function of $Z$ is formula [24]
     <span style="float: right;">[24]</span>
 </p>
 
-Next, to solve the formula[24], we use Leibniz interal Rule[28] to become fromula [24].
+Next, to solve the formula[24], we use Leibniz integral Rule[28] to become fromula [24].
 
 <p align="center">
     <span>$p_{Z}(z) = \int_{-\infty}^{\infty}p_{XY}(x, z-x)dx$</span>
@@ -337,7 +337,7 @@ $\equiv p_{X}(x) \ast p_{Y}(z)$
 
 <br><br>
 
-## Leibniz Interal Rule
+## Leibniz Integral Rule
 
 <p align="center">
     <span>$\frac{d}{dx}\int_{a(x)}^{b(x)}f(x,t)dt = f(x, b(x)){b}'(x)-f(x, a(x)){a}'(x) + \int_{a(x)}^{b(x)} \frac{\partial}{\partial x}f(x, t)dt$</span>
