@@ -208,7 +208,7 @@ Opposely, the conditional probability density function of $X$ will occur under t
 
 # Independence Random Variable
 
-If the joint probability of A and B is equal to the product of the probabilities of A and B, then events A and B are called **independent events** :
+If the joint probability of A and B equals to the product of the probabilities of A and B, then events A and B are called **independent events** :
 
 <p align="center">
     <span>$P(A, B) = P(A)P(B)$</span>
@@ -225,7 +225,7 @@ And if the joint probability of the N events $A_{i}, i=1, ... n$ satisfies formu
 Likewise, if the probability density function of random variable  satisfies formula 18, the N random variables are independent.
 
 <p align="center">
-    <span>$p_{X{1},...X_{n}} = \prod_{i=1}^{n}p_{X_{i}}(x_{i})$</span>
+    <span>$p_{X_{1},...X_{n}} = \prod_{i=1}^{n}p_{X_{i}}(x_{i})$</span>
     <span style="float: right;">[18]</span>
 </p>
 
