@@ -17,7 +17,7 @@ $n$ numbers of events $B_{i}, i=1, 2, ..., n$ are exclusive each other like imag
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/25299ac0-9669-48c4-84d2-ff6cb8c8cd98">
 </center>
 
-And considering the entire sample space, $\Sigma_{i=1}^{n}P(B_{i})=1$. Then, the probability of random event $A$ is expressed as formula [1]:
+And considering the entire sample space, $\Sigma_{i=1}^{n}P(B_{i})=1$. Then, the probability of a random event $A$ is expressed as formula [1]:
 
 <center>
 
@@ -31,7 +31,7 @@ $P(A) = \Sigma_{i=1}^{n}P(A, B_{i})$<br>
 
 </center>
 
-Formula [1] is called **total probability theorem**.<br>
+Formula [1] is called a **total probability theorem**.<br>
 
 In order to induce the bayes' theorem, we sholud know about the conditional probability. The conditional probability is:
 
@@ -46,7 +46,7 @@ $P(B_{i} \mid A) = \frac{P(A,B_{i})}{P(A)}$
 
 </center>
 
-If you substitue the total probability theorem into formula [2]:
+If you substitute the total probability theorem into formula [2]:
 
 <p align="center">
     <span>$=\frac{P(A \mid B_{i})P(B_{i})}{\Sigma_{i=1}^{n}P(A|B_{i})P(B_{i})}$</span>
@@ -55,7 +55,7 @@ If you substitue the total probability theorem into formula [2]:
 
 Formula [3] is called the **Bayes' theorem**.<br>
 
-Of course, it can be expressed as probability density function as formula [4].
+Of course, it can be expressed as [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) as formula [4].
 
 <center>
 
@@ -70,7 +70,7 @@ $= \frac{p_{XY}(x,y)}{p_{Y}(y)}$
 
 </center>
 
-where $p_{X}(x)$ is prior probability density function, $p_{X \mid Y}(x \mid y)$ is posterior probability density function.
+where $p_{X}(x)$ is a prior probability density function, $p_{X \mid Y}(x \mid y)$ is a posterior probability density function.
 
 Of course again, the occasion that events and random variables are mixed, the bayes' theorem is formula [5].
 
