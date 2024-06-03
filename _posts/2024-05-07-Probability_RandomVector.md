@@ -392,7 +392,7 @@ $\int_{x}^{x+\Delta x}p_{X}(x)dx \approx \int_{x}^{x+\Delta x}\frac{1}{N} \Sigma
 $=\frac{1}{N}\Sigma_{i=1}^{N} \int_{x}^{x+\Delta x}\delta (x-x^{(i)})$<br>
 
 <p align="center">
-    <span>$=\frac{the \ number \ of \ samples \ that \ belongs \ to \ the \ interver (x, x+\Delta x]}{N}$</span>
+    <span>$=\frac{the \ number \ of \ samples \ that \ belongs \ to \ the \ interval (x, x+\Delta x]}{N}$</span>
     <span style="float: right;">[32]</span>
 </p>
 
@@ -400,9 +400,9 @@ $=\frac{1}{N}\Sigma_{i=1}^{N} \int_{x}^{x+\Delta x}\delta (x-x^{(i)})$<br>
 
 <br>
 
-Therefore, the histogram that shows the number of samples belongs to the arbitrary bin has the same shape of the approximation of probability density function $p_{X}(x)$. There is one thing that differ to the probability density function is the area of probability density function must be 1. So, if the area of histogram is normalized to 1, we can get closer shape to the shape of the probability density function.<br>
+Therefore, the histogram that shows the number of samples belongs to the arbitrary bin has the same shape of the approximation of probability density function $p_{X}(x)$. There is one thing that differs to the probability density function is the area of probability density function must be 1. So, if the area of histogram is normalized to 1, we can get closer shape to the shape of the probability density function.<br>
 
-For example, let's approximate the probability density function of $Z$ obtained in [example](https://csh970605.github.io/posts/Probability_RandomVector/#example) by extracting 10,000 samples each from X and Y. The image below is the picture of drawing probability density function of $Z$ that is calculated approximately by using sample $z^{(i)}$.
+For example, let's approximate the probability density function of $Z$ obtained in [example](https://csh970605.github.io/posts/Probability_RandomVector/#example) by extracting 10,000 samples each from $X$ and $Y$. The image below is the picture of drawing probability density function of $Z$ that is calculated approximately by using sample $z^{(i)}$.
 
 <center>
 
@@ -420,7 +420,7 @@ Question.
 
 ---
 
-Assume that $X$ and $Y$ is the independence random variable. And the probability density functions are:
+Assume that $X$ and $Y$ is the independent random variable. And the probability density functions are:
 <center>
 $p_{X}(x)=\left\{\begin{matrix}
 1, \ \ 0\leq x \leq 1\\ 
