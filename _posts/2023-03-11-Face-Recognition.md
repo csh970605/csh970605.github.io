@@ -10,11 +10,12 @@ mermaid: true
 
 # What is Face Recognition?
 <br>
- with the facial images already extracted, cropped, resized and usually converted to grayscale, the face recognition algorithm is responsible for finding characteristics which best describe the image.<br><br>
+
+With the facial images already extracted, cropped, resized, and usually converted to grayscale, the face recognition algorithm is responsible for finding characteristics that best describe the image.<br><br>
  
- ## Differences From Face Detection
- <br>
- Face recognition classifies faces with face images extracted from face detection.
+## Differences From Face Detection
+<br>
+Face recognition classifies faces using face images extracted from face detection.
 <br><br><br><br>
 
 
