@@ -14,11 +14,15 @@ mermaid: true
 ---
 
 Prepare two sets of images.<br>
-First set is positive images, while the second set is negative images.
+The first set consists of positive images, while the second set consists of negative images.
+<br><br>
+
 ## Step 2
 ---
 Send all the images to a machine learning algorithm called [AdaBoost](https://csh970605.github.io/posts/AdaBoost/) so that it learns the features of the images as well as the details of a face.<br>
-For example, a face consists of eyes, moth, nose and so on.<br>
+For example, a face consists of eyes, mouth, nose, and so on.<br>
+<br>
+
 ## Step 3
 ---
 
@@ -29,7 +33,7 @@ For example, a face consists of eyes, moth, nose and so on.<br>
 
 </center>
 
-this picture means if any of the features from C1 to CN is False, cascade returns 'No Detection'<br><br>
+This picture shows that if any of the features from C1 to CN is false, the cascade returns 'No Detection'.<br><br>
 
 
 
@@ -37,7 +41,7 @@ this picture means if any of the features from C1 to CN is False, cascade return
 ## Example Code
 ---
 
-I'm going to detect faces of 'test image' below by openCV
+I'm going to detect faces in the 'test image' below using OpenCV.
 <center>
 
 <img src="https://user-images.githubusercontent.com/28240052/222977717-9ffdbd56-0e14-46a1-9c96-bcc03c7018bb.png" width=500px height=500px><br>
@@ -51,7 +55,7 @@ import cv2
 face_detector = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 image = cv2.imread('people1.jpg')
-# Why use grayscale image?: Cascade detectors with opencv recommands to use grayscale images.
+# Why use grayscale images?: Cascade detectors with OpenCV recommend using grayscale images.
 image_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 # scaleFactor: Image reduction ratio, default value is 1.1
 # minNeighbors: Speicies how many neighboring squares must be detected to set it as the final   detection area. default is 3
