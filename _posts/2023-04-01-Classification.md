@@ -19,7 +19,7 @@ Classification is defined as the process of recognizing, understanding, and grou
 + Classification : Used to predict categories or classes.
 <br><br>
 
-# Pros and cons of classification model
+# Pros and Cons of Classification Models
 
 | Classification Model | Pros | Cons |
 | -------------------- | ---- | ---- |
