@@ -9,16 +9,14 @@ mermaid: true
 ---
 
 # What is Regression?<br>
-Regression finds correlations between dependent and independent variables. <br>
-Therefore, regression algorithms help predict continuous variables such as house prices, market trends, weather patterns, oil and gas prices, etc.<br>
-If your independent variable is time, then you are forecasting future values, otherwise your model is predicting present but unknown values.<br>
-<br>
+Regression finds correlations between dependent and independent variables. Therefore, regression algorithms help predict continuous variables such as house prices, market trends, weather patterns, oil and gas prices, etc. If your independent variable is time, then you are forecasting future values; otherwise, your model is predicting present but unknown values.
+<br><br><br><br>
 
 # Regression VS Classification
 
 + Regression : Used to predict continuous real values.
 + Classification : Used to predict categories or classes.
-<br><br>
+<br><br><br><br>
 
 # Pros and cons of regression model
 
