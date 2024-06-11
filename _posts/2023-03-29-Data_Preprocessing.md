@@ -9,16 +9,14 @@ mermaid: true
 ---
 # What is data preprocessing?<br>
 
-Data preprocessing is a important task that must be conducted before a dataset can be used for model training.<br>
-Raw data is often noisy and unreliable, and may be missing values. <br>
-Using such data for modeling can produce misleading results.<br>
+Data preprocessing is an important task that must be conducted before a dataset can be used for model training. Raw data is often noisy and unreliable, and may be missing values. Using such data for modeling can produce misleading results.<br>
 
 # The need of preprocessed and clean data<br>
 
-Real world data is gathered from various sources and processes and it may contain irregularities or corrupt data compromising the quality of the dataset.<br>
+The data of real world is gathered from various sources and processes, and it may contain irregularities or corrupt data, compromising the quality of the dataset.<br>
 The typical data quality issues that arise are
 
-+ **Incomplete**: Data lacks attributes or containing missing values.<br>
++ **Incomplete**: Data lacks attributes or contains missing values.<br>
 + **Noisy**: Data contains erroneous records or outliers.<br>
 + **Inconsistent**: Data contains conflicting records or discrepancies.<br><br>
 
@@ -31,7 +29,7 @@ To avoid "garbage in, garbage out" and improve data quality and therefore model 
 + **Data transformation**: Normalize data to reduce dimensions and noise.<br>
 + **Data reduction**: Sample data records or attributes for easier data handling.<br>
 + **Data discretization**: Convert continuous attributes to categorical attributes for ease of use with certain machine learning methods.<br>
-+ **Text cleaning**: remove embedded characters that may cause data misalignment. For example, embedded tabs in a tab-separated data file, embedded new lines that may break records, for example.
++ **Text cleaning**: Remove embedded characters that may cause data misalignment. For example, embedded tabs in a tab-separated data file, or embedded new lines that may break records.
 
 # What is the order of data preprocessing?<br>
 1. **Taking care of missing data**<br>
@@ -49,9 +47,7 @@ Because the average and standard deviation of the training set affect the averag
 ---
 <br>
 
-+ **Deletion**: Remove records with missing values<br>
-There is an example of conducting Deletion<br>
-You can see the example code below.<br>
++ **Deletion**: Remove records with missing values. There is an example of conducting deletion below.<br>
 
 ```py
 from sklearn.impute import SimpleImputer
@@ -63,9 +59,8 @@ X[:, 1:3] = imputer.transform(X[:, 1:3])
 ```
 <br>
 
-+ **Dummy substitution**: Replace missing values with a dummy value: e.g, unknown for categorical or 0 for numerical values.<br>
-There is an example of conducting Deletion<br>
-You can see the example code below.<br>
++ **Dummy substitution**: Replace missing values with a dummy value, e.g., "unknown" for categorical or 0 for numerical values.<br>
+There is an example of conducting dummy substitution below.<br>
 
 ```py
 from sklearn.impute import SimpleImputer
@@ -78,8 +73,7 @@ X[:, 1:3] = imputer.transform(X[:, 1:3])
 <br>
 
 + **Mean substitution**: If the missing data is numerical, replace the missing values with the mean.<br>
-There is an example of conducting Deletion<br>
-You can see the example code below.<br>
+There is an example of conducting mean substitution below.<br>
 
 ```py
 from sklearn.impute import SimpleImputer
@@ -92,9 +86,8 @@ X[:, 1:3] = imputer.transform(X[:, 1:3])
 <br>
 <br>
 
-+ **Frequent substitution**: If the missing data is categorical, replace the missing values with the most frequent item<br>
-There is an example of conducting Deletion<br>
-You can see the example code below.<br>
++ **Frequent substitution**: If the missing data is categorical, replace the missing values with the most frequent item.<br>
+There is an example of conducting frequent substitution below.<br>
 
 ```py
 from sklearn.impute import SimpleImputer
@@ -110,9 +103,8 @@ X[:, 1:3] = imputer.transform(X[:, 1:3])
 ## Why and how to Encoding categorical data?
 ---
 <br>
-The reason for encoding is to create a string value as a binary vector that is easy for computers to recognize.<br>
-The reason why it is not a simple "int value" is that it can recognize that there is a correlation between codes during machine learning.<br>
-There are example codes and results below<br>
+The reason for encoding is to create a string value as a binary vector that is easy for computers to recognize. The reason why it is not a simple "int value" is that it can recognize that there is a correlation between codes during machine learning.<br>
+There are example codes and results below.<br>
 
 ```py 
 # Example code
