@@ -10,10 +10,9 @@ mermaid: true
 
 # What is decision tree regression?
 
-The entire data set (parent node) is divided into two data sets (child nodes) based on the reference value.<br>
-Repeat the above steps for each child node to create child nodes until only one class of data exists in the child node.<br>
+The entire data set (parent node) is divided into two data sets (child nodes) based on the reference value. Repeat the above steps for each child node to create child nodes until only one class of data exists in the child node.
 
-There are example images below that shows step by step how nodes are made.<br><br>
+There are example images below that show step by step how nodes are made.<br><br>
 
 ## Step 1
 ---
@@ -97,4 +96,4 @@ X_pred = regressor.predict(X)
 </center>
 
 <br><br><br><br>
-You can see my implementation on my [Github](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%202%20-%20Regression/Section%208%20-%20Decision%20Tree%20Regression/python)
+You can see my implementation on my [GitHub](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%202%20-%20Regression/Section%208%20-%20Decision%20Tree%20Regression/python)
