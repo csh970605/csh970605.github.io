@@ -10,8 +10,8 @@ mermaid: true
 
 # What is Simple Linear Regression?
 Simple linear regression is a statistical method that allows us to summarize and study relationships between two continuous (quantitative) variables:<br>
-+ The first variable(X) is regarded as the predictor, explanatory, or independent variable.
-+ The second variable(Y) is regarded as the response, outcome, or dependent variable.
++ The first variable $X$ is regarded as the predictor, explanatory, or independent variable.
++ The second variable $Y$ is regarded as the response, outcome, or dependent variable.
 
 As a result, the formula for simple linear regression is expressed as the formula below.
 
@@ -31,18 +31,15 @@ You can use simple linear regression when you want to know:<br>
 <br>
 
 
-## How is formula made?
+## How is the formula made?
 ---
 <br>
 <img src="https://user-images.githubusercontent.com/28240052/228837755-7d5f25f7-6019-40f0-ad0f-2dc8ea71eaaf.png"><br><br>
 
-As you can see in the image above, there are **red crosses(y<sub>i</sub>)** with a salary based experience.<br>
-And there are **green crosses(y<sub>i</sub><sup>^</sup>)** which are the modeled values. So, the modeled value represents the experience level at what the salary is.<br>
-**The green lines** therefore represent the difference between actual salary and modled salary.<br>
-Find the straight line where the sum of the distances of the green lines is the minimum, and that becomes the **black line**.<br>
+As you can see in the image above, there are **red crosses (y<sub>i</sub>)** representing actual salaries based on experience. The **green crosses (y<sub>i</sub><sup>^</sup>)** are the modeled values, representing the salary at a given experience level. The **green lines** represent the difference between the actual salary and the modeled salary.The goal is to find the straight line where the sum of the distances of the green lines is minimized, which becomes the **black line**.
 
 
-<br><br>
+<br><br><br><br>
 
 # Example<br>
 <br>
