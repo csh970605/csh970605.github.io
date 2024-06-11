@@ -9,7 +9,7 @@ mermaid: true
 ---
 
 # What is Multiple Linear Regression?
-Multiple linear regression is used to estimate the relationship between two or more independent variables(X) and one dependent variable(Y): <br>
+Multiple linear regression is used to estimate the relationship between two or more independent variables(X) and one dependent variable (Y): <br>
 + X is regarded as the predictor, explanatory, or independent variable.
 + Y is regarded as the response, outcome, or dependent variable.
 As a result, the formula for multiple linear regression is expressed as the formula below.<br>
@@ -22,8 +22,8 @@ $ y = b_{0} + b_{1}*x_{1} + b_{2}*x_{2}+ ... + b_{n}*x_{n} $
 </center>
 You can use multiple linear regression when you want to know:<br>
 
-+ How strong the relationship is between two or more independent variables and one dependent variable (e.g. how rainfall, temperature, and amount of fertilizer added affect crop growth).<br>
-+ The value of the dependent variable at a certain value of the independent variables (e.g. the expected yield of a crop at certain levels of rainfall, temperature, and fertilizer addition).<br>
++ How strong the relationship is between two or more independent variables and one dependent variable (e.g., how rainfall, temperature, and amount of fertilizer added affect crop growth).<br>
++ The value of the dependent variable at a certain value of the independent variables (e.g., the expected yield of a crop at certain levels of rainfall, temperature, and fertilizer addition).<br>
 <br>
 
 # Example<br>
@@ -81,4 +81,4 @@ regressor.fit(X_train, y_train)
 
 # Implementation
 
-+ [Github](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%202%20-%20Regression/Section%205%20-%20Multiple%20Linear%20Regression/Python)
++ [GitHub](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%202%20-%20Regression/Section%205%20-%20Multiple%20Linear%20Regression/Python)
