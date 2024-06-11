@@ -11,16 +11,16 @@ mermaid: true
 # What is polynomial regression?<br>
 
 A simple linear regression algorithm only works when the relationship between the data is linear.<br>
-But suppose we have non-linear data, then linear regression will not be able to draw a best-fit line.<br>
+However, if we have non-linear data, linear regression will not be able to draw a best-fit line.<br>
 Simple regression analysis fails in such conditions.<br>
-There is a dataset has a non-linear relationship like image below, and you can see the linear regression results on it, which does not perform well, meaning it does not come close to reality. <br>
+There is a dataset with a non-linear relationship, as shown in the image below. You can see that the linear regression results do not perform well, meaning they do not come close to reality. <br>
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/229110371-52985448-6044-4e6a-8d83-3d9728c417d9.png" width=500>
 </center>
 <br>
-Hence, we introduce polynomial regression to overcome this problem, which helps identify the curvilinear relationship between independent and dependent variables.<Br>
+To overcome this problem, we introduce polynomial regression, which helps identify the curvilinear relationship between independent and dependent variables.<br>
 
-Polynomial regression is a form of Linear regression where only due to the non-linear relationship between dependent and independent variables, we add some polynomial terms to linear regression to convert it into Polynomial regression.<br>
+Polynomial regression is a form of linear regression where, due to the non-linear relationship between dependent and independent variables, we add some polynomial terms to linear regression to convert it into polynomial regression.<br>
 As a result, the formula for multiple linear regression is expressed as the formula below.<br>
 <center>
 <font size="2">
