@@ -12,7 +12,7 @@ mermaid: true
 # What is Decision Tree Classification?
 
 It's basic algorithm is the same as [Decision Tree Regression](https://csh970605.github.io/posts/Decision_Tree_Regression/).<br>
-You can find the difference in the image below.
+The difference can be seen in the image below.
 <br>
 <center>
 <font size=4>
