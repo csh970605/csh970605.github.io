@@ -9,10 +9,8 @@ mermaid: true
 ---
 
 # What is Classification?<br>
-Classification is defined as the process of recognition, understanding, and grouping of objects and ideas into preset categories.<br>
-With the help of these pre-categorized training datasets, classification in machine learning programs leverage a wide range of algorithms to classify future datasets into respective and relevant categories.<br>
-Classification algorithms used in machine learning utilize input training data for the purpose of predicting the likelihood or probability that the data that follows will fall into one of the predetermined categories.<br>
-**In short, classification is a form of pattern recognition.**<Br>
+Classification is defined as the process of recognizing, understanding, and grouping objects and ideas into preset categories. With the help of these pre-categorized training datasets, classification in machine learning programs leverages a wide range of algorithms to classify future datasets into respective and relevant categories. Classification algorithms used in machine learning utilize input training data to predict the likelihood or probability that the data that follows will fall into one of the predetermined categories.<br>
+**In short, classification is a form of pattern recognition.**<br>
 <br><br>
 
 # Regression VS Classification
