@@ -8,7 +8,7 @@ math: true
 mermaid: true
 ---
 
-# What is kernel SVM?
+# What is Kernel SVM?
 
 It is a concept that came out to compensate for the disadvantage that SVM cannot handle non linear datasets like image below.<br><br>
 
@@ -17,7 +17,7 @@ It is a concept that came out to compensate for the disadvantage that SVM cannot
 </center>
 
 <br><br>
-Then, how kernel SVM classify non linear dataset? The answer is mapping to a higher dimension like image below.<br>
+So, how does Kernel SVM classify non-linear datasets? The answer is mapping to a higher dimension like image below.<br>
 <br>
 
 <center>
@@ -26,8 +26,7 @@ Then, how kernel SVM classify non linear dataset? The answer is mapping to a hig
 
 <br><br>
 
-By mapping to a higher dimension, we can get a linearly separable dataset divided by hyperplane in the space.<br>
-After going through the above process, if you project to the lower dimension again, you can get a result with a round hyperplane like the image below.
+By mapping to a higher dimension, we can obtain a linearly separable dataset divided by a hyperplane in the space. After going through this process, if you project to the lower dimension again, you can get a result with a round hyperplane, as shown in the image below.
 
 <br><br>
 
@@ -37,15 +36,15 @@ After going through the above process, if you project to the lower dimension aga
 
 <br><br>
 
-If then, kernel SVM can classify more complex data set like image below?<br>
+Can Kernel SVM then classify a more complex dataset, as shown in the image below?"<br>
 
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/229293702-4fef8e9c-c9b6-474d-85c7-d991c3024a75.png" width=500>
 </center>
 
-The answer is YES. By adding more than two kernel formula like Gaussian RBF Kernel, it can classify data set.
+The answer is YES. By adding more than two kernel formula like Gaussian RBF Kernel, it can classify dataset.
 
-There are simple Gaussian RBF kernel formula:<br>
+Here is a simple Gaussian RBF kernel formula:<br>
 
 <center>
 <font size=4>
@@ -71,7 +70,7 @@ $K($ $\overrightarrow{x}$ $, \overrightarrow{l}^{1} )$ $+ K($ $\overrightarrow{x
 $K($ $\overrightarrow{x}$ $, \overrightarrow{l}^{1} )$ $+ K($ $\overrightarrow{x}$ $, \overrightarrow{l}^{2} ) = 0$
 
 
-# Types of Kernel Function
+# Types of Kernel Functions
 
 + Gaussian RBF Kernel<br>
 <center>
@@ -84,7 +83,7 @@ $K($ $\overrightarrow{x}$ $, \overrightarrow{l}^{1} ) = $ $e^{-\vert \vec{x} - \
 <img src="https://user-images.githubusercontent.com/28240052/229349560-87dfa4f1-9c4c-4470-a620-683afda441fe.png" width=400>
 </center>
 
-+ Sigmoid Kerenel<br>
++ Sigmoid Kernel<br>
 <center>
 <font size=4>
 
