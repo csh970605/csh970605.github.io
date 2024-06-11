@@ -10,16 +10,16 @@ mermaid: true
 
 # What is random forest regression?
 
-It is type of ensemble learning which is the process of using multiple models, trained over the same data, averaging the results of each model ultimately finding a more powerful predictive/classification result.<br><br>
+Random forest regression is a type of ensemble learning, which is the process of using multiple models, trained over the same data, averaging the results of each model to ultimately find a more powerful predictive/classification result.<br><br>
 
 ## The process of making a random forest regression
 ---
 <br>
 
 + Step 1: Pick at random K data points from the Training set.<br>
-+ Step 2: Build the decision tree associated to these K data points.<br>
-+ Step 3: Choose the number of trees you want to build and repeat step 1 and 2.<br>
-+ Step 4: For a new data point, make each one of your trees predict the value of **Y** for the data point in question. Then, assign the new data point the average across all of the predicted Y values.<br>
++ Step 2: Build the decision tree associated with these K data points.<br>
++ Step 3: Choose the number of trees you want to build and repeat steps 1 and 2.<br>
++ Step 4: For a new data point, make each one of your trees predict the value of **Y** for the data point in question. Then, assign the new data point the average of all the predicted Y values.<br>
 
 # Example
 <br><br>
