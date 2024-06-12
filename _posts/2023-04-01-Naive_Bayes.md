@@ -9,8 +9,7 @@ mermaid: true
 ---
 
 # What is Bayes?
-Bayesian analysis is a statistical paradigm that answers research questions about unknown parameters using probability statements.<br>
-It can be expressed in the following formula:
+Bayesian analysis is a statistical paradigm that answers research questions about unknown parameters using probability statements. It can be expressed in the following formula:
 <center>
 <font size=4>
 
@@ -19,20 +18,18 @@ $ P(A\vert B) = $ $ P(B\vert A) * P(A) \over P(B) $ $ = $ $ P(A \cap B) \over P(
 </font>
 </center>
 
-And you can get more information about Bayes' Therom in [here](https://csh970605.github.io/posts/Bayes_Theorem/)
+And you can get more information about Bayes' Theroem in [here](https://csh970605.github.io/posts/Bayes_Theorem/)
 <br><br>
 
 # What is Naive bayes?
 
-Classify the data based on the Bayesian theory. I will explain step by step below.<br>
-Before starting steps, let's assume that we have a data set like image.<br>
+Classify the data based on the Bayesian theory. I will explain step by step below. Before starting steps, let's assume that we have a dataset like the one in the image.<br>
 
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/229355657-a9928c9b-49b4-4bad-b0bd-b8c2d1da8873.png" width=500>
 </center>
 <br>
-Gray dot is a data that we want to predict.<br>
-Then we will predict the category between "Walks" and "Drives" by probability:<br>
+The gray dot represents a data point that we want to predict. Then we will predict the category between "Walks" and "Drives" based on probability:<br>
 
 + Walks probability:<br>
 
@@ -77,29 +74,23 @@ Classify the data by the probabilities calculated in step 1 and step 2.
 <center>
 <font size=4>
 
-$ P(Walks) = $ $ Number of Walkers \over Total Observations$<br>
+$P(Walks) = \frac{\text{Number of Walkers}}{\text{Total Observations}}$<br>
 
 </font>
 </center>
 
-Thus, in this case P(Walks)'s probability will be 
-<font size=4>
-$ 10 \over 30 $
-</font>
+Thus, in this case, the probability of $P(Walks)$ will be $\frac{10}{30}$
 
 + Step 2<br>
-To do this step, we must select a radius and we are going to draw a circle of your desired size around our observation like image below.<br>
-Then, we are going to count all the points that are inside the circle.<br>
-And it will be **number of similzr observations**.<br>
-In this step, we are going to find P(X) which expressed by:<br>
+To do this step, we must select a radius and we are going to draw a circle of your desired size around our observation like image below. Then, we will count all the points that are inside the circle. And it will be **the number of similar observations**. In this step, we are going to find P(X) which expressed by:<br>
 <center>
 
 <font size=4>
 
-$ P(X) = $ $ Number of Similar Observations \over Total Observations $<br>
+$P(X) = \frac{\text{Number of Similar Observations}}{\text{Total Observations}}$<br>
 </font>
 
-And in this case, P(X) will be $ 4 \over 30 $ <br>
+And in this case, $P(X)$ will be $\frac{4}{30}$ <br>
 
 <img src="https://user-images.githubusercontent.com/28240052/229357205-b99be7ad-c742-4073-acbb-6330e51f2bba.png" width=400>
 
@@ -107,14 +98,14 @@ And in this case, P(X) will be $ 4 \over 30 $ <br>
 
 + Step 3<br>
 
-In this step we are going to find $ P(X \vert Walks) $ which expressed by:<br>
+In this step, we will find $P(X \mid Walks)$, which is expressed as:<br>
 <center>
 <font size=4>
 
-$ P(X \vert Walks) = $ $ Among those who Walk \over Total number of Walkers $
+$P(X \mid Walks) = \frac{\text{Among those who Walk}}{\text{Total number of Walkers}} $
 </font>
 
-And in this case, $ (X \vert Walks) $ will be $3 \over 10 $<br>
+And in this case, $(X \mid Walks)$ will be $\frac{3}{10}$<br>
 </center>
 
 + Step 4<br>
@@ -123,7 +114,7 @@ In this step we are going to find $P(Walks \vert X)$ and it will be:
 <center>
 <font size=4>
 
-$P(Walks \vert X) = \frac{\frac {3}{10} * \frac{10}{30}} {\frac{4}{30}}  = 0.75$
+$P(Walks \mid X) = \frac{\frac {3}{10} \times \frac{10}{30}} {\frac{4}{30}} = 0.75$
 </font>
 </center>
 
