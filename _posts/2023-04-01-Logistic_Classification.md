@@ -19,22 +19,23 @@ Let's assume that you have a data set like image below.<br>
 </center>
 <br>
 
-How do you predict value by linear regression like [Simple Linear Regression](https://csh970605.github.io/posts/Simple_Linear_Regression/) or [Multiple Linear Regression](https://csh970605.github.io/posts/Multiple_Linear_Regression/)?<br>
-If you use linear regression on the data set above, it will get a graph like image below.<br>
+How do you predict a value using linear regression, such as [Simple Linear Regression](https://csh970605.github.io/posts/Simple_Linear_Regression/) or [Multiple Linear Regression](https://csh970605.github.io/posts/Multiple_Linear_Regression/)?<br>
+If you use linear regression on the data set above, you will get a graph like image below.<br>
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/229272509-640be045-6204-4de1-b3e0-34290f6cf372.png" width=500>
 </center>
 <br><br>
-But what does linear regression give us a hint about? When the people get more age, As shown in the graph, as people get older, they take action more often, and when they get younger, they don't take action more often. <br>
+But what hint does linear regression give us? As shown in the graph, as people get older, they take action more often, and when they are younger, they take action less often. <br>
 <br>
-So, if you draw a graph applying this to the extreme, a graph like the image below is drawn.<br><br>
+So, if you draw a graph applying this to the extreme, you get a graph like the image below.
+<br><br>
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/229272859-9228569a-59f7-4029-90d1-16bbdf2b8d85.png" width=500>
 </center>
 <br><br>
 
 To make the graph less extreme we use the **sigmoid function** with the formula<br>
-Let's assume the formula for a straight line.:
+Let's assume the formula for a straight line:
 
 <center>
 <font size=4>
@@ -49,7 +50,7 @@ And the formula for the sigmoid function is:
 <center>
 <font size=4>
 
-$p = $ $1 \over 1 + e^{-y}$
+$p = \frac{1}{1 + e^{-y}}$
 
 </font>
 </center>
@@ -61,7 +62,7 @@ Combining the two formulas gives the formula shown below, which is the formula o
 <center>
 <font size=4>
 
-$ln($ $p\over1-p$ $) = $ $b_{0} + b_{1}*1$
+$\ln \left(\frac{p}{1-p}\right) = b_{0} + b_{1}*1$
 
 </font>
 </center>
@@ -74,14 +75,14 @@ And the graph will be drawn like:
 <br><br>
 </center>
 <br>
-So, how could we use this graph? you can get probabilities of each ages like image below.<br><br>
+So, how can we use this graph? You can get the probabilities for each age like image below.<br><br>
 
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/229273624-044ae587-480c-49ce-a001-0a933808db52.png" width=500>
 </center>
 <br><br>
 
-After get probabilities, classify 0 and 1 based on a specific value set for these probabilities like image below.
+After getting the probabilities, classify them as 0 or 1 based on a specific threshold, as shown in the image below.
 <br><br>
 
 <center>
