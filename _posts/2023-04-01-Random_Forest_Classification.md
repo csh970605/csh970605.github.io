@@ -10,7 +10,7 @@ mermaid: true
 
 # What is Random Forest Classification?
 
-It's basic algorithm is the same as [Random Forest Regression](https://csh970605.github.io/posts/Random_Forest_Regression/) except that predicting a value sets a category.<br><br><br>
+Its basic algorithm is the same as [Random Forest Regression](https://csh970605.github.io/posts/Random_Forest_Regression/) except that predicting a value sets a category.<br><br><br>
 
 # Example
 <br><br>
