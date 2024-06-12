@@ -10,22 +10,19 @@ mermaid: true
 
 # What is Logistic Regression?
 
-Logistic regression is an example of supervised learning. It is used to calculate or predict the probability of a binary event occurring.<br><br>
-
-Let's assume that you have a data set like image below.<br>
+Logistic regression is an example of supervised learning. It is used to calculate or predict the probability of a binary event occurring. Let's assume that you have a data set like image below.<br>
 
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/229272192-58cc6629-5a1e-4380-b7d5-5246e02ec263.png" width=500>
 </center>
 <br>
 
-How do you predict a value using linear regression, such as [Simple Linear Regression](https://csh970605.github.io/posts/Simple_Linear_Regression/) or [Multiple Linear Regression](https://csh970605.github.io/posts/Multiple_Linear_Regression/)?<br>
-If you use linear regression on the data set above, you will get a graph like image below.<br>
+How do you predict a value using linear regression, such as [Simple Linear Regression](https://csh970605.github.io/posts/Simple_Linear_Regression/) or [Multiple Linear Regression](https://csh970605.github.io/posts/Multiple_Linear_Regression/)? If you use linear regression on the data set above, you will get a graph like image below.<br>
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/229272509-640be045-6204-4de1-b3e0-34290f6cf372.png" width=500>
 </center>
 <br><br>
-But what hint does linear regression give us? As shown in the graph, as people get older, they take action more often, and when they are younger, they take action less often. <br>
+But what hint does linear regression give us? As shown in the graph, as people get older, they take action more often, and when they are younger, they take action less often.
 <br>
 So, if you draw a graph applying this to the extreme, you get a graph like the image below.
 <br><br>
