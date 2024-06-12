@@ -10,36 +10,35 @@ mermaid: true
 
 # What is Hierarchical Clustering?
 
-Hierarchical Clustering gives results very similar to [K-means clsutering](https://csh970605.github.io/posts/KMeans_Clustering/). But the whole process is different.<br>
-<br>
-And there are two type of hierarchical clustering:<br>
+Hierarchical Clustering gives results very similar to [K-means clustering](https://csh970605.github.io/posts/KMeans_Clustering/), But the whole process is different.<br>
+There are two types of hierarchical clustering:<br>
 
 + Agglomerative<br>
-Agglomerative is the bottom up approach and deviding into multiple.<br>
+Agglomerative is the bottom-up approach and involves dividing into multiple clusters.<br>
 There are several steps to doing agglomerative approach.<br>
 
     + Step 1. <br>
-    Make each data point a single-point cluster. That forms N clusters.<br><br>
+    Make each data point a single-point cluster. This forms N clusters.<br><br>
 
     <center>
     <img src="https://user-images.githubusercontent.com/28240052/230056661-24655520-6832-457d-b964-2f5e680c0b71.png" width=400>
     </center><br>
 
     + Step 2.<br>
-    Take the two closest data points and make them one cluster. That forms N-1 clusters.<br><br>
+    Take the two closest data points and make them one cluster. This forms N-1 clusters.<br><br>
     <center>
     <img src="https://user-images.githubusercontent.com/28240052/230056979-c78d9d3d-e4e4-4a8f-ad48-28458b26ca2d.png" width=400>
     </center><br>
 
     + Step 3.<br>
-    Take the two closest clusters and make them one cluster. That forms N-2 Clusters.<br>
+    Take the two closest clusters and make them one cluster. This forms N-2 clusters.<br>
 
     <center>
     <img src="https://user-images.githubusercontent.com/28240052/230057069-4fb165cb-23b5-4b69-a3ea-8c0f8767161d.png" width=400>
     </center><br>
 
     + Step 4.<br>
-    Repeat Step 3 until there is only one clusters.<br>
+    Repeat Step 3 until there is only one cluster.<br>
     <center>
     <img src="https://user-images.githubusercontent.com/28240052/230057375-80862a2d-2085-47d2-ab64-6f9f8da46dc1.png" width=400>
     <br><br>
@@ -53,7 +52,7 @@ There are several steps to doing agglomerative approach.<br>
     <br><br><br><br>
 
 + Divisive<br>
-Divisive is the up bottom approach and deviding into multiple.
+Divisive is the top-down approach and involves dividing into multiple clusters.
 
     + Step 1.<br>
     All points in the dataset belong to one single cluster.<br>
@@ -62,16 +61,16 @@ Divisive is the up bottom approach and deviding into multiple.
     </center><br>
 
     + Step 2.<br>
-    Partition the cluster into two least similar cluster based on SSE(Sum of Squared Errors).<br>
+    Partition the cluster into the two least similar clusters based on SSE (Sum of Squared Errors).<br>
     <center>
     <img src="https://user-images.githubusercontent.com/28240052/230057529-225d706b-aa11-4991-ba68-210d03a71c76.png" width=400>
     </center><br>
 
     + Step 3.<br>
-    Repaet Step 2 until the desired number of clusters are obtained
+    Repeat Step 2 until the desired number of clusters is obtained.
     <br><br>
     + Fin<br>
-    Because, the number we wanted to obatin is 3, Divisive is done.<br>
+    Since the number we wanted to obtain is 3, the divisive process is complete.<br>
     <center>
     <img src="https://user-images.githubusercontent.com/28240052/230057375-80862a2d-2085-47d2-ab64-6f9f8da46dc1.png" width=400>
     </center>
@@ -85,7 +84,7 @@ Divisive is the up bottom approach and deviding into multiple.
 ## How to calculate the distance between clusters?
 ---
 <br>
-There are 4 ways to calculate distance.<br><br>
+There are four ways to calculate distance.<br><br>
 
 + Option 1: <br>
 The distance between closest points in the clusters.<br>
@@ -103,8 +102,7 @@ These ways can significantly affect the output.<br>
 ## The purpose of agglomerative or divisive?
 ---
 <br>
-The purpose of hierarchical clustering, the way the hierarchical clustering works, is to maintain a memory of how we went through those porcesses.<br>
-And that memory is stored in a dendrogram. 
+The purpose of hierarchical clustering, the way the hierarchical clustering works, is to maintain a memory of how we went through those processes. This memory is stored in a dendrogram. 
 
 <br><br>
 
@@ -112,7 +110,7 @@ And that memory is stored in a dendrogram.
 
 We created clusters above and the dendrogram will help us get the desired result from those clusters.<br>
 
-Let's assume that we have 6 data points and apply agglomerative hierachical clustering.<br>
+Let's assume that we have six data points and apply agglomerative hierachical clustering.<br>
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/230084437-cb8fbcdc-782f-4979-aae5-de318270f2fe.png" width=400>
 </center>
@@ -147,13 +145,13 @@ After that, follow the steps of agglomerative. I'll show you the progress by ima
 
 # How to choose clusters?
 
-When a straight line parallel to the X-axis is drawn on the dendrogram obtained through the above process, the point where the graph intersects is the number of clusters.
+When a straight line parallel to the X-axis is drawn on the dendrogram obtained through the above process, the points where the graph intersects are the number of clusters.
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/230090171-91e227bb-3070-4e7e-9179-50050ea11a2d.png" width=400>
 </center>
 <br><br>
 
-**The optimal number of clusters is the place where the most flat straight lines can be drawn on the X-axis without changing the number of clusters.** <br>
+**The optimal number of clusters is the place where the most flat, straight lines can be drawn on the X-axis without changing the number of clusters.** <br>
 In other words, in our results, it is appropriate when the number of clusters is 2.<br>
 
 <center>
