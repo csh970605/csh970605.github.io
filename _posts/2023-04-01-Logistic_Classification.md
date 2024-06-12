@@ -34,7 +34,7 @@ So, if you draw a graph applying this to the extreme, you get a graph like the i
 </center>
 <br><br>
 
-To make the graph less extreme we use the **sigmoid function** with the formula<br>
+To make the graph less extreme, we use the **sigmoid function** with the formula.<br>
 Let's assume the formula for a straight line:
 
 <center>
