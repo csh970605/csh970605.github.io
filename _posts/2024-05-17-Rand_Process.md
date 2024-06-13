@@ -28,7 +28,7 @@ Vector random process is the vector whose element is scalar random process. It i
 
 <center>
 
-$X(t) \equiv X(t,e) = [X_{1}(t, e)X_{2}(t,e), ..., X_{n}(t,e)]^{T}$
+$X(t) \equiv X(t,e) = [X_{1}(t, e)X_{2}(t,e), \ldots , X_{n}(t,e)]^{T}$
 </center>
 
 And it is simply called random process.
@@ -48,7 +48,7 @@ And if time is discrete, the random process is called **discrete-time** or **ran
 
 <center>
 
-$X(k) \equiv X(k,e) = [X_{1}(k,e)X_{2}(k,e), ..., X_{n}(k,e)]^{T}$
+$X(k) \equiv X(k,e) = [X_{1}(k,e)X_{2}(k,e), \ldots , X_{n}(k,e)]^{T}$
 </center>
 
 Where $k$ is index of time.
@@ -121,11 +121,11 @@ In stationarity process, there are two process:
 
 ## Strict Sense Stationary(SSS)
 
-If at a probability density function of random process $X(t)$, when taking any $m$ time points $t_{1} < t_{2} < ... < t_{m}$, joint probability density functions of $X(t_{m}), X(t_{m}), ..., X(t_{m})$ satisfy the following expression for any $h > 0$, $X(t)$ is called **SSS process**
+If at a probability density function of random process $X(t)$, when taking any $m$ time points $t_{1} < t_{2} < \ldots  < t_{m}$, joint probability density functions of $X(t_{m}), X(t_{m}), \ldots , X(t_{m})$ satisfy the following expression for any $h > 0$, $X(t)$ is called **SSS process**
 
 <center>
 
-$p_{X}(x(t_{1}), x(t_{2}), ..., x(t_{m})) = p_{X}(x(t_{1} + h), x(t_{2} + h), ..., x(t_{m} + h))$
+$p_{X}(x(t_{1}), x(t_{2}), \ldots , x(t_{m})) = p_{X}(x(t_{1} + h), x(t_{2} + h), \ldots , x(t_{m} + h))$
 </center>
 
 If $X(t)$ is SSS process, a mean of ensemble becomes constant and auto-correlation function $R_{XX}(t_{1}, t_{2})$ at any two time points $X(t_{1})$ and $X(t_{2})$ becomse a function of the time difference between two time points $(t_{2} - t_{1})$.<br>
@@ -339,7 +339,7 @@ Same as the markov process, a definition of markov sequence is determined by a p
 
 <center>
 
-$p_{X}(s(k) \mid x(k-1), x(k-2), ..., x(0)) = p_{X}(x(k) \mid x(k-1)), \ \ \forall k$<br>
+$p_{X}(s(k) \mid x(k-1), x(k-2), \ldots , x(0)) = p_{X}(x(k) \mid x(k-1)), \ \ \forall k$<br>
 
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/27150017-1960-463c-88f7-44749beb755f">
 </center>
