@@ -60,7 +60,7 @@ And the graph will be:<br>
 ## Rectifier function
 ---
 <br>
-he rectifier function is one of the most popular functions for ANN. It returns 0 if the value is less than 0, and returns the value if the value is more than 0. To express it in a formula:
+The rectifier function is one of the most popular functions for ANN. It returns 0 if the value is less than 0, and returns the value if the value is more than 0. To express it in a formula:
 <br>
 
 <center>
