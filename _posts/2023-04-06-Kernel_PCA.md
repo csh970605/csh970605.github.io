@@ -26,8 +26,8 @@ The goals of Kernel PCA are:
 The role of Kernel PCA is:
 + Standardize the data.
 + Obtain the eigenvectors and eigenvalues from the covariance matrix or correlation matrix, or perform Singular Value Decomposition (SVD).<br>
-+ Sort eigenvalues in descending order and choose the *k* eigenvectors that correspond to the *k* largest eigenvalues where *k* is the number of dimensions of the new feature subspace.<br>
-+ Construct the projection matrix W from the selected *k* eigen vectors.<br>
++ Sort eigenvalues in descending order and choose the $k$ eigenvectors that correspond to the $k$ largest eigenvalues where $k$ is the number of dimensions of the new feature subspace.<br>
++ Construct the projection matrix W from the selected $k$ eigen vectors.<br>
 + Transform the original data set X via W to obtain a k-dimensional feature subspace Y.<br>
 
 
