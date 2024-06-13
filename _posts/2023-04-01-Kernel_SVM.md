@@ -87,7 +87,7 @@ $K($ $\overrightarrow{x}$ $, \overrightarrow{l}^{1} ) = $ $e^{-\vert \vec{x} - \
 <center>
 <font size=4>
 
-$K(X, Y) = $ $\tanh(\gamma*X^{T}Y + r)$
+$K(X, Y) = $ $\tanh(\gamma \times X^{T}Y + r)$
 
 </font>
 <br>
@@ -98,7 +98,7 @@ $K(X, Y) = $ $\tanh(\gamma*X^{T}Y + r)$
 <center>
 <font size=4>
 
-$K(X,Y) = $ $(\gamma*X^{T}Y + r)^{d},r > 0$
+$K(X,Y) = $ $(\gamma \times X^{T}Y + r)^{d},r > 0$
 
 </font>
 <br>
