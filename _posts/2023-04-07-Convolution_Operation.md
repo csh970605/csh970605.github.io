@@ -13,7 +13,7 @@ Formula of convolution:
 <center>
 <font size=4>
 
-$(f * g)(t)\ =\ \int_{-\infty}^{\infty}f(\tau)g(t\ -\ \tau)d\tau$
+$(f \times g)(t)\ =\ \int_{-\infty}^{\infty}f(\tau)g(t\ -\ \tau)d\tau$
 </font>
 </center>
 Convolution is the simple application of a filter called feature detector to an input that results in an activation.<br>
@@ -46,10 +46,10 @@ And shape of return will be(N, $C_{out}$, $H_{out}$, $W_{out}$) where:<br>
 <center>
 <font size=4>
 
-$H_{out} = floor(\frac{H_{in}\ +\ 2\ *\ padding[0]\ -\ dilation[0]\ *\ (kernelsize[0]\ -\ 1)\ -\ 1}{stride[0]})\ + 1$
+$H_{out} = floor(\frac{H_{in}\ +\ 2\  \times \ padding[0]\ -\ dilation[0]\  \times \ (kernelsize[0]\ -\ 1)\ -\ 1}{stride[0]})\ + 1$
 <br><br>
 
-$W_{out} = floor(\frac{W_{in}\ +\ 2\ *\ padding[1]\ -\ dilation[1]\ *\ (kernelsize[1]\ -\ 1)\ -\ 1}{stride[1]})\ + 1$
+$W_{out} = floor(\frac{W_{in}\ +\ 2\  \times \ padding[1]\ -\ dilation[1]\  \times \ (kernelsize[1]\ -\ 1)\ -\ 1}{stride[1]})\ + 1$
 </font>
 </center>
 
