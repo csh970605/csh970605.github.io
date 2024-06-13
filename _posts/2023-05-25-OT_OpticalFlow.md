@@ -123,9 +123,9 @@ detected_next = nextPts[status==1]
 
 2. Calculate the magnitude (speed) and angle of motion using **cv2.cartToPolar(x, y) -> magnitude, angle** where<br>
 
-    + x : flow[..., 0] that obtained in step 1.
+    + x : flow[$\ldots$, 0] that obtained in step 1.
 
-    + y : flow[..., 1] that obtained in step 1.
+    + y : flow[$\ldots$, 1] that obtained in step 1.
 
 <br><br>
 
