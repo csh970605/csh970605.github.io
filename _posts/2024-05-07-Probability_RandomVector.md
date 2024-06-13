@@ -101,11 +101,11 @@ According to the definition of probability density function, $p_{X}(x) \geq 0, \
 At a discrete random variable $X$ uses probability mass function $w_{X}(x_{i})$ instead of probability density function.
 
 <p align="center">
-    <span>$w_{X}(x_{i})=P(X=x_{i}), i= 1, ..., n$</span>
+    <span>$w_{X}(x_{i})=P(X=x_{i}), i= 1, \ldots , n$</span>
     <span style="float: right;">[5]</span>
 </p>
 
-where $x_{i}, i = 1, ..., n$ is all elements in a sample space.<br>
+where $x_{i}, i = 1, \ldots , n$ is all elements in a sample space.<br>
 
 If you use a Dirac delta function ($\delta(x)$), you can express probability mass function to the form of probability density function.
 
@@ -215,7 +215,7 @@ If the joint probability of A and B equals to the product of the probabilities o
     <span style="float: right;">[16]</span>
 </p>
 
-And if the joint probability of the N events $A_{i}, i=1, ... n$ satisfies formula 17, the set is called independence.
+And if the joint probability of the N events $A_{i}, i=1, \ldots, n$ satisfies formula 17, the set is called independence.
 
 <p align="center">
     <span>$P(\bigcap_{i=1}^{n}A_{i}) = \prod_{i=1}^{n}P(A_{i})$</span>
@@ -225,7 +225,7 @@ And if the joint probability of the N events $A_{i}, i=1, ... n$ satisfies formu
 Likewise, if the probability density function of random variable  satisfies formula 18, the N random variables are independence.
 
 <p align="center">
-    <span>$p_{X_{1},...X_{n}} = \prod_{i=1}^{n}p_{X_{i}}(x_{i})$</span>
+    <span>$p_{X_{1}, \ldots, X_{n}} = \prod_{i=1}^{n}p_{X_{i}}(x_{i})$</span>
     <span style="float: right;">[18]</span>
 </p>
 
@@ -358,13 +358,13 @@ The sample that extracted from random variable $X$ whose probability density fun
     <span style="float: right;">[29]</span>
 </p>
 
-Assume that $N$ number of samples extracted from random variable are {$x^{(1)}, x^{(2)}, ..., x^{(N)}$}, if each samples are extracted independently and fairwisely, the probability of each sample being extracted is the same as formula [30].
+Assume that $N$ number of samples extracted from random variable are {$x^{(1)}, x^{(2)}, \ldots , x^{(N)}$}, if each samples are extracted independently and fairwisely, the probability of each sample being extracted is the same as formula [30].
 
 <center>
 
 $w_{X}(x^{(i)}) = P(X=x^{(i)})$
 <p align="center">
-    <span>$=\frac{1}{N}, i = 1, 2, ..., N$</span>
+    <span>$=\frac{1}{N}, i = 1, 2, \ldots , N$</span>
     <span style="float: right;">[30]</span>
 </p>
 
