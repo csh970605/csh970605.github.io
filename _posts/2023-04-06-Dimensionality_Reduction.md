@@ -10,11 +10,11 @@ mermaid: true
 
 # What is Dimensionality Reduction?
 
-In [classification](https://csh970605.github.io/posts/Classification/), we worked with datasets composed of only two independent variables. We did for two reasons:
+In [classification](https://csh970605.github.io/posts/Classification/), we worked with datasets composed of only two independent variables. We did so for two reasons:
 
-+ Because we needed two dimensions to visualize better how Machine Learning models worked (by plotting the prediction regions and the prediction boundary for each model).
++ Because we needed two dimensions to better visualize how Machine Learning models worked (by plotting the prediction regions and the prediction boundary for each model).
 
-+ Because whatever is the original number of our independent variables, we can often end up with two independent variables by applying an appropriate Dimensionality Reduction technique.
++ Because regardless of the original number of our independent variables, we can often end up with two independent variables by applying an appropriate Dimensionality Reduction technique.
 
 There are two types of Dimensionality Reduction techniques:
 
