@@ -37,7 +37,7 @@ Let's assume the formula for a straight line:
 <center>
 <font size=4>
 
-$y = $ $b_{0} + b_{1}*1$
+$y = $ $b_{0} + b_{1} \times 1$
 
 </font>
 </center>
@@ -59,7 +59,7 @@ Combining the two formulas gives the formula shown below, which is the formula o
 <center>
 <font size=4>
 
-$\ln \left(\frac{p}{1-p}\right) = b_{0} + b_{1}*1$
+$\ln \left(\frac{p}{1-p}\right) = b_{0} + b_{1} \times 1$
 
 </font>
 </center>
