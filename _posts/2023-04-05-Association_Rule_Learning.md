@@ -8,10 +8,10 @@ math: true
 mermaid: true
 ---
 
-# What is Association rule learning?
+# What is Association Rule Learning?
 
 
-Association rule learning is a rule-based machine learning method for discovering interesting relations between variables.<br>
+Association rule learning is a rule-based machine learning method for discovered in the dataset using some measures of interestingness.<br>
 It is intended to identify strong rules discovered in data set using some measures of interestingness.
 <br><br><br>
 
@@ -22,4 +22,4 @@ It is intended to identify strong rules discovered in data set using some measur
 + [Eclat](https://csh970605.github.io/posts/Eclat/)<br>
 
 <br><br>
-You can see my implementation on my [Github](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%205%20-%20Association%20Rule%20Learning)
+You can see my implementation on my [GitHub](https://github.com/csh970605/Machine-LearningA-Z/tree/main/Part%205%20-%20Association%20Rule%20Learning).
