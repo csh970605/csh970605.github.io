@@ -87,14 +87,14 @@ The combination of measurement vectors that collect all random measurement vecto
 
 <center>
 
-$Z_{k} = \{Z(0), Z(1), ..., Z(k) \}$
+$Z_{k} = \{Z(0), Z(1), \ldots , Z(k) \}$
 </center><br>
 
 And the combination of the measured values of random measurement vectors are expressed as follows:
 
 <center>
 
-$z_{k} = \{z(0), z(1), ..., z(k) \}$
+$z_{k} = \{z(0), z(1), \ldots , z(k) \}$
 
 </center>
 
@@ -102,7 +102,7 @@ where
 
 <center>
 
-$Z_{k} = z_{k}:\{Z(0)=z(0), Z(1) = z(1), ..., Z(k) = z(k) \}$
+$Z_{k} = z_{k}:\{Z(0)=z(0), Z(1) = z(1), \ldots , Z(k) = z(k) \}$
 </center>
 
 <br><br>
