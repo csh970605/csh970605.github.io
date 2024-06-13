@@ -16,7 +16,7 @@ As a result, the formula for multiple linear regression is expressed as the form
 <center>
 <font size="2">
 
-$ y = b_{0} + b_{1}*x_{1} + b_{2}*x_{2}+ ... + b_{n}*x_{n} $
+$ y = b_{0} + b_{1} \times x_{1} + b_{2} \times x_{2}+ ... + b_{n} \times x_{n} $
 
 </font>
 </center>
