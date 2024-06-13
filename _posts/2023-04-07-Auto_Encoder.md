@@ -1,5 +1,5 @@
 ---
-title: Auto Encoder
+title: Autoencoder
 author: SeHoon
 date: 2023-04-07 14:24:30 +0900
 categories: [Deep Learning, DL_Introduction]
@@ -9,26 +9,27 @@ mermaid: true
 ---
 
 
-# What is Auto Encoder?
-Auto encoder is an unsupervised deep learning that is used for:
-+ Feature detections.<br>
-When auto encoder encodes datas, the hidden layer represents important features. And we can use the features.
-+ Recommendation system.<br>
-+ Encoding.<br>
+# What is Autoencoder?
+An autoencoder is an unsupervised deep learning algorithm used for:
 
-Auto encoder encodes itself. So, auto encoder takes some inputs, put it to the hidden layer, and then gets the outputs with the same number as the inputs.<br>
++ Feature detection.<br>
+When an autoencoder encodes data, the hidden layer represents important features, which can be used.
++ Recommendation systems.<br>
++ Data encoding.<br>
 
-Here is a simple structure of auto encoder:
+An autoencoder encodes data by taking inputs, passing them through the hidden layer, and then producing outputs with the same number of dimensions as the inputs.<br>
+
+Here is a simple structure of an autoencoder:
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/232176425-4140165a-ac3e-4d9c-8357-795a847c33a0.png" width=400>
 </center>
 <br>
 
-Auto encoder is directed types of neural network unlike [boltzmann machine](https://csh970605.github.io/posts/Boltzmann_Machine/).<br>
+ An autoencoder is a directed type of neural network, unlike the [boltzmann machine](https://csh970605.github.io/posts/Boltzmann_Machine/).<br>
 <br>
 
-# How does Auto Encoder works?
-Here is a simplified auto encoder:
+# How does an Autoencoder Work?
+Here is a simplified autoencoder:
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/232210406-0781ef41-ce2a-4cd7-9cbb-edf5f99ea38f.png" width=600>
 </center>
@@ -40,9 +41,9 @@ And then, as an example, set the weights like:
 <img src="https://user-images.githubusercontent.com/28240052/232227829-684dd24f-1111-4a5a-a078-ebc5d4588ff9.png" width=600>
 </center>
 <br><br>
-Though we set the weights like in the image above as an example, in auto encoder, hyperbolic tangent usually used to set weights.<br>
+ Although we set the weights as shown in the image above as an example, in an autoencoder, the hyperbolic tangent function is usually used to set weights.<br>
 <br><br>
-And we get input "[1 0 0 0]".
+We get the input "[1 0 0 0]".
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/232228496-1b3ad1b5-232e-4965-9781-207dade786b0.png" width=600>
 </center>
@@ -53,15 +54,14 @@ Computing the input with the weights gives the output "[2 0 0 -2]".
 </center>
 <br><br>
 
-But, this is not the end. By using [softmax function](https://csh970605.github.io/posts/Softmax/), the output is "[1 0 0 0]"
+However, this is not the end. By using [softmax function](https://csh970605.github.io/posts/Softmax/), the output becomes "[1 0 0 0]"
 
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/232228892-b8512a68-c66b-418f-b5ad-9ceca9cf8766.png" width=200>
 </center>
 <br><br>
 
-In this case, the input is the same as the output.<br>
-Then, how the output isn't the same as the input? It is easily solved by adding biases.
+In this case, the input is the same as the output. So, how do you solve the case where the output is not the same as the input? Adding biases is an easy solution.
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/232277193-cc8c0476-bf4d-4861-a8ab-0e147c67a6e5.png" width=600>
 </center>
@@ -70,23 +70,22 @@ Then, how the output isn't the same as the input? It is easily solved by adding 
 
 
 
-# Training steps of an Auto Encoder
-Let's see the steps of training by example.<br>
-As an example, we have movie ratings from various users.
+# Training Steps of an Autoencoder
+Let's see the steps of training with an example. As an example, we have movie ratings from various users.<br>
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/232277621-887eb48e-426c-4d69-908c-74e7e6519e6d.png" width=400>
 </center>
 <br><br>
 
 + STEP 1 <br>
-We start with an array where the lines (the observations) correspond to the users and the columns (the features) correspond to the movies. Each cell (u, i) contains the rating (from 1 to 5, 0 if no rating) of the movie i by the user u.<br>
+We start with an array where the rows (the observations) correspond to the users and the columns (the features) correspond to the movies. Each cell (u, i) contains the rating (from 1 to 5, 0 if no rating) of the movie i by the user u.<br>
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/232277621-887eb48e-426c-4d69-908c-74e7e6519e6d.png" width=400>
 </center>
 <br><br>
 
 + STEP 2<br>
-The first user goes into the network. The input vector $x = (r_{1}, r_{2}, ..., r_{m})$ contains all its ratings for all the movies.<br>
+The first user goes into the network. The input vector $x = (r_{1}, r_{2}, \ldots,  r_{m})$ contains all its ratings for all the movies.<br>
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/232278246-fe14b895-d7a3-4197-9cf2-53c9124082ae.png" width=400>
 </center>
@@ -127,17 +126,17 @@ When the whole training set passed through the ANN, that makes an epoch. Redo mo
 <br><br><br>
 
 # Overcomplete Hidden Layers
-Overcomplete hidden layers are used for lots of variations of autoencoders. For example, we want to get more hidden nodes than input layer to use autoencoder as a feature extractor to get more features, we can use overcomplete hidden layers.<br>
-But there is a problem. If there are more hidden layers than input layer, autoencoder can use a cheat like "values in boxes of the same color are always the same."<br>
+Overcomplete hidden layers are used in many variations of autoencoders. For example, if we want to use an autoencoder as a feature extractor and get more features by having more hidden nodes than input nodes, we can use overcomplete hidden layers.<br>
+However, there is a problem. If there are more hidden nodes than input nodes, the autoencoder can use a "cheat" like "values in boxes of the same color are always the same."<br>
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/232283557-728c8877-d286-4ddb-ab7b-cca8a103c9b8.png" width=400>
 </center>
 <br><br>
 
-In this way, we can't extract any valuable features from autoencoder. To solve this problem, there are several different types of autoencoders and I'll introduce it below.
+ In this way, we can't extract any valuable features from the autoencoder. To solve this problem, there are several different types of autoencoders, which I'll introduce below.
 <br><br><br>
 
-# Types of Auto Encoders
+# Types of Autoencoders
 
 + [Sparse Autoencoder](https://csh970605.github.io/posts/Sparse_Autoencoder/)<br>
 
@@ -215,7 +214,7 @@ class SAE(nn.Module):
         self.fc4 = nn.Linear(20, nb_movies)
         self.activation = nn.Sigmoid()
         
-    # Define action in auto encoder
+    # Define action in autoencoder
     def forward(self, x):
         x = self.activation(self.fc1(x))
         x = self.activation(self.fc2(x))
@@ -280,6 +279,6 @@ for id_user in range(nb_users):
 
 # Implementation
 
-+ [Auto Encoder 1](https://github.com/csh970605/Deep_Learning_A-Z/tree/main/Part%206%20-%20AutoEncoders/Section%2019%20-%20AutoEncoders)<br>
-+ [Auto Encoder 2](https://github.com/csh970605/TensorFlow-2.0-Advanced/tree/main/Section%203)<br>
++ [AutoEncoder 1](https://github.com/csh970605/Deep_Learning_A-Z/tree/main/Part%206%20-%20AutoEncoders/Section%2019%20-%20AutoEncoders)<br>
++ [AutoEncoder 2](https://github.com/csh970605/TensorFlow-2.0-Advanced/tree/main/Section%203)<br>
 + [Classify autoencoded images by CNN](https://github.com/csh970605/Computer-Vision-Masterclass/tree/main/Section%208)<br>
