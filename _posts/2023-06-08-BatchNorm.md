@@ -14,7 +14,7 @@ Batch Normalization is normalized using the mean and variance of the mini-batch,
 
 Then, let's see what happend in batch normalization.<br><br>
 
-Input : Values of x over a mini-batch: B= {$x_{1}...m$}<br>
+Input : Values of x over a mini-batch: B= {$x_{1}, \ldots, m$}<br>
         Parameters to be learned : $\gamma,\ \beta$
         <br>
 Output : {$y_{i}\ =\ BN_{\gamma,\beta}(x_{i})$}
