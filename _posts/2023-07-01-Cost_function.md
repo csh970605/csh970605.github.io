@@ -26,7 +26,7 @@ Cost function is a function that needs to find the maximum or minimum value in a
 + Binary Cross-entropy(log loss) : $-\frac{1}{N} \Sigma_{i=1}^{N}(y_{i}log(\hat{y_{i}})\ +\ (1-y_{i})log(1-\hat{y_{i}}))$
 <br>
 
-+ Multinomial-log loss : $-\frac{1}{N}\Sigma_{i=1}^{N}\Sigma_{i=1}^{K}(y_{i,k}*log(\hat{y_{i,k}}))$
++ Multinomial-log loss : $-\frac{1}{N}\Sigma_{i=1}^{N}\Sigma_{i=1}^{K}(y_{i,k} \times log(\hat{y_{i,k}}))$
 <br>
 
 where $y_{i}$=Ground Truth, $\hat{y_{i}}$=Expected Value
