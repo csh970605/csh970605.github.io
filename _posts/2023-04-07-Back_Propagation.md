@@ -14,5 +14,5 @@ Update the weights according to how much they are responsible for the error like
 <img src="https://user-images.githubusercontent.com/28240052/230598392-c78537d5-2d95-4a15-ac56-f7487415f140.png" width=600>
 </center>
 <br><br>
-The learning rate decides by how much we update the weights.<br>
+The learning rate determines how much we update the weights.<br>
 <br><br><br>
