@@ -1,5 +1,5 @@
 ---
-title: Kernel Principal Component Analysis(Kernel PCA)
+title: Kernel Principal Component Analysis (Kernel PCA)
 author: SeHoon
 date: 2023-04-06 21:19:30 +0900
 categories: [Machine Learning, ML_Introduction]
@@ -15,20 +15,20 @@ mermaid: true
 Kernel PCA is used for:
 + Noise filtering<br>
 + Visualization<br>
-+ Feature Extraction<br>
++ Feature extraction<br>
 + Stock market predictions<br>
 + Gene data analysis<br>
 
-The goal of Kernel PCA is:
-+ Identify patterns in data.<br>
+The goals of Kernel PCA are:
++ Identifying patterns in data.<br>
 + Detect the correlation between variables.<br>
 
 The role of Kernel PCA is:
 + Standardize the data.
-+ Obtain the eigenvectors and eigenvalues from the covariance matrix or correlation matrix, or perform Singular Vector Decomposition<br>
++ Obtain the eigenvectors and eigenvalues from the covariance matrix or correlation matrix, or perform Singular Value Decomposition (SVD).<br>
 + Sort eigenvalues in descending order and choose the *k* eigenvectors that correspond to the *k* largest eigenvalues where *k* is the number of dimensions of the new feature subspace.<br>
 + Construct the projection matrix W from the selected *k* eigen vectors.<br>
-+ Transfrom the original data set X via W to obatin a k-dimensional feature subspace Y.<br>
++ Transform the original data set X via W to obtain a k-dimensional feature subspace Y.<br>
 
 
 Kernel PCA can be expressed as:
