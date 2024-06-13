@@ -10,17 +10,17 @@ mermaid: true
 
 # Random Vector
 
-A random vector is a vector consisting of random variables. When the element consist the vecotr $X$ is $X_{1}, X_{2}, ..., X{n}$, the probability distribution function is defined as formula [1].
+A random vector is a vector consisting of random variables. When the element consist the vecotr $X$ is $X_{1}, X_{2}, \ldots , X{n}$, the probability distribution function is defined as formula [1].
 
 <p align="center">
-    <span>$F_{X_{1},...,X_{n}}(x_{1}, ..., x_{n}) = P (X_{1} \leq x_{1}, ..., X_{n} \leq x_{n})$</span>
+    <span>$F_{X_{1}, \ldots ,X_{n}}(x_{1}, \ldots , x_{n}) = P (X_{1} \leq x_{1}, \ldots , X_{n} \leq x_{n})$</span>
     <span style="float: right;">[1]</span>
 </p>
 
 And the joint probability distribution function is written as formula [2].
 
 <p align="center">
-    <span>$F_{X}(x) = F_{X_{1},...,X_{n}}(x_{1}, ..., x_{n})$</span>
+    <span>$F_{X}(x) = F_{X_{1}, \ldots ,X_{n}}(x_{1}, \ldots , x_{n})$</span>
     <span style="float: right;">[2]</span>
 </p>
 
@@ -44,7 +44,7 @@ The probability density function of random vector $X$ $p_{X}(x) $ is defined as 
 
 <center>
 
-$F_{X}(x) = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty}...\int_{-\infty}^{\infty}p_{X_{1}}, ..., p_{X_{n}}(x_{1}, ..., x_{n})dx_{1}...dx_{n}$
+$F_{X}(x) = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty}\ldots \int_{-\infty}^{\infty}p_{X_{1}}, \ldots , p_{X_{n}}(x_{1}, \ldots , x_{n})dx_{1}\ldots dx_{n}$
 
 <p align="center">
     <span>$= \int_{-\infty}^{\infty}p_{X}(x)dx$</span>
@@ -53,7 +53,7 @@ $F_{X}(x) = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty}...\int_{-\infty}^{\i
 
 </center>
 
-Where $p_{X}(x)$ is a multivariate function that is $p_{X}(x) = p_{X_{1}}, ..., p_{X_{n}}(x_{1}, ..., x_{n})$
+Where $p_{X}(x)$ is a multivariate function that is $p_{X}(x) = p_{X_{1}}, \ldots , p_{X_{n}}(x_{1}, \ldots , x_{n})$
 
 And the conditional probability density function of random vector $X$ that is given random vector $Y$ is $Y=y$ is defined as formula [4].
 
@@ -66,13 +66,13 @@ where
 
 <center>
 
-$(X \leq x) = (X_{1} \leq x_{1}, X_{2} \leq x_{2}, ..., X_{n} \leq x_{n})$
+$(X \leq x) = (X_{1} \leq x_{1}, X_{2} \leq x_{2}, \ldots , X_{n} \leq x_{n})$
 
-$(Y \leq t) = (Y_{1} \leq y_{1}, Y_{2} \leq y_{2}, ..., Y_{n} \leq y_{n})$
+$(Y \leq t) = (Y_{1} \leq y_{1}, Y_{2} \leq y_{2}, \ldots , Y_{n} \leq y_{n})$
 
-$p_{X \mid Y}(x \mid y) = p_{X_{1}, ..., X_{n} \mid Y_{1}, ..., Y_{m}}(x_{1}, ..., x_{n} \mid y_{1}, ..., y_{m})$
+$p_{X \mid Y}(x \mid y) = p_{X_{1}, \ldots , X_{n} \mid Y_{1}, \ldots , Y_{m}}(x_{1}, \ldots , x_{n} \mid y_{1}, \ldots , y_{m})$
 
-$ = \frac{p_{XY}(x,y)}{p_{Y}(y)} = \frac{p_{X_{1}, ..., X_{n} \mid Y_{1}, ..., Y_{m}}(x_{1}, ..., x_{n} \mid y_{1}, ..., y_{m})}{p_{Y_{1}, ..., Y_{m}}(x_{1}, ..., x_{n} \mid y_{1}, ..., y_{m})}$
+$ = \frac{p_{XY}(x,y)}{p_{Y}(y)} = \frac{p_{X_{1}, \ldots , X_{n} \mid Y_{1}, \ldots , Y_{m}}(x_{1}, \ldots , x_{n} \mid y_{1}, \ldots , y_{m})}{p_{Y_{1}, \ldots , Y_{m}}(x_{1}, \ldots , x_{n} \mid y_{1}, \ldots , y_{m})}$
 
 </center>
 
@@ -87,7 +87,7 @@ And $P_{X \mid Y}(x \mid y)$ is a multi variable function.
 
 ## Expectation
 
-The Expectation or mean of random vector $X=[X_{1}, X_{2}, ..., X_{n}]^{T}$ is defined as the expectation of each random vector element as formula [5].
+The Expectation or mean of random vector $X=[X_{1}, X_{2}, \ldots , X_{n}]^{T}$ is defined as the expectation of each random vector element as formula [5].
 
 <center>
 
@@ -108,7 +108,7 @@ x_{n}
 
 </center>
 
-where $x = [x_{1}, x_{2}, ..., x_{n}]^{T}$.<br>
+where $x = [x_{1}, x_{2}, \ldots , x_{n}]^{T}$.<br>
 
 The expectation of function $g(X)$ of random vector $X$ is defined as:
 
@@ -120,7 +120,7 @@ $\mathbb{E}[g(X)] = \int_{-\infty}^{\infty}g(x)p_{X}(x)dx$
 
 ## Covariance
 
-The covariance matrix $Cov(X)$ of random vector $X=[X_{1}, X_{2}, ..., X_{n}]^{T}$ is defined as symmetric matrix as formula [6].
+The covariance matrix $Cov(X)$ of random vector $X=[X_{1}, X_{2}, \ldots , X_{n}]^{T}$ is defined as symmetric matrix as formula [6].
 
 <center>
 
@@ -199,7 +199,7 @@ The characteristic function of random vector $X$ is defined as formula [11].
     <span style="float: right;">[11]</span>
 </p>
 
-where $\omega =[\omega_{1}, \omega_{2}, ..., \omega_{n}]^{T}$ is a $n$-dimensional real number vector, $n$ is the dimension of $X$.<br>
+where $\omega =[\omega_{1}, \omega_{2}, \ldots , \omega_{n}]^{T}$ is a $n$-dimensional real number vector, $n$ is the dimension of $X$.<br>
 According to the definition of expectation, formula [11] can be written as formula [12].
 
 <p align="center">
