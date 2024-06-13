@@ -10,7 +10,7 @@ mermaid: true
 
 # Bayes' Theorem
 
-$n$ numbers of events $B_{i}, i=1, 2, ..., n$ are exclusive each other like image below, $P(B_{i}, B_{j})=0, \forall \  i \neq j$. 
+$n$ numbers of events $B_{i}, i=1, 2, \ldots , n$ are exclusive each other like image below, $P(B_{i}, B_{j})=0, \forall \  i \neq j$. 
 
 <center>
 
