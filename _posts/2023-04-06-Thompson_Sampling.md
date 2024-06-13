@@ -9,22 +9,22 @@ mermaid: true
 ---
 
 # What is Thompson Sampling?
-Unlike [UCB](https://csh970605.github.io/posts/UCB/), which selects a high confidence interval, Thompson samling creates a probabilistic perception.
+Unlike [UCB](https://csh970605.github.io/posts/UCB/), which selects a high confidence interval, Thompson sampling creates a probabilistic perception.
 <br><br>
 
 ## Algorithm of Thompson Sampling
 ---
 <br>
 Let's assume that we are planning an advertisement.<br>
-There are 3 steps to get the result:
+There are three steps to get the result:
 
 + Step 1. <br>
-At each round n, we consider two numbers for each ad *i*:
-    + $N_{i}^{1}(n)$ : the number of times the ad *i* got reward 1 up to round *n*.
-    + $N_{i}^{0}(n)$ : the number of times the ad *i* got reward 0 up to round *n*.<br><br>
+At each round $n$, we consider two numbers for each ad $i$:
+    + $N_{i}^{1}(n)$ : the number of times the ad $i$ got reward 1 up to round $n$.
+    + $N_{i}^{0}(n)$ : the number of times the ad $i$ got reward 0 up to round $n$.<br><br>
 
 + Step 2.<br>
-For each ad *i*, we take a random draw from the distribution below:
+For each ad $i$, we take a random draw from the distribution below:
 <br>
 
 <center>
@@ -36,14 +36,14 @@ $\theta_{i}(n) = \beta(N_{i}^{1}(n)\ +\ 1,\ N_{i}^{0}(n)\ +\ 1)$
 <br>
 
 + Step 3.<br>
-Select the ad that has the highest $\theta_{i}(n).$
+Select the ad that has the highest $\theta_{i}(n)$.
 
 
 ## The process of deriving the result value of Thompson Sampling
 ---
 <br>
 
-You can see the graph. X axis means that we expected profit from ad. And the bar means center of distribution.
+You can see the graph. The x-axis represents the expected profit from the ad, and the bar represents the center of the distribution.
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/230351720-264315ab-d644-4e2d-a563-187d1c46c4db.png" width=500>
 </center>
@@ -65,8 +65,7 @@ As above, apply it to yellow ad and blue ad and get the result.<br>
 </center>
 <br><br>
 
-As you can see, the expected value which machine produces does not match the actual distribution.<br>
-To solve this problem, we can help machine by giving real expected value.<br>
+As you can see, the expected value produced by the machine does not match the actual distribution. To solve this problem, we can help machine by giving real expected value.<br>
 And the distribution will be change like:
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/230355627-5fa889b5-8c5f-4d44-adc6-92bee7a873b0.png" width=500>
@@ -78,8 +77,8 @@ Repeat the above process until the distribution created by the machine is suffic
 </center>
 <br><br>
 
-As you can see in the image above, yellow ad will gives us the highest profit.
-<br><br><Br>
+As you can see in the image above, the yellow ad will give us the highest profit.
+<br><br><br><br>
 
 # Example
 <br><br>
