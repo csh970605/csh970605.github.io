@@ -28,10 +28,8 @@ For each ad $i$, we take a random draw from the distribution below:
 <br>
 
 <center>
-<font size=4>
 
 $\theta_{i}(n) = \beta(N_{i}^{1}(n)\ +\ 1,\ N_{i}^{0}(n)\ +\ 1)$
-</font>
 </center>
 <br>
 
