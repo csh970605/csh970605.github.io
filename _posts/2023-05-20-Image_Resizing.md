@@ -10,7 +10,7 @@ mermaid: true
 
 # What is image Resizing?
 
-In image resizing, we just change the width and height. To do image Resizing, we can use<br>
+In image resizing, we simply change the width and height. To do image Resizing, we can use<br>
 **cv2.resize(image, dsize(output imagesize), x_scale, y_scale, interpolation)**<br>
 If dsize is None, the output image will be calculated as a function of scaling using x&y scale.
 
@@ -27,7 +27,7 @@ If dsize is None, the output image will be calculated as a function of scaling u
 
 # What is image scaling?
 
-In scaling we change the size, but keep the width to height ratio constant. To do image scaling, we can use<br>
+In image scaling, we change the size while keeping the width-to-height ratio constant. To do image scaling, we can use<br>
 **cv2.resize(image, dsize=None, x_scale, y_scale, interpolation)**<br>
 <br><br><br>
 
