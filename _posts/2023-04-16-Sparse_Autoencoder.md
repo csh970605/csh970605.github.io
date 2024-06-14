@@ -9,7 +9,7 @@ mermaid: true
 ---
 
 # What is Sparse Autoencoder?
-A Sparse Autoencoder is a type of [autoencoder](https://csh970605.github.io/posts/Auto_Encoder/)  used to extract more features (i.e., to have more hidden nodes) than input nodes. It is also effective in preventing overfitting. Here is a simple structure of a Sparse Autoencoder.
+A Sparse Autoencoder is a type of [autoencoder](https://csh970605.github.io/posts/Auto_Encoder/) used to extract more features (i.e., to have more hidden nodes) than input nodes. It is also effective in preventing overfitting. Here is a simple structure of a Sparse Autoencoder.
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/232287646-c05fdd2d-4f5b-422b-8c9a-4367106aaf16.png" width=400>
 </center>
