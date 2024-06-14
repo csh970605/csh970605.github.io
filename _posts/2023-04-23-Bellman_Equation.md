@@ -15,10 +15,8 @@ Bellman Equation writes the value of a decision problem at a certain point in ti
 # The formula of Bellman Equation
 
 <center>
-<font size=4>
 
 $ V(s)\ =\ max(R(s,a)\ +\ \gamma V(s')) $
-</font>
 </center>
 
 + s : Current state or given state.
