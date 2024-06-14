@@ -9,19 +9,18 @@ mermaid: true
 ---
 
 # What is Batch Normalization?
-It is a way to perform [Regularization](https://csh970605.github.io/posts/Regularization/).<br>
-Batch Normalization is normalized using the mean and variance of the mini-batch, and scale and shift are performed through $\gamma$ values and $\beta$ values. At this time, $\gamma$ and $\beta$ is learnable through [back propagation](https://csh970605.github.io/posts/Back_Propagation/).<br><br>
+It is a way to perform [Regularization](https://csh970605.github.io/posts/Regularization/). Batch normalization normalizes using the mean and variance of the mini-batch, and scaling and shifting are performed using $\gamma$ values and $\beta$ values. At this time, $\gamma$ and $\beta$ are learnable through [back propagation](https://csh970605.github.io/posts/Back_Propagation/).<br><br>
 
-Then, let's see what happend in batch normalization.<br><br>
+Now, let's see what happens in batch normalization.<br><br>
 
-Input : Values of x over a mini-batch: B= {$x_{1}, \ldots, m$}<br>
+Input : Values of $x$ over a mini-batch: $B = {x_{1}, \ \ldots,\  x_{m}}$<br>
         Parameters to be learned : $\gamma,\ \beta$
         <br>
 Output : {$y_{i}\ =\ BN_{\gamma,\beta}(x_{i})$}
 <br><br>
 
 
-$\mu_{B} \leftarrow \frac{1}{m}\sum_{i=1}^{m}x_{i}$ : mini-batch mean<br>
+$\mu_{B} \leftarrow \frac{1}{m}\sum_{i=1}^{m}x_{i}$ : Mini-batch mean<br>
 
 $\sigma^{2}_{B} \leftarrow \frac{1}{m}\sum_{i=1}^{m}(x_{i}-\mu_{B})^{2}$<br>
 
