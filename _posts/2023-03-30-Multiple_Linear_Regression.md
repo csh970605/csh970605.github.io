@@ -14,11 +14,9 @@ Multiple linear regression is used to estimate the relationship between two or m
 + Y is regarded as the response, outcome, or dependent variable.
 As a result, the formula for multiple linear regression is expressed as the formula below.<br>
 <center>
-<font size="2">
 
 $ y = b_{0} + b_{1} \times x_{1} + b_{2} \times x_{2}+ \ldots + b_{n} \times x_{n} $
 
-</font>
 </center>
 You can use multiple linear regression when you want to know:<br>
 
