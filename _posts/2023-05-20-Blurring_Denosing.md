@@ -10,9 +10,9 @@ mermaid: true
 
 # What is Blurring?
 
-As you can see the naime Blurring, it blurrs image by:<br>
+As you can see the name Blurring, it blurs an image by:<br>
 
-+ Convolution : It uses [convolution layer](https://csh970605.github.io/posts/CNN/) in order to get blurred images. It can be used as:<br>
++ Convolution : It uses a [convolution layer](https://csh970605.github.io/posts/CNN/) in order to get blurred images. It can be used as:<br>
 **cv2.filter2D(src, ddepth, kernel)** where: <br>
     + src = input image
     + ddepth = desired depth of the destination image.
