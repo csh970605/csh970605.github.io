@@ -111,10 +111,9 @@ To solve this problem, K-Means++ exists, but it can still happen. So, it would b
 We can choose $K$ using WCSS:
 
 <center>
-<font size=2>
 
 $ WCSS = \displaystyle\sum_{P_{i} \in Cluster 1}^{}{distance(P_{i},C{1})^2} + \displaystyle\sum_{P_{i} \in Cluster 2}^{}{distance(P_{i},C{2})^2} + \ldots + \displaystyle\sum_{P_{i} \in Cluster n}^{}{distance(P_{i},C{n})^2}$
-</font>
+
 </center>
 <br><br>
 
