@@ -23,11 +23,9 @@ To overcome this problem, we introduce polynomial regression, which helps identi
 Polynomial regression is a form of linear regression where, due to the non-linear relationship between dependent and independent variables, we add some polynomial terms to linear regression to convert it into polynomial regression.<br>
 As a result, the formula for multiple linear regression is expressed as the formula below.<br>
 <center>
-<font size="2">
 
 $ y = b_{0} + b_{1}\times x + b_{2} \times x^{2}+ \ldots + b_{n} \times x^{n} $
 
-</font>
 </center>
 <br><br>
 
