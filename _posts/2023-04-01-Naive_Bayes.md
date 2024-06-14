@@ -11,11 +11,9 @@ mermaid: true
 # What is Bayes?
 Bayesian analysis is a statistical paradigm that answers research questions about unknown parameters using probability statements. It can be expressed in the following formula:
 <center>
-<font size=4>
 
 $ P(A\vert B) = $ $ P(B\vert A) * P(A) \over P(B) $ $ = $ $ P(A \cap B) \over P(A) $
 
-</font>
 </center>
 
 And you can get more information about Bayes' Theroem in [here](https://csh970605.github.io/posts/Bayes_Theorem/)
@@ -72,11 +70,9 @@ Classify the data by the probabilities calculated in step 1 and step 2.
 + Step 1<br>
 
 <center>
-<font size=4>
 
 $P(Walks) = \frac{\text{Number of Walkers}}{\text{Total Observations}}$<br>
 
-</font>
 </center>
 
 Thus, in this case, the probability of $P(Walks)$ will be $\frac{10}{30}$
@@ -85,10 +81,8 @@ Thus, in this case, the probability of $P(Walks)$ will be $\frac{10}{30}$
 To do this step, we must select a radius and we are going to draw a circle of your desired size around our observation like image below. Then, we will count all the points that are inside the circle. And it will be **the number of similar observations**. In this step, we are going to find P(X) which expressed by:<br>
 <center>
 
-<font size=4>
 
 $P(X) = \frac{\text{Number of Similar Observations}}{\text{Total Observations}}$<br>
-</font>
 
 And in this case, $P(X)$ will be $\frac{4}{30}$ <br>
 
@@ -100,10 +94,8 @@ And in this case, $P(X)$ will be $\frac{4}{30}$ <br>
 
 In this step, we will find $P(X \mid Walks)$, which is expressed as:<br>
 <center>
-<font size=4>
 
 $P(X \mid Walks) = \frac{\text{Among those who Walk}}{\text{Total number of Walkers}} $
-</font>
 
 And in this case, $(X \mid Walks)$ will be $\frac{3}{10}$<br>
 </center>
@@ -112,10 +104,8 @@ And in this case, $(X \mid Walks)$ will be $\frac{3}{10}$<br>
 
 In this step we are going to find $P(Walks \vert X)$ and it will be:
 <center>
-<font size=4>
 
 $P(Walks \mid X) = \frac{\frac {3}{10} \times \frac{10}{30}} {\frac{4}{30}} = 0.75$
-</font>
 </center>
 
 # Example
