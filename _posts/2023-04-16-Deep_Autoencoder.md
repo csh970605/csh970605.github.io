@@ -9,7 +9,7 @@ mermaid: true
 ---
 
 # What is Deep Autoencoder?
-Deep autoencoder is a stack of [RBM](https://csh970605.github.io/posts/RBM/).
+A deep autoencoder is a stack of [RBMs](https://csh970605.github.io/posts/RBM/).
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/232394498-58fe514d-89a0-4e0c-8653-945a848490e3.png" width=400>
 </center>
