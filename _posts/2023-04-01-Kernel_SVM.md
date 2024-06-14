@@ -47,11 +47,9 @@ The answer is YES. By adding more than two kernel formulas such as the Gaussian 
 Here is a simple Gaussian RBF kernel formula:<br>
 
 <center>
-<font size=4>
 
 $K($ $\overrightarrow{x}$ $, \overrightarrow{l}^{1} ) = $ $e^{-\vert \vec{x} - \vec{l} \vert^{2}\over 2\sigma^{2} }$
 
-</font>
 </center>
 
 <br>
@@ -74,33 +72,27 @@ $K($ $\overrightarrow{x}$ $, \overrightarrow{l}^{1} )$ $+ K($ $\overrightarrow{x
 
 + Gaussian RBF Kernel<br>
 <center>
-<font size=4>
 
 $K($ $\overrightarrow{x}$ $, \overrightarrow{l}^{1} ) = $ $e^{-\vert \vec{x} - \vec{l} \vert^{2}\over 2\sigma^{2} }$
 
-</font>
 <br>
 <img src="https://user-images.githubusercontent.com/28240052/229349560-87dfa4f1-9c4c-4470-a620-683afda441fe.png" width=400>
 </center>
 
 + Sigmoid Kernel<br>
 <center>
-<font size=4>
 
 $K(X, Y) = $ $\tanh(\gamma \times X^{T}Y + r)$
 
-</font>
 <br>
 <img src="https://user-images.githubusercontent.com/28240052/229349566-c33c86e5-bd69-4bf8-8264-2569c4cf132b.png" width=400>
 </center>
 
 + Polynomial Kernel<br>
 <center>
-<font size=4>
 
 $K(X,Y) = $ $(\gamma \times X^{T}Y + r)^{d},r > 0$
 
-</font>
 <br>
 <img src="https://user-images.githubusercontent.com/28240052/229349574-07be2253-3ac9-4fdf-9571-79eb88061f2b.png" width=400>
 </center>
