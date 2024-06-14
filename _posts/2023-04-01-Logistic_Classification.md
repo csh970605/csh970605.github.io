@@ -35,21 +35,17 @@ To make the graph less extreme, we use the **sigmoid function** with the formula
 Let's assume the formula for a straight line:
 
 <center>
-<font size=4>
 
 $y = $ $b_{0} + b_{1} \times 1$
 
-</font>
 </center>
 
 And the formula for the sigmoid function is:
 
 <center>
-<font size=4>
 
 $p = \frac{1}{1 + e^{-y}}$
 
-</font>
 </center>
 
 <br>
@@ -57,11 +53,9 @@ Combining the two formulas gives the formula shown below, which is the formula o
 <br><br>
 
 <center>
-<font size=4>
 
 $\ln \left(\frac{p}{1-p}\right) = b_{0} + b_{1} \times 1$
 
-</font>
 </center>
 <br>
 And the graph will be drawn like:
