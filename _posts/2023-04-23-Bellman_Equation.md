@@ -9,10 +9,10 @@ mermaid: true
 ---
 
 # What is Bellman Equation
-Bellman Equation writes the value of a decision problem at a certain point in time in terms of the payoff from some initial choices and the value of the remaining decision problem that results from those initial choices.
-<br><br><br>
+The Bellman Equation expresses the value of a decision problem at a certain point in time in terms of the payoff from initial choices and the value of the remaining decision problem resulting from those initial choices.
+<br><br><br><br>
 
-# The formula of Bellman Equation
+# The Formula of the Bellman Equation
 
 <center>
 
@@ -25,5 +25,5 @@ $ V(s)\ =\ max(R(s,a)\ +\ \gamma V(s')) $
 + R(s, a) : Reward.
 
 <br><br>
-Since there are few things that are 100% sure in real world, there is more advanced formula based on [MDP](https://csh970605.github.io/posts/MDP/).
+Since few things are 100% certain in the real world, there is a more advanced formula based on the [MDP](https://csh970605.github.io/posts/MDP/).
 
