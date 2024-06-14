@@ -16,14 +16,12 @@ The goal of policy($\pi_{\phi} $) gradient is to optimize the expected return by
 Then how policy gradient update weights? The function is:
 
 <center>
-<font size=4>
 
 $ \phi_{t+1}\ =\ \phi_{t}\ +\ \alpha \nabla_{\phi}J(\pi_{\phi})|_{\phi_{t}} $
 <br>
 
 $ \nabla_{\phi}J(\phi)\ =\ \nabla_{\phi}\Sigma_{s\in S}d^{\pi}(s)V^{\pi}(s)\ =\ \nabla_{\phi}\Sigma_{s\in S}d^{\pi}(s)\Sigma_{a \in A} \pi_{\phi}(a|s)Q^{\pi}(s,a) $
 
-</font>
 </center>
 <br><br>
 
@@ -31,10 +29,8 @@ The return of policy gradient affects the reward of [bellman equation](https://c
 The return of policy graddient is:
 
 <center>
-<font size=4>
 
 $ R_{t}\ =\ \Sigma_{i=t}^{T} \gamma^{i-t}r(s_{i}, a_{i}) $
-</font>
 </center>
 <br><br>
 <br>
