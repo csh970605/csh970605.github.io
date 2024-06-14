@@ -20,7 +20,6 @@ Input : Values of x over a mini-batch: B= {$x_{1}, \ldots, m$}<br>
 Output : {$y_{i}\ =\ BN_{\gamma,\beta}(x_{i})$}
 <br><br>
 
-<font size=4>
 
 $\mu_{B} \leftarrow \frac{1}{m}\sum_{i=1}^{m}x_{i}$ : mini-batch mean<br>
 
@@ -29,5 +28,3 @@ $\sigma^{2}_{B} \leftarrow \frac{1}{m}\sum_{i=1}^{m}(x_{i}-\mu_{B})^{2}$<br>
 $\hat{x}_{i} \leftarrow \frac{x_{i}-\mu_{B}}{\sqrt{\sigma^{2}_{B}+\epsilon}}$<br>
 
 $y_{i} \leftarrow \gamma\hat{x}_{i} + \beta \equiv BN_{\gamma,\beta}(x_{i})$<br>
-
-</font>
