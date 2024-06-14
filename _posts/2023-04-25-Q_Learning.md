@@ -18,10 +18,8 @@ Through these Q values, we can make deep learning algorithm called deep Q learni
 # Formula of Q Learning
 
 <center>
-<font size=4>
 
 $ Q_{t}(s, a)\ =\ Q_{t-1}(s,a)\ +\ \alpha(R(s,a)\ +\ \gamma(maxQ(s',a')\ -\ Q_{t-1}(s,a))) $
-</font>
 </center>
 
 <br><br><br>
