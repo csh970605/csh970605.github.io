@@ -15,14 +15,12 @@ It's basic algorithm is the same as [Decision Tree Regression](https://csh970605
 The difference can be seen in the image below.
 <br>
 <center>
-<font size=4>
 Decision Tree Classification
 <br>
 <img src="https://user-images.githubusercontent.com/28240052/229423625-25378b8d-ba9d-43a9-be70-d280084b5b87.png" width=500>
 <br><br>
 Decision Tree Regression<br>
 <img src="https://user-images.githubusercontent.com/28240052/229132724-57601288-8664-4d0c-bb66-695a38b71a48.png" width=500>
-</font>
 </center>
 
 <br><br>
