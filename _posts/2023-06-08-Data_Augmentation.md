@@ -9,8 +9,7 @@ mermaid: true
 ---
 
 # What is Data Augmentation?
-It is a way to perform [Regularization](https://csh970605.github.io/posts/Regularization/).<br>
-Data Augmentation is a technique to augment the number by applying various transformations to the original in order to increase the amount of data.
+It is a way to perform [Regularization](https://csh970605.github.io/posts/Regularization/). Data augmentation is a technique to increase the amount of data by applying various transformations to the original dataset.
 <br><br><br><br>
 
 # Data Augmentation techniques
@@ -20,19 +19,19 @@ Data Augmentation is a technique to augment the number by applying various trans
 ---
 <br>
 
-+ Pixel Level Transforms : Apply Blur, Jitter, Noise, etc to the image.
++ Pixel Level Transforms : Apply Blur, Jitter, Noise, etc., to the image.
 <br><br>
 
-+ Spatial Level Trnasforms : Changes the whole image by Flip, Rotation, Crop, etc.
++ Spatial Level Transforms : Change the whole image by flipping, rotating, cropping, etc.
 <br><br>
 
-+ [“PatchShuffle Regularization”, 2017](https://arxiv.org/abs/1707.07103) : A technique that randomly shuffles feature values within an N x N non-overlapping sliding window
++ [“PatchShuffle Regularization”, 2017](https://arxiv.org/abs/1707.07103) : A technique that randomly shuffles feature values within an $N \times N$ non-overlapping sliding window.
 <br><br>
 
 + [“Random Erasing Data Augmentation”, 2017](https://arxiv.org/abs/1708.04896) : After creating a bounding box with a random size of the input image, fill it with random noise, ImageNet mean value, 0, 255, etc to train the model.
 <br><br>
 
-+ [“Improved Regularization of Convolutional Neural Networks with Cutout”, 2017](https://arxiv.org/abs/1708.04552) : Cutout is a method of filling random bounding box with zeros.
++ [“Improved Regularization of Convolutional Neural Networks with Cutout”, 2017](https://arxiv.org/abs/1708.04552) : Cutout is a method of filling a random bounding box with zeros.
 <br><br>
 
 + [“Data Augmentation by Pairing Samples for Images Classification”, 2018](https://arxiv.org/abs/1801.02929) : After randomly extracting two images A and B from the training set, randomly crop them to a size of 224, and then apply random horizontal flip. The two patches thus obtained are averaged to create a mixed patch. At this time, Label uses the label of A as it is.
@@ -47,7 +46,7 @@ Data Augmentation is a technique to augment the number by applying various trans
 + [“Data augmentation using random image cropping and patches for deep CNNs”, 2018](https://arxiv.org/abs/1811.09030) : A random image cropping and patching (RICAP) technique that combines random cropped patches from four images into one image. Also, like the mixup, 4 labels are mixed according to the area ratio of the patch to create a soft label for learning.
 <br><br>
 
-+ [“Manifold Mixup: Better Representations by Interpolating Hidden States”, 2018](https://arxiv.org/abs/1806.05236) : Mixup is performed at the hidden representation or feature map level rather than the input image.
++ [“Manifold Mixup: Better Representations by Interpolating Hidden States”, 2018](https://arxiv.org/abs/1806.05236) : Mixup is performed at the hidden representation or feature map level rather than on the input image.
 <br><br>
 
 + [“Hide-and-Seek: A Data Augmentation Technique for Weakly-Supervised Localization and Beyond”, 2018](https://arxiv.org/abs/1811.02545) : After dividing the image into grids, the patch is randomly erased at the every iteration and train the model.
