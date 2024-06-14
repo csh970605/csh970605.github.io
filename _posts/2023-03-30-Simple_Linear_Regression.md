@@ -16,11 +16,9 @@ Simple linear regression is a statistical method that allows us to summarize and
 As a result, the formula for simple linear regression is expressed as the formula below.
 
 <center>
-<font size="2"> 
 
 $y = ax + b$
 
-</font>
 </center>
 You can use simple linear regression when you want to know:<br>
 
