@@ -8,12 +8,12 @@ math: true
 mermaid: true
 ---
 
-# What is Software Development Tools?
+# What are Software Development Tools?
 
-Software Development Tools is one of the composition of [ROS](https://csh970605.github.io/posts/ROS/).<br>
+Software Development Tools are one of the components of [ROS](https://csh970605.github.io/posts/ROS/).<br>
 <br><br><br><br>
 
-## Compositions of Simulation
+## Components of Software Development Tools
 ---
 
 + RViz
