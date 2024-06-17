@@ -17,15 +17,15 @@ $n$ numbers of events $B_{i}, i=1, 2, \ldots , n$ are exclusive each other like 
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/25299ac0-9669-48c4-84d2-ff6cb8c8cd98">
 </center>
 
-And considering the entire sample space, $\Sigma_{i=1}^{n}P(B_{i})=1$. Then, the probability of a random event $A$ is expressed as formula [1]:
+And considering the entire sample space, $\sum_{i=1}^{n}P(B_{i})=1$. Then, the probability of a random event $A$ is expressed as formula [1]:
 
 <center>
 
-$P(A) = \Sigma_{i=1}^{n}P(A, B_{i})$<br>
+$P(A) = \sum_{i=1}^{n}P(A, B_{i})$<br>
 
 
 <p align="center">
-    <span>$=\Sigma_{i=1}^{n}P(A|B_{i})P(B_{i})$</span>
+    <span>$=\sum_{i=1}^{n}P(A|B_{i})P(B_{i})$</span>
     <span style="float: right;">[1]</span>
 </p>
 
@@ -49,7 +49,7 @@ $P(B_{i} \mid A) = \frac{P(A,B_{i})}{P(A)}$
 If you substitute the total probability theorem into formula [2]:
 
 <p align="center">
-    <span>$=\frac{P(A \mid B_{i})P(B_{i})}{\Sigma_{i=1}^{n}P(A|B_{i})P(B_{i})}$</span>
+    <span>$=\frac{P(A \mid B_{i})P(B_{i})}{\sum_{i=1}^{n}P(A|B_{i})P(B_{i})}$</span>
     <span style="float: right;">[3]</span>
 </p>
 
@@ -75,6 +75,6 @@ where $p_{X}(x)$ is a prior probability density function, $p_{X \mid Y}(x \mid y
 Of course again, the occasion that events and random variables are mixed, the bayes' theorem is formula [5].
 
 <p align="center">
-    <span>$P(B_{i} \mid y) = \frac{p_{Y \mid B_{i}}(y \mid B_{i})P(B_{i})}{\Sigma_{j=1}^{n}p_{Y \mid B_{j}}(y \mid B_{j})P(B_{j})}$</span>
+    <span>$P(B_{i} \mid y) = \frac{p_{Y \mid B_{i}}(y \mid B_{i})P(B_{i})}{\sum_{j=1}^{n}p_{Y \mid B_{j}}(y \mid B_{j})P(B_{j})}$</span>
     <span style="float: right;">[5]</span>
 </p>
