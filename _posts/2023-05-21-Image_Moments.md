@@ -29,8 +29,8 @@ third\ normalized\ central\ moments\ :\ nu_{21},\ nu_{12},\ nu_{30},\ nu_{03},\ 
 By the output, we can calculate <br>
 
 + Mass center($ \bar{x},\ \bar{y} $) : $ \bar{x}\ =\ \frac{m_{10}}{m_{00}},\ \bar{y}\ =\ \frac{m_{01}}{m_{00}}$
-+ Spatial moments : $ m_{ij}\ =\ \Sigma_{x,y}(array(x,y)*x^{i}y^{j}) $
-+ Central moments : $ mu{ij}\ =\ \Sigma_{x,y}(array(x,y)*(x-\bar{x})^{i}(y-\bar{y}^{j})) $
++ Spatial moments : $ m_{ij}\ =\ \sum_{x,y}(array(x,y)*x^{i}y^{j}) $
++ Central moments : $ mu{ij}\ =\ \sum_{x,y}(array(x,y)*(x-\bar{x})^{i}(y-\bar{y}^{j})) $
 + Normalized central moments : $ nu_{ij}\ =\ \frac{mu_{ij}}{m_{00}^{\frac{i+j}{2}+1}} $
 
 <br><br><br><br>
