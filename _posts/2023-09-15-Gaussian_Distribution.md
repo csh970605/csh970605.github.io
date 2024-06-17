@@ -10,8 +10,7 @@ mermaid: true
 
 # Gaussian Distribution
 
-Gaussian distribution also known as normal distribution is a type of continuous probability distribution.<br>
-The general form of its [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) is :
+The Gaussian distribution, also known as the normal distribution, is a type of continuous probability distribution. The general form of its [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) is :
 
 <center>
 
@@ -19,15 +18,15 @@ $f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}$<br>
 
 </center>
 
-Where <br>
+where <br>
 
-+ $\mu$ : The mean or expectation of distribution.<br>
-+ $\sigma$ : standard deviation.
++ $\mu$ : The mean or expectation of the distribution.<br>
++ $\sigma$ : The standard deviation.
 
 
-Since gaussian distribution is calculated by two probability information, that is, expectation and distribution, it is easy to treat mathematically. And also, since lots of signals from nature is similiary to gaussian distribution, it is usually used to model the various social, nature phenomenons.
+Since the Gaussian distribution is characterized by two parameters, the mean and the standard deviation, it is easy to treat mathematically. Additionally, since many natural signals are similar to the Gaussian distribution, it is often used to model various social and natural phenomena.
 
-The shape of gaussian distribution is:
+The shape of the Gaussian distribution is:
 
 <center>
 
@@ -39,7 +38,7 @@ The shape of gaussian distribution is:
 
 # Gaussian Random Vector
 
-The probability density function of gaussian [random vector](https://csh970605.github.io/posts/Rand_Vector/) $X$ is defined as formula[1].
+The probability density function of a Gaussian [random vector](https://csh970605.github.io/posts/Rand_Vector/) $X$ is defined as in formula [1].
 
 <center>
 
@@ -52,16 +51,16 @@ $p_{X}(x) = N(x \mid \mu_{X}, P_{XX})$
 
 </center>
 
-Where
+where
 
 + $\mu_{X}$ : Expectation.
 + $P_{XX}$ : Covariance.
 + $n$ : Dimension of $X$.
 + $detP_{XX}$ : determinant of $P_{XX}$.
 
-The gaussian random variable $X$ is expressed simply as $X \sim N(x \mid \mu, \sigma^{2})$, and the gaussian random vector X is expressed simply as $X \sim N(X \mid \mu_{X}, P_{XX})$
+The Gaussian random variable $X$ is expressed simply as $X \sim N(x \mid \mu, \sigma^{2})$, and the Gaussian random vector $X$ is expressed simply as $X \sim N(X \mid \mu_{X}, P_{XX})$.
 
-There are images that drawing the shape of 2-dimensional gaussian probability density function following several expectations and covariances:
+Below are images that show the shape of the 2-dimensional Gaussian probability density function with different means and covariances:
 
 <center>
 
@@ -105,23 +104,23 @@ $\mu_{X} = \begin{bmatrix}
 
 </center>
 
-According to the images above, if the values of off-diagonal terms are 0, the contour is a circle around the expectation, and if the values of off-diagonal terms are not 0, the contour is a ellipse around the expectation. You can see the proof [here](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-1).
+According to the images above, if the values of the off-diagonal terms are 0, the contour is a circle around the mean, and if the values of the off-diagonal terms are not 0, the contour is an ellipse around the mean. You can see the proof [here](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-1).
 
 <br><br>
 
 ## Joint Gaussian Random Vector
 
-If the random vector $Y = \begin{bmatrix}
-X \\
-Y
-\end{bmatrix}$ that consist of random vector $X$ and $Y$ has gaussian distribution, it is called **joint gaussian random vector**. And the probability density function is 
+If the random vector $Y = \begin{bmatrix} 
+X \ 
+Z 
+\end{bmatrix}$ that consists of random vectors $X$ and $Z$ has a Gaussian distribution, it is called a **joint Gaussian random vector**. The probability density function is:
 
 <center>
 
 $p_{XZ}(x, z) = p_{Y}(y) = N(y\mid \mu_{Y}, P_{YY})$
 </center>
 
-And express the expectation and the covariance of $Y$ with the expectation and the covariance of $X$ and $Z$ is:
+The expectation and the covariance of $Y$ can be expressed using the expectation and the covariance of $X$ and $Z$ as follows:
 
 <center>
 
@@ -148,22 +147,22 @@ Where
 
 ## Feature of Gaussian Random Vector
 
-There are 5 feature of gaussian random vector.
+There are 5 features of a Gaussian random vector.
 
-1. The linear transform of the gaussian random vector is a gaussian random vector.
+1. The linear transform of a Gaussian random vector is a Gaussian random vector.
 
-2. If random vector $X$ and $Z$ has joint gaussian distribution, $X$ and $Z$ are gaussian random vector respectively. That is, if $p_{XZ}(x, z) = p_{Y}(y)=N(y \mid \mu_{Y}, P_{YY})$,<br>
-$X \sim N(z \mid A\mu_{X}, AP_{XX}A^{T})$.
+2. If random vectors $X$ and $Z$ have a joint Gaussian distribution, $X$ and $Z$ are Gaussian random vectors respectively. That is, if $p_{XZ}(x, z) = p_{Y}(y)=N(y \mid \mu_{Y}, P_{YY})$,<br>
+$=X \sim N(z \mid A\mu_{X}, AP_{XX}A^{T})$.
 
-3. The non-correlated gaussian random vectors are independent of each other.
+3. Non-correlated Gaussian random vectors are independent of each other.
 
-4. If two gaussain random vector $X$ and $Z$ are independent to each other, sum of the two vectors is gaussian random vector. That is, if $X \sim N(x \mid \mu_{X}, P_{XX})$, $Z \sim N(z \mid \mu_{Z}, P_{ZZ})$,<br>
-$X + Z \sim N(\mu_{X} + \mu_{Z}, P_{XX} + P_{ZZ})$
+4. If two Gaussian random vectors $X$ and $Z$ are independent of each other, the sum of the two vectors is a Gaussian random vector. That is, if $X \sim N(x \mid \mu_{X}, P_{XX})$, $Z \sim N(z \mid \mu_{Z}, P_{ZZ})$,<br>
+$=X + Z \sim N(\mu_{X} + \mu_{Z}, P_{XX} + P_{ZZ})$
 
 5. If two random vectors $X$ and $Z$ has joint gaussian distribution, the [conditional probability](https://csh970605.github.io/posts/Probability_RandomVector/#conditional-probability) density function of $X$ or $Z$ is gaussian too.
 <br>
 
-You can see the prooves of five features here [1](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-2), [2](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-3), [3](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-4), [4](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-5), [5](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-6)
+You can see the proofs of these five features here: [1](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-2), [2](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-3), [3](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-4), [4](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-5), [5](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-6)
 <br><br><br><br>
 
 
@@ -208,16 +207,16 @@ Since all values except $X$ are constant, the formula above can be written as:
 $(x-\mu_{X})^{T}P_{XX}^{-1}(x-\mu_{X})=c_{2} > 0$
 </center>
 
-Where $c_{2}$ is a constant.
+where $c_{2}$ is a constant.
 
-Because $P_{XX}$ is a positive-definite matrix, it has eigenvalue $\lambda_{1}, \lambda_{2}$ which are bigger than 0, and eigenvector $v_{1}, v_{2}$ which are orthogonal. Thus, we can divide $P_{XX}$ as:
+Because $P_{XX}$ is a positive-definite matrix, it has eigenvalues $\lambda_{1}, \lambda_{2}$ which are greater than 0, and eigenvectors $v_{1}, v_{2}$ which are orthogonal. Thus, we can decompose $P_{XX}$ as:
 
 <center>
 
 $P_{XX} = \mathbb{E}\wedge \mathbb{E}_{T}$
 </center>
 
-Where
+where
 
 + $\mathbb{E}$ : $\begin{bmatrix}
 v_{1} & v_{2}
@@ -245,20 +244,18 @@ where $y=\begin{bmatrix}
 y_{1} & y_{2}
 \end{bmatrix}^{T}$.
 
-So, the contour of gaussian probability density function is an ellipse centered around $\mu_{X}$, the length of the main axis is $sqrt{\lambda_{1}}$ and $sqrt{\lambda_{2}}$, and the direction of the main axis is $v_{1}, v_{2}$ respectively.
+So, the contour of the Gaussian probability density function is an ellipse centered around $\mu_{X}$. The lengths of the main axes are $\sqrt{\lambda_{1}}$ and $\sqrt{\lambda_{2}}$, and the directions of the main axes are $v_{1}$ and $v_{2}$ respectively.
 
 <br><br>
 
 ## Proof 2.
 
-Proof the first feature of gaussian random vector.
+Prove the first feature of a Gaussian random vector.
 <br><br>
 
 ---
 
-Let the random vector $Y$ is th linear transform of gaussian random vector $X$.<br>
-
-Then, check the characteristic function of random vector $Y$.<br>
+Let the random vector $Y$ be the linear transform of the Gaussian random vector $X$. Then, check the characteristic function of the random vector $Y$.<br>
 
 <center>
 
@@ -275,26 +272,26 @@ $\therefore Y = AX \sim N(y \mid A\mu_{X}, AP_{XX}A^{T})$
 
 ## Proof 3.
 
-Proof the second feature of gaussian random vector.
+Prove the second feature of a Gaussian random vector.
 <br><br>
 
 ---
 
-Let $Y= \begin{bmatrix}
-X \\
-Z
-\end{bmatrix}$, where $X$ and $Z$ are random vector respectively.<br>
+Let $Y= \begin{bmatrix} 
+X \\ 
+Z 
+\end{bmatrix}$, where $X$ and $Z$ are random vectors respectively.<br>
 
 Then, $X=\begin{bmatrix}
 I & 0
-\end{bmatrix}\begin{bmatrix}
+\end{bmatrix}, \begin{bmatrix}
 X \\
 Z
 \end{bmatrix} = \begin{bmatrix}
 I & 0
 \end{bmatrix}Y$.
 
-Therefore, according to the [first feature of gaussian random vector](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-2), $X$ must be a gaussian vector.
+Therefore, according to the [first feature of Gaussian random vector](https://csh970605.github.io/posts/Gaussian_Distribution/#proof-2), $X$ must be a Gaussian vector.
 
 In detail, the expectation and covariance of $X$ are:
 
@@ -328,12 +325,12 @@ I \\
 
 ## Proof 4.
 
-Proof the third feature of gaussian random vector.
+Prove the third feature of a Gaussian random vector.
 <br><br>
 
 ---
 
-Let there are two gaussian random vectors $X \sim N(\mu_{X}, P_{XX}), Z \sim N(\mu_{Z}, P_{ZZ})$. If $X$ and $Z$ are non-correlated, $P_{XZ} = P_{ZX} = 0$ because $\mathbb{E}[(X-\mu_{X})(Z-\mu_{Z})^{T}] = [(Z-\mu_{Z})(X-\mu_{X})^{T}] = 0$.
+Let there be two Gaussian random vectors $X \sim N(\mu_{X}, P_{XX})$ and $Z \sim N(\mu_{Z}, P_{ZZ})$. If $X$ and $Z$ are non-correlated, then $P_{XZ} = P_{ZX} = 0$ because $\mathbb{E}[(X-\mu_{X})(Z-\mu_{Z})^{T}] = \mathbb{E}[(Z-\mu_{Z})(X-\mu_{X})^{T}] = 0$.
 
 Then, the covariance of joint gaussian random vector is:
 <center>
@@ -359,18 +356,18 @@ $= N(x \mid \mu_{X}, P_{XX})N(z \mid \mu_{Z}, P_{ZZ})$
 $= p_{X}(x)p_{Z}(z)$
 </center>
 
-So, $X$ and $Z$ are independent to each other.
+So, $X$ and $Z$ are independent of each other.
 
 <br><br>
 
 ## Proof 5.
 
-Proof the fourth feature of gaussian random vector.
+Prove the fourth feature of a Gaussian random vector.
 <br><br>
 
 ---
 
-Let the sum of two independent random variables $X$ $Z$ is $Y$. Then, the characteristic function of $Y$ is :
+Let the sum of two independent random variables $X$ and $Z$ be $Y$. Then, the characteristic function of $Y$ is:
 
 <center>
 
@@ -388,12 +385,12 @@ $\therefore Y \sim N(\mu_{X}+\mu_{Z}, P_{XX} + P_{ZZ})$
 
 ## Proof 6.
 
-Proof the fifth feature of gaussian random vector.
+Prove the fifth feature of a Gaussian random vector.
 <br><br>
 
 ---
 
-Let $X \sim N(\mu_{X}, P_{XX}), Z \sim N(\mu_{Z}, P_{ZZ})$, then,
+Let $X \sim N(\mu_{X}, P_{XX})$ and $Z \sim N(\mu_{Z}, P_{ZZ})$. Then,
 
 <center>
 
@@ -410,7 +407,7 @@ D^{-1} & -D^{-1}P_{XZ}P_{ZZ}^{-1} \\
 
 + $D$ : $P_{XX}-P_{XZ}P_{ZZ}^{-1}P_{ZX}$
 
-To make the formula which is in { } simple,
+To simplify the formula within the curly brackets,
 
 <center>
 
@@ -435,4 +432,4 @@ Where
 + $R_{X \mid Z} = D$
 + $\mu_{X \mid Z} = \mu_{X} p_{XZ}P_{ZZ}^{-1}(z-\mu_{Z})$
 
-Therefore, [conditional probability](https://csh970605.github.io/posts/Probability_RandomVector/#conditional-probability) density function of random vector $X$ is gaussian.
+Therefore, the [conditional probability](https://csh970605.github.io/posts/Probability_RandomVector/#conditional-probability) density function of the random vector $X$ is Gaussian.
