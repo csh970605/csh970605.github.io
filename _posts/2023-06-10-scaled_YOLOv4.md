@@ -10,17 +10,12 @@ mermaid: true
 
 # What is scaled-YOLOv4?
 
-Scaled-YOLOv4 is designed to use in every devices whether they are low-end devices or high-end devices. And also, it can perform real-time object detection on 16, 30, 60 FPS movies or embedded systems.<br><br>
-
-As you can see the name of scaled-YOLOv4, it just adds [YOLOv4](https://csh970605.github.io/posts/YOLOv4/) and the upper & lower bounds of linear scaling up&down model which are YOLOv4-large & YOLOv4-tiny.
-<br><br>
-
-Then, let's see the structure of scaled-YOLOv4.
+Scaled-YOLOv4 is designed to be used on every device, whether they are low-end or high-end. Additionally, it can perform real-time object detection on 16, 30, and 60 FPS videos or embedded systems. As indicated by the name scaled-YOLOv4, it includes [YOLOv4](https://csh970605.github.io/posts/YOLOv4/) and the upper and lower bounds of linear scaling models, which are YOLOv4-large and YOLOv4-tiny. Then, let's see the structure of scaled-YOLOv4.
 <br><br><br><br>
 
 # Structure of scaled-YOLOv4
 
-+ Backbone : CSPDarknet53 with no computation of down-sampling convolution for cross-stage process. And scaled-YOLOv4 is separated YOLOv4-tiny and YOLOv4-large
++ Backbone : CSPDarknet53 with no computation of down-sampling convolution for cross-stage process. Scaled-YOLOv4 is divided into YOLOv4-tiny and YOLOv4-large.
 
     + YOLOv4-tiny : CSPOSANet with PCB architecture to form the backbone of YOLOv4.<br>
         And also to make YOLOv4-tiny compute as low as possible then $O(whkb^2)$, it performs model scaling by :<br>
@@ -29,28 +24,21 @@ Then, let's see the structure of scaled-YOLOv4.
         <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/c1aa1824-f510-4290-8103-128ce4f1e932" width=500><br>
         computational block of YOLOv4-tiny where<br> 
         </center><br>
-        b = channel of base layer.<br>
-        k = numbers of layer.<br>
+        b = number of channels in the base layer.<br>
+        k = number of layers.<br>
         g = growth rate which is the number of filters used in each convolutional layer.
 
         <br><br>
 
-    
-    
-
-
-
-
-
-+ Neck : Use CSP-ize the PAN architecture in YOLOv4((a) in image below) and 2 reversed CSP dark layers((b) in image below). Unlike the original SPP module, in scaled-YOLOv4, SPP module is inserted in the middle position of the first computation list group of the CSPPAN.
++ Neck : Uses CSP-ized PAN architecture in YOLOv4 (shown as (a) in the image below) and 2 reversed CSP dark layers (shown as (b) in the image below). Unlike the original SPP module, in scaled-YOLOv4, the SPP module is inserted in the middle position of the first computation list group of the CSPPAN.
 
     <center>
     <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/b6c7c8de-9cd7-440d-b63a-0c5848096f7d" width=500>
     </center><br><br>
 
-    + YOLOv4-large : A fully CSP-ized model YOLOv4-P5 and scaling it up to YOLOv4-P6 and YOLOv4-P7.<br>
-    YOLOv4-p6 reaches real-time performance at 30 FPS video when the width scaling factor is equal to 1.<br>
-    YOLOv4-P7 reaches real-time performance at 16 FPS video when the width scaling factor is equal to 1.25.
+    + YOLOv4-large : A fully CSP-ized model starting from YOLOv4-P5 and scaling up to YOLOv4-P6 and YOLOv4-P7.<br>
+    YOLOv4-P6 reaches real-time performance at 30 FPS video when the width scaling factor is equal to 1.<br>
+    YOLOv4-P7 reaches real-time performance at 16 FPS video when the width scaling factor is 1.25.
 
     <center>
     <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/ea5af52a-c43b-45e4-b6e7-dd334c7a20c1" width=800>
