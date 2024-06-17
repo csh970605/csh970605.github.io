@@ -10,7 +10,7 @@ mermaid: true
 
 # What is cost function?
 
-A cost function is a function that needs to find the maximum or minimum value in an optimization algorithm in machine learning. [Gradient descent](https://csh970605.github.io/posts/Gradient_Descent/) is a basic algorithm used to minimize or maximize the cost function.
+A cost function is a function that needs to be minimized or maximized in an optimization algorithm in machine learning. [Gradient descent](https://csh970605.github.io/posts/Gradient_Descent/) is a basic algorithm used to minimize or maximize the cost function.
 
 <br><br><br><br>
 
@@ -29,4 +29,4 @@ A cost function is a function that needs to find the maximum or minimum value in
 + Multinomial-log loss : $-\frac{1}{N}\sum_{i=1}^{N}\sum_{i=1}^{K}(y_{i,k} \times log(\hat{y_{i,k}}))$
 <br>
 
-where $y_{i}$=Ground Truth, $\hat{y_{i}}$=Expected Value
+where $y_{i}=$ Ground Truth, $\hat{y_{i}}=$ Expected Value
