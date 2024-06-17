@@ -109,7 +109,7 @@ observations are grouped with respect to the mean.<br>
 The equation of Standard Deviation is:
 <center>
 
-$ \sigma = \sqrt{\frac{\Sigma^{N}_{i=1}(x_{i}-\mu)^2}{N}} $
+$ \sigma = \sqrt{\frac{\sum^{N}_{i=1}(x_{i}-\mu)^2}{N}} $
 </center>
 
 where $ \sigma$ is the standard deviation of the EMG signal, $ \mu$ is the average of the EMG signal, $ x$ is the value of the EMG signal at the $ i $-th time instant $ N$ is the number of measurements in the EMG signal.
@@ -150,7 +150,7 @@ $ s(x,y) \ = \ \left\{\begin{matrix}
 0 \ \ \ if(xy) > 0
 \end{matrix}\right.$
 
-$ZC(V) = \Sigma^{n-1}_{i=1}s(V_i, V_{i+1})$
+$ZC(V) = \sum^{n-1}_{i=1}s(V_i, V_{i+1})$
 <br>
 where ZC is the zero crossing value, x and y are the EMG signal values.
 </center>
@@ -162,7 +162,7 @@ EMG time signal.<br>
 The equation of average change is:
 <center>
 
-$i_{Avg} \ = \ \frac{1}{N}\Sigma^{N}_{i=1}x_i$<br>
+$i_{Avg} \ = \ \frac{1}{N}\sum^{N}_{i=1}x_i$<br>
 where x = amplitude value
 </center>
 <br><br>
@@ -192,7 +192,7 @@ frequency, and duration of the waveform.<br>
 Te equation of average change is:
 <center>
 
-$WL = \Sigma^{N-1}_{i=1}\left | x_{i+1} \ - \ x_{i}  \right |$
+$WL = \sum^{N-1}_{i=1}\left | x_{i+1} \ - \ x_{i}  \right |$
 </center>
 <br><br>
 
@@ -205,7 +205,7 @@ potential (MUAP) and muscle contraction. A suitable value for the threshold para
 usually chosen between 10 and 100 mV, which depends on the gain setting of the instrument.<br>
 <center>
 
-$WAMP \ = \ \Sigma^{N-1}_{i=1}f(\left | x_{i} \ - \ x_{i+1}  \right |)$<br>
+$WAMP \ = \ \sum^{N-1}_{i=1}f(\left | x_{i} \ - \ x_{i+1}  \right |)$<br>
 
 $f(x) \ = \ \left\{\begin{matrix}
 1 \ \ \ if(x \geq y)
