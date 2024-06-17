@@ -8,15 +8,15 @@ math: true
 mermaid: true
 ---
 
-# What is Robotics Application Framework?
+# What is the Robotics Application Framework?
 
-Robotics Application Framework is one of the composition of [ROS](https://csh970605.github.io/posts/ROS/).<br>
+The Robotics Application Framework is one of the components of [ROS](https://csh970605.github.io/posts/ROS/).<br>
 
-Robotics Application Framework is used to support in the creation of various robotics application.
+The Robotics Application Framework is used to support the creation of various robotics applications.
 
 <br><br><br><br>
 
-## Compositions of Robotics Application Framework
+## Components of the Robotics Application Framework
 ---
 
 + dynamic reconfigure
