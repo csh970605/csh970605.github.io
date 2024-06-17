@@ -8,11 +8,11 @@ math: true
 mermaid: true
 ---
 
-# What is Client Layer?
+# What is the Client Layer?
 
-Client Layer is one of the composition of [ROS](https://csh970605.github.io/posts/ROS/).<br>
+The Client Layer is one of the components of [ROS](https://csh970605.github.io/posts/ROS/).<br>
 
-Client Layer is used to support multiple programming language.
+The Client Layer is used to support multiple programming languages.
 <br><br><br><br>
 
 ## Compositions of Client Layer
