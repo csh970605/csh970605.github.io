@@ -14,7 +14,7 @@ It is a way to perform [Regularization](https://csh970605.github.io/posts/Regula
 L2 Regularization is weight decay technique which decrease more faster if the weight is bigger. Thus, as the overall weights get smaller, the learning effect improves. L2 Regularization adds the squared value of the weights to the cost function:
 
 
-$Cost = \frac{1}{n} \Sigma_{i=1}^{n}(L(y_{i}, \hat{y_{i}}) + \frac{\lambda}{2}|w|^{2})$
+$Cost = \frac{1}{n} \sum_{i=1}^{n}(L(y_{i}, \hat{y_{i}}) + \frac{\lambda}{2}|w|^{2})$
 
 <br>
 
