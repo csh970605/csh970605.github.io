@@ -10,64 +10,56 @@ mermaid: true
 
 # What is BiomacEMG?
 
-BiomacEMG is a concept that is suggested by [Article](https://www.mdpi.com/2076-3417/13/9/5744).
+BiomacEMG is a concept suggested by an [article](https://www.mdpi.com/2076-3417/13/9/5744).
 <br>
-In the article, biomacEMG classifies 7 handgestures with Machine Learning. <br>
+In the article, BiomacEMG classifies seven hand gestures using machine learning. <br>
 The gestures are:
 <center>
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/f644544b-37d5-451e-9e22-cc6a294f813d" width=300 height=500>
 </center>
-Then, let's see how it works.
+Let's now see how it works.
 <br><br><br><br>
 
 
 # What is EMG?
 
-EMG(electromyography) is a type of physiological signal recording that detects electrical signals from muscle fibres in response to gestures or movements.<br>
+EMG (electromyography) is a type of physiological signal recording that detects electrical signals from muscle fibers in response to gestures or movements.<br>
 
 <br><br><br><br>
 
 # What does BiomacEMG do?
 
-The article uses surface electrodes to collect electromyographic (EMG) data from
-the forearm flexion and extension muscles, which were used as input parameters to the
-machine learning algorithms to recognize seven hand gestures.<br>
+The article uses surface electrodes to collect electromyographic (EMG) data from the forearm flexion and extension muscles, which are used as input parameters for the machine learning algorithms to recognize seven hand gestures.<br>
 
-Since EMG signals are erratic, signal analysis performance is generally poor, they measure different types of muscle gropus in real time. Which is:
+Since EMG signals are erratic, signal analysis performance is generally poor. They measure different types of muscle groups in real time, which are:
 
-+ The carpi radials of the muscle flexor are responsible for the flexion and radial deviation of the wrist.<br>
++ The flexor carpi radialis muscle is responsible for the flexion and radial deviation of the wrist.<br>
 
-+ Musculus flexor pollicis longus, which is responsible for the flexion of the pollicis.<br>
++ The flexor pollicis longus muscle, which is responsible for the flexion of the thumb.<br>
 
-+ The carpi radials of the muscle flexor are responsible for the flexion and radial deviation of the wrist.<br>
++ The flexor digitorum muscle, which is responsible for the flexion of the fingers.<br>
 
-+ Musculus flexor pollicis longus, which is responsible for the flexion of the pollicis.<br>
++ The flexor carpi ulnaris muscle, which is responsible for the flexion and ulnar deviation of the wrist.<br>
 
-+ Musculus flexor digitorum, which is responsible for flexion of the fingers.<br>
++ The extensor pollicis longus and brevis muscles, which are responsible for the extension of the thumb.<br>
 
-+ The carpi ulnaris muscle flexor, which is responsible for flexion and ulnar deviation
-of the wrist.<br>
++ The extensor carpi ulnaris muscle is responsible for the extension and ulnar deviation of the wrist.<br>
 
-+ Muscuclus extensor pollicis longus at brevis, which is responsible for the extension of
-pollicis.<br>
++ The extensor digitorum muscle, which is responsible for the extension of the fingers.<br>
 
-+ The carpi ulnaris muscle extensor is responsible for extension and ulnar deviation of
-the wrist.<br>
-+ Musculus extensor digitorum, that is responsible for extension of the fingers.<br>
++ The extensor carpi radialis muscle, which is responsible for the extension and radial deviation of the wrist.<br>
 
-+ Musculus extensor carpi radialis, which is responsible for extension and radial deviation of the wrist.<br>
-
-You can see which muscles are used at the pictures below:
+You can see which muscles are used in the pictures below:
 <center>
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/39c46a76-ef03-45ee-8885-10b1a8f93e85" width="330" height="300"><img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/a54f1c86-ba1e-4ce2-ae9d-18bc0cc83bef" width="350" height="300">
 </center>
 <br><br>
 <br><br>
 
-# Steps of classifing gestures
+# Steps of Classifying Gestures
 
 1. Feature extraction<br>
-    In this article, it extracted 9 features which are:
+    In this article, nine features were extracted, which are:
 
     + [Standard deviation](https://csh970605.github.io/posts/BiomacEMG/#standard-deviation)
 
@@ -87,26 +79,26 @@ You can see which muscles are used at the pictures below:
 
     + [Wilson amplitude](https://csh970605.github.io/posts/BiomacEMG/#wilson-amplitude)
 
-    You can see how the methods are used by clicking the link on the method.
+    You can see how the methods are used by clicking the link for each method.
 
 2. [PCA](https://csh970605.github.io/posts/PCA/)<br>
     PCA showed that gesture classes overlap strongly in the feature space.
 
 3. [Random Forest Classification](https://csh970605.github.io/posts/Random_Forest_Classification/)<br>
-    Since the signal data is non-linear, They choose Random Forest Classification which is non-linear classification method.
+    Since the signal data is non-linear, they chose Random Forest Classification, a non-linear classification method.
 
 4. [Pareto Optimization](https://csh970605.github.io/posts/Pareto_Front/)<br>
-    In the context of EMG feature selection, they use Pareto optimization to identify the optimal subset of EMG features that best represent the underlying signal while minimizing the number of features required for classification. <br>
-    To do this, a Pareto front is first constructed by generating multiple solutions that represent different trade-offs between performance and feature number. <br>
+    In the context of EMG feature selection, Pareto optimization is used to identify the optimal subset of EMG features that best represent the underlying signal while minimizing the number of features required for classification. <br>
+    To do this, a Pareto front is first constructed by generating multiple solutions that represent different trade-offs between performance and the number of features. <br>
     Each solution is evaluated on the basis of its classification accuracy and the number of features it employs. <br>
-    The set of all solutions that cannot be improved in one objective without sacrificing performance in another objective is called the Pareto front.
+    The set of all solutions that cannot be improved in one objective without sacrificing performance in another is called the Pareto front.
 
 <br><br>
 
 ## Standard Deviation
 Standard deviation is a measure of absolute variability that shows how individual
 observations are grouped with respect to the mean.<br>
-The equation of Standard Deviation is:
+The equation for the standard deviation is:
 <center>
 
 $ \sigma = \sqrt{\frac{\sum^{N}_{i=1}(x_{i}-\mu)^2}{N}} $
@@ -116,11 +108,11 @@ where $ \sigma$ is the standard deviation of the EMG signal, $ \mu$ is the avera
 <br><br>
 
 ## Minimum 
-To choose the best discrimation of the gesture, the minimum value operator which is obtained by searching for the minimum value in the EMG signal.
-The equation of minimum is:
+To choose the best discrimination of the gesture, the minimum value operator is obtained by searching for the minimum value in the EMG signal.
+The equation for the minimum is:
 <center>
 
-$ X_{min}\ = min_{1 \leq I \leq N}(x_{i})$
+$ X_{min}\ = \min_{1 \leq i \leq N}(x_{i})$
 </center>
 <br><br>
 
@@ -129,19 +121,13 @@ To choose the best discrimation of the gesture, the maximum value operator which
 The equation of maximum is:
 <center>
 
-$ X_{max}\ = max_{1 \leq I \leq N}(x_{i})$
+$ X_{max}\ = \max_{1 \leq i \leq N}(x_{i})$
 </center>
 <br><br>
 
 ## Crossing the zero axis
 
-Crossing the zero axis is a convenient and fast way to estimate the frequency of a
-sampled sequence of data.<br>
-A zero crossing is the point where the sign of a function inverts
-into opposite.<br>
-It is a signal evaluation indicator often employed in electronics, mathematics, acoustics, and
-image processing.<br>
-The equation of zero crossing is:
+Crossing the zero axis is a convenient and fast way to estimate the frequency of a sampled sequence of data. A zero crossing is the point where the sign of a function inverts to its opposite. It is a signal evaluation indicator often employed in electronics, mathematics, acoustics, and image processing. The equation for zero crossing is:
 <center>
 
 $ s(x,y) \ = \ \left\{\begin{matrix}
@@ -152,32 +138,29 @@ $ s(x,y) \ = \ \left\{\begin{matrix}
 
 $ZC(V) = \sum^{n-1}_{i=1}s(V_i, V_{i+1})$
 <br>
-where ZC is the zero crossing value, x and y are the EMG signal values.
+where $ZC$ is the zero crossing value, and $x$ and $y$ are the EMG signal values.
 </center>
 <br><br>
 
 ## Average change in amplitude
 The average amplitude is the average magnitude of all instantaneous values in the
 EMG time signal.<br>
-The equation of average change is:
+The equation for the average change is:
 <center>
 
 $i_{Avg} \ = \ \frac{1}{N}\sum^{N}_{i=1}x_i$<br>
-where x = amplitude value
+where $x$ = amplitude value
 </center>
 <br><br>
 
 ## The first amplitude jump
-Literally, the first amplitude jump means the first major change or increase that occurs at a specific point in time.
+The first amplitude jump refers to the first major change or increase that occurs at a specific point in time.
 
 <br><br>
 
 ## Mean absolute value(MAV)
-Mean absolute average deviation, also known as mean aboslute average error, is a
-measure of the accuracy of a forecasting method, such as trend estimation, and is also used
-as a loss function.<br>
-MAV is a method to determine and evaluate the level of muslce contraction.<br>
-The equation of average change is:
+Mean absolute deviation, also known as mean absolute error, is a measure of the accuracy of a forecasting method, such as trend estimation, and is also used as a loss function. MAV is a method to determine and evaluate the level of muscle contraction. The equation for MAV is:
+
 <center>
 
 $MAV \ = \ \frac{1}{N}\left | x_{i} \right |$
@@ -187,9 +170,7 @@ $MAV \ = \ \frac{1}{N}\left | x_{i} \right |$
 
 ## Wave length
 Wave length is intuitively the total length of the waveform in a segment.<br>
-The resulting waveform length count values provide a measure of the amplitude,
-frequency, and duration of the waveform.<br>
-Te equation of average change is:
+The resulting waveform length values provide a measure of the amplitude, frequency, and duration of the waveform. The equation for the waveform length is:
 <center>
 
 $WL = \sum^{N-1}_{i=1}\left | x_{i+1} \ - \ x_{i}  \right |$
@@ -197,28 +178,23 @@ $WL = \sum^{N-1}_{i=1}\left | x_{i+1} \ - \ x_{i}  \right |$
 <br><br>
 
 ## Wilson amplitude(WAMP)
-WAMP is the number of times the difference between the
-amplitudes of the sEMG signal of two adjacent segments exceeds a predetermined threshold
-to reduce the effects of noise.<br>
-WAMP is related to the level of motor unit action
-potential (MUAP) and muscle contraction. A suitable value for the threshold parameter is
+WAMP is the number of times the difference between the amplitudes of the sEMG signal in two adjacent segments exceeds a predetermined threshold to reduce the effects of noise. WAMP is related to the level of motor unit action potential (MUAP) and muscle contraction. A suitable value for the threshold parameter is
 usually chosen between 10 and 100 mV, which depends on the gain setting of the instrument.<br>
 <center>
 
 $WAMP \ = \ \sum^{N-1}_{i=1}f(\left | x_{i} \ - \ x_{i+1}  \right |)$<br>
 
 $f(x) \ = \ \left\{\begin{matrix}
-1 \ \ \ if(x \geq y)
+1 \ \ \ \text{if}(x \geq y)
 \\ 
-0 \ \ \ otherwise
+0 \ \ \ \text{otherwise}
 \end{matrix}\right.$
 </center>
 
 <br><br><br><br>
 
 # Result
-Each contraction of the arm muscles during one of the seven movements was recorded
-by 8 EMG sensors. The result of each methods:
+Each contraction of the arm muscles during one of the seven movements was recorded by eight EMG sensors. The result of each methods:
 <center>
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/07a4a9f4-a672-4e7c-876c-b6009f5621cd" width=500 height=500>
 </center><br>
@@ -247,6 +223,6 @@ At the end, we can see the classification result with random forest classifier.
 
 # Opinion
 
-At the article, they said the accuracy is 92% but, by simple calculation, the accuracy must be 84%.<br>
-Unlike other studies that used deep learning such as RNN or CNN, they just use machine learning.<br>
-However, it must be the fastest way to classify the handgesture. I also want to know the performance of the other hand gestures to be used in real life.
+In the article, they stated the accuracy is 92%, but by simple calculation, the accuracy appears to be 84%.<br>
+Unlike other studies that used deep learning techniques such as RNN or CNN, they only used machine learning.<br>
+However, it may be the fastest way to classify hand gestures. I also want to know the performance of other hand gestures when used in real-life applications.
