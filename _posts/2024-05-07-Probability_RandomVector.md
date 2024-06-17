@@ -110,7 +110,7 @@ where $x_{i}, i = 1, \ldots , n$ is all elements in a sample space.<br>
 If you use a Dirac delta function ($\delta(x)$), you can express probability mass function to the form of probability density function.
 
 <p align="center">
-    <span>$p_{X}(x)=\Sigma^{n}_{i=1}w_{X}(x_{i})\delta (x-x_{i})$</span>
+    <span>$p_{X}(x)=\sum^{n}_{i=1}w_{X}(x_{i})\delta (x-x_{i})$</span>
     <span style="float: right;">[6]</span>
 </p>
 
@@ -376,9 +376,9 @@ As in Formula [30], if each sample is independently and equitably extracted from
 
 <center>
 
-$p_{X}(x) \approx \Sigma_{N}^{i=1}w_{X}(x^{(i)})\delta (x-x^{(i)})$
+$p_{X}(x) \approx \sum_{N}^{i=1}w_{X}(x^{(i)})\delta (x-x^{(i)})$
 <p align="center">
-    <span>$=\frac{1}{N}\Sigma_{N}^{i=1} \delta(x-x^{(i)})$</span>
+    <span>$=\frac{1}{N}\sum_{N}^{i=1} \delta(x-x^{(i)})$</span>
     <span style="float: right;">[31]</span>
 </p>
 </center>
@@ -387,9 +387,9 @@ Then we can calculate the probability $P(x < X \leq x + \Delta x)$ of belonging 
 
 <center>
 
-$\int_{x}^{x+\Delta x}p_{X}(x)dx \approx \int_{x}^{x+\Delta x}\frac{1}{N} \Sigma_{i=1}^{N} \delta (x-x^{(i)})dx$<br>
+$\int_{x}^{x+\Delta x}p_{X}(x)dx \approx \int_{x}^{x+\Delta x}\frac{1}{N} \sum_{i=1}^{N} \delta (x-x^{(i)})dx$<br>
 
-$=\frac{1}{N}\Sigma_{i=1}^{N} \int_{x}^{x+\Delta x}\delta (x-x^{(i)})$<br>
+$=\frac{1}{N}\sum_{i=1}^{N} \int_{x}^{x+\Delta x}\delta (x-x^{(i)})$<br>
 
 <p align="center">
     <span>$=\frac{the \ number \ of \ samples \ that \ belongs \ to \ the \ interval (x, x+\Delta x]}{N}$</span>
