@@ -17,7 +17,7 @@ Policy Gradient is used to update the [actor model](https://csh970605.github.io/
 $ \phi_{t+1}\ =\ \phi_{t}\ +\ \alpha \nabla_{\phi}J(\pi_{\phi})|_{\phi_{t}} $
 <br>
 
-$ \nabla_{\phi}J(\phi)\ =\ \nabla_{\phi}\Sigma_{s\in S}d^{\pi}(s)V^{\pi}(s)\ =\ \nabla_{\phi}\Sigma_{s\in S}d^{\pi}(s)\Sigma_{a \in A} \pi_{\phi}(a|s)Q^{\pi}(s,a) $
+$ \nabla_{\phi}J(\phi)\ =\ \nabla_{\phi}\sum_{s\in S}d^{\pi}(s)V^{\pi}(s)\ =\ \nabla_{\phi}\sum_{s\in S}d^{\pi}(s)\sum_{a \in A} \pi_{\phi}(a|s)Q^{\pi}(s,a) $
 
 </center>
 <br><br>
@@ -27,7 +27,7 @@ The return of the policy graddient is:
 
 <center>
 
-$ R_{t}\ =\ \Sigma_{i=t}^{T} \gamma^{i-t}r(s_{i}, a_{i}) $
+$ R_{t}\ =\ \sum_{i=t}^{T} \gamma^{i-t}r(s_{i}, a_{i}) $
 </center>
 <br><br>
 <br>
