@@ -8,17 +8,16 @@ math: true
 mermaid: true
 ---
 
-# What is Robotics Application?
+# What is a Robotics Application?
 
 
-Robotics Application is one of the composition of [ROS](https://csh970605.github.io/posts/ROS/).<br>
+A Robotics Application is one of the components of [ROS](https://csh970605.github.io/posts/ROS/).<br>
 
-Robotics Application is an application for service.
+A Robotics Application is an application for service.
 
 <br><br><br><br>
 
-## Compositions of Robotics Application
----
+## Components of a Robotics Application
 
 + MoveIt!
 
