@@ -36,6 +36,6 @@ Both of networks update the policy parameters through gradient ascent like polic
 $ \theta_{t+1}\ =\ \theta_{t}\ +\ \alpha \nabla_{\theta}J(\pi_{\theta})|_{\theta_{t}} $
 <br>
 
-$ \nabla_{\theta}J(\theta)\ =\ \nabla_{\theta}\Sigma_{s\in S}d^{\pi}(s)V^{\pi}(s)\ =\ \nabla_{\theta}\Sigma_{s\in S}d^{\pi}(s)\Sigma_{a \in A} \pi_{\theta}(a|s)Q^{\pi}(s,a) $
+$ \nabla_{\theta}J(\theta)\ =\ \nabla_{\theta}\sum_{s\in S}d^{\pi}(s)V^{\pi}(s)\ =\ \nabla_{\theta}\sum_{s\in S}d^{\pi}(s)\sum_{a \in A} \pi_{\theta}(a|s)Q^{\pi}(s,a) $
 
 </center>
