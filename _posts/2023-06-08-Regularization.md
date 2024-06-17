@@ -9,15 +9,14 @@ mermaid: true
 ---
 
 # What is Regularization?
-Regularization penalizes the model to prevent it from overfitting. That is, the model increase potential fit by giving up the perfect fit.<br>
-If weights have too big values, the function will be made like:
+Regularization penalizes the model to prevent it from overfitting. That is, the model increases its potential to generalize by giving up a perfect fit to the training data. If the weights have very large values, the function will look like this:
 <center>
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/59b147a9-a34e-4e97-accc-b8d13401fea9" width=700>
 </center>
 <br><br>
 <br><br>
 
-# Types of regularization
+# Types of Regularization
 
 + [L2 Regularization](https://csh970605.github.io/posts/L2_Regularization/)
 
