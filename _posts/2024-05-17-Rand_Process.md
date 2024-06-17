@@ -203,7 +203,7 @@ The power spectral density of WSS random sequence $S_{XX}(\hat{\omega})$ is defi
 
 <center>
 
-$S_{XX}(\hat{\omega}) = \Sigma_{n=-\infty}^{\infty}R_{XX}(n)e^{-j\hat{\omega}n}$
+$S_{XX}(\hat{\omega}) = \sum_{n=-\infty}^{\infty}R_{XX}(n)e^{-j\hat{\omega}n}$
 </center>
 <br>
 
@@ -271,7 +271,7 @@ And the power spectral density of white noise sequnce is:
 
 <center>
 
-$S_{VV}(\hat{\omega}) = \Sigma_{n=-\infty}^{\infty}R_{VV}(n)e^{-j\hat{\omega}n} = S_{0}$
+$S_{VV}(\hat{\omega}) = \sum_{n=-\infty}^{\infty}R_{VV}(n)e^{-j\hat{\omega}n} = S_{0}$
 </center>
 
 And it has same power spectrum density values in all frequency domain.
@@ -306,11 +306,11 @@ Also, if ensemble correation $\mathbb{E}[X(t)X^{T}(t+\tau)]$ of $X(t)$ equals to
 In random sequence, time average and time correlation is defined as formula [3] and formula [4] respectively.
 
 <p align="center">
-    <span>&lt; $x(k)$ &gt; $=lim_{T \rightarrow \infty} \frac{1}{2N+1}\Sigma_{k=-n}^{N}x(k)$</span>
+    <span>&lt; $x(k)$ &gt; $=lim_{T \rightarrow \infty} \frac{1}{2N+1}\sum_{k=-n}^{N}x(k)$</span>
     <span style="float: right;">[1]</span>
 </p>
 <p align="center">
-    <span>&lt; $x(k)x^{T}(k+m)$ &gt; $=lim_{T \rightarrow \infty} \frac{1}{2N+1}\Sigma_{k=-n}^{N}x(k)X^{T}(k+m)$</span>
+    <span>&lt; $x(k)x^{T}(k+m)$ &gt; $=lim_{T \rightarrow \infty} \frac{1}{2N+1}\sum_{k=-n}^{N}x(k)X^{T}(k+m)$</span>
     <span style="float: right;">[2]</span>
 </p>
 
