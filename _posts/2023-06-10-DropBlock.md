@@ -9,25 +9,22 @@ mermaid: true
 ---
 
 # What is DropBlock?
-It is a way to perform [Regularization](https://csh970605.github.io/posts/Dropout/).
-And it is almost same as [dropout](https://csh970605.github.io/posts/Dropout/). However, there is some difference that dropblock drops random "blocks" of feature to cover the disadvantage of dropout like:
+It is a way to perform [Regularization](https://csh970605.github.io/posts/Dropout/). It is almost same as [Dropout](https://csh970605.github.io/posts/Dropout/). However, there is a key difference: DropBlock drops random 'blocks' of features to address the disadvantages of Dropout like:
 <br>
 
 <center>
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/9d3f1af7-caaa-4405-891e-64462563ba35" width=400>
 </center>
 
-<br><br>
+<br><br><br><br>
 
 # Usage
 
-<br>
+<br><br>
 
 ## PyTorch
----
-<br>
 
-**torchvision.ops.drop_block2d(input, p, block_size, inplcae=Fales, eps=1--06, training=True)->Tensor** where:
+**torchvision.ops.drop_block2d(input, p, block_size, inplace=Fales, eps=1-06, training=True)->Tensor** where:
 
 + input : The input tensor or 4-dimensions with the first one being its batch.
 
@@ -35,7 +32,7 @@ And it is almost same as [dropout](https://csh970605.github.io/posts/Dropout/). 
 
 + block_size : Size of the block to drop.
 
-+ inplcae : If set to True, will do this operation in-place.
++ inplace : If set to True, will do this operation in-place.
 
 + eps :  A value added to the denominator for numerical stability.
 
