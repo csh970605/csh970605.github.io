@@ -10,14 +10,14 @@ mermaid: true
 
 # Bayes' Theorem
 
-$n$ numbers of events $B_{i}, i=1, 2, \ldots , n$ are exclusive each other like image below, $P(B_{i}, B_{j})=0, \forall \  i \neq j$. 
+n events $B_{i}, i=1, 2, \ldots , n$, are mutually exclusive, as shown in the image below. Therefore, $P(B_{i}, B_{j})=0 \ \forall \ i \neq j$.
 
 <center>
 
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/25299ac0-9669-48c4-84d2-ff6cb8c8cd98">
 </center>
 
-And considering the entire sample space, $\sum_{i=1}^{n}P(B_{i})=1$. Then, the probability of a random event $A$ is expressed as formula [1]:
+Considering the entire sample space, we have $\sum_{i=1}^{n}P(B_{i})=1$. Then, the probability of a random event $A$ is expressed as shown in equation [1]:
 
 <center>
 
@@ -31,9 +31,9 @@ $P(A) = \sum_{i=1}^{n}P(A, B_{i})$<br>
 
 </center>
 
-Formula [1] is called a **total probability theorem**.<br>
+Equation [1] is called the **total probability theorem**.<br>
 
-In order to induce the bayes' theorem, we sholud know about the conditional probability. The conditional probability is:
+In order to derive Bayes' theorem, we should understand conditional probability. The conditional probability is:
 
 <center>
 
@@ -46,16 +46,16 @@ $P(B_{i} \mid A) = \frac{P(A,B_{i})}{P(A)}$
 
 </center>
 
-If you substitute the total probability theorem into formula [2]:
+If we substitute the law of total probability into equation [2], we get:
 
 <p align="center">
-    <span>$=\frac{P(A \mid B_{i})P(B_{i})}{\sum_{i=1}^{n}P(A|B_{i})P(B_{i})}$</span>
-    <span style="float: right;">[3]</span>
+<span>$\frac{P(A \mid B_{i})P(B_{i})}{\sum_{i=1}^{n}P(A \mid B_{i})P(B_{i})}$</span>
+<span style="float: right;">[3]</span>
 </p>
 
-Formula [3] is called the **Bayes' theorem**.<br>
+Equation [3] is called the **Bayes' theorem**.<br>
 
-Of course, it can be expressed as [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) as formula [4].
+It can also be expressed using the [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) as shown in equation [4].
 
 <center>
 
@@ -72,7 +72,7 @@ $= \frac{p_{XY}(x,y)}{p_{Y}(y)}$
 
 where $p_{X}(x)$ is a prior probability density function, $p_{X \mid Y}(x \mid y)$ is a posterior probability density function.
 
-Of course again, the occasion that events and random variables are mixed, the bayes' theorem is formula [5].
+When events and random variables are mixed, Bayes' theorem is given by equation [5].
 
 <p align="center">
     <span>$P(B_{i} \mid y) = \frac{p_{Y \mid B_{i}}(y \mid B_{i})P(B_{i})}{\sum_{j=1}^{n}p_{Y \mid B_{j}}(y \mid B_{j})P(B_{j})}$</span>
