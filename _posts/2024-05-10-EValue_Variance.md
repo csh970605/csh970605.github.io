@@ -10,30 +10,30 @@ mermaid: true
 
 # Expected Value
 
-The expectation or mean of [random variable](https://csh970605.github.io/posts/Probability_RandomVector/#random-variable) $X$ $\mathbb{E}[X]$ is defined as formula [1].
+The expectation or mean of the [random variable](https://csh970605.github.io/posts/Probability_RandomVector/#random-variable) $X$, denoted $\mathbb{E}[X]$, is defined by equation [1].
 
 <p align="center">
     <span>$\mathbb{E}[X] = \int_{-\infty}^{\infty}xp_{X}(x)dx$</span>
     <span style="float: right;">[1]</span>
 </p>
 
-And the $k^{th}$ moment of random varialbe X $\mathbb{E}[X]$ is defined as formula [2].
+The $k^{th}$ moment of the random variable $X$, denoted $\mathbb{E}[X^k]$, is defined by equation [2].
 
 <p align="center">
     <span>$\mathbb{E}[X^{k}] = \int_{-\infty}^{\infty}x^{k}p_{X}(x)dx$</span>
     <span style="float: right;">[2]</span>
 </p>
 
-Where the first moment is expectation and the second moment is mean square or average power of random variable.<br>
+The first moment is the expectation, and the second moment is the mean square or average power of the random variable.<br>
 
-And the function of random variable $X$ $g(X)$ is defined as formula [3].
+The expectation of a function of the random variable $X$, denoted $\mathbb{E}[g(X)]$, is defined by equation [3].
 
 <p align="center">
     <span>$\mathbb{E}[g(X)] = \int_{-\infty}^{\infty}g(x)p_{X}(x)dx$</span>
     <span style="float: right;">[3]</span>
 </p>
 
-if random variable $X$ has a joint distribution with $Y$, the expectation of function of random variable $X$ $\mathbb{E}[g(X)]$ is defined as formula [4].
+If the random variable $X$ has a joint distribution with $Y$, the expectation of a function of the random variable $X$, denoted $\mathbb{E}[g(X)]$, is defined by equation [4].
 
 <center>
 
@@ -45,7 +45,7 @@ $\mathbb{E}[g(X)] = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty}g(x)p_{XY}(x,
 </p>
 </center>
 
-The expectaion of function of random variable $X$ and $Y$ $g(X, Y)$ is defined as formula [5].
+The expectation of a function of the random variables $X$ and $Y$, denoted $\mathbb{E}[g(X, Y)]$, is defined by equation [5].
 
 <p align="center">
     <span>$\mathbb{E}[g(X, Y)] = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty}g(x, y)p_{XY}(x,y)dxdy$</span>
@@ -56,7 +56,7 @@ The expectaion of function of random variable $X$ and $Y$ $g(X, Y)$ is defined a
 
 # Variance
 
-The variance of random variable is defined as formula [6].
+The variance of a random variable is defined by equation [6].
 
 <center>
 
@@ -71,16 +71,16 @@ $= \int_{-\infty}^{\infty}(x-\mathbb{E}[X])^{2}p_{X}(x)dx$
 
 </center>
 
-The **standard deviation** of $X$ is defined as $\sigma_{X} = \sqrt{Var(X)}$. And the $k^{th}$ central moment $\mathbb{E}[(X-\mu_{X})^{k}]$ is defined as formula [7].
+The **standard deviation**  of $X$ is defined as $\sigma_{X} = \sqrt{Var(X)}$. The $k^{th}$ central moment, denoted $\mathbb{E}[(X - \mu_{X})^{k}]$, is defined by equation [7].
 
 <p align="center">
     <span>$\mathbb{E}[(X - \mathbb{E}[X])^{k}] = \int_{-\infty}^{\infty}(x-\mathbb{E}[X])^{k}p_{X}(x)dx$</span>
     <span style="float: right;">[7]</span>
 </p>
 
-Where $\mathbb{E}[X] = \mu_{X}$, the first central moment is 0, the second central momentom is being the variance of random variable.<br>
+where, $\mathbb{E}[X] = \mu_{X}$. The first central moment is 0, and the second central moment is the variance of the random variable.<br>
 
-The covariance of two random variable $X$ and $Y$ is defined as formula [8].
+The covariance of two random variables $X$ and $Y$ is defined by equation [8].
 
 <center>
 
@@ -92,9 +92,9 @@ $Cov(X, Y) = \mathbb{E}[(X-\mathbb{E}[X])(Y-\mathbb{E}[Y])]$
 </p>
 </center>
 
-As you can see at the formula[8], if $X=Y$, $Cov(X,Y) = Var(X)$.<br>
+As you can see in equation [8], if $X = Y$, $Cov(X, Y) = Var(X)$.<br>
 
-If the covariance of random variable $X$ and $Y$ is 0, it is called that $X$ and $Y$ are **uncorrelated** to each other. And the **correlation** of $X$ and $Y$ is defined as formula [9].
+If the covariance of random variables $X$ and $Y$ is 0, $X$ and $Y$ are said to be **uncorrelated**. The **correlation** of $X$ and $Y$ is defined by equation [9].
 
 <center>
 
@@ -106,14 +106,14 @@ $Cor(X, Y) = \mathbb{E}[XY]$
 </p>
 </center>
 
-However, $X$ and $Y$ are independent, the correlation is expressed as:
+However, if $X$ and $Y$ are independent, the correlation is expressed as:
 
 <center>
 
-$Cor(X,Y) = \mathbb{E}[XY] = \mathbb{E}[X][Y]$
+$Cor(X, Y) = \mathbb{E}[XY] = \mathbb{E}[X] \mathbb{E}[Y]$
 </center>
 
-And if $\mathbb{E}[XY] = 0$, it is called **orthogonal**. 
+If $\mathbb{E}[XY] = 0$, $X$ and $Y$ are said to be **orthogonal**. 
 
 <br><br><br><br>
 
@@ -124,25 +124,25 @@ And if $\mathbb{E}[XY] = 0$, it is called **orthogonal**.
 
 ## Conditional Expectaion
 
-The conditional expectation of $X$ that is given random variable $Y$ as $y$ is defined as formula [10].
+The conditional expectation of $X$ given random variable $Y$ as $y$ is defined by equation [10].
 
 <p align="center">
     <span>$\mathbb{E}[X \mid Y = y] = \int_{-\infty}^{\infty}xp_{X \mid Y}(x \mid y) dx$</span>
     <span style="float: right;">[10]</span>
 </p>
 
-And conditional expectation of $X$ that is conditioning the random variable $Y$ is defined as formula [11].
+The conditional expectation of $X$ given the random variable $Y$ is defined by equation [11].
 
 <p align="center">
     <span>$\mathbb{E}[X \mid Y] = \int_{-\infty}^{\infty}xp_{X \mid Y}(x \mid Y) dx$</span>
     <span style="float: right;">[11]</span>
 </p>
 
-<span style="color: red;">**Note that $\mathbb{E}[X \mid Y=y]$ is a real number as a function of real number $y$, but $\mathbb{E}[X \mid Y]$ is a random variable as a function of random variable $Y$.**</span>
+<span style="color: red;">*Note that $\mathbb{E}[X \mid Y = y]$ is a real number as a function of the real number $y$, but $\mathbb{E}[X \mid Y]$ is a random variable as a function of the random variable $Y$.**</span>
 
 <br><br>
 
-The conditional expectaion of $X$ that is given random variable $Y$ as $y$ and the conditional expectation of $X$ That is conditioning the random variable $Y$ are defined as fromula [12], [13] respectively.
+The conditional expectation of $X$ given that the random variable $Y$ as $y$ and the conditional expectation of $X$ given the random variable $Y$ are defined by equations [12] and [13], respectively.
 
 <p align="center">
     <span>$\mathbb{E}[g(X) \mid Y=y] = \int_{-\infty}^{\infty}g(x)p_{X \mid Y}(x \mid y) dx$</span>
@@ -154,7 +154,7 @@ The conditional expectaion of $X$ that is given random variable $Y$ as $y$ and t
     <span style="float: right;">[13]</span>
 </p>
 
-Since $Var(X \mid Y)$ is also random variable, the expectation can be caluclated as formula [14].
+Since $Var(X \mid Y)$ is also a random variable, the expectation can be calculated by equation [14].
 
 <center>
 
@@ -171,14 +171,14 @@ $\mathbb{E}[Var(X \mid Y)] = \mathbb{E}[\mathbb{E}[X^{2} \mid Y] - (\mathbb{E}[X
 
 ## Conditional variance
 
-The conditional variance of $X$ that is given random variable $Y$ as $y$ and the conditional variance of $X$ That is conditioning the random variable $Y$ are defined as fromula [15], [16] respectively.
+The conditional variance of $X$ given random variable $Y$ as $y$ and the conditional variance of $X$ given the random variable $Y$ are defined by equations [15] and [16], respectively.
 
 <center>
 
 $Var(X \mid Y = y) = \mathbb{E}[(X-\mathbb{E}[X \mid Y=y)]^{2} \mid Y=y]$
 
 <p align="center">
-    <span>$= \mathbb{E}[X^{2} \mid Y] - (\mathbb{E}[X \mid Y = y])^{2}$</span>
+    <span>$= \mathbb{E}[X^{2} \mid Y=y] - (\mathbb{E}[X \mid Y = y])^{2}$</span>
     <span style="float: right;">[15]</span>
 </p>
 
@@ -190,16 +190,16 @@ $Var(X \mid Y) = \mathbb{E}[(X - \mathbb{E}[X \mid Y])^{2} \mid y] $
 
 </center>
 
-As [conditional expectaion](https://csh970605.github.io/posts/EValue_Variance/#conditional-expectaion) does, <span style="color: red;">**note that $Var[X \mid Y=y]$ is a real number as a function of real number $y$, but $Var[X \mid Y]$ is a random variable as a function of random variable $Y$.**</span>
+As with [conditional expectaion](https://csh970605.github.io/posts/EValue_Variance/#conditional-expectaion), <span style="color: red;">**note that $Var[X \mid Y = y]$ is a real number as a function of the real number $y$, but $Var[X \mid Y]$ is a random variable as a function of the random variable $Y$.**</span>
 
-And also, since $\mathbb{E}(X \mid Y)$ is also random variable, the expectation can be caluclated as formula [17].
+Additionally, since $\mathbb{E}(X \mid Y)$ is also a random variable, the expectation can be calculated by equation [17].
 
 <center>
 
 $Var(\mathbb{E}[X \mid Y]) = \mathbb{E}[(\mathbb{E}[X \mid Y] - \mathbb{E}[\mathbb{E}[X \mid Y]])^{2}]$
 
 <p align="center">
-    <span>$= \mathbb{E}[(\mathbb{E}[X \mid Y])^{2} - (\mathbb{E}[X])^{2}]$</span>
+    <span>$= \mathbb{E}[(\mathbb{E}[X \mid Y])^{2}] - (\mathbb{E}[X])^{2}$</span>
     <span style="float: right;">[17]</span>
 </p>
 
