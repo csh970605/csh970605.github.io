@@ -10,14 +10,14 @@ mermaid: true
 
 # Random Vector
 
-A random vector is a vector consisting of random variables. When the element consist the vecotr $X$ is $X_{1}, X_{2}, \ldots , X{n}$, the probability distribution function is defined as formula [1].
+A random vector is a vector consisting of random variables. When the elements of the vector $X$ are $X_{1}, X_{2}, \ldots, X_{n}$, the probability distribution function is defined by equation [1].
 
 <p align="center">
     <span>$F_{X_{1}, \ldots ,X_{n}}(x_{1}, \ldots , x_{n}) = P (X_{1} \leq x_{1}, \ldots , X_{n} \leq x_{n})$</span>
     <span style="float: right;">[1]</span>
 </p>
 
-And the joint probability distribution function is written as formula [2].
+The joint probability distribution function is given by equation [2].
 
 <p align="center">
     <span>$F_{X}(x) = F_{X_{1}, \ldots ,X_{n}}(x_{1}, \ldots , x_{n})$</span>
@@ -40,7 +40,7 @@ x_{n}
 \end{bmatrix}$
 </center>
 
-The probability density function of random vector $X$ $p_{X}(x) $ is defined as the joint probablity density function of random variable as formula [3].
+The probability density function of the random vector $X$, denoted $p_{X}(x)$, is defined as the joint probability density function of random variables by equation [3].
 
 <center>
 
@@ -55,7 +55,7 @@ $F_{X}(x) = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty}\ldots \int_{-\infty}
 
 Where $p_{X}(x)$ is a multivariate function that is $p_{X}(x) = p_{X_{1}}, \ldots , p_{X_{n}}(x_{1}, \ldots , x_{n})$
 
-And the conditional probability density function of random vector $X$ that is given random vector $Y$ is $Y=y$ is defined as formula [4].
+The conditional probability density function of the random vector $X$ given the random vector $Y$ as $Y = y$ is defined by equation [4].
 
 <p align="center">
     <span>$P(X \leq x \mid Y = y)= \int_{-\infty}^{\infty}p_{X \mid Y}(x \mid y)dx$</span>
@@ -87,7 +87,7 @@ And $P_{X \mid Y}(x \mid y)$ is a multi variable function.
 
 ## Expectation
 
-The Expectation or mean of random vector $X=[X_{1}, X_{2}, \ldots , X_{n}]^{T}$ is defined as the expectation of each random vector element as formula [5].
+The expectation or mean of the random vector $X = [X_{1}, X_{2}, \ldots, X_{n}]^{T}$ is defined as the expectation of each element of the random vector, as shown in equation [5].
 
 <center>
 
@@ -110,7 +110,7 @@ x_{n}
 
 where $x = [x_{1}, x_{2}, \ldots , x_{n}]^{T}$.<br>
 
-The expectation of function $g(X)$ of random vector $X$ is defined as:
+The expectation of the function $g(X)$ of the random vector $X$ is defined as:
 
 <center>
 
