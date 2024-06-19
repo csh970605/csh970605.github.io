@@ -10,63 +10,62 @@ mermaid: true
 
 # Random Process
 
-A random process is defined as the function mapping the result of probability experiment to the time function. It is written as:
+A random process is defined as a function that maps the result of a probability experiment to a time function. It is written as:
 
 <center>
 
 $X(t)\equiv X(t, e)$
 </center>
 
-And random variable $X\equiv X(e)$ is defined as the function mapping the result of probability $e$ to the real number.<br>
-Random process is used to model the time-varying probability experiments. For example, models for stock prices, power of wind, noises of sensor, etc.<br><br>
+A random variable $X \equiv X(e)$ is defined as a function that maps the result of a probability experiment $e$ to a real number. A random process is used to model time-varying probability experiments. Examples include models for stock prices, wind power, sensor noise, etc.<br><br>
 
 <br><br>
 
 ## Vector Random Process
 
-Vector random process is the vector whose element is scalar random process. It is expressed as:
+A vector random process is a vector whose elements are scalar random processes. It is expressed as:
 
 <center>
 
-$X(t) \equiv X(t,e) = [X_{1}(t, e)X_{2}(t,e), \ldots , X_{n}(t,e)]^{T}$
+$X(t) \equiv X(t, e) = [X_{1}(t, e), X_{2}(t, e), \ldots, X_{n}(t, e)]^{T}$
 </center>
 
-And it is simply called random process.
+It is also simply called a **random process**.
 
 <br><br>
 
 ## Sample Function
 
-Random processe is usually capitalized and lowercase in the time function that random processe can actually take. That is if the time function of random process mapping the probability experiment result $\mathbb{E}$ is $x(t)$, random process is written as $X(T, e) = x(t, e) or X(t) = x(t)$.<br>
+A random process is usually denoted with capital letters, and the corresponding time function is denoted with lowercase letters. That is, if the time function of a random process mapping the probability experiment result $\mathbb{E}$ is $x(t)$, the random process is written as $X(T, e) = x(t, e)$ or $X(t) = x(t)$.<br>
 
-$x(t)$ means the state of random process at time $t$, and it is called **sample function**. More speceifically, if e is fixed as $e = e_{1}$, random process becomes sample function $X(t, e_{1}) = x(t, e_{1})$. One more example, if e is fixed as $e = e_{2}$, random process becomes sample function $X(t, e_{2}) = x(t, e_{2})$.<br>
+$x(t)$ represents the state of the random process at time $t$, and it is called a **sample function**. More specifically, if $e$ is fixed as $e = e_{1}$, the random process becomes the sample function $X(t, e_{1}) = x(t, e_{1})$. For another example, if $e$ is fixed as $e = e_{2}$, the random process becomes the sample function $X(t, e_{2}) = x(t, e_{2})$.<br>
 
-As you can see at the example, sample function is deterministic function and all the samples are called **ensemble**.
+As you can see in the example, a sample function is a deterministic function and all the samples are called an **ensemble**.
 <br><br>
 
-And if time is discrete, the random process is called **discrete-time** or **random sequence**. It is expressed as :
+If time is discrete, the random process is called a **discrete-time** or **random sequence**. It is expressed as :
 
 <center>
 
-$X(k) \equiv X(k,e) = [X_{1}(k,e)X_{2}(k,e), \ldots , X_{n}(k,e)]^{T}$
+$X(k) \equiv X(k, e) = [X_{1}(k, e), X_{2}(k, e), \ldots, X_{n}(k, e)]^{T}$
 </center>
 
-Where $k$ is index of time.
+where $k$ is the index of time.
 <br><br><br><br>
 
 # Mean Function and Auto-correlation Function and Auto-covariance Function
 
-In this section, we will see **mean function**, **auto-correlation function**, **auto-covariance function**.
+In this section, we will discuss the **mean function**, **auto-correlation function**, **auto-covariance function**.
 
-Except those, the other definition of random sequence is the same as random process
+Apart from these, the other definitions of a random sequence are the same as those of a random process.
 
 <br><br>
 
 ## Mean Function
 
-The [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) of random process is a function of time because it can vary from time to time. And written as $p_{X}(x(t))$. At the time $t = t_{1}$, a expectation or ensemble mean function is defined as expectations of the elements of a random vector respectively.
+The [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) of a random process is a function of time because it can vary from time to time, and it is written as $p_{X}(x(t))$. At the time $t = t_{1}$, the expectation or ensemble mean function is defined as the expectation of the elements of a random vector, respectively.
 
-That is,
+This means that,
 
 <center>
 
@@ -77,8 +76,8 @@ $\mu_{X}(t_{1}) = \mathbb{E}[X(t_{1})]$
 
 ## Auto-correlation Function
 
-At time $t_{1}$ and $t_{2}$, two random vectors have [joint probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#joint-probability-function) $p_{X}(x(t_{1}), x(t_{2}))$.
-To show auto-correlation at different points in time of random process, we define auto-correlation function $R_{XX}(t_{1}, t_{2})$ as follows:
+At times $t_{1}$ and $t_{2}$, two random vectors have the [joint probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#joint-probability-function) $p_{X}(x(t_{1}), x(t_{2}))$.
+To show the auto-correlation at different points in time of a random process, we define the auto-correlation function $R_{XX}(t_{1}, t_{2})$ as follows:
 
 <center>
 
@@ -92,12 +91,12 @@ $= \begin{bmatrix}
 </center>
 <br>
 
-Auto-correlation function represents the auto-correlation of random processes in the time domain and represents the power or distribution of energy that process contains in the frequency domain.
+The auto-correlation function represents the auto-correlation of random processes in the time domain and the power or distribution of energy that the process contains in the frequency domain.
 <br><br>
 
 ## Auto-covariance Function
 
-Auto-covariance Function $P_{XX}(t_{1}, t_{2})$ is defined as:
+The auto-covariance function $P_{XX}(t_{1}, t_{2})$ is defined as follows:
 
 <center>
 
@@ -109,9 +108,9 @@ $P_{XX}(t_{1}, t_{2}) = \mathbb{E}[(X(t_{1})-\mathbb{E}[X(t_{1})])(X(t_{2})-\mat
 
 # Stationarity Process
 
-Stationarity process means the partial or entire probabilitic feature of random process is time-invariant.<br>
+A stationary process means that the partial or entire probabilistic feature of a random process is time-invariant.<br>
 
-In stationarity process, there are two process:
+In stationary processes, there are two types:
 
 + [Strict-sense stationary(SSS)](https://csh970605.github.io/posts/Rand_Process/#strict-sense-stationarysss)
 
@@ -119,30 +118,30 @@ In stationarity process, there are two process:
 
 <br><br>
 
-## Strict Sense Stationary(SSS)
+## Strict Sense Stationary (SSS)
 
-If at a probability density function of random process $X(t)$, when taking any $m$ time points $t_{1} < t_{2} < \ldots  < t_{m}$, joint probability density functions of $X(t_{m}), X(t_{m}), \ldots , X(t_{m})$ satisfy the following expression for any $h > 0$, $X(t)$ is called **SSS process**
+If the probability density function of a random process $X(t)$, when taking any $m$ time points $t_{1} < t_{2} < \ldots < t_{m}$, satisfies the following expression for the joint probability density functions of $X(t_{1}), X(t_{2}), \ldots , X(t_{m})$ for any $h > 0$, then $X(t)$ is called an **SSS process**.
 
 <center>
 
 $p_{X}(x(t_{1}), x(t_{2}), \ldots , x(t_{m})) = p_{X}(x(t_{1} + h), x(t_{2} + h), \ldots , x(t_{m} + h))$
 </center>
 
-If $X(t)$ is SSS process, a mean of ensemble becomes constant and auto-correlation function $R_{XX}(t_{1}, t_{2})$ at any two time points $X(t_{1})$ and $X(t_{2})$ becomse a function of the time difference between two time points $(t_{2} - t_{1})$.<br>
+If $X(t)$ is an SSS process, the mean of the ensemble becomes constant, and the auto-correlation function $R_{XX}(t_{1}, t_{2})$ at any two time points $t_{1}$ and $t_{2}$ becomes a function of the time difference between the two time points $(t_{2} - t_{1})$.<br>
 That is,
 
-+ $\mathbb{E}[X(t)] = constant$
++ $\mathbb{E}[X(t)] = \text{constant}$
 
 + $R_{XX}(t_{1}, t_{2}) = R_{XX}(t_{2} - t_{1}) = R_{XX}(\tau)$
 <br><br>
 
-## Wide Sense Stationary(WSS)
+## Wide Sense Stationary (WSS)
 
-If a mean of ensemble of random process $X(t)$ is constant and $R_{XX}(t_{1}, t_{2} = RXX_{\tau})$, $X(t)$ is called **WSS process**.<br>
+If the mean of the ensemble of a random process $X(t)$ is constant and $R_{XX}(t_{1}, t_{2}) = R_{XX}(\tau)$, then $X(t)$ is called a **WSS process**.<br>
 
-If $X(t)$ is SSS process, $X(t)$ is WSS process also but inverse is not established.<br><br>
+If $X(t)$ is an SSS process, then $X(t)$ is also a WSS process, but the inverse is not true.<br><br>
 
-In the WSS, a sharp decrease in $R_{XX}$ for $\tau$ as shown in the image [1] results in a sharp decrease in the correlation between the two time points. Conversely, a gradual decrease in $R_{XX}$ for $\tau$ as shown in the image [2] results in a gradual decrease in the correlation between the two time points. <br>
+In WSS, a sharp decrease in $R_{XX}$ for $\tau$, as shown in image [1], results in a sharp decrease in the correlation between the two time points. Conversely, a gradual decrease in $R_{XX}$ for $\tau$, as shown in image [2], results in a gradual decrease in the correlation between the two time points. <br>
 
 Thus, $R_{XX}(\tau)$ functions as a measure of the rate of change of $X(t)$ relative to time $t$. In other words, it acts as a kind of frequency response to $X$.
 
@@ -154,13 +153,13 @@ image [1]<br><br>
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/c8c40ceb-11e9-4283-a8be-0295a08b98d5">
 image [2]
 </center>
-WSS is a general condition that can also be applied to multi-dimensional signals, that is, time series data of vector values, but there is also a scalar WSS used when the WSS condition is applied to a single variable (scalar) time signal.
+WSS is a general condition that can also be applied to multi-dimensional signals, that is, time series data of vector values. However, there is also scalar WSS used when the WSS condition is applied to a single variable (scalar) time signal.
 
 <br><br>
 
 ### Scalar WSS
 
-At scalar WSS, the feature of auto-correation funtion $R_{XX}(\tau)$ of $X(t)$ and $Y(t)$ is:
+In scalar WSS, the features of the auto-correlation function $R_{XX}(\tau)$ of $X(t)$ and $Y(t)$ are as follows:
 
 + $\mathbb{E}[X^{2}(t)] = R_{XX}(0) \geq 0$
 
@@ -172,7 +171,7 @@ At scalar WSS, the feature of auto-correation funtion $R_{XX}(\tau)$ of $X(t)$ a
 
 # Power Spectral Density(PSD)
 
-Power spectral density $S_{XX}(\omega)$ of WSS random process is defined as fourier transform of auto-correation function. The function of $S_{XX}(\omega)$ is :
+The power spectral density $S_{XX}(\omega)$ of a WSS random process is defined as the Fourier transform of the auto-correlation function. The function $S_{XX}(\omega)$ is:
 
 <center>
 
@@ -180,10 +179,10 @@ $S_{XX}(\omega) = \int_{-\infty}^{\infty}R_{XX}(\tau)e^{-j\omega \tau}d\tau$
 
 </center>
 
-where $\omega$ is frequency in $rad/sec$.
+where $\omega$ is the frequency in $rad/sec$.
 <br>
 
-We can get auto-correation function by using fourier inverse transform from power spectral density as:
+We can get the auto-correlation function by using the Fourier inverse transform from the power spectral density as:
 
 <center>
 
@@ -191,7 +190,7 @@ $R_{XX}(\tau) = \frac{1}{2\pi}\int_{-\infty}^{\infty}S_{XX}(\omega)e^{j\omega\ta
 </center>
 <br>
 
-The power of $X(t)$ is calculated from auto-correaltion function or power spectral density as:
+The power of $X(t)$ is calculated from the auto-correlation function or power spectral density as:
 
 <center>
 
@@ -199,7 +198,7 @@ $\mathbb{E}[X(t)X^{T}(t)] = R_{XX}(0) = \frac{1}{2\pi}\int_{-\infty}^{\infty}S_{
 </center>
 <br>
 
-The power spectral density of WSS random sequence $S_{XX}(\hat{\omega})$ is defined by discrete-time fourier transform of auto-correlation function as:
+The power spectral density of a WSS random sequence $S_{XX}(\hat{\omega})$ is defined by the discrete-time Fourier transform of the auto-correlation function as:
 
 <center>
 
@@ -207,57 +206,56 @@ $S_{XX}(\hat{\omega}) = \sum_{n=-\infty}^{\infty}R_{XX}(n)e^{-j\hat{\omega}n}$
 </center>
 <br>
 
-where $\hat{\omega}$ is discrete-time frequency and the range is $\hat{\omega} \in [-\pi, \pi]$.<br>
+where $\hat{\omega}$ is the discrete-time frequency and the range is $\hat{\omega} \in [-\pi, \pi]$.<br>
 
-Also, we can get a auto-correlation function by discrete-time fourier inverse transform from power spectral density as:
-
+Also, we can get the auto-correlation function by the discrete-time Fourier inverse transform from the power spectral density as:
 <center>
 
 $R_{XX}(n) = \frac{1}{2\pi}\int_{-\pi}^{\pi}S_{XX}(\hat{\omega})e^{j\hat{\omega}n}d\hat{\omega}$
 </center><br>
 
-A power of random sequence $X(k)$ can be calculated from auto-correlation function or power spectral density as:
+The power of a random sequence $X(k)$ can be calculated from the auto-correlation function or power spectral density as:
 
 <center>
 
-$\mathbb{E}[X(k)X^{T}(k)] = R_{XX}(0) = \frac{1}{2\pi}\int_{-\pi}^{\pi}S_{XX}(\hat{\omega})d\hat{\omega}$
+$\mathbb{E}[X(k)X^{T}(k)] = R_{XX}(0) = \frac{1}{2\pi}\int_{-\pi}^{\pi}S_{XX}(\hat{\omega})d\hat{\omega}$/*
 
-$\int e^{(a-jw)\tau}d\tau$
+$= \int e^{(a-jw)\tau}d\tau$
 </center>
 
 <br><br><br><br>
 
 # White Noise
 
-A random process that is in non-relationship timely is called **white noise** $V(t)$. And it is an impulse-like signal in a deterministic system, defined as a WSS process in which the auto-correlation function is given as a [Dirac delta function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-mass-function) as follows:
+A random process that is temporally uncorrelated is called **white noise** $V(t)$. It is an impulse-like signal in a deterministic system, defined as a WSS process in which the auto-correlation function is given as a [Dirac delta function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-mass-function) as follows:
 
 <center>
 
 $\mathbb{E}[V(t)V^{T}(t+\tau)] = R_{VV}(\tau) = S_{0}\delta(\tau)$
 </center>
 
-where $S_{0}$ is const matrix.<br>
+where $S_{0}$ is a constant matrix.<br>
 
-And the power spectral density is:
+The power spectral density is:
 
 <center>
 
 $S_{VV}(\omega) = \int_{-\infty}^{\infty}R_{VV}(\tau)e^{-j\omega \tau}d\tau = S_{0}\int_{-\infty}^{\infty}\delta(\tau)e^{-j\omega \tau}d\tau = S_{0}$
 </center>
 
-Therefore, a white noise has same power spectral density value at all of the frquency domain.<br>
+Therefore, white noise has the same power spectral density value across all frequencies.<br>
 <br>
 
 ## White Noise Sequence
 
-WSS random sequence $V(k)$ that the auto-correlation function is given as a kronecker delta function as follows is called **white noise sequence**.
+A WSS random sequence $V(k)$, in which the auto-correlation function is given as a Kronecker delta function, is called a **white noise sequence**.
 
 <center>
 
 $\mathbb{E}[V(k)V^{T}(k+m)] = R_{VV}(m) = S_{0}\delta_{m}$
 </center>
 
-where $\delta_{m}$ is a kronecker delta function and is defined as:
+where $\delta_{m}$ is a Kronecker delta function defined as:
 
 <center>
 
@@ -267,29 +265,29 @@ $\delta_{m} = \left\{\begin{matrix}
 \end{matrix}\right.$
 </center>
 
-And the power spectral density of white noise sequnce is:
+The power spectral density of a white noise sequence is:
 
 <center>
 
 $S_{VV}(\hat{\omega}) = \sum_{n=-\infty}^{\infty}R_{VV}(n)e^{-j\hat{\omega}n} = S_{0}$
 </center>
 
-And it has same power spectrum density values in all frequency domain.
+It has the same power spectral density value across all frequencies.
 
 <br><br>
 
 ## Gaussian White Noise
 
-In every time point $t$ or $k$, a probability density function of white noise $V(t) or V(k) is given as a gaussian function, it is called **gaussian white noise**.
+At every time point $t$ or $k$, if the probability density function of white noise $V(t)$ or $V(k)$ is given as a Gaussian function, it is called **gaussian white noise**.
 
 <br><br><br><br>
 
 # Ergodic Process in The Mean
 
-An ergodic process in the mean means that a sample function extracted stationarity random process randomly is a process that includes all probabilitic information of a random process. Although it is very hard to prove whether it is a ergodic process or not, <span style="color: red;">note that a white noise is a ergodic process.</span>
+An ergodic process in the mean means that a sample function extracted from a stationary random process randomly includes all probabilistic information of the random process. Although it is very hard to prove whether it is an ergodic process or not, <span style="color: red;">note that white noise is an ergodic process.</span>
 
 
-A time average and time correlation of any deterministic function $x(t)$ is defined as formula [1] and formula [2] respectively.
+A time average and time correlation of any deterministic function $x(t)$ are defined as formula [1] and formula [2], respectively.
 
 <p align="center">
     <span>&lt; $x(t)$ &gt; $=lim_{T \rightarrow \infty} \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}x(t)dt$</span>
@@ -300,8 +298,8 @@ A time average and time correlation of any deterministic function $x(t)$ is defi
     <span style="float: right;">[2]</span>
 </p>
 
-And let $x(t)$ is a sample function of stationarity process, if the ensemble mean $\mathbb{E}[X(t)]$ of $X(t)$ equals to time average $<x(t)>$, $X(t)$ is called a **ergodic process in the mean**.<br>
-Also, if ensemble correation $\mathbb{E}[X(t)X^{T}(t+\tau)]$ of $X(t)$ equals to time correlation $<x(t)x^{T}(t+\tau)>$, $X(t)$ is called **correation ergodic process in the mean**.<br>
+If $x(t)$ is a sample function of a stationary process, and if the ensemble mean $\mathbb{E}[X(t)]$ of $X(t)$ equals the time average $\langle x(t) \rangle$, $X(t)$ is called an **ergodic process in the mean**.<br>
+Also, if the ensemble correlation $\mathbb{E}[X(t)X^{T}(t+\tau)]$ of $X(t)$ equals the time correlation $\langle x(t)x^{T}(t+\tau) \rangle$, $X(t)$ is called a **correlation ergodic process in the mean**.<br>
 
 In random sequence, time average and time correlation is defined as formula [3] and formula [4] respectively.
 
@@ -318,16 +316,16 @@ In random sequence, time average and time correlation is defined as formula [3] 
 
 # Idependent, Identically Distributed(IID)
 
-If all random vectors that consist random process $X(t)$ are independent and have the same probability density funciton, $X(t)$ is called **IID**.<br>
-If all random vectors that consist random sequnce $X(t)$ are independent and have the same probability density funciton, $X(t)$ is called **IID sequence**.
+If all random vectors that constitute a random process $X(t)$ are independent and have the same probability density function, $X(t)$ is called **IID**.<br>
+If all random vectors that constitute a random sequence $X(t)$ are independent and have the same probability density function, $X(t)$ is called an **IID sequence**.
 
 <br><br><br><br>
 
 # Markov Process
 
-Markov process means that it is a random process which under conditions where current probability information is given, the future and the past are irrelevant or conditional independent.<br>
-That is, when the probability distribution of a random process $X(t)$ is given at a specific time point $t_{1}$, if probability distribution of $X(t)$ at time point $t > t_{1}$ is irrelevent to the probability distribution of $X(s)$ at time point $s < t_{1}$, $X(t)$ is defined as **markov process**.<br>
-And markov process is expressed as probability as follows:
+A Markov process is a random process in which, given the current probability information, the future and the past are irrelevant or conditionally independent.<br>
+That is, when the probability distribution of a random process $X(t)$ is given at a specific time point $t_{1}$, if the probability distribution of $X(t)$ at time point $t > t_{1}$ is irrelevant to the probability distribution of $X(s)$ at time point $s < t_{1}$, $X(t)$ is defined as a **Markov process**.<br>
+A Markov process is expressed probabilistically as follows:
 
 <center>
 
@@ -335,7 +333,7 @@ $p_{X}(x(t) \mid x(s) \leq t_{1}) = p_{X}(x(t) \mid x(t_{1})), \ \ \forall t > t
 </center>
 <br>
 
-Same as the markov process, a definition of markov sequence is determined by a probability distribution of one-step ago. The formula of markov sequence $X(k)$ by using probability density function and image of markov sequence is :
+Similarly to the Markov process, the definition of a Markov sequence is determined by the probability distribution of one step prior. The formula for the Markov sequence $X(k)$ using the probability density function and an image of the Markov sequence is:
 
 <center>
 
@@ -344,29 +342,30 @@ $p_{X}(s(k) \mid x(k-1), x(k-2), \ldots , x(0)) = p_{X}(x(k) \mid x(k-1)), \ \ \
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/27150017-1960-463c-88f7-44749beb755f">
 </center>
 
+<br><br><br><br>
+
 # Differentiation of Random Process
 
-If a random process $X(t)$ satisfies the following formula, $X(t)$ is called **ontinuity in the maen square sense** at time $t=t_{0}$.
+If a random process $X(t)$ satisfies the following formula, $X(t)$ is called **continuous in the mean square sense** at time $t=t_{0}$.
 
 <center>
 
-$lim_{t \rightarrow t_{0}} \mathbb{E}[(X(t) - X(t_{0}))^{2}] = 0$
+$\lim_{t \rightarrow t_{0}} \mathbb{E}[(X(t) - X(t_{0}))^{2}] = 0$
 </center><br>
 
-If a random process is continuity in the mean square sense at $t=t_{0}$, it is written simply as general deterministic function as:
+If a random process is continuous in the mean square sense at $t=t_{0}$, it can be written simply as a general deterministic function as:
 
 <center>
 
-$lim_{t \rightarrow t_{0}} X(t) = X(t_{0})$
+$\lim_{t \rightarrow t_{0}} X(t) = X(t_{0})$
 </center>
 
 <br>
 
-A random process can be differentiated because it change over time. The differientation $X'(t)$ of a random process $X(t)$ is defined as :
-
+A random process can be differentiated because it changes over time. The differentiation $X'(t)$ of a random process $X(t)$ is defined as:
 <center>
 
-$X'(t) = \frac{dX(t)}{dt} = lim_{h \rightarrow 0} \frac{X(t+h)-X(t)}{h}$
+$X'(t) = \frac{dX(t)}{dt} = \lim_{h \rightarrow 0} \frac{X(t+h)-X(t)}{h}$
 </center>
 
 <font color='red'>
