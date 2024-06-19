@@ -33,7 +33,7 @@ The expectation of a function of the random variable $X$, denoted $\mathbb{E}[g(
     <span style="float: right;">[3]</span>
 </p>
 
-If the random variable $X$ has a joint distribution with $Y$, the expectation of a function of the random variable $X$, denoted $\mathbb{E}[g(X)]$, is defined by equation [4].
+If the random variable $X$ has a joint distribution with $Y$, the expectation of a function of the random variables $X$ and $Y$, denoted $\mathbb{E}[g(X, Y)]$, is defined by equation [4].
 
 <center>
 
@@ -78,7 +78,7 @@ The **standard deviation**  of $X$ is defined as $\sigma_{X} = \sqrt{Var(X)}$. T
     <span style="float: right;">[7]</span>
 </p>
 
-where, $\mathbb{E}[X] = \mu_{X}$. The first central moment is 0, and the second central moment is the variance of the random variable.<br>
+where $\mathbb{E}[X] = \mu_{X}$. The first central moment is 0, and the second central moment is the variance of the random variable.<br>
 
 The covariance of two random variables $X$ and $Y$ is defined by equation [8].
 
@@ -124,7 +124,7 @@ If $\mathbb{E}[XY] = 0$, $X$ and $Y$ are said to be **orthogonal**.
 
 ## Conditional Expectaion
 
-The conditional expectation of $X$ given random variable $Y$ as $y$ is defined by equation [10].
+The conditional expectation of $X$ given the random variable $Y$ as $y$ is defined by equation [10].
 
 <p align="center">
     <span>$\mathbb{E}[X \mid Y = y] = \int_{-\infty}^{\infty}xp_{X \mid Y}(x \mid y) dx$</span>
@@ -138,11 +138,11 @@ The conditional expectation of $X$ given the random variable $Y$ is defined by e
     <span style="float: right;">[11]</span>
 </p>
 
-<span style="color: red;">*Note that $\mathbb{E}[X \mid Y = y]$ is a real number as a function of the real number $y$, but $\mathbb{E}[X \mid Y]$ is a random variable as a function of the random variable $Y$.**</span>
+<span style="color: red;">Note that $\mathbb{E}[X \mid Y = y]$ is a real number as a function of the real number $y$, but $\mathbb{E}[X \mid Y]$ is a random variable as a function of the random variable $Y$.</span>
 
 <br><br>
 
-The conditional expectation of $X$ given that the random variable $Y$ as $y$ and the conditional expectation of $X$ given the random variable $Y$ are defined by equations [12] and [13], respectively.
+The conditional expectation of $X$ given the random variable $Y$ as $y$ and the conditional expectation of $X$ given the random variable $Y$ are defined by equations [12] and [13], respectively.
 
 <p align="center">
     <span>$\mathbb{E}[g(X) \mid Y=y] = \int_{-\infty}^{\infty}g(x)p_{X \mid Y}(x \mid y) dx$</span>
@@ -171,7 +171,7 @@ $\mathbb{E}[Var(X \mid Y)] = \mathbb{E}[\mathbb{E}[X^{2} \mid Y] - (\mathbb{E}[X
 
 ## Conditional variance
 
-The conditional variance of $X$ given random variable $Y$ as $y$ and the conditional variance of $X$ given the random variable $Y$ are defined by equations [15] and [16], respectively.
+The conditional variance of $X$ given the random variable $Y$ as $y$ and the conditional variance of $X$ given the random variable $Y$ are defined by equations [15] and [16], respectively.
 
 <center>
 
@@ -190,7 +190,7 @@ $Var(X \mid Y) = \mathbb{E}[(X - \mathbb{E}[X \mid Y])^{2} \mid y] $
 
 </center>
 
-As with [conditional expectaion](https://csh970605.github.io/posts/EValue_Variance/#conditional-expectaion), <span style="color: red;">**note that $Var[X \mid Y = y]$ is a real number as a function of the real number $y$, but $Var[X \mid Y]$ is a random variable as a function of the random variable $Y$.**</span>
+As with [conditional expectation](https://csh970605.github.io/posts/EValue_Variance/#conditional-expectaion), <span style="color: red;">**note that $Var[X \mid Y = y]$ is a real number as a function of the real number $y$, but $Var[X \mid Y]$ is a random variable as a function of the random variable $Y$.**</span>
 
 Additionally, since $\mathbb{E}(X \mid Y)$ is also a random variable, the expectation can be calculated by equation [17].
 
