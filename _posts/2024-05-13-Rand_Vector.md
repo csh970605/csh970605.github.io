@@ -76,7 +76,7 @@ $ = \frac{p_{XY}(x,y)}{p_{Y}(y)} = \frac{p_{X_{1}, \ldots , X_{n} \mid Y_{1}, \l
 
 </center>
 
-And $P_{X \mid Y}(x \mid y)$ is a multi variable function.
+And $p_{X \mid Y}(x \mid y)$ is a multivariate function.
 
 <br><br><br><br>
 
@@ -120,7 +120,7 @@ $\mathbb{E}[g(X)] = \int_{-\infty}^{\infty}g(x)p_{X}(x)dx$
 
 ## Covariance
 
-The covariance matrix $Cov(X)$ of random vector $X=[X_{1}, X_{2}, \ldots , X_{n}]^{T}$ is defined as symmetric matrix as formula [6].
+The covariance matrix $Cov(X)$ of the random vector $X=[X_{1}, X_{2}, \ldots, X_{n}]^{T}$ is defined as a symmetric matrix as shown in equation [6].
 
 <center>
 
@@ -148,35 +148,35 @@ And the correlation matrix of random vector $X$ and $Y$ is defined as:
 $\mathbb{E}[XY^{T}] = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} xy^{T}p_{XY}(x,y)dxdy$
 </center>
 
-And the inter-covariance matrix of random vector $X$ and $Y$ is defined as:
+The inter-covariance matrix of the random vectors $X$ and $Y$ is defined as follows:
 
 <center>
 
 $\mathbb{E}[(X-\mathbb{E}[X])(Y-\mathbb{E}[Y])^{T}] = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty}(x-\mathbb{E}[X])(y-\mathbb{E}[Y])^{T}p_{XY}(x,y)dxdy$
 </center>
 
-If the inter-covariance matrix of $X$ and $Y$ is 0, $X$ and $Y$ are in the **uncorrelated** to each other.<br>
-If $\mathbb{E}[X^{T}Y]=0$, $X$ and $Y$ are **orthogonal** to each other.<br>
+If the inter-covariance matrix of $X$ and $Y$ is 0, $X$ and $Y$ are **uncorrelated**<br>
+If $\mathbb{E}[X^{T}Y]=0$, $X$ and $Y$ are **orthogonal**.<br>
 
-If $p_{XY}(x,y)=p_{X}(x)p_{Y}(y)$, $X$ and $Y$ are independent.
+If $p_{XY}(x, y) = p_{X}(x)p_{Y}(y)$, $X$ and $Y$ are independent.
 
-The conditional expectation of $X$ that is given random variable $Y$ as $y$ is defined as formula [7].
+The conditional expectation of $X$ given the random variable $Y$ as $y$ is defined by equation [7].
 
 <p align="center">
     <span>$\mathbb{E}[X \mid Y = y] = \int_{-\infty}^{\infty}xp_{X \mid Y}(x \mid y) dx$</span>
     <span style="float: right;">[7]</span>
 </p>
 
-And conditional expectation of $X$ that is conditioning the random variable $Y$ is defined as formula [8].
+The conditional expectation of $X$ given the random variable $Y$ is defined by equation [8].
 
 <p align="center">
     <span>$\mathbb{E}[X \mid Y] = \int_{-\infty}^{\infty}xp_{X \mid Y}(x \mid Y) dx$</span>
     <span style="float: right;">[8]</span>
 </p>
 
-<span style="color: red;">**Note that $\mathbb{E}[X \mid Y=y]$ is a real number as a function of real number $y$, but $\mathbb{E}[X \mid Y]$ is a random variable as a function of random variable $Y$.**</span>
+<span style="color: red;">**Note that $\mathbb{E}[X \mid Y = y]$ is a real number as a function of the real number $y$, but $\mathbb{E}[X \mid Y]$ is a random variable as a function of the random variable $Y$.**</span>
 
-The conditional covariance matrix of $X$ that is given random variable $Y$ as $y$ and the conditional covariance matrix of $X$ That is conditioning the random variable $Y$ are defined as fromula [9], [10] respectively.
+The conditional covariance matrix of $X$ given the random variable $Y$ as $y$ and the conditional covariance matrix of $X$ given the random variable $Y$ are defined by equations [9] and [10], respectively.
 
 <p align="center">
     <span>$Cov[X \mid Y=y] = \mathbb{E}[(X - \mathbb{E}[X \mid Y=y])(X - \mathbb{E}[X \mid Y=y])^{T} \mid Y=y]$</span>
@@ -192,22 +192,22 @@ The conditional covariance matrix of $X$ that is given random variable $Y$ as $y
 
 # Characteristic function
 
-The characteristic function of random vector $X$ is defined as formula [11].
+The characteristic function of the random vector $X$ is defined by equation [11].
 
 <p align="center">
     <span>$\Phi_{X}(\omega) = \mathbb{E}[e^{j\omega^{T}X}]$</span>
     <span style="float: right;">[11]</span>
 </p>
 
-where $\omega =[\omega_{1}, \omega_{2}, \ldots , \omega_{n}]^{T}$ is a $n$-dimensional real number vector, $n$ is the dimension of $X$.<br>
-According to the definition of expectation, formula [11] can be written as formula [12].
+where $\omega =[\omega_{1}, \omega_{2}, \ldots, \omega_{n}]^{T}$ is an $n$-dimensional real number vector, and $n$ is the dimension of $X$.<br>
+According to the definition of expectation, equation [11] can be written as equation [12].
 
 <p align="center">
     <span>$\Phi_{X}(\omega) = \int_{-\infty}^{\infty}e^{j\omega^{T}X}p_{X}(x)dx$</span>
     <span style="float: right;">[12]</span>
 </p>
 
-As you can see at the formula [12], the characteristic function of random vector $X$ is the multi-dimensional inverse Fourier transform of probability density function. Thus, the probability of $X$ can be get by transforming the characteristic function as:
+As you can see in equation [12], the characteristic function of the random vector $X$ is the multi-dimensional inverse Fourier transform of the probability density function. Thus, the probability density function of $X$ can be obtained by transforming the characteristic function as follows:
 
 <center>
 
