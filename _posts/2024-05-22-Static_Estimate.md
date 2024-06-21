@@ -10,12 +10,11 @@ mermaid: true
 
 # Static Estimation
 
-A static estimation estimates the constant parameters which don't change over time. On the contrary, a dynamic estimation estimates the [state variables](https://csh970605.github.io/posts/Kalman_Filter/#state-variables) which change over time.
+Static estimation estimates constant parameters that don't change over time. In contrast, dynamic estimation estimates   [state variables](https://csh970605.github.io/posts/Kalman_Filter/#state-variables) that change over time.
 
-Then, let's see what the static estimation is.<br>
+Now, let's examine what static estimation is.<br>
 
-Let there be two unknown vectors, a constant vector $X \in \mathbb{R}^{n}$ and a measurement vector $Z \in \mathbb{R}^{p}$. Since these two vectors are related to each other, if you measure $Z$, you can obtain information about $X$. And it can be expressed as a general non-linear equation, additional measurement noise and linear eqaultion as follows respectively.:
-
+Let there be two unknown vectors, a constant vector $X \in \mathbb{R}^{n}$ and a measurement vector $Z \in \mathbb{R}^{p}$. Since these two vectors are related, measuring $Z$ provides information about $X$. They can be expressed as a general non-linear equation, an additional measurement noise, and a linear equation as follows, respectively:
 <center>
 
 $Z = h(X, V)$
@@ -25,30 +24,29 @@ $Z = h(X) + V$
 $Z = HX + V$
 </center>
 
-where $V$ is a [random vector](https://csh970605.github.io/posts/Rand_Vector/#random-vector) of sensor measurement noise and $H \in \mathbb{R}^{p \times n}$. 
-Since $V$ is a random vector, Z is a random vector also.
+where $V$ is a [random vector](https://csh970605.github.io/posts/Rand_Vector/#random-vector) of sensor measurement noise, and $H \in \mathbb{R}^{p \times n}$. Since $V$ is a random vector, $Z$ is also a random vector.
 
-For example, think about a simple system that estimates the 2D location of something with radar. Assume that the object is fixed at $(x, y)$ and radar can estimate the distance $R$ and azimuth $\Psi$. Then, $R$ and $\Psi$ are given as follows respectively:
+For example, consider a simple system that estimates the 2D location of an object using radar. Assume that the object is fixed at $(x, y)$ and the radar can estimate the distance $R$ and azimuth $\Psi$. Then, $R$ and $\Psi$ are given as follows, respectively:
 
 <center>
 
 $R = \sqrt{x^{2} + y^{2}}$
 
-$\Psi = tan ^{-1}(\frac{y}{x})$
+$\Psi = \tan^{-1}(\frac{y}{x})$
 </center>
 
-Since there are measurement noises always, the values of $R$ and $\Psi$ that radar estimates are mixed with noises. So, the measurement equations are :
+Since there are always measurement noises, the values of $R$ and $\Psi$ that the radar estimates are mixed with noises. Therefore, the measurement equations are:
 
 <center>
 
 $Z_{1} = R + V_{r} = \sqrt{x^{2} + y^{2}} + V_{r}$
 
-$Z_{2} = \Psi + V_{\Psi} = tan^{-1}(\frac{y}{x}) + V_{\Psi}$
+$Z_{2} = \Psi + V_{\Psi} = \tan^{-1}(\frac{y}{x}) + V_{\Psi}$
 </center>
 
 where $V_{r}$ and $V_{\Psi}$ are the measurement noises of distance and azimuth respectively.<br>
 
-Making those formulas as vector:
+Expressing these formulas as vectors:
 
 <center>
 
@@ -59,7 +57,7 @@ Z_{2}
 
 $= \begin{bmatrix}
 \sqrt{x^{2} + y^{2}} \\
-tan^{-1}(\frac{1}{2})
+tan^{-1}(\frac{y}{x})
 \end{bmatrix} + \begin{bmatrix}
 V_{r} \\
 V_{\Psi}
@@ -81,7 +79,7 @@ $Z(k) = H(k)X + V(k)$ : linear
 Where $k$ is time index.
 <br>
 
-Since measurements are measured independently, the measurement noises are independent or uncorrelated to time.<br>
+Since measurements are taken independently, the measurement noises are independent and uncorrelated over time.<br>
 
 The combination of measurement vectors that collect all random measurement vectors from $k=0$ to $k$ is expressed as follows:
 
@@ -109,7 +107,7 @@ $Z_{k} = z_{k}:\{Z(0)=z(0), Z(1) = z(1), \ldots , Z(k) = z(k) \}$
 
 ## Static Estimation Problem
 
-A static estimation problem is a problem that designs a estimator of a constant vectors which as a function of a combination of measurement vectors $z_{k}$ as follows:
+A static estimation problem is a problem that designs an estimator of constant vectors as a function of a combination of measurement vectors $z_{k}$ as follows:
 
 <center>
 
@@ -117,21 +115,20 @@ $\hat{x}(k) = g(z_{k})$
 </center>
 <br>
 
-If the measurement vectors are given as $Z_{k}=z_{k}$, the estimation values are deterministcic values, however if the measurement vectors are given as random vectors, the estimation values are random vectors also as follows:
-
+If the measurement vectors are given as $Z_{k}=z_{k}$, the estimation values are deterministic; however, if the measurement vectors are given as random vectors, the estimation values are also random vectors as follows:
 <center>
 
 $\hat{X}(k) = g(Z_{k})$
 </center>
 <br>
 
-Depending on what unkown nature X is defined, the estimator is divided into two methods:
+Depending on the unknown nature of $X$, the estimator is divided into two methods:
 
 + Bayesian approach
 
 + non-Bayesian approach
 
-The evaluation elements of a estimator is:
+The evaluation elements of an estimator are:
 
 + Bias
 
@@ -143,11 +140,11 @@ The evaluation elements of a estimator is:
 
 ### Bayesian Approach
 
-In a bayesian approach, $X$ is a random vector. Therefore, assume that we know a priori probability information of $X$.<br>
+In a Bayesian approach, $X$ is a random vector. Therefore, assume that we know a priori probability information of $X$.<br>
 
-A measurement vector $Z$ reinforce the probability information of $X$ more precisely.<br>
+A measurement vector $Z$ reinforces the probability information of $X$ more precisely.<br>
 
-[MAP estimator](https://csh970605.github.io/posts/MAP_Estimator) and [MMSE estimator](https://csh970605.github.io/posts/MMSE_Estimator) are a bayesian approach estimator. The basic form of bayesian approach estimator is :
+[MAP estimator](https://csh970605.github.io/posts/MAP_Estimator) and [MMSE estimator](https://csh970605.github.io/posts/MMSE_Estimator) are a Bayesian approach estimators. The basic form of Bayesian approach estimator is :
 
 <center>
 
@@ -157,9 +154,9 @@ A measurement vector $Z$ reinforce the probability information of $X$ more preci
 
 ### non-Bayesian Approach
 
-In a non-bayesian approach, $X$ is a unknown deterministic value. Therefore, asume that there is no a priori probability information, and the information of $X$ can only be obatined by a measurement vector $Z$.
+In a non-Bayesian approach, $X$ is an unknown deterministic value. Therefore, assume that there is no a priori probability information, and the information of $X$ can only be obtained by a measurement vector $Z$.
 
-[ML estimator](https://csh970605.github.io/posts/ML_Estimator) and [WLS estimator](https://csh970605.github.io/posts/WLS_Estimator) are a non-bayesian approach estimator. The basic form of bayesian approach estimator is :
+[ML estimator](https://csh970605.github.io/posts/ML_Estimator) and [WLS estimator](https://csh970605.github.io/posts/WLS_Estimator) are non-Bayesian approach estimators. The basic form of non-Bayesian approach estimators is:
 
 <center>
 
@@ -169,29 +166,29 @@ In a non-bayesian approach, $X$ is a unknown deterministic value. Therefore, asu
 
 # Bias
 
-When a unkown constant vector $X$ is a random vector and probability information is given as [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) $p_{X}(x)$, if there is a estimator that $\mathbb{E}[\hat{X}] = \mathbb{E}[X]$, it is called a **unbaised estimator**. Or, if the estimator is $\mathbb{E}[\hat{X}] = x$ where $X$ is a unknown constant vector which is $x$, it is also called a **unbaised estimator**.<br>
-When $k \rightarrow \infty$, if $\mathbb{E}[\hat{X}] = \mathbb{E}[X] , \mathbb{E}[\hat{X}] = x$ are established, it is called a **asymptotically unbiased estimator**.
+When an unknown constant vector $X$ is a random vector and probability information is given as a [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) $p_{X}(x)$, if there is an estimator such that $\mathbb{E}[\hat{X}] = \mathbb{E}[X]$, it is called an **unbaised estimator**. Alternatively, if the estimator is $\mathbb{E}[\hat{X}] = x$ where $X$ is an unknown constant vector which is $x$, it is also called an **unbaised estimator**.<br>
+When $k \rightarrow \infty$, if $\mathbb{E}[\hat{X}] = \mathbb{E}[X]$ or $\mathbb{E}[\hat{X}] = x$ are established, it is called an **asymptotically unbiased estimator**.
 
 <br><br>
 
 # Consistency
 
-When a unkown constant vector $X$ is a random vector, if there is a estimator that $lim_{k \rightarrow \infty}\mathbb{E}[(X-\hat{X}(k))^{T}(X-\hat{X}(k))]$, it is called a **consistent estimator**. Or, if the estimator is $lim_{k \rightarrow \infty}\mathbb{E}[(x-\hat{X}(k))^{T}(x-\hat{X}(k))]$ where $X$ is a unknown constant vector which is $x$, it is also called a **consistent estimator**.
+When an unknown constant vector $X$ is a random vector, if there is an estimator such that $\lim_{k \rightarrow \infty}\mathbb{E}[(X-\hat{X}(k))^{T}(X-\hat{X}(k))] = 0$, it is called a **consistent estimator**. Alternatively, if the estimator is $\lim_{k \rightarrow \infty}\mathbb{E}[(x-\hat{X}(k))^{T}(x-\hat{X}(k))] = 0$ where $X$ is an unknown constant vector which is $x$, it is also called a **consistent estimator**.
 
 <br><br>
 
 # Covariance of Estimation Errors
 
-Covariance of estimation errors is used to evaluate the quality. That is, the smaller covariance value, the better estimate value.
+Covariance of estimation errors is used to evaluate the quality of an estimator. That is, the smaller the covariance value, the better the estimate.
 
-When a unkown constant vector $X$ is a random vector, the covariance of estimation errors of estimator without bias is given as:
+When an unknown constant vector $X$ is a random vector, the covariance of estimation errors of an unbiased estimator is given as:
 
 <center>
 
 $\mathbb{E}[(X-\hat{X})(X-\hat{X})^{T}]$
 </center>
 
-and when $X$ is a unknown constant vector which is $x$, the covariance of estimation errors of estimator without bias is given as:
+When $X$ is an unknown constant vector which is $x$, the covariance of estimation errors of an unbiased estimator is given as:
 
 <center>
 
