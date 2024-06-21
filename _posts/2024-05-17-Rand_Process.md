@@ -36,14 +36,14 @@ It is also simply called a **random process**.
 
 ## Sample Function
 
-A random process is usually denoted with capital letters, and the corresponding time function is denoted with lowercase letters. That is, if the time function of a random process mapping the probability experiment result $\mathbb{E}$ is $x(t)$, the random process is written as $X(T, e) = x(t, e)$ or $X(t) = x(t)$.<br>
+A random process is usually denoted with capital letters, and the corresponding time function is denoted with lowercase letters. That is, if the time function of a random process mapping the probability experiment result $e$ is $x(t)$, the random process is written as $X(t, e) = x(t, e)$ or $X(t) = x(t)$.<br>
 
 $x(t)$ represents the state of the random process at time $t$, and it is called a **sample function**. More specifically, if $e$ is fixed as $e = e_{1}$, the random process becomes the sample function $X(t, e_{1}) = x(t, e_{1})$. For another example, if $e$ is fixed as $e = e_{2}$, the random process becomes the sample function $X(t, e_{2}) = x(t, e_{2})$.<br>
 
-As you can see in the example, a sample function is a deterministic function and all the samples are called an **ensemble**.
+As you can see in the example, a sample function is a deterministic function, and all the samples are called an **ensemble**.
 <br><br>
 
-If time is discrete, the random process is called a **discrete-time** or **random sequence**. It is expressed as :
+If time is discrete, the random process is called a **discrete-time random process** or **random sequence**. It is expressed as :
 
 <center>
 
@@ -63,9 +63,9 @@ Apart from these, the other definitions of a random sequence are the same as tho
 
 ## Mean Function
 
-The [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) of a random process is a function of time because it can vary from time to time, and it is written as $p_{X}(x(t))$. At the time $t = t_{1}$, the expectation or ensemble mean function is defined as the expectation of the elements of a random vector, respectively.
+The [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) of a random process is a function of time because it can vary from time to time, and it is written as $p_{X}(x(t))$. At time $t = t_{1}$, the expectation or ensemble mean function is defined as the expectation of the elements of a random vector.
 
-This means that,
+This means that
 
 <center>
 
@@ -112,9 +112,9 @@ A stationary process means that the partial or entire probabilistic feature of a
 
 In stationary processes, there are two types:
 
-+ [Strict-sense stationary(SSS)](https://csh970605.github.io/posts/Rand_Process/#strict-sense-stationarysss)
++ [Strict-sense stationary (SSS)](https://csh970605.github.io/posts/Rand_Process/#strict-sense-stationarysss)
 
-+ [Wide-sense stationary(WSS)](https://csh970605.github.io/posts/Probability_RandomVector/#wide-sense-stationarywss)
++ [Wide-sense stationary (WSS)](https://csh970605.github.io/posts/Probability_RandomVector/#wide-sense-stationarywss)
 
 <br><br>
 
@@ -169,7 +169,7 @@ In scalar WSS, the features of the auto-correlation function $R_{XX}(\tau)$ of $
 <br><br>
 <br><br>
 
-# Power Spectral Density(PSD)
+# Power Spectral Density (PSD)
 
 The power spectral density $S_{XX}(\omega)$ of a WSS random process is defined as the Fourier transform of the auto-correlation function. The function $S_{XX}(\omega)$ is:
 
@@ -287,7 +287,7 @@ At every time point $t$ or $k$, if the probability density function of white noi
 An ergodic process in the mean means that a sample function extracted from a stationary random process randomly includes all probabilistic information of the random process. Although it is very hard to prove whether it is an ergodic process or not, <span style="color: red;">note that white noise is an ergodic process.</span>
 
 
-A time average and time correlation of any deterministic function $x(t)$ are defined as formula [1] and formula [2], respectively.
+A time average and time correlation of any deterministic function $x(t)$ are defined as equations [1] and [2], respectively.
 
 <p align="center">
     <span>&lt; $x(t)$ &gt; $=lim_{T \rightarrow \infty} \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}x(t)dt$</span>
@@ -301,7 +301,7 @@ A time average and time correlation of any deterministic function $x(t)$ are def
 If $x(t)$ is a sample function of a stationary process, and if the ensemble mean $\mathbb{E}[X(t)]$ of $X(t)$ equals the time average $\langle x(t) \rangle$, $X(t)$ is called an **ergodic process in the mean**.<br>
 Also, if the ensemble correlation $\mathbb{E}[X(t)X^{T}(t+\tau)]$ of $X(t)$ equals the time correlation $\langle x(t)x^{T}(t+\tau) \rangle$, $X(t)$ is called a **correlation ergodic process in the mean**.<br>
 
-In random sequence, time average and time correlation is defined as formula [3] and formula [4] respectively.
+In a random sequence, time average and time correlation are defined as equations [3] and [4], respectively.
 
 <p align="center">
     <span>&lt; $x(k)$ &gt; $=lim_{T \rightarrow \infty} \frac{1}{2N+1}\sum_{k=-n}^{N}x(k)$</span>
@@ -314,7 +314,7 @@ In random sequence, time average and time correlation is defined as formula [3] 
 
 <br><br><br><br>
 
-# Idependent, Identically Distributed(IID)
+# Independent, Identically Distributed (IID)
 
 If all random vectors that constitute a random process $X(t)$ are independent and have the same probability density function, $X(t)$ is called **IID**.<br>
 If all random vectors that constitute a random sequence $X(t)$ are independent and have the same probability density function, $X(t)$ is called an **IID sequence**.
@@ -323,7 +323,7 @@ If all random vectors that constitute a random sequence $X(t)$ are independent a
 
 # Markov Process
 
-A Markov process is a random process in which, given the current probability information, the future and the past are irrelevant or conditionally independent.<br>
+A Markov process is a random process in which, given the current probability information, the future and the past are irrelevant or conditionally independent of each other.<br>
 That is, when the probability distribution of a random process $X(t)$ is given at a specific time point $t_{1}$, if the probability distribution of $X(t)$ at time point $t > t_{1}$ is irrelevant to the probability distribution of $X(s)$ at time point $s < t_{1}$, $X(t)$ is defined as a **Markov process**.<br>
 A Markov process is expressed probabilistically as follows:
 
@@ -333,7 +333,7 @@ $p_{X}(x(t) \mid x(s) \leq t_{1}) = p_{X}(x(t) \mid x(t_{1})), \ \ \forall t > t
 </center>
 <br>
 
-Similarly to the Markov process, the definition of a Markov sequence is determined by the probability distribution of one step prior. The formula for the Markov sequence $X(k)$ using the probability density function and an image of the Markov sequence is:
+Similar to the Markov process, the definition of a Markov sequence is determined by the probability distribution of the preceding step. The equation for the Markov sequence $X(k)$ using the probability density function and an image of the Markov sequence is:
 
 <center>
 
@@ -344,9 +344,9 @@ $p_{X}(s(k) \mid x(k-1), x(k-2), \ldots , x(0)) = p_{X}(x(k) \mid x(k-1)), \ \ \
 
 <br><br><br><br>
 
-# Differentiation of Random Process
+# Differentiation of a Random Process
 
-If a random process $X(t)$ satisfies the following formula, $X(t)$ is called **continuous in the mean square sense** at time $t=t_{0}$.
+If a random process $X(t)$ satisfies the following equation, $X(t)$ is called **continuous in the mean square sense** at time $t=t_{0}$.
 
 <center>
 
