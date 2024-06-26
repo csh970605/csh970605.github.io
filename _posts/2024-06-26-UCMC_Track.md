@@ -104,7 +104,7 @@ Assuming that the camera's motion-induced acceleration is the source of noise, U
 
 $\left\{\begin{matrix}
 \Delta x = \frac{\sigma \times (\Delta t)^2}{2}\\ \Delta v = \sigma \times \Delta t
-\end{matrix}\right$
+\end{matrix}\right.$
 
 </center>
 
