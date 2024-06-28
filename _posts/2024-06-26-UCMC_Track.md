@@ -375,7 +375,7 @@ d\gamma = -(\frac{1}{b_{3}})^{2}(a_{31}du + a_{32}dv)
 \end{matrix}\right.$
 </center>
 
-Combine two equations($\left\{\begin{matrix}
+Combine two equations( $\left\{\begin{matrix}
 dx = \gamma(a_{11}du + a_{12}dv) + b_{1}d\gamma \\
 dy = \gamma(a_{21}du+a_{22}dv) + b_{2}d\gamma \\
 d\gamma = -(\frac{1}{b_{3}})^{2}(a_{31}du + a_{32}dv)
