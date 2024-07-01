@@ -2,8 +2,8 @@
 title: Hungarian Method
 author: SeHoon
 date: 2024-04-16 10:02:30 +0900
-categories: [Papers, DeepLearning]
-tags: [Papers, DeepLearning, MultiObjectTracking]
+categories: [Papers, Tracking]
+tags: [Papers, Tracking, MultiObjectTracking]
 math: true
 mermaid: true
 ---
