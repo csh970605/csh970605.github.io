@@ -34,14 +34,11 @@ Assume that a cost matrix consists of $n \times n$ elements. Each row represents
 
 Assume that there is a cost matrix:
 
-<center>
-
 | | Task A | Task B | Task C |
 |---|---|---|---|
 | resource 1 | 4 | 1 | 3 |
 | resource 2 | 2 | 0 | 5 |
 | resource 3 | 5 | 3 | 4 |
-</center>
 
 Follow the steps above:
 
@@ -55,14 +52,13 @@ Follow the steps above:
 
     The resulting matrix is:
 
-    <center>
 
     | | Task A | Task B | Task C |
     |---|---|---|---|
     | resource 1 | 3 | 0 | 2 |
     | resource 2 | 2 | 0 | 5 |
     | resource 3 | 2 | 0 | 1 |
-    </center>
+
 
 2. Reduce columns:
 
@@ -74,26 +70,25 @@ Follow the steps above:
 
     The resulting matrix is:
 
-    <center>
+
 
     | | Task A | Task B | Task C |
     |---|---|---|---|
     | resource 1 | 1 | 0 | 0 |
     | resource 2 | 0 | 0 | 0 |
     | resource 3 | 1 | 5 | 0 |
-    </center>
+
 
 Now, we can assign resource 1 to Task B, resource 2 to Task A, and resource 3 to Task C.
 
 Note that if the cost matrix is:
 
-<center>
+
 
 | | Task A | Task B | Task C |
 |---|---|---|---|
 | resource 1 | 0 | 0 | 0 |
 | resource 2 | 0 | 0 | 0 |
 | resource 3 | 1 | 5 | 0 |
-</center>
 
 we can assign tasks as we want, such as assigning resource 1 to Task A, resource 2 to Task B, and resource 3 to Task C.
