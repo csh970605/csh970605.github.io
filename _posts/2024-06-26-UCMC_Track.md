@@ -162,11 +162,13 @@ y \\
 
 where
 
-$A$ = $\begin{bmatrix}
+$$
+A = \begin{bmatrix}
 \theta_{11} & \theta_{12} & \theta_{13}z_{0} + \theta_{14} \\
 \theta_{21} & \theta_{22} & \theta_{23}z_{0} + \theta_{24} \\
 \theta_{31} & \theta_{32} & \theta_{33}z_{0} + \theta_{34} \\
-\end{bmatrix}$.
+\end{bmatrix}.
+$$
 
 Let $b = A^{-1}\begin{bmatrix}
 u \\
