@@ -170,15 +170,26 @@ A = \begin{bmatrix}
 \end{bmatrix}.
 $$
 
-Let $b = A^{-1}\begin{bmatrix}
+<center>
+
+Let $b$
+</center>
+
+$$
+= A^{-1}\begin{bmatrix}
 u \\
 v \\
 1
-\end{bmatrix} = \begin{bmatrix}
+\end{bmatrix}
+$$
+
+$$
+= \begin{bmatrix}
 b1 \\
 b2 \\
 b3
-\end{bmatrix}$
+\end{bmatrix}
+$$
 
 $\therefore$ the physical coordinates can be calculated from pixel coordinates as:
 
