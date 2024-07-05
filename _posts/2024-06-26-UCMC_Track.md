@@ -94,16 +94,24 @@ where
 
 + $\gamma_{0}$ : A scale factor.
 
-+ $K_{i}$ : The intrinsic matrix $\begin{bmatrix}
++ $K_{i}$ : The intrinsic matrix 
+
+$$
+\begin{bmatrix}
 f_{x} & 0 & u_{0} & 0 \\
 0 & f_{y} & v_{0} & 0 \\
 0 & 0 & 1 & 0
-\end{bmatrix}$.
+\end{bmatrix}.
+$$
 
-+ $K_{o}$ : The extrinsic matrix $\begin{bmatrix}
++ $K_{o}$ : The extrinsic matrix 
+
+$$
+\begin{bmatrix}
 R & T \\
 0 & 1
-\end{bmatrix}$.
+\end{bmatrix}.
+$$
 
 Thus, the equation above can be expressed as:
 <center>
@@ -336,6 +344,7 @@ C = \begin{bmatrix}
 $$
 
 $a_{11} \ldots a_{32}$ : Elements of a projection matrix, which is the product of the camera intrinsic and extrinsic parameters, the inverse of matrix <br>
+
 $$
 A^{-1} = \begin{bmatrix}
 a_{11} & a_{12} & a_{13} \\
