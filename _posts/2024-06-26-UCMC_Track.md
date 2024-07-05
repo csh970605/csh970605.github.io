@@ -328,12 +328,12 @@ $R_{k} = CR_{k}^{uv}C^{T}$
 
 where
 
-+ $C = \begin{bmatrix}
+$C = \begin{bmatrix}
 \gamma a_{11} - a_{31} \gamma x & \gamma a_{12} - a_{32} \gamma x \\
 \gamma a_{21} - a_{31} \gamma y & \gamma a_{22} - a_{32} \gamma y
-\end{bmatrix}$
+\end{bmatrix}$<br>
 
-+ $a_{11} \ldots a_{32}$ : Elements of a projection matrix, which is the product of the camera intrinsic and extrinsic parameters, the inverse of matrix $A^{-1} = \begin{bmatrix}
+$a_{11} \ldots a_{32}$ : Elements of a projection matrix, which is the product of the camera intrinsic and extrinsic parameters, the inverse of matrix $A^{-1} = \begin{bmatrix}
 a_{11} & a_{12} & a_{13} \\
 a_{21} & a_{22} & a_{23} \\
 a_{31} & a_{32} & a_{33} \\
