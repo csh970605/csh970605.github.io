@@ -335,11 +335,14 @@ C = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-$a_{11} \ldots a_{32}$ : Elements of a projection matrix, which is the product of the camera intrinsic and extrinsic parameters, the inverse of matrix $A^{-1} = \begin{bmatrix}
+$a_{11} \ldots a_{32}$ : Elements of a projection matrix, which is the product of the camera intrinsic and extrinsic parameters, the inverse of matrix 
+$$
+A^{-1} = \begin{bmatrix}
 a_{11} & a_{12} & a_{13} \\
 a_{21} & a_{22} & a_{23} \\
 a_{31} & a_{32} & a_{33} \\
-\end{bmatrix}$.
+\end{bmatrix}.
+$$
 
 It is important to highlight that the mapped distribution exhibits a strong correlation since $R_{k}$ is non-diagonal.
 
