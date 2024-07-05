@@ -335,7 +335,7 @@ C = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-$a_{11} \ldots a_{32}$ : Elements of a projection matrix, which is the product of the camera intrinsic and extrinsic parameters, the inverse of matrix 
+$a_{11} \ldots a_{32}$ : Elements of a projection matrix, which is the product of the camera intrinsic and extrinsic parameters, the inverse of matrix <br>
 $$
 A^{-1} = \begin{bmatrix}
 a_{11} & a_{12} & a_{13} \\
