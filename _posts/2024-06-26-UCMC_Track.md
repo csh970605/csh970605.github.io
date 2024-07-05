@@ -38,6 +38,11 @@ To make observation and calculation more convenient, the choice was made to use 
 
 $\mathbf{x} = [x, \dot{x}, y, \dot{y}]^{\top}$
 </center>
+where 
+
++ $\dot{x}$ : Rate of change of $x$.
+
++ $\dot{y}$ : Rate of change of $y$.
 
 According to the [linear camera model](https://www.eecis.udel.edu/~jye/lab_research/ECCV/ECCV04.pdf), the mapping relationship between the ground plane coordinates $x$ and $y$ and the image plane coordinates $u$ and $v$ can be expressed as
 
