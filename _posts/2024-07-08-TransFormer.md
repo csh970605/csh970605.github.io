@@ -14,7 +14,7 @@ mermaid: true
 
 Attention mechanisms have become an integral part of compelling sequence modeling and transduction models in various tasks, allowing modeling of dependencies without reagrd to their distance in the input or output sequences. However, typical attention mechanisms are used in conjunction with a RNN.<br>
 
-o use an attention mechanism itself, this paper proposes the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output.
+To use an attention mechanism itself, this paper proposes the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output.
 <br><br><br><br>
 
 # Methology
