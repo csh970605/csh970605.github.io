@@ -1,7 +1,7 @@
 ---
 title: Transformer
 author: SeHoon
-date: 2024-06-26 10:00:30 +0900
+date: 2024-07-08 10:00:30 +0900
 categories: [Papers, DeepLearning]
 tags: [Papers, DeepLearning, NLP]
 math: true
