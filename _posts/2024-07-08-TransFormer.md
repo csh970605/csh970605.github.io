@@ -68,7 +68,7 @@ An attention function is described as mapping a query and a set of key-value pai
 
 ### Scaled Dot-Product Attention
 
-The input consists of queries and keys of dimension $d_{k}$, and values of dimension $d_{v}$. Transformer computes the dot products of the query with all keys, divides each by $\sqrt{d_{k}}$, and apply a softmax function to obtain the weights on the values.<br>
+The input consists of queries and keys of dimension $d_{k}$, and values of dimension $d_{v}$. Transformer computes the dot products of the query with all keys, divides each by $\sqrt{d_{k}}$, and applies a softmax function to obtain the weights on the values.<br>
 
 In practice, transformer computes the attention function on a set of queries simultaneously, packed together into a matrix $Q$. The keys and values are also packed together into matrices $K$ and $V$. Then, transformer computes the matrix of outputs as:
 
@@ -77,7 +77,7 @@ In practice, transformer computes the attention function on a set of queries sim
 $\text{Attention}(Q, K, V) = \text{softmax}\frac{QK^{T}}{\sqrt{d_{k}}}V$
 </center>
 
-The strcuture of the scaled dot-product attention is:
+The structure of the scaled dot-product attention is:
 
 <center>
 
@@ -88,11 +88,42 @@ The strcuture of the scaled dot-product attention is:
 
 ### Multi-Head Attention
 
+The transformer found it beneficial to linearly project the queries, keys, and values $h$ times with different, learned linear projections to $d_{k}, d_{k}, \text{and } d_{v}$ dimensions, respectively. On each of these projected versions of queries, keys and values then perform the attention function in parallel, yielding $d_{v}$-dimensional output values. These are concatenated and once again projected, resulting in the final values, as :
+
+<center>
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/6a64eda0-a82b-493b-b117-29afdc493989">
+</center>
+
+Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions. The pseudocode of the multi-head attention is:
+
+<center>
+
+$\text{MultiHead}(Q, K, V) = \text{Concat}(\text{head}_{1}, \text{head}_{2}, \text{head}_{h}) W^{O}$<br>
+
+where $\text{head}_{i} = \text{Attention}(QW_{i}^{Q}, KW_{i}^{K}, VW_{i}^{V})$
+</center>
+
+where
+
++ $W_{i}^{Q} \in \mathbb{R}^{d_{model}\times d_{k}}$
+
++ $W_{i}^{K} \in \mathbb{R}^{d_{model}\times d_{k}}$
+
++ $W_{i}^{V} \in \mathbb{R}^{d_{model}\times d_{v}}$
+
++ $W^{O} \in \mathbb{R}^{d_{model}\times hd_{v}}$
+
 <br><br>
 
-## Position-wise Feed-Forward Networks
+## Position-wise Feed-Forward Networks (FFN)
 
+Each sub-layer in the transformer encoder and decoder contains a fully connected feed-forward network, which consists of two linear layers with a [ReLU](https://csh970605.github.io/posts/Activation_Function/#rectifier-function) activation in between. The equation of the FFN is:
 
+<center>
+
+$\text{FFN}(x) = \max(0, xW_{1} + b_{1})W_{2} + b_{2}$
+</center>
 <br><br>
 
 ## Embeddings and Softmax
