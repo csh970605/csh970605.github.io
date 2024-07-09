@@ -57,20 +57,52 @@ In this paper, they introduce 6 main methods which are:
 
 ## Attention
 
-<br><Br>
+An attention function is described as mapping a query and a set of key-value pairs to an output, where a query, keys, values, and an output are all vectors. The output is computed as a weighted sum of the values, where the weight assigned to each value is computed by a compatibility function of the query with the corresponding key. Two main features of attention are:
+
++ Scaled Dot-Product Attention
+    
+
++ Multi-Head Attention
+
+<br><br>
+
+### Scaled Dot-Product Attention
+
+The input consists of queries and keys of dimension $d_{k}$, and values of dimension $d_{v}$. Transformer computes the dot products of the query with all keys, divides each by $\sqrt{d_{k}}$, and apply a softmax function to obtain the weights on the values.<br>
+
+In practice, transformer computes the attention function on a set of queries simultaneously, packed together into a matrix $Q$. The keys and values are also packed together into matrices $K$ and $V$. Then, transformer computes the matrix of outputs as:
+
+<center>
+
+$\text{Attention}(Q, K, V) = \text{softmax}\frac{QK^{T}}{\sqrt{d_{k}}}V$
+</center>
+
+The strcuture of the scaled dot-product attention is:
+
+<center>
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/86d24315-984d-44a1-9700-e544ef1ff9e4">
+</center>
+
+<br><br>
+
+### Multi-Head Attention
+
+<br><br>
 
 ## Position-wise Feed-Forward Networks
 
-<br><Br>
+
+<br><br>
 
 ## Embeddings and Softmax
 
-<br><Br>
+<br><br>
 
 ## Positional Encoding
 
-<br><Br>
+<br><br>
 
 ## Model Architecture
 
-<br><Br>
+<br><br>
