@@ -10,6 +10,7 @@ mermaid: true
 
 
 # What are Activation Functions?
+
 Activation functions are used in 3rd step in the image below.
 <center>
 <img src="https://user-images.githubusercontent.com/28240052/230564680-e8828b3e-fba4-4262-ab7e-5cf4ead2d0e9.png" width=600>
@@ -17,13 +18,11 @@ Activation functions are used in 3rd step in the image below.
 <br><br><br><br>
 
 # Types of Activation Functions
-<br>
 
 There are 5 types of activation functions:<br><br><br>
 
 ## Threshold function
----
-<br>
+
 The threshold function returns 0 if the value is less than 0, and returns 1 if the value is greater than 0. It's a type of yes/no function. To express it in a formula:
 <br>
 
@@ -40,8 +39,7 @@ And the graph will be:<br>
 </center><br><br>
 
 ## Sigmoid function
----
-<br>
+
 The sigmoid function is useful in the final layer (output layer), especially when predicting probabilities. To express it in a formula:
 <br>
 
@@ -57,9 +55,8 @@ And the graph will be:<br>
 <img src="https://user-images.githubusercontent.com/28240052/230562601-806d267d-1331-4c32-ab90-5f61f091f074.png" width=400>
 </center><br><br>
 
-## Rectifier function
----
-<br>
+## Rectifier function (ReLU)
+
 The rectifier function is one of the most popular functions for ANN. It returns 0 if the value is less than 0, and returns the value if the value is more than 0. To express it in a formula:
 <br>
 
@@ -76,8 +73,7 @@ And the graph will be:<br>
 </center><br><br>
 
 ## Hyperbolic Tangent(tanh) function
----
-<br>
+
 It is similar to the sigmoid function, but it goes below 0. To express it in a formula:
 <br>
 
@@ -94,8 +90,7 @@ And the graph will be:<br>
 </center><br><br>
 
 ## Mish Activation
----
-<br>
+
 Mish avoids saturation due to capping because the graph tends towards positive infinity. Also, it can decrease overfitting, and strong regularization may appear because it is bounded below.<br>
 
 <center>
@@ -109,8 +104,7 @@ $\phi(x)\ =\ xtanh(softplus(x))\ =\ xtanh(ln(1+e^{x}))$
 </center><br><br>
 
 ## SiLU Activation
----
-<br>
+
 The SiLU activation function avoids saturation due to capping because the graph tends towards positive infinity. It can also decrease overfitting, and strong regularization may appear because it is bounded below.<br>
 <center>
 
