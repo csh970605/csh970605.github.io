@@ -128,6 +128,35 @@ $\text{FFN}(x) = \max(0, xW_{1} + b_{1})W_{2} + b_{2}$
 
 ## Embeddings and Softmax
 
+Transformer uses learned embeddings to convert the input tokens and output tokens to vectors of dimension $d_{model}$. For example, in an encoder, assume that the input vector is "The cat sat on the mat", and all words are converted as:
+
++ "The" $\rightarrow$ [0.1, 0.2, 0.3, 0.4]
+
++ "cat" $\rightarrow$ [0.5, 0.6, 0.7, 0.8]
+
++ "sat" $\rightarrow$ [0.9, 1.0, 1.1, 1.2]
+
++ "on" $\rightarrow$ [1.3, 1.4, 1.5, 1.6]
+
++ "the" $\rightarrow$ [1.7, 1.8, 1.9, 2.0]
+
++ "mat" $\rightarrow$ [2.1, 2.2, 2.3, 2.4]
+<br>
+
+In the same way, in a decoder, assume that the output vector is "\<start> Hell", and all words including the \<start> token are converted as:
+
++ "\<start>" $\rightarrow$ [0.1, 0.2, 0.3, 0.4]
+
++ "H" $\rightarrow$ [0.5, 0.6, 0.7, 0.8]
+
++ "e" $\rightarrow$ [0.9, 1.0, 1.1, 1.2]
+
++ "l" $\rightarrow$ [1.3, 1.4, 1.5, 1.6]
+
++ "l" $\rightarrow$ [1.3, 1.4, 1.5, 1.6]
+
+Through the output vector, to predict next-token probabilities, the transformer uses learned two linear layers and softmax function. The two linear layers have same the same weights, which are multiplied by $\sqrt{d_{model}}$.
+
 <br><br>
 
 ## Positional Encoding
