@@ -161,8 +161,34 @@ Through the output vector, to predict next-token probabilities, the transformer 
 
 ## Positional Encoding
 
+Since the transformer doesn't contain recurrence and convolution, it is hard to make use of the order of the sequence. The transformer must inject some information about the relative or absolute position of the tokens in the sequence. The positional encodings are derived to inject some information about the relative or absolute position of the tokens at the bottoms of the encoder and decoder stacks. The positional encodings have the same dimension $d_{model}$ as the embeddings, so that the two can be summed.
+
+In the transformer, sine and cosine functions of different frequencies are used as:
+
+<center>
+
+$PE_{(pos, 2i)} = \sin(pos/10000^{\frac{2i}{d_{model}}})$<br>
+
+$PE_{(pos, 2i+1)} = \cos(pos/10000^{\frac{2i}{d_{model}}})$
+</center>
+
+where
+
++ $pos$ : The position.
+
++ $i$ : The dimension.
 <br><br>
 
 ## Model Architecture
 
-<br><br>
+<center>
+
+<img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/9ec25be1-063d-4d81-a087-3c37ea0c5a08">
+</center>
+
+<br><br><br><br>
+
+
+# Conclusion
+
+In traditional NLP, RNN or [LSTM](https://csh970605.github.io/posts/LSTM/) models are used to predict the outputs. However, these models are often heavy and weak at generating perfect outputs. Transformer, which is introudced in this paper, makes NLP more efficient and powerful, enabling the creation of advanced language models such as [BERT](https://arxiv.org/abs/1810.04805) and [GPT](https://arxiv.org/abs/2005.14165).
