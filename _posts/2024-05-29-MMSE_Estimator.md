@@ -79,7 +79,7 @@ Because the mean of $\tilde{X}$ is 0, the expectation value of the estimation va
 
 ### [Covariance](https://csh970605.github.io/posts/Rand_Vector/#covariance) of The Estimation Error
 
-The covariance of the estimation error $\tilde{X}$ is given as the mean of the conditional covariance of $X$ conditioned on the set of measurement vectors $Z_{k}$ as follows:
+The covariance of the estimation error $\tilde{X}$ is given as the mean of the conditional covariance of $X$ conditioned on the set of measurement vectors $Z_{k}$, as follows:
 
 <center>
 
@@ -103,3 +103,26 @@ $= \mathbb{E}[(X-\mathbb{E}[X \mid Z_{k}=z_{k}])(X-\mathbb{E}[X \mid Z_{k}=z_{k}
 
 $=P_{XX \mid Z_{k}}$
 </center>
+
+Also, the estimation error is always orthogonal with $g_{j}$ which is composed by measurement variable. It is written as an equation as :
+
+<center>
+
+$\mathbb{E}[X - \hat{X}^{MMSE}g^{T}(Z)] = 0$
+</center>
+
+where $Z$ is a measurement vector.
+
+To prove this, 
+<center>
+
+$\mathbb{E}[(x - \hat{X}^{MMSE}g^{T}(Z))] = \mathbb{E}[Xg^{T}(Z)]-\mathbb{E}[\mathbb{E}[X \mid Z]g^{T}(Z)]$<br>
+
+$=\mathbb{E}[Xg^{T}(Z)]-\mathbb{E}[\mathbb{E}[Xg^{T}(Z) \mid Z]]$<br>
+
+$= \mathbb{E}[Xg^{T}(Z)] - \mathbb{E}[Xg^{T}(Z)] = 0$
+</center>
+
+Then, let $g^{T}(Z) = Z$, $\mathbb{E}[X-\hat{X}^{MMSE}Z^{T}] = 0$.
+
+According to the equation above, $\hat{X}^{MMSE}_{i}$ is given as the value of projecting $X_{i}$ into a span consisting of a linear combination of measurement variables $Z_{i}$ and the measurement error is orthogonal to this span.
