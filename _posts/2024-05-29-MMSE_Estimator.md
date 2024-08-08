@@ -126,7 +126,7 @@ $= \mathbb{E}[Xg^{T}(Z)] - \mathbb{E}[Xg^{T}(Z)] = 0$
 Then, let $g^{T}(Z) = Z$, $\mathbb{E}[X-\hat{X}^{MMSE}Z^{T}] = 0$.<br>
 
 
-According to the equation above,$\hat{X}_{i}^{MMSE}$ is given as the value of projecting $X_{i}$ into a span consisting of a linear combination of measurement variables $Z_{i}$ and the measurement error is orthogonal to this span.
+According to the equation above, $$\hat{X}_{i}^{MMSE}$$ is given as the value of projecting $X_{i}$ into a span consisting of a linear combination of measurement variables $Z_{i}$ and the measurement error is orthogonal to this span.
 
 <br><br>
 
