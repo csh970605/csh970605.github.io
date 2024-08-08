@@ -126,7 +126,7 @@ $= \mathbb{E}[Xg^{T}(Z)] - \mathbb{E}[Xg^{T}(Z)] = 0$
 Then, let $g^{T}(Z) = Z$, $\mathbb{E}[X-\hat{X}^{MMSE}Z^{T}] = 0$.<br>
 
 
-According to the equation above, $\hat{X}_{i}^{MMSE}$ 
+According to the equation above, $\hat{X}_{i}^{MMSE}$ is given as the value of projecting $X_{i}$ 
 
 <br><br>
 
