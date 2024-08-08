@@ -125,7 +125,7 @@ $= \mathbb{E}[Xg^{T}(Z)] - \mathbb{E}[Xg^{T}(Z)] = 0$
 
 Then, let $g^{T}(Z) = Z$, $\mathbb{E}[X-\hat{X}^{MMSE}Z^{T}] = 0$.
 
-According to the equation above, $\hat{X}^{MMSE}_{i}$ is given as the value of projecting $X_{i}$ into a span consisting of a linear combination of measurement variables $Z_{i}$ and the measurement error is orthogonal to this span.
+According to the equation above, $\hat{X}_{i}^{MMSE}$ is given as the value of projecting $X_{i}$ into a span consisting of a linear combination of measurement variables $Z_{i}$ and the measurement error is orthogonal to this span.
 
 <br><br>
 
@@ -186,13 +186,13 @@ where
 
 + $P_{XX \mid Z}$ : $P_{XX} - P_{XZ} P_{ZZ}^{-1} P_{ZX}$
 
-Thus, the MMSE estimation value $\hat{X}^{MMSE}$ and the estimation error covariance $P_{\widetilde{X}\widetilde{X}}$ are:
+Thus, the MMSE estimation value $\hat{X}^{MMSE}$ and the estimation error covariance $P_{\tilde{X}\tilde{X}}$ are:
 
 <center>
 
 $\hat{X}^{MMSE}(z) = \mu_{X} + P_{XZ}P_{ZZ}^{-1}(z-\mu_{Z})$<br>
 
-$P_{\widetilde{X}\widetilde{X}} = P_{XX \mid Z} = P_{XX}-P_{XZ}P_{ZZ}^{-1}P_{ZX}$
+$P_{\tilde{X}\tilde{X}} = P_{XX \mid Z} = P_{XX}-P_{XZ}P_{ZZ}^{-1}P_{ZX}$
 </center>
 
 <br><br>
