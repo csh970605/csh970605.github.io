@@ -48,7 +48,7 @@ $\hat{X}^{MMSE} = \mathbb{E}[X \mid Z_{k}]$
 </center>
 <br><br>
 
-## Check The Performance of The MMSE Estimator
+## The Performance of The MMSE Estimator
 
 <br><br>
 
@@ -126,3 +126,74 @@ $= \mathbb{E}[Xg^{T}(Z)] - \mathbb{E}[Xg^{T}(Z)] = 0$
 Then, let $g^{T}(Z) = Z$, $\mathbb{E}[X-\hat{X}^{MMSE}Z^{T}] = 0$.
 
 According to the equation above, $\hat{X}^{MMSE}_{i}$ is given as the value of projecting $X_{i}$ into a span consisting of a linear combination of measurement variables $Z_{i}$ and the measurement error is orthogonal to this span.
+
+<br><br>
+
+## Joint Gaussian MMSE Estimator
+
+Let's get the MMSE estimation value $\hat{X}^{MMSE}$ of random vector $X$ when the two random vectors $X$ and $Z$ have a [joint gaussian distribution](https://csh970605.github.io/posts/Gaussian_Distribution/#joint-gaussian-random-vector). <br>
+If the two random vectors are joint gaussian vectors, each random vector follows a gaussian distribution. Let $X$ and $Z$ have the following [probability density functions](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function):
+
+<center>
+
+$X \sim N(\mu_{X}, P_{XX}),$<br>
+
+$Z \sim N(\mu_{Z}, P_{ZZ})$
+</center>
+
+Also, assume that the [joint probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#joint-probability-function) of two random vectors is given as:
+
+<center>
+
+$Y = \begin{bmatrix}
+X \\
+Z
+\end{bmatrix} \sim N(\mu_{Y}, P_{YY})$
+</center>
+
+Then, $\mu_{Y}$ and $P_{YY}$ are:
+
+<center>
+
+$\mu_{Y}= \begin{bmatrix}
+\mu_{X} \\
+\mu_{Z}
+\end{bmatrix}, P_{YY} = \begin{bmatrix}
+P_{XX} & P_{XZ} \\
+P_{ZX} & P_{ZZ}
+\end{bmatrix}$
+</center>
+
+where $P$ represents the covariance matrix.<br>
+
+To obtain $\hat{X}^{MMSE}$, we need the [conditional probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#conditional-probability) of $X$ given $Z = z$. The conditional probability density function $p_{X\mid Z}(x \mid z)$ is given as:
+
+<center>
+
+$p_{X \mid Z}(x \mid z) = \frac{p_{XZ}(x, z)}{p_{Z}(z)} = \frac{p_{Y}(y)}{p_{Z}(z)}$<br>
+
+$= \frac{\sqrt{(2 \pi)^{p}\det{P_{ZZ}}}}{\sqrt{(2 \pi)^{n+p}\det{P_{YY}}}}\exp({-\frac{1}{2}\begin{Bmatrix}
+(y-\mu_{Y})^{T}P^{-1}_{YY}(y-\mu_{Y}) \\
+-(z-\mu_{Z})^{T}P^{-1}_{ZZ}(z-\mu_{Z})
+\end{Bmatrix}})$<br>
+
+$= \frac{1}{\sqrt{(2 \pi)^{n}\det{P_{XX\mid Z}}}} \exp{(-\frac{1}{2}(x-E[X \mid Z=z])^{T}P_{XX \mid Z} ^{-1}(x-E[X \mid Z=z]))}$
+</center>
+
+where
+
++ $E[X \mid Z=z]$ : $\mu_{X} + P_{XZ}P_{ZZ}^{-1}(z-\mu_{Z})$<br>
+
++ $P_{XX \mid Z}$ : $P_{XX} - P_{XZ} P_{ZZ}^{-1} P_{ZX}$
+
+Thus, the MMSE estimation value $\hat{X}^{MMSE}$ and the estimation error covariance $P_{\widetilde{X}\widetilde{X}}$ are:
+
+<center>
+
+$\hat{X}^{MMSE}(z) = \mu_{X} + P_{XZ}P_{ZZ}^{-1}(z-\mu_{Z})$<br>
+
+$P_{\widetilde{X}\widetilde{X}} = P_{XX \mid Z} = P_{XX}-P_{XZ}P_{ZZ}^{-1}P_{ZX}$
+</center>
+
+<br><br>
+
