@@ -123,7 +123,8 @@ $=\mathbb{E}[Xg^{T}(Z)]-\mathbb{E}[\mathbb{E}[Xg^{T}(Z) \mid Z]]$<br>
 $= \mathbb{E}[Xg^{T}(Z)] - \mathbb{E}[Xg^{T}(Z)] = 0$
 </center>
 
-Then, let $g^{T}(Z) = Z$, $\mathbb{E}[X-\hat{X}^{MMSE}Z^{T}] = 0$.
+Then, let $g^{T}(Z) = Z$, $\mathbb{E}[X-\hat{X}^{MMSE}Z^{T}] = 0$.<br>
+
 
 According to the equation above, $\hat{X}_{i}^{MMSE}$ is given as the value of projecting $X_{i}$ into a span consisting of a linear combination of measurement variables $Z_{i}$ and the measurement error is orthogonal to this span.
 
@@ -131,8 +132,8 @@ According to the equation above, $\hat{X}_{i}^{MMSE}$ is given as the value of p
 
 ## Joint Gaussian MMSE Estimator
 
-Let's get the MMSE estimation value $\hat{X}^{MMSE}$ of random vector $X$ when the two random vectors $X$ and $Z$ have a [joint gaussian distribution](https://csh970605.github.io/posts/Gaussian_Distribution/#joint-gaussian-random-vector). <br>
-If the two random vectors are joint gaussian vectors, each random vector follows a gaussian distribution. Let $X$ and $Z$ have the following [probability density functions](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function):
+Let's get the MMSE estimation value $\hat{X}^{MMSE}$ of random vector $X$ when the two random vectors $X$ and $Z$ have a [joint Gaussian distribution](https://csh970605.github.io/posts/Gaussian_Distribution/#joint-gaussian-random-vector). <br>
+If the two random vectors are joint Gaussian vectors, each random vector follows a Gaussian distribution. Let $X$ and $Z$ have the following [probability density functions](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function):
 
 <center>
 
@@ -197,3 +198,73 @@ $P_{\tilde{X}\tilde{X}} = P_{XX \mid Z} = P_{XX}-P_{XZ}P_{ZZ}^{-1}P_{ZX}$
 
 <br><br>
 
+## Joint Gaussian MMSE Estimator for Linear Measurements
+
+Let an unknown random vector $X$ and a measurement vector $Z$ have a linear relationship as:
+
+<center>
+
+$Z = HX + V$
+</center>
+
+where $X$ and $V$ which is a measurement noise are given as [Gaussian random vectors](https://csh970605.github.io/posts/Gaussian_Distribution/#gaussian-random-vector) as:
+
+<center>
+
+$X \sim N(\mu_{X}, P_{XX}),$<br>
+$V \sim N(0, R),$<br>
+$\mathbb{E}[(X-\mu_{X})V^{T}]=0$
+</center>
+and assume that the two random vectors are uncorrelated.<br>
+
+Since $X$ and $V$ are uncorrelated Gaussian random vectors, and $X$ and $Z$ have a linear relationship, $X$ and $Z$ have [joint Gaussian distribution](https://csh970605.github.io/posts/Gaussian_Distribution/#joint-gaussian-random-vector). Thus, the estimation value $\hat{X}^{MMSE}$ and the estimation error covariance $P_{\tilde{X}\tilde{X}}$ of the random vector $X$ conditioned on the random vector $Z$ are:
+
+<center>
+
+$\hat{X}^{MMSE}(z) = \mu_{X}+P_{XX}H^{T}(HP_{XX}H^{T} + R)^{-1}(z-H\mu_{X})$<br>
+
+$P_{\tilde{X}\tilde{X}} = (P_{XX}^{-1} + H^{T}R^{-1}H)^{-1}$
+</center>
+
+To prove this, we need to get $\mu_{Z}$ first.
+<center>
+
+$\mu_{Z} = \mathbb{E}[Z] = \mathbb{E}[HX + V] = H\mathbb{E}[X] = H\mu_{X}$
+</center>
+
+Second, get $P_{ZZ}$.
+<center>
+
+$P_{ZZ} = \mathbb{E}[(Z-\mu_{Z})(Z-\mu_{Z})^{T}]$<br>
+
+$= \mathbb{E}[(H(X-\mu_{X})+V)(H(X-\mu_{X})+V)^{T}]$<br>
+
+$= HP_{XX}H^{T} + \mathbb{E}[H(X-\mu_{X})V^{T}]+\mathbb{E}[V(X-\mu_{X})^{T}H^{T}]+ R$<br>
+
+$=HP_{XX}H^{T}+R$
+</center>
+
+Third, get the cross-covariance $P_{XZ}$.
+<center>
+
+$P_{XZ} = \mathbb{E}[(X-\mu_{X})(Z-\mu_{Z})]$<br>
+
+$= \mathbb{E}[(X-\mu_{X})(H(X-\mu_{X})+V)^{T}]$<br>
+
+$= P_{XX}H^{T} + \mathbb{E}[(X-\mu_{X})V^{T}]$<br>
+
+$= P_{XX}H^{T}$
+</center>
+
+Finally, to get $\hat{X}^{MMSE}(z)$ and $P_{\tilde{X}\tilde{X}}$, use the equations of joint Gaussian MMSE estimator above.
+
+<center>
+
+$\hat{X}^{MMSE}(z) = \mu_{X}+P_{XX}H^{T}(HP_{XX}H^{T} + R)^{-1}(z-H\mu_{X})$<br>
+
+$P_{\tilde{X}\tilde{X}} = P_{XX\mid Z}$ <br>
+
+$= P_{XX}-P_{XX}H^{T}(HP_{XX}H^{T}+R)^{-1}HP_{XX}$<br>
+
+$(P_{XX}^{-1} + H^{T}R^{-1}H)^{-1}$
+</center>
