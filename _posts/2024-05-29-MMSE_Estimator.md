@@ -173,10 +173,8 @@ To obtain $\hat{X}^{MMSE}$, we need the [conditional probability density functio
 
 $p_{X \mid Z}(x \mid z) = \frac{p_{XZ}(x, z)}{p_{Z}(z)} = \frac{p_{Y}(y)}{p_{Z}(z)}$<br>
 
-$= \frac{\sqrt{(2 \pi)^{p}\det{P_{ZZ}}}}{\sqrt{(2 \pi)^{n+p}\det{P_{YY}}}}\exp({-\frac{1}{2}\begin{Bmatrix}
-(y-\mu_{Y})^{T}P^{-1}_{YY}(y-\mu_{Y}) \\
--(z-\mu_{Z})^{T}P^{-1}_{ZZ}(z-\mu_{Z})
-\end{Bmatrix}})$<br>
+$= \frac{\sqrt{(2 \pi)^{p}\det{P_{ZZ}}}}{\sqrt{(2 \pi)^{n+p}\det{P_{YY}}}}\exp({-\frac{1}{2}
+(y-\mu_{Y})^{T}P^{-1}_{YY}(y-\mu_{Y})-(z-\mu_{Z})^{T}P^{-1}_{ZZ}(z-\mu_{Z})})$<br>
 
 $= \frac{1}{\sqrt{(2 \pi)^{n}\det{P_{XX\mid Z}}}} \exp{(-\frac{1}{2}(x-E[X \mid Z=z])^{T}P_{XX \mid Z} ^{-1}(x-E[X \mid Z=z]))}$
 </center>
@@ -268,3 +266,77 @@ $= P_{XX}-P_{XX}H^{T}(HP_{XX}H^{T}+R)^{-1}HP_{XX}$<br>
 
 $(P_{XX}^{-1} + H^{T}R^{-1}H)^{-1}$
 </center>
+<br><br>
+
+## Linear MMSE Estimator
+
+When a measurement vector $z$ and an estimate $\hat{x}$ of an unknown random vector $X$ have a linear relationship given by $\hat{x}(z) = Az + b$, we refer to the estimator as a linear estimator.<br>
+
+If the measurement vector is not fixed as $Z=z$ and is instead given as a random vector, the linear estimator is expressed as $\hat{X}(Z) = AZ + b$.<br>
+
+The Linear Minimum Mean-Square Error (LMMSE) estimator is defined as an estimator that minimizes the following objective function.
+
+<center>
+
+$J = \mathbb{E}[(X-\hat{X}^{LMMSE})^{T}(X-\hat{X}^{LMMSE})]$<br>
+
+$= tr\mathbb{E}[(X-\hat{X}^{LMMSE})(X-\hat{X}^{LMMSE})^{T}]$<br>
+
+$= tr\mathbb{E}[(X - AZ -b)(X-AZ-b)^{T}]$<br>
+
+$= tr\mathbb{E}[(X-AZ-b-\mathbb{E}[X]+\mathbb{E}[X])(X-AZ-b-\mathbb{E}[X]+\mathbb{E}[X])^{T}]$<br>
+
+$= trP_{XX}+A(P_{ZZ}+\mathbb{E}[Z](\mathbb{E}[Z])^{T})A^{T}+(\mathbb{E}[X]-b)(\mathbb{E}[X]-b)^{T}-2A\mathbb{E}[Z](\mathbb{E}[X]-b)^{T}-2AP_{XZ}$
+</center>
+
+where 
+
++ $tr$ : Trace(sum of diagonal components).
+
++ $A$ : A deterministic matrix. Need to be determined to make $J$ minimum.
+
++ $b$ : A deterministic vector. Need to be determined to make $J$ minimum.
+
+The necessary conditions for minimizing $J$ are as:
+
+<center>
+
+$\frac{\partial J}{\partial b} = 2(\mathbb{E}[X]-b)-2A\mathbb{E}[Z]=0$<br>
+
+$\frac{\partial J}{\partial A} = 2A(P_{ZZ}+\mathbb{E}[Z](\mathbb{E}[Z])^{T} - 2P_{XZ}-2(\mathbb{E}[X]-b)(\mathbb{E}[Z])^{T})=0$
+</center>
+
+$A$ and $b$ are calculated among the equations above.
+
++ $A$ : $P_{XZ}P_{ZZ}^{-1}$<br>
+
++ $b$ : $\mathbb{E}[X]-P_{XZ}P_{ZZ}^{-1}\mathbb{E}[Z]$
+
+Then, LMMSE is given as:
+
+<center>
+
+$\hat{X}^{LMMSE}(Z) = \mathbb{E}[X] + P_{XZ}P_{ZZ}^{-1}(Z-\mathbb{E}[Z])$
+</center>
+
+If the estimation vector is confirmed as $Z=z$, LLMSE is given as:
+
+<center>
+
+$\hat{X}^{LLMSE}(z) = \mathbb{E}[X] + P_{XZ}P_{ZZ}^{-1}(z-\mathbb{E}[Z])$
+</center>
+
+Additionally, $\mathbb{E}[\hat{X}^{LMMSE}(Z)]$ and $P_{\tilde{X}\tilde{X}}$ are:
+
+<center>
+
+$\mathbb{E}[\hat{X}^{LMMSE}(Z)] = \mathbb{E}[\mathbb{E}[X]] + P_{XZ}P_{ZZ}^{-1}(\mathbb{E}[Z]-\mathbb{E}[Z]) = \mathbb{E}[X]$<br>
+
+$P_{\tilde{X}\tilde{X}} = \mathbb{E}[(\tilde{X}-\mathbb{E}[\tilde{X}])(\tilde{X}-\mathbb{E}[\tilde{X}])^{T}]$<br>
+
+$=\mathbb{E}[\tilde{X}\tilde{X}^{T}] = \mathbb{E}[(X-\hat{X}^{LMMSE})(X-\hat{X}^{LMMSE})^{T}]$<br>
+
+$= P_{XX}-P_{XZ}P_{ZZ}^{-1}P_{ZX}$
+</center>
+
+Since $\mathbb{E}[\hat{X}^{LMMSE}(Z)] = \mathbb{E}[X]$, the LMMSE estimator is unbiased.
