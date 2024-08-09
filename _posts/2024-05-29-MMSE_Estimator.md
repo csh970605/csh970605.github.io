@@ -395,7 +395,7 @@ $=HP_{XX}H^{T} + \mathbb{E}[(X-\mu_{X})+V^{T}]$<br>
 $=P_{XX}H^{T}$
 </center>
 
-Finally, to get $\hat{X}^{LMMSE}(z) and $P_{\tilde{X}\tilde{X}}$, use the equations of the LMMSE estimator given above.
+Finally, to get $\hat{X}^{LMMSE}(z)$ and $P_{\tilde{X}\tilde{X}}$, use the equations of the LMMSE estimator given above.
 <center>
 
 $\hat{X}^{LMMSE}(z) = \mu_{X}+P_{XX}H^{T}(HP_{XX}H^{T} +R)^{-1}(z-H\mu_{X})$<br>
