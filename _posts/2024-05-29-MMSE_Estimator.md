@@ -340,3 +340,67 @@ $= P_{XX}-P_{XZ}P_{ZZ}^{-1}P_{ZX}$
 </center>
 
 Since $\mathbb{E}[\hat{X}^{LMMSE}(Z)] = \mathbb{E}[X]$, the LMMSE estimator is unbiased.
+
+<br><br>
+
+## Linear MMSE Estimator for Linear Measurements
+
+Let an unknown random vector $X$ and a measurement vector $Z$ be related by the linear equation $Z = HX + V$. Assume that $X$ and the measurement noise $V$ are random vectors with arbitrary probability distributions and are uncorrelated with each other as:
+
+<center>
+
+$X \sim (\mu_{X},P_{XX})$,<br>
+
+$V \sim (0, R)$,<br>
+
+$\mathbb{E}[(X-\mu_{X})V^{T}] = 0$
+</center>
+
+The estimate $\hat{X}^{LMMSE}$ and the estimation error covariance $P_{\tilde{X}\tilde{X}}$ of the random vector $X$ conditioned on the random vector $Z = z$ are:
+
+<center>
+
+$\hat{X}^{LMMSE}(z) = \mu_X + P_{XX}H^{T}(HP_{XX}H^{T} + R)^{-1}(z - H\mu_X)$<br>
+
+$P_{\tilde{X}\tilde{X}} = (P_{XX}^{-1}+H^{T}R^{-1}H)^{-1}$
+</center>
+
+To prove this, we need to get $\mu_{Z}$ first.
+<center>
+
+$\mu_{Z}=\mathbb{E}[Z] = \mathbb{E}[HX+V] = H\mathbb{E}[X] = H\mu_{X}$
+</center>
+
+Second, get $P_{ZZ}$
+<center>
+
+$P_{ZZ} = \mathbb{E}[(Z-\mu_{Z})(Z-\mu_{Z})^{T}]$<br>
+
+$=\mathbb{E}[(H(X-\mu_{X})+V)(H(X-\mu_{X})+V)^{T}]$<br>
+
+$= HP_{XX}H^{T} + \mathbb{E}[H(X-\mu_{X})V^{T}]+ \mathbb{E}[V(X-\mu_{X})^{T}H^{T}]+R$<br>
+
+$=HP_{XX}H^{T} + R$
+</center>
+
+Third, get the cross-covariance $P_{XZ}$.
+<center>
+
+$P_{XZ} = \mathbb{E}[(X-\mu_{X})(Z-\mu_{Z})^{T}]$<br>
+
+$= \mathbb{E}[(X-\mu_{X})(H(X-\mu_{X})+V)^{T}]$<br>
+
+$=HP_{XX}H^{T} + \mathbb{E}[(X-\mu_{X})+V^{T}]$<br>
+
+$=P_{XX}H^{T}$
+</center>
+
+Finally, to get $\hat{X}^{LMMSE}(z) and $P_{\tilde{X}\tilde{X}}$, use the equations of the LMMSE estimator given above.
+<center>
+
+$\hat{X}^{LMMSE}(z) = \mu_{X}+P_{XX}H^{T}(HP_{XX}H^{T} +R)^{-1}(z-H\mu_{X})$<br>
+
+$P_{\tilde{X}\tilde{X}}=P_{XX}-P_{XX}H^{T}(HP_{XX}H^{T}+R)^{-1}HP_{XX}$<br>
+
+$=(P_{XX}^{-1}+H^{T}R^{-1}H)^{-1}$
+</center>
