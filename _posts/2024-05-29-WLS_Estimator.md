@@ -122,9 +122,7 @@ To express $P_{\tilde{X}\tilde{X}}$ in terms of $K$, multiply both sides by $H^{
 
 <center>
 
-$P_{\tilde{X}\tilde{X}}(k+1)H^{T}(k+1)R^{-1}(k+1)=P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)R^{-1}(k+1)-$<br>
-
-$P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)(H(k+1)P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)+R(k+1))^{-1}H(k+1)P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)R^{-1}(k+1)$<br>
+$P_{\tilde{X}\tilde{X}}(k+1)H^{T}(k+1)R^{-1}(k+1)=P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)R^{-1}(k+1)- \\ P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)(H(k+1)P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)+R(k+1))^{-1}H(k+1) \\ P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)R^{-1}(k+1)$<br>
 
 $=P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)S^{-1}(k+1)$<br>
 
