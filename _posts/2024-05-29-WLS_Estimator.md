@@ -61,3 +61,95 @@ This type of estimator is called a batch WLS estimator. If a new measurement $z(
 
 <br><br><br><br>
 
+# Recursive WLS Estimator
+
+To address the disadvantage of recalculating $\hat{x}^{WLS}(k+1)$ in a batch WLS estimator, a recursive WLS estimator that updates the existing estimate has been introduced.To transform a batch WLS estimator into a recursive WLS estimator, the parameters used in the WLS estimator are represented as:
+
+<center>
+
+$z^{k+1} = \begin{bmatrix}
+z^{k} \\
+z(k+1)
+\end{bmatrix}$<br>
+
+$H^{k+1}=\begin{bmatrix}
+H^{k} \\
+H(k+1)
+\end{bmatrix}$<br>
+
+$v^{k+1}=\begin{bmatrix}
+v^{k} \\
+v(k+1)
+\end{bmatrix}$<br>
+
+$R^{k+1}=\begin{bmatrix}
+R^{k} && 0 \\
+0 && R(k+1)
+\end{bmatrix}$<br>
+</center>
+
+Next, $P_{\tilde{X}\tilde{X}}^{-1}$ is calculated as:
+
+<center>
+
+$P_{\tilde{X}\tilde{X}}^{-1}(k+1)=(H^{k+1})^{T}(R^{k+1})^{-1}H^{k+1}$<br>
+
+$=((H^{k})^{T}H^{T}(k+1))\begin{bmatrix}
+R^{k} && 0 \\
+0 && R(k+1)
+\end{bmatrix}$<br>
+
+$=(H^{k})^{T}(R^{k})^{-1}H^{k} + H^{T}(k+1)R^{-1}(k+1)H(k+1)$<br>
+
+$=P_{\tilde{X}\tilde{X}}^{-1}(k)+H^{T}(k+1)R^{-1}(k+1)H(k+1)$<br>
+
+$\therefore P_{\tilde{X}\tilde{X}}(k+1)=(P_{\tilde{X}\tilde{X}}(k)+H^{T}(k+1)R^{-1}(k+1)H(k+1))^{-1}$<br>
+
+$=P_{\tilde{X}\tilde{X}}(k)-P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)(H(k+1)P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)+R(k+1))^{-1}H(k+1)P_{\tilde{X}\tilde{X}}(k)$<br>
+
+$=P_{\tilde{X}\tilde{X}}(k)-K(k+1)H(k+1)+R(k+1)$<br>
+
+$=P_{\tilde{X}\tilde{X}}(k)-K(k+1)S(k+1)K^{T}(k+1)$
+</center>
+
+where 
+
++ $S(k+1) = H(k+1)P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)+R(k+1)$
+
++ $K(k+1) = P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)S^{-1}(k+1)$
+
+To express $P_{\tilde{X}\tilde{X}}$ in terms of $K$, multiply both sides by $H^{T}(k+1)R^{-1}(k+1)$.
+
+<center>
+
+$P_{\tilde{X}\tilde{X}}(k+1)H^{T}(k+1)R^{-1}(k+1)=P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)R^{-1}(k+1)-P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)(H(k+1)P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)+R(k+1))^{-1}H(k+1)P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)R^{-1}(k+1)$<br>
+
+$=P_{\tilde{X}\tilde{X}}(k)H^{T}(k+1)S^{-1}(k+1)$<br>
+
+$=K(k+1)$
+</center>
+
+The updated estimate $\hat{x}^{WLS}(k+1)$ is then calculated as:
+
+<center>
+
+$\hat{x}^{WLS}(k+1)=((H^{k+1})^{T}(R^{k+1})^{-1}H^{k+1})^{-1}(H^{k+1})^{T}(R^{k+1})^{-1}z^{k_+1}$<br>
+
+$=P_{\tilde{X}\tilde{X}}(k+1)(H^{k+1})^{T}(R^{k+1})^{-1}z^{k+1}$
+
+$=P_{\tilde{X}\tilde{X}}(k+1)((H^{k})^{T}H^{T}(k+1))\begin{bmatrix}
+R^{k} && 0 \\
+0 && R(k+1)
+\end{bmatrix}^{-1}\begin{bmatrix}
+z^{k} \\
+z(k+1)
+\end{bmatrix}$<br>
+
+$=P_{\tilde{X}\tilde{X}}(k+1)(H^{k})^{T}(R^{k})^{-1}z^{k} + P_{\tilde{X}\tilde{X}}(k+1)H^{T}(k+1)R^{-1}(k+1)z(k+1)$<br>
+
+$=(I-K(k+1)H(k+1))P_{\tilde{X}\tilde{X}}(k)(H^{k})^{T}(R^{k})^{-1}z^{k} + K(k+1)z(k+1)$<br>
+
+$=(I-K(k+1)H(k+1))\hat{x}^{WLS}(k)+K(k+1)z(k+1)$<br>
+
+$=\hat{x}^{WLS}(k) + K(k+1)(z(k+1)-H(k+1)\hat{x}^{WLS}(k))$
+</center>
