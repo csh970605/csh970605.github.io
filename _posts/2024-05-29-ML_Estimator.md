@@ -10,7 +10,7 @@ mermaid: true
 
 # ML(Maximum Likelihood) Estimator
 
-Since the ML Estimator is a non-Bayesian estimator, it considers the vector $X$ as an unknown fixed value. Thus, it should be noted that $X$ is not a[random vector](https://csh970605.github.io/posts/Rand_Vector/).<br>
+Since the ML Estimator is a [non-Bayesian estimator](https://csh970605.github.io/posts/Static_Estimate/#non-bayesian-approach), it considers the vector $X$ as an unknown fixed value. Thus, it should be noted that $X$ is not a[random vector](https://csh970605.github.io/posts/Rand_Vector/).<br>
 
 Since the measurement vector $z$ varies depending on the value of $x$, the [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) of $Z$ is a function of the unkown vector $x$. This is expressed as $p_{Z}(z(x))$.<br>
 
