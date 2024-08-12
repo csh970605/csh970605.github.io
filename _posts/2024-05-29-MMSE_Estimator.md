@@ -138,7 +138,7 @@ Then, let $g^{T}(Z) = Z$, $\mathbb{E}[X-\hat{X}^{MMSE}Z^{T}] = 0$.<br>
 
 According to the equation above, $$\hat{X}_{i}^{MMSE}$$ is given as the value of projecting $X_{i}$ into a span consisting of a linear combination of measurement variables $Z_{i}$ and the measurement error is orthogonal to this span.
 
-<br><br>
+<br><br><br><br>
 
 # Joint Gaussian MMSE Estimator
 
@@ -204,7 +204,7 @@ $\hat{X}^{MMSE}(z) = \mu_{X} + P_{XZ}P_{ZZ}^{-1}(z-\mu_{Z})$<br>
 $P_{\tilde{X}\tilde{X}} = P_{XX \mid Z} = P_{XX}-P_{XZ}P_{ZZ}^{-1}P_{ZX}$
 </center>
 
-<br><br>
+<br><br><br><br>
 
 # Joint Gaussian MMSE Estimator for Linear Measurements
 
@@ -276,7 +276,7 @@ $= P_{XX}-P_{XX}H^{T}(HP_{XX}H^{T}+R)^{-1}HP_{XX}$<br>
 
 $(P_{XX}^{-1} + H^{T}R^{-1}H)^{-1}$
 </center>
-<br><br>
+<br><br><br><br>
 
 # Linear MMSE Estimator
 
@@ -351,7 +351,7 @@ $= P_{XX}-P_{XZ}P_{ZZ}^{-1}P_{ZX}$
 
 Since $\mathbb{E}[\hat{X}^{LMMSE}(Z)] = \mathbb{E}[X]$, the LMMSE estimator is unbiased.
 
-<br><br>
+<br><br><br><br>
 
 # Linear MMSE Estimator for Linear Measurements
 
