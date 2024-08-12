@@ -49,13 +49,13 @@ $\hat{X}^{MMSE} = \mathbb{E}[X \mid Z_{k}]$
 
 There are four kinds of MMSE Estimators. Which are :
 
-+ Joint Gaussian MMSE Estimator
++ [Joint Gaussian MMSE Estimator](https://csh970605.github.io/posts/MMSE_Estimator/#joint-gaussian-mmse-estimator)
 
-+ Joint Gaussian MMSE Estimator for Linear Measurements
++ [Joint Gaussian MMSE Estimator for Linear Measurements](https://csh970605.github.io/posts/MMSE_Estimator/#joint-gaussian-mmse-estimator-for-linear-measurements)
 
-+ Linear MMSE Estimator
++ [Linear MMSE Estimator](https://csh970605.github.io/posts/MMSE_Estimator/#linear-mmse-estimator)
 
-+ Linear MMSE Estimator for Linear Measurements
++ [Linear MMSE Estimator for Linear Measurements](https://csh970605.github.io/posts/MMSE_Estimator/#linear-mmse-estimator-for-linear-measurements)
 <br><br>
 
 ## The Performance of The MMSE Estimator
