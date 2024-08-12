@@ -46,6 +46,16 @@ Similar to the formula above, if the measurement vectors are random vectors, the
 
 $\hat{X}^{MMSE} = \mathbb{E}[X \mid Z_{k}]$
 </center>
+
+There are four kinds of MMSE Estimators. Which are :
+
++ Joint Gaussian MMSE Estimator
+
++ Joint Gaussian MMSE Estimator for Linear Measurements
+
++ Linear MMSE Estimator
+
++ Linear MMSE Estimator for Linear Measurements
 <br><br>
 
 ## The Performance of The MMSE Estimator
@@ -130,7 +140,7 @@ According to the equation above, $$\hat{X}_{i}^{MMSE}$$ is given as the value of
 
 <br><br>
 
-## Joint Gaussian MMSE Estimator
+# Joint Gaussian MMSE Estimator
 
 Let's get the MMSE estimation value $\hat{X}^{MMSE}$ of random vector $X$ when the two random vectors $X$ and $Z$ have a [joint Gaussian distribution](https://csh970605.github.io/posts/Gaussian_Distribution/#joint-gaussian-random-vector). <br>
 If the two random vectors are joint Gaussian vectors, each random vector follows a Gaussian distribution. Let $X$ and $Z$ have the following [probability density functions](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function):
@@ -196,7 +206,7 @@ $P_{\tilde{X}\tilde{X}} = P_{XX \mid Z} = P_{XX}-P_{XZ}P_{ZZ}^{-1}P_{ZX}$
 
 <br><br>
 
-## Joint Gaussian MMSE Estimator for Linear Measurements
+# Joint Gaussian MMSE Estimator for Linear Measurements
 
 Let an unknown random vector $X$ and a measurement vector $Z$ have a linear relationship as:
 
@@ -268,7 +278,7 @@ $(P_{XX}^{-1} + H^{T}R^{-1}H)^{-1}$
 </center>
 <br><br>
 
-## Linear MMSE Estimator
+# Linear MMSE Estimator
 
 When a measurement vector $z$ and an estimate $\hat{x}$ of an unknown random vector $X$ have a linear relationship given by $\hat{x}(z) = Az + b$, we refer to the estimator as a linear estimator.<br>
 
@@ -343,7 +353,7 @@ Since $\mathbb{E}[\hat{X}^{LMMSE}(Z)] = \mathbb{E}[X]$, the LMMSE estimator is u
 
 <br><br>
 
-## Linear MMSE Estimator for Linear Measurements
+# Linear MMSE Estimator for Linear Measurements
 
 Let an unknown random vector $X$ and a measurement vector $Z$ be related by the linear equation $Z = HX + V$. Assume that $X$ and the measurement noise $V$ are random vectors with arbitrary probability distributions and are uncorrelated with each other as:
 
