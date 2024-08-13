@@ -9,3 +9,6 @@ mermaid: true
 ---
 
 # Bayes Filter
+> An example showing the `tip` type prompt.
+{: .prompt-tip }
+
