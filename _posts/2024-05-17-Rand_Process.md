@@ -43,7 +43,7 @@ $x(t)$ represents the state of the random process at time $t$, and it is called 
 As you can see in the example, a sample function is a deterministic function, and all the samples are called an **ensemble**.
 <br><br>
 
-If time is discrete, the random process is called a **discrete-time random process** or **random sequence**. It is expressed as :
+If time is discrete, the random process is called a **discrete-time random process** or a **random sequence**. It is expressed as :
 
 <center>
 
