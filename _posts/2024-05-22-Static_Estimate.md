@@ -162,20 +162,20 @@ In a non-Bayesian approach, $X$ is an unknown deterministic value. Therefore, as
 
 <img src="https://github.com/csh970605/csh970605.github.io/assets/28240052/f5353493-76eb-4e99-bfcd-e5eba47d2f80">
 </center>
-<br><br>
+<br><br><br><br>
 
 # Bias
 
 When an unknown constant vector $X$ is a random vector and probability information is given as a [probability density function](https://csh970605.github.io/posts/Probability_RandomVector/#probability-density-function) $p_{X}(x)$, if there is an estimator such that $\mathbb{E}[\hat{X}] = \mathbb{E}[X]$, it is called an **unbaised estimator**. Alternatively, if the estimator is $\mathbb{E}[\hat{X}] = x$ where $X$ is an unknown constant vector which is $x$, it is also called an **unbaised estimator**.<br>
 When $k \rightarrow \infty$, if $\mathbb{E}[\hat{X}] = \mathbb{E}[X]$ or $\mathbb{E}[\hat{X}] = x$ are established, it is called an **asymptotically unbiased estimator**.
 
-<br><br>
+<br><br><br><br>
 
 # Consistency
 
 When an unknown constant vector $X$ is a random vector, if there is an estimator such that $\lim_{k \rightarrow \infty}\mathbb{E}[(X-\hat{X}(k))^{T}(X-\hat{X}(k))] = 0$, it is called a **consistent estimator**. Alternatively, if the estimator is $\lim_{k \rightarrow \infty}\mathbb{E}[(x-\hat{X}(k))^{T}(x-\hat{X}(k))] = 0$ where $X$ is an unknown constant vector which is $x$, it is also called a **consistent estimator**.
 
-<br><br>
+<br><br><br><br>
 
 # Covariance of Estimation Errors
 
@@ -194,3 +194,5 @@ When $X$ is an unknown constant vector which is $x$, the covariance of estimatio
 
 $\mathbb{E}[(x-\hat{X})(x-\hat{X})^{T}]$
 </center>
+
+<br><br><br><br>
